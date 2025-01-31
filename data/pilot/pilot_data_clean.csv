@@ -1,0 +1,801 @@
+id,treatment,attention,age,gender,gender_text,political_ideology,religiosity,order,dilemma,advisor,advice,trustworthy,blame,trust_other_issues,surprise,humanlike,cold,illogical,judgement_pre,judgement_post,confidence_pre,confidence_post,manipulation_check
+1,AI,TikTok,26,Female,NA,4,5,1,Bike,ETHIC-AI,Utilitarian,5,5,5,5,3,6,4,0.81,0.57,4,4,Utilitarian
+1,AI,TikTok,26,Female,NA,4,5,2,Baby,INTELLI-MORAL,Deontological,1,7,1,7,1,7,7,0.03,0,7,7,Deontological
+2,Human,TikTok,66,Male,NA,2,1,1,Baby,Dr. Thompson,Deontological,5,1,5,2,NA,NA,NA,0.08,0.07,7,7,Deontological
+2,Human,TikTok,66,Male,NA,2,1,2,Bike,Dr. Smith,Utilitarian,6,6,6,1,NA,NA,NA,0.84,0.92,6,6,Utilitarian
+3,AI,TikTok,33,Male,NA,4,1,1,Baby,ETHIC-AI,Deontological,7,1,6,7,7,1,1,0,0,7,7,Deontological
+3,AI,TikTok,33,Male,NA,4,1,2,Bike,INTELLI-MORAL,Utilitarian,3,7,2,7,1,6,2,0,0,7,7,Utilitarian
+4,AI,TikTok,64,Male,NA,5,1,1,Baby,ETHIC-AI,Deontological,5,4,5,4,2,5,1,0.08,0.09,5,5,Deontological
+4,AI,TikTok,64,Male,NA,5,1,2,Bike,INTELLI-MORAL,Utilitarian,5,3,5,3,2,5,1,0.05,0.06,5,5,Utilitarian
+5,Human,TikTok,28,Male,NA,3,1,1,Bike,Dr. Smith,Utilitarian,3,7,2,5,NA,NA,NA,0.02,0.08,7,7,Utilitarian
+5,Human,TikTok,28,Male,NA,3,1,2,Baby,Dr. Thompson,Deontological,6,1,7,1,NA,NA,NA,0.01,0.05,7,7,Deontological
+6,Human,TikTok,35,Female,NA,4,4,1,Baby,Dr. Smith,Deontological,4,6,3,3,NA,NA,NA,0.79,0.82,5,6,Deontological
+6,Human,TikTok,35,Female,NA,4,4,2,Bike,Dr. Thompson,Utilitarian,5,2,5,2,NA,NA,NA,0.52,0.77,3,5,Utilitarian
+7,AI,TikTok,60,Male,NA,3,6,1,Baby,INTELLI-MORAL,Deontological,6,5,5,4,2,6,2,0.27,0,2,6,Deontological
+7,AI,TikTok,60,Male,NA,3,6,2,Bike,ETHIC-AI,Utilitarian,6,4,5,3,2,6,2,0.76,0.83,5,5,Utilitarian
+8,Human,TikTok,48,Male,NA,4,2,1,Bike,Dr. Smith,Utilitarian,2,6,2,6,NA,NA,NA,0.12,0.09,4,5,Utilitarian
+8,Human,TikTok,48,Male,NA,4,2,2,Baby,Dr. Thompson,Deontological,5,2,5,2,NA,NA,NA,0,0,7,7,Deontological
+9,AI,TikTok,56,Male,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,1,5,1,1,2,6,3,0.22,0.3,5,5,Utilitarian
+9,AI,TikTok,56,Male,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,4,6,6,4,3,6,3,0,0,6,6,Deontological
+10,AI,TikTok,50,Female,NA,4,1,1,Bike,INTELLI-MORAL,Deontological,5,4,5,5,6,3,3,0.62,0.61,1,3,Deontological
+10,AI,TikTok,50,Female,NA,4,1,2,Baby,ETHIC-AI,Utilitarian,3,5,3,7,3,5,4,0,0,5,6,Utilitarian
+11,AI,TikTok,31,Male,NA,3,1,1,Bike,ETHIC-AI,Utilitarian,4,4,3,1,5,5,1,0.16,0.39,3,3,Utilitarian
+11,AI,TikTok,31,Male,NA,3,1,2,Baby,INTELLI-MORAL,Deontological,4,4,4,3,5,5,3,0.54,0.53,1,1,Deontological
+12,Human,TikTok,25,Female,NA,5,1,1,Baby,Dr. Smith,Deontological,7,1,5,1,NA,NA,NA,0.34,0.34,1,4,Deontological
+12,Human,TikTok,25,Female,NA,5,1,2,Bike,Dr. Thompson,Utilitarian,3,5,2,5,NA,NA,NA,0.36,0.3,2,4,Utilitarian
+13,AI,TikTok,25,Male,NA,6,2,1,Bike,ETHIC-AI,Deontological,5,2,5,4,6,2,2,0.52,0.39,4,5,Deontological
+13,AI,TikTok,25,Male,NA,6,2,2,Baby,INTELLI-MORAL,Utilitarian,4,3,4,3,3,6,1,0.56,0.57,4,4,Utilitarian
+14,Human,Reddit,37,Male,NA,2,1,1,Baby,Dr. Smith,Utilitarian,7,7,7,7,NA,NA,NA,1,1,7,7,Utilitarian
+14,Human,Reddit,37,Male,NA,2,1,2,Bike,Dr. Thompson,Deontological,7,4,5,6,NA,NA,NA,1,1,7,4,Deontological
+15,AI,TikTok,27,Male,NA,6,2,1,Bike,ETHIC-AI,Deontological,5,5,4,3,3,5,4,0,0,6,6,Deontological
+15,AI,TikTok,27,Male,NA,6,2,2,Baby,INTELLI-MORAL,Utilitarian,4,6,4,5,4,5,4,0.61,0.58,4,6,Utilitarian
+16,Human,TikTok,33,Male,NA,1,1,1,Bike,Dr. Thompson,Utilitarian,2,2,3,3,NA,NA,NA,0.57,0.56,2,2,Utilitarian
+16,Human,TikTok,33,Male,NA,1,1,2,Baby,Dr. Smith,Deontological,2,2,2,3,NA,NA,NA,0.58,0.56,2,2,Deontological
+17,Human,TikTok,40,Female,NA,2,2,1,Baby,Dr. Thompson,Deontological,6,3,5,2,NA,NA,NA,0.74,0.67,3,5,Deontological
+17,Human,TikTok,40,Female,NA,2,2,2,Bike,Dr. Smith,Utilitarian,3,5,3,5,NA,NA,NA,0.42,0.4,5,4,Utilitarian
+18,AI,TikTok,27,Female,NA,4,6,1,Bike,ETHIC-AI,Utilitarian,3,3,2,2,1,6,3,0.75,0.44,5,3,Utilitarian
+18,AI,TikTok,27,Female,NA,4,6,2,Baby,INTELLI-MORAL,Deontological,6,1,6,1,7,1,1,0.18,0.01,6,7,Deontological
+19,AI,TikTok,52,Male,NA,2,1,1,Bike,ETHIC-AI,Deontological,3,4,2,5,2,6,3,0.61,0.6,2,2,Deontological
+19,AI,TikTok,52,Male,NA,2,1,2,Baby,INTELLI-MORAL,Utilitarian,4,2,5,3,4,5,2,0.93,0.91,6,6,Utilitarian
+20,AI,TikTok,32,Female,NA,2,1,1,Bike,INTELLI-MORAL,Deontological,7,1,5,7,7,1,1,0.26,0,1,4,Deontological
+20,AI,TikTok,32,Female,NA,2,1,2,Baby,ETHIC-AI,Utilitarian,4,1,5,5,6,4,2,0.28,0.52,2,4,Utilitarian
+21,Human,TV,48,Female,NA,4,3,1,Baby,Dr. Thompson,Utilitarian,2,5,2,5,NA,NA,NA,0.21,0.2,4,4,Utilitarian
+21,Human,TV,48,Female,NA,4,3,2,Bike,Dr. Smith,Deontological,4,4,4,4,NA,NA,NA,0.65,0.46,4,1,Deontological
+22,AI,TikTok,42,Male,NA,2,1,1,Baby,ETHIC-AI,Utilitarian,1,7,1,1,1,7,1,0,0,7,7,Utilitarian
+22,AI,TikTok,42,Male,NA,2,1,2,Bike,INTELLI-MORAL,Deontological,1,4,1,1,1,7,1,0,0,6,6,Deontological
+23,Human,TikTok,61,Male,NA,2,1,1,Baby,Dr. Smith,Deontological,4,4,4,6,NA,NA,NA,0.74,0.57,5,4,Deontological
+23,Human,TikTok,61,Male,NA,2,1,2,Bike,Dr. Thompson,Utilitarian,6,2,5,4,NA,NA,NA,0.83,0.85,6,6,Utilitarian
+24,Human,TikTok,31,Male,NA,3,4,1,Baby,Dr. Smith,Deontological,6,1,3,6,NA,NA,NA,0.71,0.32,2,3,Deontological
+24,Human,TikTok,31,Male,NA,3,4,2,Bike,Dr. Thompson,Utilitarian,5,1,6,1,NA,NA,NA,0.81,0.83,6,5,Utilitarian
+25,AI,TikTok,30,Female,NA,2,2,1,Bike,ETHIC-AI,Utilitarian,4,3,4,3,4,4,4,0.75,0.78,5,5,Utilitarian
+25,AI,TikTok,30,Female,NA,2,2,2,Baby,INTELLI-MORAL,Deontological,2,4,2,5,2,5,3,0.48,0.58,2,3,Deontological
+26,AI,TikTok,28,Male,NA,2,1,1,Baby,INTELLI-MORAL,Deontological,5,5,4,2,5,3,4,0.28,0.24,3,3,Deontological
+26,AI,TikTok,28,Male,NA,2,1,2,Bike,ETHIC-AI,Utilitarian,3,5,3,5,2,6,2,0.11,0.41,5,4,Utilitarian
+27,Human,TikTok,49,Female,NA,4,1,1,Baby,Dr. Thompson,Utilitarian,6,1,6,1,NA,NA,NA,0.64,0.76,4,6,Utilitarian
+27,Human,TikTok,49,Female,NA,4,1,2,Bike,Dr. Smith,Deontological,3,5,2,7,NA,NA,NA,0.86,0.87,6,6,Deontological
+28,AI,TikTok,26,Female,NA,4,6,1,Bike,INTELLI-MORAL,Deontological,5,2,5,2,2,6,5,0.24,0.02,2,7,Deontological
+28,AI,TikTok,26,Female,NA,4,6,2,Baby,ETHIC-AI,Utilitarian,1,7,1,7,1,7,7,0.01,0,7,7,Utilitarian
+29,AI,TikTok,50,Female,NA,3,1,1,Bike,ETHIC-AI,Utilitarian,5,3,5,2,3,5,1,0.8,0.73,2,3,Utilitarian
+29,AI,TikTok,50,Female,NA,3,1,2,Baby,INTELLI-MORAL,Deontological,7,1,7,7,7,1,6,0.75,0.01,1,4,Deontological
+30,AI,TikTok,40,Female,NA,4,1,1,Bike,INTELLI-MORAL,Deontological,3,4,3,4,2,6,3,0.51,0.27,4,5,Deontological
+30,AI,TikTok,40,Female,NA,4,1,2,Baby,ETHIC-AI,Utilitarian,1,6,2,5,2,7,3,0.27,0.14,5,6,Utilitarian
+31,AI,TikTok,51,Female,NA,4,2,1,Baby,INTELLI-MORAL,Utilitarian,2,2,2,5,1,7,6,0.16,0.01,1,6,Utilitarian
+31,AI,TikTok,51,Female,NA,4,2,2,Bike,ETHIC-AI,Deontological,7,2,6,1,7,1,2,0,0,7,7,Deontological
+32,AI,TikTok,21,Female,NA,4,4,1,Bike,INTELLI-MORAL,Utilitarian,4,5,4,3,3,5,3,0.48,0.51,4,4,Utilitarian
+32,AI,TikTok,21,Female,NA,4,4,2,Baby,ETHIC-AI,Deontological,3,5,4,3,3,5,3,0.51,0.51,4,4,Utilitarian
+33,AI,TikTok,29,Male,NA,5,1,1,Baby,ETHIC-AI,Utilitarian,3,4,3,1,2,5,2,0.55,0.55,1,1,Utilitarian
+33,AI,TikTok,29,Male,NA,5,1,2,Bike,INTELLI-MORAL,Deontological,6,2,6,1,6,2,4,0.67,0.65,2,3,Deontological
+34,Human,TikTok,44,Female,NA,5,3,1,Baby,Dr. Smith,Deontological,5,2,5,5,NA,NA,NA,0.5,0.5,4,4,Deontological
+34,Human,TikTok,44,Female,NA,5,3,2,Bike,Dr. Thompson,Utilitarian,3,3,4,3,NA,NA,NA,0.39,0.44,3,4,Utilitarian
+35,AI,TikTok,40,Male,NA,3,1,1,Baby,INTELLI-MORAL,Deontological,1,6,3,5,1,7,4,0,0,7,7,Deontological
+35,AI,TikTok,40,Male,NA,3,1,2,Bike,ETHIC-AI,Utilitarian,1,6,1,5,1,7,4,0,0,7,7,Utilitarian
+36,AI,TikTok,46,Female,NA,3,1,1,Baby,INTELLI-MORAL,Utilitarian,4,1,4,4,2,4,3,0.47,0.5,2,2,Utilitarian
+36,AI,TikTok,46,Female,NA,3,1,2,Bike,ETHIC-AI,Deontological,4,4,4,6,4,4,4,0.59,0.52,2,4,Utilitarian
+37,Human,TikTok,34,Female,NA,2,1,1,Bike,Dr. Smith,Deontological,6,2,6,2,NA,NA,NA,0.05,0,6,7,Deontological
+37,Human,TikTok,34,Female,NA,2,1,2,Baby,Dr. Thompson,Utilitarian,4,6,2,6,NA,NA,NA,0.03,0.11,7,6,Utilitarian
+38,Human,TikTok,40,Male,NA,5,2,1,Baby,Dr. Smith,Utilitarian,5,3,4,3,NA,NA,NA,0.31,0.42,3,2,Utilitarian
+38,Human,TikTok,40,Male,NA,5,2,2,Bike,Dr. Thompson,Deontological,3,5,2,6,NA,NA,NA,0.94,1,6,6,Deontological
+39,AI,TikTok,60,Male,NA,4,1,1,Bike,ETHIC-AI,Deontological,7,1,7,1,4,4,4,0,0,7,7,Deontological
+39,AI,TikTok,60,Male,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,4,7,4,7,4,4,4,0,0,7,7,Utilitarian
+40,AI,TikTok,48,Female,NA,4,1,1,Bike,ETHIC-AI,Deontological,4,5,3,5,2,6,4,0.62,0.59,5,4,Deontological
+40,AI,TikTok,48,Female,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,4,5,3,3,2,6,5,0.57,0.64,5,5,Deontological
+41,AI,TikTok,53,Male,NA,2,1,1,Bike,INTELLI-MORAL,Deontological,2,4,2,6,4,4,5,0.61,0.67,3,3,Deontological
+41,AI,TikTok,53,Male,NA,2,1,2,Baby,ETHIC-AI,Utilitarian,5,3,4,3,3,5,3,0.5,0.5,3,3,Utilitarian
+42,Human,TikTok,45,Male,NA,2,5,1,Bike,Dr. Smith,Utilitarian,5,3,4,4,NA,NA,NA,0.4,0.46,3,3,Utilitarian
+42,Human,TikTok,45,Male,NA,2,5,2,Baby,Dr. Thompson,Deontological,3,5,3,5,NA,NA,NA,0.6,0.55,5,3,Deontological
+43,AI,TikTok,28,Male,NA,2,1,1,Baby,INTELLI-MORAL,Utilitarian,1,7,2,1,1,7,4,0.63,0.57,2,2,Utilitarian
+43,AI,TikTok,28,Male,NA,2,1,2,Bike,ETHIC-AI,Deontological,5,2,5,6,5,3,4,0,0,7,7,Deontological
+44,Human,TikTok,36,Male,NA,4,4,1,Bike,Dr. Smith,Utilitarian,7,1,7,1,NA,NA,NA,0.83,1,7,7,Utilitarian
+44,Human,TikTok,36,Male,NA,4,4,2,Baby,Dr. Thompson,Deontological,2,7,2,7,NA,NA,NA,1,1,6,7,Deontological
+45,Human,TV,20,Male,NA,5,2,1,Bike,Dr. Smith,Deontological,5,4,5,3,NA,NA,NA,0.64,0.3,3,4,Deontological
+45,Human,TV,20,Male,NA,5,2,2,Baby,Dr. Thompson,Utilitarian,2,6,2,7,NA,NA,NA,0.26,0.22,6,5,Utilitarian
+46,AI,TikTok,63,Male,NA,3,4,1,Bike,ETHIC-AI,Deontological,6,2,5,1,5,3,2,0.13,0.11,5,6,Deontological
+46,AI,TikTok,63,Male,NA,3,4,2,Baby,INTELLI-MORAL,Utilitarian,4,3,4,3,2,5,2,0.65,0.65,3,5,Utilitarian
+47,AI,TikTok,20,Male,NA,4,1,1,Baby,INTELLI-MORAL,Deontological,5,4,6,2,5,5,2,0.69,0.27,6,6,Deontological
+47,AI,TikTok,20,Male,NA,4,1,2,Bike,ETHIC-AI,Utilitarian,6,2,6,1,5,4,1,0.77,0.93,5,6,Utilitarian
+48,AI,TikTok,40,Male,NA,5,1,1,Baby,ETHIC-AI,Deontological,5,2,4,2,2,5,2,0.26,0.22,2,2,Deontological
+48,AI,TikTok,40,Male,NA,5,1,2,Bike,INTELLI-MORAL,Utilitarian,3,3,3,5,3,5,3,0.21,0.3,2,2,Utilitarian
+49,Human,TikTok,22,Female,NA,3,2,1,Bike,Dr. Thompson,Deontological,5,3,4,5,NA,NA,NA,0.35,0.32,4,5,Deontological
+49,Human,TikTok,22,Female,NA,3,2,2,Baby,Dr. Smith,Utilitarian,4,3,5,5,NA,NA,NA,0.72,0.74,6,6,Utilitarian
+50,AI,TikTok,37,Female,NA,1,1,1,Bike,ETHIC-AI,Deontological,3,4,4,5,2,7,4,0.51,0.5,2,3,Deontological
+50,AI,TikTok,37,Female,NA,1,1,2,Baby,INTELLI-MORAL,Utilitarian,2,4,2,2,2,7,4,0.51,0.51,1,1,Utilitarian
+51,AI,TikTok,40,Female,NA,4,3,1,Baby,INTELLI-MORAL,Utilitarian,2,6,1,5,1,6,1,0.5,0.4,1,1,Utilitarian
+51,AI,TikTok,40,Female,NA,4,3,2,Bike,ETHIC-AI,Deontological,5,3,4,3,1,6,3,0.1,0.15,6,3,Deontological
+52,Human,TV,53,Male,NA,4,1,1,Baby,Dr. Thompson,Utilitarian,6,1,6,2,NA,NA,NA,0.79,0.99,6,7,Utilitarian
+52,Human,TV,53,Male,NA,4,1,2,Bike,Dr. Smith,Deontological,3,2,4,5,NA,NA,NA,0.54,0.67,4,5,Deontological
+53,AI,TikTok,44,Female,NA,2,2,1,Baby,ETHIC-AI,Deontological,5,1,5,6,6,2,1,0.47,0.06,1,4,Deontological
+53,AI,TikTok,44,Female,NA,2,2,2,Bike,INTELLI-MORAL,Utilitarian,4,4,4,5,7,4,3,0.12,0.64,2,4,Utilitarian
+54,AI,TikTok,45,Male,NA,4,2,1,Baby,INTELLI-MORAL,Deontological,5,3,5,3,6,3,2,0.23,0.17,2,3,Deontological
+54,AI,TikTok,45,Male,NA,4,2,2,Bike,ETHIC-AI,Utilitarian,4,3,4,4,4,5,4,0.26,0.38,2,2,Utilitarian
+55,Human,TikTok,62,Male,NA,6,1,1,Baby,Dr. Smith,Deontological,4,1,2,1,NA,NA,NA,0,0,7,7,Deontological
+55,Human,TikTok,62,Male,NA,6,1,2,Bike,Dr. Thompson,Utilitarian,4,3,3,2,NA,NA,NA,0.48,0.63,3,3,Utilitarian
+56,AI,TikTok,42,Male,NA,2,1,1,Baby,ETHIC-AI,Utilitarian,2,5,2,5,2,5,2,0.1,0.13,6,5,Utilitarian
+56,AI,TikTok,42,Male,NA,2,1,2,Bike,INTELLI-MORAL,Deontological,4,2,5,6,6,2,4,0.13,0.1,5,5,Deontological
+57,Human,TikTok,48,Male,NA,4,2,1,Baby,Dr. Smith,Utilitarian,2,5,2,4,NA,NA,NA,0.15,0.16,4,5,Utilitarian
+57,Human,TikTok,48,Male,NA,4,2,2,Bike,Dr. Thompson,Deontological,4,4,3,4,NA,NA,NA,0.63,0.63,4,4,Deontological
+58,Human,TikTok,30,Female,NA,4,5,1,Baby,Dr. Smith,Deontological,6,1,6,1,NA,NA,NA,0.05,0,6,7,Deontological
+58,Human,TikTok,30,Female,NA,4,5,2,Bike,Dr. Thompson,Utilitarian,4,2,5,4,NA,NA,NA,0.01,0.06,6,5,Utilitarian
+59,Human,TikTok,40,Female,NA,2,1,1,Baby,Dr. Thompson,Utilitarian,2,6,1,3,NA,NA,NA,0,0,7,6,Utilitarian
+59,Human,TikTok,40,Female,NA,2,1,2,Bike,Dr. Smith,Deontological,1,6,1,4,NA,NA,NA,0.03,0.02,6,6,Deontological
+60,Human,TikTok,27,Female,NA,1,1,1,Bike,Dr. Smith,Utilitarian,3,5,3,3,NA,NA,NA,0.54,0.55,2,3,Utilitarian
+60,Human,TikTok,27,Female,NA,1,1,2,Baby,Dr. Thompson,Deontological,5,3,4,4,NA,NA,NA,0.56,0.52,3,3,Deontological
+61,Human,TikTok,53,Male,NA,5,1,1,Baby,Dr. Smith,Utilitarian,6,1,5,1,NA,NA,NA,0.68,0.85,5,6,Utilitarian
+61,Human,TikTok,53,Male,NA,5,1,2,Bike,Dr. Thompson,Deontological,5,2,5,4,NA,NA,NA,0.38,0.34,3,4,Deontological
+62,Human,TikTok,45,Male,NA,5,4,1,Bike,Dr. Thompson,Utilitarian,7,1,7,1,NA,NA,NA,1,1,7,7,Utilitarian
+62,Human,TikTok,45,Male,NA,5,4,2,Baby,Dr. Smith,Deontological,7,1,7,1,NA,NA,NA,0.47,0,4,7,Deontological
+63,Human,TikTok,48,Male,NA,3,1,1,Baby,Dr. Smith,Deontological,6,2,6,1,NA,NA,NA,0.17,0,7,7,Deontological
+63,Human,TikTok,48,Male,NA,3,1,2,Bike,Dr. Thompson,Utilitarian,6,2,5,2,NA,NA,NA,0.75,0.97,4,7,Utilitarian
+64,AI,TikTok,42,Male,NA,1,1,1,Bike,ETHIC-AI,Utilitarian,6,7,2,6,3,4,3,1,1,7,7,Utilitarian
+64,AI,TikTok,42,Male,NA,1,1,2,Baby,INTELLI-MORAL,Deontological,1,7,1,7,1,7,7,1,1,7,7,Deontological
+65,Human,TikTok,43,Male,NA,2,6,1,Bike,Dr. Thompson,Utilitarian,7,1,7,1,NA,NA,NA,0.99,1,7,7,Utilitarian
+65,Human,TikTok,43,Male,NA,2,6,2,Baby,Dr. Smith,Deontological,6,2,6,7,NA,NA,NA,0.85,0.81,6,5,Utilitarian
+66,Human,TikTok,25,Female,NA,5,6,1,Baby,Dr. Smith,Deontological,6,1,7,1,NA,NA,NA,0.23,0.07,4,7,Deontological
+66,Human,TikTok,25,Female,NA,5,6,2,Bike,Dr. Thompson,Utilitarian,5,1,6,4,NA,NA,NA,0.27,0.7,6,6,Utilitarian
+67,Human,TikTok,22,Female,NA,1,1,1,Baby,Dr. Thompson,Deontological,5,1,6,5,NA,NA,NA,0.67,0.15,4,6,Deontological
+67,Human,TikTok,22,Female,NA,1,1,2,Bike,Dr. Smith,Utilitarian,5,6,5,2,NA,NA,NA,0.2,0.28,5,5,Utilitarian
+68,Human,TikTok,35,Male,NA,2,4,1,Baby,Dr. Thompson,Deontological,7,1,7,1,NA,NA,NA,0,0,4,7,Deontological
+68,Human,TikTok,35,Male,NA,2,4,2,Bike,Dr. Smith,Utilitarian,3,5,2,7,NA,NA,NA,0.12,0,4,7,Utilitarian
+69,AI,TikTok,28,Male,NA,5,2,1,Baby,ETHIC-AI,Utilitarian,4,6,3,5,3,5,3,0.12,0.21,6,6,Utilitarian
+69,AI,TikTok,28,Male,NA,5,2,2,Bike,INTELLI-MORAL,Deontological,5,5,4,5,3,5,2,0.42,0.58,4,5,Deontological
+70,AI,TikTok,38,Female,NA,4,1,1,Baby,ETHIC-AI,Deontological,4,3,4,5,1,6,4,0.81,0.52,6,1,Deontological
+70,AI,TikTok,38,Female,NA,4,1,2,Bike,INTELLI-MORAL,Utilitarian,6,1,5,1,3,6,1,0.84,0.95,6,6,Utilitarian
+71,Human,TikTok,49,Male,NA,2,1,1,Bike,Dr. Thompson,Utilitarian,1,6,1,6,NA,NA,NA,0.14,0.18,6,6,Utilitarian
+71,Human,TikTok,49,Male,NA,2,1,2,Baby,Dr. Smith,Deontological,4,4,4,4,NA,NA,NA,0.51,0.51,4,4,Deontological
+72,Human,TikTok,54,Male,NA,5,3,1,Bike,Dr. Thompson,Deontological,4,2,5,1,NA,NA,NA,0.51,0.4,4,2,Deontological
+72,Human,TikTok,54,Male,NA,5,3,2,Baby,Dr. Smith,Utilitarian,5,3,5,2,NA,NA,NA,0.83,0.74,4,4,Utilitarian
+73,AI,TikTok,57,Female,NA,4,1,1,Baby,INTELLI-MORAL,Utilitarian,3,6,3,6,1,7,4,0.04,0.04,6,6,Utilitarian
+73,AI,TikTok,57,Female,NA,4,1,2,Bike,ETHIC-AI,Deontological,4,2,4,3,3,4,3,0.55,0.71,3,6,Deontological
+74,Human,TikTok,34,Male,NA,5,1,1,Bike,Dr. Thompson,Utilitarian,4,5,4,2,NA,NA,NA,0.26,0.25,3,4,Utilitarian
+74,Human,TikTok,34,Male,NA,5,1,2,Baby,Dr. Smith,Deontological,5,2,5,2,NA,NA,NA,0,0,5,5,Deontological
+75,AI,TikTok,28,Female,NA,4,6,1,Bike,ETHIC-AI,Utilitarian,4,2,3,1,1,7,2,0.62,0.6,1,3,Utilitarian
+75,AI,TikTok,28,Female,NA,4,6,2,Baby,INTELLI-MORAL,Deontological,5,1,5,5,5,3,4,0.43,0.39,1,3,Deontological
+76,Human,TikTok,30,Female,NA,4,1,1,Bike,Dr. Thompson,Utilitarian,4,2,4,2,NA,NA,NA,0.86,0.84,7,5,Utilitarian
+76,Human,TikTok,30,Female,NA,4,1,2,Baby,Dr. Smith,Deontological,4,4,4,2,NA,NA,NA,0,0,2,3,Deontological
+77,Human,TikTok,53,Female,NA,5,2,1,Bike,Dr. Thompson,Deontological,5,1,5,6,NA,NA,NA,0.98,0.98,5,6,Deontological
+77,Human,TikTok,53,Female,NA,5,2,2,Baby,Dr. Smith,Utilitarian,6,1,6,3,NA,NA,NA,0.92,1,5,6,Utilitarian
+78,Human,TikTok,40,Male,NA,6,1,1,Baby,Dr. Smith,Utilitarian,7,1,7,2,NA,NA,NA,0.93,1,6,7,Utilitarian
+78,Human,TikTok,40,Male,NA,6,1,2,Bike,Dr. Thompson,Deontological,1,7,1,7,NA,NA,NA,1,1,7,7,Deontological
+79,Human,TikTok,43,Male,NA,4,2,1,Baby,Dr. Thompson,Utilitarian,4,4,4,4,NA,NA,NA,0.59,0.82,2,3,Utilitarian
+79,Human,TikTok,43,Male,NA,4,2,2,Bike,Dr. Smith,Deontological,3,3,3,3,NA,NA,NA,1,0.87,2,2,Deontological
+80,AI,TikTok,42,Female,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,2,6,3,1,2,1,4,0.31,0.13,1,1,Utilitarian
+80,AI,TikTok,42,Female,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,3,4,3,4,3,4,4,0.51,0.23,1,2,Deontological
+81,Human,TikTok,32,Female,NA,4,1,1,Baby,Dr. Thompson,Deontological,7,1,7,1,NA,NA,NA,0,0,7,7,Deontological
+81,Human,TikTok,32,Female,NA,4,1,2,Bike,Dr. Smith,Utilitarian,5,2,6,2,NA,NA,NA,0.25,0.33,5,5,Utilitarian
+82,Human,Other,45,Female,NA,4,2,1,Baby,Dr. Thompson,Utilitarian,3,4,3,2,NA,NA,NA,0.25,0.28,6,6,Utilitarian
+82,Human,Other,45,Female,NA,4,2,2,Bike,Dr. Smith,Deontological,4,2,4,4,NA,NA,NA,0.4,0.39,5,5,Deontological
+83,AI,TikTok,40,Male,NA,3,2,1,Bike,INTELLI-MORAL,Utilitarian,1,7,1,7,1,7,7,0,0,7,7,Utilitarian
+83,AI,TikTok,40,Male,NA,3,2,2,Baby,ETHIC-AI,Deontological,7,1,7,4,7,1,1,0,0,7,7,Deontological
+84,Human,TikTok,30,Male,NA,1,1,1,Bike,Dr. Thompson,Deontological,5,1,5,1,NA,NA,NA,0.22,0.16,7,7,Deontological
+84,Human,TikTok,30,Male,NA,1,1,2,Baby,Dr. Smith,Utilitarian,3,3,1,3,NA,NA,NA,0,0.01,7,7,Utilitarian
+85,AI,TikTok,36,Male,NA,6,7,1,Bike,INTELLI-MORAL,Utilitarian,4,4,2,1,2,6,1,0.2,0.17,5,5,Utilitarian
+85,AI,TikTok,36,Male,NA,6,7,2,Baby,ETHIC-AI,Deontological,6,1,6,5,6,2,2,0.16,0.13,6,6,Deontological
+86,Human,TikTok,54,Male,NA,5,3,1,Baby,Dr. Thompson,Deontological,5,6,3,5,NA,NA,NA,1,1,6,7,Deontological
+86,Human,TikTok,54,Male,NA,5,3,2,Bike,Dr. Smith,Utilitarian,4,6,4,6,NA,NA,NA,0.7,1,5,7,Utilitarian
+87,AI,TikTok,21,Male,NA,4,7,1,Baby,INTELLI-MORAL,Utilitarian,3,5,2,6,1,7,7,0.1,0.07,5,6,Utilitarian
+87,AI,TikTok,21,Male,NA,4,7,2,Bike,ETHIC-AI,Deontological,3,7,1,7,1,7,7,0.74,0.86,6,6,Deontological
+88,Human,TikTok,25,Male,NA,2,1,1,Bike,Dr. Smith,Deontological,4,1,4,1,NA,NA,NA,0.12,0.13,5,5,Deontological
+88,Human,TikTok,25,Male,NA,2,1,2,Baby,Dr. Thompson,Utilitarian,4,3,3,7,NA,NA,NA,0.15,0.14,5,5,Utilitarian
+89,Human,TikTok,18,Female,NA,4,1,1,Bike,Dr. Smith,Utilitarian,4,5,5,4,NA,NA,NA,0.69,0.79,3,5,Utilitarian
+89,Human,TikTok,18,Female,NA,4,1,2,Baby,Dr. Thompson,Deontological,3,6,3,5,NA,NA,NA,0.9,0.89,6,6,Deontological
+90,AI,TikTok,38,Female,NA,4,1,1,Baby,ETHIC-AI,Deontological,5,2,4,2,2,6,1,0.11,0.06,6,6,Deontological
+90,AI,TikTok,38,Female,NA,4,1,2,Bike,INTELLI-MORAL,Utilitarian,2,7,1,6,5,5,4,0,0,7,7,Utilitarian
+91,Human,TikTok,39,Male,NA,4,4,1,Bike,Dr. Smith,Deontological,5,3,5,6,NA,NA,NA,0.7,0.53,5,5,Deontological
+91,Human,TikTok,39,Male,NA,4,4,2,Baby,Dr. Thompson,Utilitarian,4,5,4,6,NA,NA,NA,0.26,0.26,6,5,Utilitarian
+92,Human,TikTok,55,Male,NA,4,1,1,Baby,Dr. Smith,Utilitarian,7,1,6,1,NA,NA,NA,1,1,7,7,Utilitarian
+92,Human,TikTok,55,Male,NA,4,1,2,Bike,Dr. Thompson,Deontological,2,7,2,6,NA,NA,NA,1,1,7,7,Deontological
+93,AI,TikTok,45,Female,NA,2,4,1,Bike,ETHIC-AI,Deontological,5,2,5,4,2,5,1,0.64,0.27,3,5,Deontological
+93,AI,TikTok,45,Female,NA,2,4,2,Baby,INTELLI-MORAL,Utilitarian,3,3,3,5,1,7,1,0.3,0.38,4,4,Utilitarian
+94,Human,TikTok,36,Female,NA,2,2,1,Bike,Dr. Thompson,Utilitarian,1,6,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+94,Human,TikTok,36,Female,NA,2,2,2,Baby,Dr. Smith,Deontological,5,2,6,2,NA,NA,NA,0.85,0.62,4,4,Deontological
+95,Human,TikTok,78,Male,NA,7,1,1,Bike,Dr. Smith,Utilitarian,6,1,6,1,NA,NA,NA,0.83,1,6,7,Utilitarian
+95,Human,TikTok,78,Male,NA,7,1,2,Baby,Dr. Thompson,Deontological,4,5,4,4,NA,NA,NA,0.73,0.45,3,4,Deontological
+96,AI,TikTok,51,Male,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,5,4,5,4,4,5,3,0.35,0.36,3,3,Utilitarian
+96,AI,TikTok,51,Male,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,5,3,3,5,5,3,3,0.22,0.22,3,3,Deontological
+97,Human,TikTok,24,Non-binary / third gender,NA,2,1,1,Baby,Dr. Thompson,Utilitarian,4,6,4,1,NA,NA,NA,0.67,0.67,3,3,Utilitarian
+97,Human,TikTok,24,Non-binary / third gender,NA,2,1,2,Bike,Dr. Smith,Deontological,4,6,3,5,NA,NA,NA,0.46,0.45,1,2,Deontological
+98,AI,TikTok,34,Female,NA,4,3,1,Baby,INTELLI-MORAL,Deontological,7,5,6,7,7,3,1,0,0,7,7,Deontological
+98,AI,TikTok,34,Female,NA,4,3,2,Bike,ETHIC-AI,Utilitarian,2,6,4,7,2,7,5,0,0,6,6,Utilitarian
+99,Human,TikTok,60,Male,NA,5,1,1,Baby,Dr. Smith,Utilitarian,6,1,5,4,NA,NA,NA,0.09,0.9,6,6,Utilitarian
+99,Human,TikTok,60,Male,NA,5,1,2,Bike,Dr. Thompson,Deontological,2,6,2,7,NA,NA,NA,1,1,7,7,Deontological
+100,Human,TikTok,61,Male,NA,2,2,1,Bike,Dr. Smith,Deontological,6,3,6,5,NA,NA,NA,0.76,0.05,3,6,Deontological
+100,Human,TikTok,61,Male,NA,2,2,2,Baby,Dr. Thompson,Utilitarian,5,4,4,6,NA,NA,NA,0.03,0.77,5,4,Utilitarian
+101,Human,TikTok,42,Female,NA,6,4,1,Bike,Dr. Smith,Deontological,3,6,2,7,NA,NA,NA,0.65,0.02,6,6,Deontological
+101,Human,TikTok,42,Female,NA,6,4,2,Baby,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+102,Human,TikTok,62,Male,NA,3,1,1,Baby,Dr. Thompson,Utilitarian,1,3,1,7,NA,NA,NA,0,0,5,4,Utilitarian
+102,Human,TikTok,62,Male,NA,3,1,2,Bike,Dr. Smith,Deontological,6,1,5,2,NA,NA,NA,0.11,0.04,5,6,Deontological
+103,Human,TikTok,34,Female,NA,4,1,1,Bike,Dr. Smith,Utilitarian,5,3,5,1,NA,NA,NA,0.63,0.7,1,4,Utilitarian
+103,Human,TikTok,34,Female,NA,4,1,2,Baby,Dr. Thompson,Deontological,6,1,5,1,NA,NA,NA,0,0,5,7,Deontological
+104,Human,TikTok,29,Male,NA,3,1,1,Bike,Dr. Smith,Deontological,5,3,4,2,NA,NA,NA,0.45,0.35,3,4,Deontological
+104,Human,TikTok,29,Male,NA,3,1,2,Baby,Dr. Thompson,Utilitarian,3,3,3,4,NA,NA,NA,0.36,0.45,2,1,Utilitarian
+105,Human,TikTok,48,Male,NA,3,7,1,Baby,Dr. Smith,Utilitarian,1,1,1,2,NA,NA,NA,0,0,7,7,Utilitarian
+105,Human,TikTok,48,Male,NA,3,7,2,Bike,Dr. Thompson,Deontological,1,1,1,5,NA,NA,NA,0.79,0.87,5,6,Deontological
+106,Human,TikTok,21,Male,NA,6,1,1,Bike,Dr. Smith,Utilitarian,4,5,4,5,NA,NA,NA,0.26,0.47,5,4,Utilitarian
+106,Human,TikTok,21,Male,NA,6,1,2,Baby,Dr. Thompson,Deontological,5,4,5,5,NA,NA,NA,0.69,0.52,6,3,Deontological
+107,AI,TikTok,59,Female,NA,5,1,1,Baby,INTELLI-MORAL,Deontological,4,7,4,2,3,6,2,0.17,0.12,5,5,Deontological
+107,AI,TikTok,59,Female,NA,5,1,2,Bike,ETHIC-AI,Utilitarian,4,5,2,5,2,4,2,0.28,0.21,6,5,Utilitarian
+108,Human,TikTok,30,Female,NA,2,1,1,Baby,Dr. Thompson,Utilitarian,3,1,4,2,NA,NA,NA,0.65,0.69,1,2,Utilitarian
+108,Human,TikTok,30,Female,NA,2,1,2,Bike,Dr. Smith,Deontological,3,1,4,5,NA,NA,NA,0.41,0.41,1,2,Deontological
+109,Human,Twitter,28,Male,NA,4,1,1,Bike,Dr. Smith,Utilitarian,4,5,4,6,NA,NA,NA,0.33,0.27,5,5,Deontological
+109,Human,Twitter,28,Male,NA,4,1,2,Baby,Dr. Thompson,Deontological,5,5,5,4,NA,NA,NA,0.28,0.28,4,5,Deontological
+110,AI,TikTok,40,Female,NA,4,4,1,Baby,ETHIC-AI,Utilitarian,5,3,5,3,6,3,4,0.55,0.66,3,5,Utilitarian
+110,AI,TikTok,40,Female,NA,4,4,2,Bike,INTELLI-MORAL,Deontological,5,4,5,5,5,5,3,0.39,0.29,3,5,Deontological
+111,AI,TikTok,54,Female,NA,3,1,1,Baby,INTELLI-MORAL,Utilitarian,4,3,5,2,2,7,1,0.66,0.66,3,4,Utilitarian
+111,AI,TikTok,54,Female,NA,3,1,2,Bike,ETHIC-AI,Deontological,3,3,2,5,3,4,5,0.66,0.64,5,4,Deontological
+112,AI,TikTok,38,Male,NA,4,4,1,Bike,ETHIC-AI,Utilitarian,3,1,4,2,4,7,1,0.27,0.21,2,5,Utilitarian
+112,AI,TikTok,38,Male,NA,4,4,2,Baby,INTELLI-MORAL,Deontological,7,1,7,4,6,3,3,0,0,7,7,Deontological
+113,Human,TikTok,38,Female,NA,3,1,1,Bike,Dr. Thompson,Deontological,4,1,3,7,NA,NA,NA,1,1,6,6,Deontological
+113,Human,TikTok,38,Female,NA,3,1,2,Baby,Dr. Smith,Utilitarian,6,1,6,1,NA,NA,NA,0.8,0.81,5,6,Utilitarian
+114,AI,TikTok,57,Male,NA,3,2,1,Bike,ETHIC-AI,Deontological,5,3,5,5,5,3,2,0.67,0.55,4,4,Deontological
+114,AI,TikTok,57,Male,NA,3,2,2,Baby,INTELLI-MORAL,Utilitarian,5,3,5,6,3,4,1,0.77,0.43,2,3,Utilitarian
+115,Human,TikTok,42,Male,NA,2,1,1,Bike,Dr. Thompson,Utilitarian,5,2,5,3,NA,NA,NA,0.32,0.33,3,2,Utilitarian
+115,Human,TikTok,42,Male,NA,2,1,2,Baby,Dr. Smith,Deontological,4,3,4,5,NA,NA,NA,0.59,0.59,4,3,Deontological
+116,Human,TikTok,29,Female,NA,4,1,1,Bike,Dr. Thompson,Utilitarian,4,4,4,4,NA,NA,NA,0.51,0.51,4,4,Utilitarian
+116,Human,TikTok,29,Female,NA,4,1,2,Baby,Dr. Smith,Deontological,1,1,1,1,NA,NA,NA,1,1,7,7,Deontological
+117,AI,TikTok,32,Male,NA,2,1,1,Baby,ETHIC-AI,Deontological,5,2,4,2,6,3,3,0.17,0.06,4,6,Deontological
+117,AI,TikTok,32,Male,NA,2,1,2,Bike,INTELLI-MORAL,Utilitarian,4,4,4,3,4,4,3,0.7,0.74,4,4,Utilitarian
+118,Human,TikTok,22,Female,NA,4,5,1,Baby,Dr. Thompson,Deontological,5,3,5,2,NA,NA,NA,0.62,0.32,4,4,Deontological
+118,Human,TikTok,22,Female,NA,4,5,2,Bike,Dr. Smith,Utilitarian,5,3,5,1,NA,NA,NA,0.65,0.79,4,4,Utilitarian
+119,AI,TikTok,38,Female,NA,4,1,1,Bike,INTELLI-MORAL,Utilitarian,1,7,1,1,1,7,3,0,0,7,7,Utilitarian
+119,AI,TikTok,38,Female,NA,4,1,2,Baby,ETHIC-AI,Deontological,5,3,3,5,6,2,2,0.33,0,5,5,Deontological
+120,AI,TikTok,59,Male,NA,3,1,1,Bike,INTELLI-MORAL,Utilitarian,2,4,4,1,1,7,1,0.21,0.61,2,4,Utilitarian
+120,AI,TikTok,59,Male,NA,3,1,2,Baby,ETHIC-AI,Deontological,5,2,5,4,5,3,3,0.23,0.23,3,5,Deontological
+121,AI,TikTok,51,Male,NA,6,1,1,Bike,INTELLI-MORAL,Deontological,7,1,7,7,7,1,4,0,0,7,7,Deontological
+121,AI,TikTok,51,Male,NA,6,1,2,Baby,ETHIC-AI,Utilitarian,4,4,4,1,1,7,1,0,0,7,7,Utilitarian
+122,AI,TikTok,58,Male,NA,3,1,1,Baby,ETHIC-AI,Deontological,3,1,4,3,2,5,3,0.75,0.72,5,5,Deontological
+122,AI,TikTok,58,Male,NA,3,1,2,Bike,INTELLI-MORAL,Utilitarian,3,1,3,6,2,3,2,0.71,0.72,3,5,Utilitarian
+123,Human,TikTok,36,Male,NA,3,1,1,Baby,Dr. Smith,Deontological,5,2,5,5,NA,NA,NA,0.33,0.29,5,5,Deontological
+123,Human,TikTok,36,Male,NA,3,1,2,Bike,Dr. Thompson,Utilitarian,3,5,3,5,NA,NA,NA,0.31,0.39,5,5,Utilitarian
+124,Human,TikTok,36,Male,NA,6,7,1,Baby,Dr. Smith,Utilitarian,1,7,1,4,NA,NA,NA,0,0,7,7,Utilitarian
+124,Human,TikTok,36,Male,NA,6,7,2,Bike,Dr. Thompson,Deontological,7,1,7,6,NA,NA,NA,0,0,7,7,Deontological
+125,Human,TikTok,42,Female,NA,4,1,1,Baby,Dr. Thompson,Deontological,3,5,4,1,NA,NA,NA,0.64,0.59,5,4,Deontological
+125,Human,TikTok,42,Female,NA,4,1,2,Bike,Dr. Smith,Utilitarian,4,3,4,7,NA,NA,NA,0,0.33,7,6,Utilitarian
+126,AI,TikTok,35,Female,NA,1,1,1,Bike,INTELLI-MORAL,Utilitarian,7,4,7,1,1,7,1,0.73,0.92,5,6,Utilitarian
+126,AI,TikTok,35,Female,NA,1,1,2,Baby,ETHIC-AI,Deontological,7,4,4,5,1,7,1,0.95,0.77,6,6,Deontological
+127,AI,TikTok,39,Female,NA,5,3,1,Bike,ETHIC-AI,Utilitarian,5,3,4,1,1,7,1,0.18,0.26,5,6,Utilitarian
+127,AI,TikTok,39,Female,NA,5,3,2,Baby,INTELLI-MORAL,Deontological,5,2,4,6,5,3,4,0.23,0.15,6,6,Deontological
+128,Human,TikTok,64,Male,NA,3,1,1,Bike,Dr. Smith,Deontological,5,2,6,6,NA,NA,NA,0,0,3,7,Deontological
+128,Human,TikTok,64,Male,NA,3,1,2,Baby,Dr. Thompson,Utilitarian,3,5,3,7,NA,NA,NA,0,0.82,3,5,Utilitarian
+129,Human,TikTok,32,Female,NA,2,6,1,Baby,Dr. Thompson,Utilitarian,1,7,3,1,NA,NA,NA,0,0,7,7,Utilitarian
+129,Human,TikTok,32,Female,NA,2,6,2,Bike,Dr. Smith,Deontological,5,1,4,7,NA,NA,NA,0.57,0.52,4,6,Deontological
+130,Human,TikTok,38,Male,NA,4,1,1,Baby,Dr. Thompson,Deontological,5,2,5,4,NA,NA,NA,0.06,0,5,6,Deontological
+130,Human,TikTok,38,Male,NA,4,1,2,Bike,Dr. Smith,Utilitarian,2,5,2,6,NA,NA,NA,0,0,7,7,Utilitarian
+131,Human,TikTok,31,Female,NA,4,5,1,Bike,Dr. Thompson,Utilitarian,4,5,4,2,NA,NA,NA,0.29,0.29,3,3,Utilitarian
+131,Human,TikTok,31,Female,NA,4,5,2,Baby,Dr. Smith,Deontological,4,3,5,4,NA,NA,NA,0.11,0.07,5,4,Deontological
+132,AI,TikTok,29,Female,NA,3,1,1,Bike,INTELLI-MORAL,Utilitarian,5,2,5,2,5,3,2,0.77,0.82,5,6,Utilitarian
+132,AI,TikTok,29,Female,NA,3,1,2,Baby,ETHIC-AI,Deontological,3,6,3,6,3,5,6,0.65,0.62,2,2,Utilitarian
+133,AI,TikTok,20,Female,NA,2,1,1,Baby,INTELLI-MORAL,Utilitarian,4,5,5,3,3,5,2,0.72,0.71,5,5,Utilitarian
+133,AI,TikTok,20,Female,NA,2,1,2,Bike,ETHIC-AI,Deontological,4,5,2,5,2,6,5,0.85,0.73,6,5,Deontological
+134,Human,TikTok,52,Male,NA,6,2,1,Baby,Dr. Thompson,Utilitarian,5,2,5,5,NA,NA,NA,0.73,0.85,3,6,Utilitarian
+134,Human,TikTok,52,Male,NA,6,2,2,Bike,Dr. Smith,Deontological,2,6,2,6,NA,NA,NA,0.98,0.99,7,7,Deontological
+135,Human,TikTok,57,Female,NA,6,4,1,Baby,Dr. Thompson,Utilitarian,3,7,1,7,NA,NA,NA,0.21,0.13,2,6,Utilitarian
+135,Human,TikTok,57,Female,NA,6,4,2,Bike,Dr. Smith,Deontological,1,7,1,7,NA,NA,NA,0.72,0.82,5,6,Deontological
+136,AI,TikTok,58,Female,NA,5,1,1,Baby,ETHIC-AI,Utilitarian,6,2,6,1,6,4,1,1,1,6,7,Utilitarian
+136,AI,TikTok,58,Female,NA,5,1,2,Bike,INTELLI-MORAL,Deontological,4,4,4,5,5,3,4,1,1,6,5,Deontological
+137,AI,TikTok,58,Female,NA,7,4,1,Baby,ETHIC-AI,Deontological,1,7,1,7,1,7,1,1,1,7,7,Deontological
+137,AI,TikTok,58,Female,NA,7,4,2,Bike,INTELLI-MORAL,Utilitarian,7,7,7,1,7,1,7,1,1,7,7,Utilitarian
+138,AI,Twitter,24,Male,NA,5,7,1,Bike,ETHIC-AI,Utilitarian,6,2,6,2,6,1,1,0.76,0.85,4,7,Utilitarian
+138,AI,Twitter,24,Male,NA,5,7,2,Baby,INTELLI-MORAL,Deontological,6,1,7,1,7,2,3,0.16,0.88,5,6,Deontological
+139,AI,TV,43,Female,NA,2,6,1,Baby,ETHIC-AI,Utilitarian,2,7,1,7,1,7,1,0,0,7,7,Deontological
+139,AI,TV,43,Female,NA,2,6,2,Bike,INTELLI-MORAL,Deontological,1,7,1,7,1,7,7,1,0.85,5,5,Deontological
+140,Human,TikTok,67,Female,NA,4,2,1,Bike,Dr. Smith,Utilitarian,5,4,4,3,NA,NA,NA,0.63,0.67,4,5,Utilitarian
+140,Human,TikTok,67,Female,NA,4,2,2,Baby,Dr. Thompson,Deontological,4,5,4,4,NA,NA,NA,0.44,0.38,4,5,Deontological
+141,Human,TikTok,36,Female,NA,4,2,1,Bike,Dr. Thompson,Utilitarian,5,3,5,2,NA,NA,NA,0.67,0.62,2,3,Utilitarian
+141,Human,TikTok,36,Female,NA,4,2,2,Baby,Dr. Smith,Deontological,6,2,6,1,NA,NA,NA,0,0,7,7,Deontological
+142,Human,TikTok,33,Male,NA,6,5,1,Baby,Dr. Thompson,Utilitarian,4,1,4,1,NA,NA,NA,0.19,0.85,5,6,Utilitarian
+142,Human,TikTok,33,Male,NA,6,5,2,Bike,Dr. Smith,Deontological,6,1,6,1,NA,NA,NA,0.02,0.06,6,6,Deontological
+143,Human,TikTok,30,Male,NA,3,2,1,Baby,Dr. Thompson,Deontological,4,3,4,5,NA,NA,NA,0.83,0.66,6,5,Deontological
+143,Human,TikTok,30,Male,NA,3,2,2,Bike,Dr. Smith,Utilitarian,4,3,4,6,NA,NA,NA,0.26,0.22,5,5,Utilitarian
+144,Human,TikTok,55,Female,NA,1,1,1,Baby,Dr. Thompson,Utilitarian,4,4,4,1,NA,NA,NA,0,0,7,7,Utilitarian
+144,Human,TikTok,55,Female,NA,1,1,2,Bike,Dr. Smith,Deontological,4,1,4,1,NA,NA,NA,0,0,7,7,Deontological
+145,Human,TikTok,45,Male,NA,3,4,1,Bike,Dr. Thompson,Deontological,5,4,5,3,NA,NA,NA,0.66,0.43,3,3,Deontological
+145,Human,TikTok,45,Male,NA,3,4,2,Baby,Dr. Smith,Utilitarian,4,4,3,6,NA,NA,NA,0.42,0.41,2,3,Utilitarian
+146,Human,TikTok,39,Female,NA,3,2,1,Baby,Dr. Smith,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+146,Human,TikTok,39,Female,NA,3,2,2,Bike,Dr. Thompson,Deontological,7,3,7,4,NA,NA,NA,0,0,7,7,Deontological
+147,AI,TikTok,29,Male,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,5,3,5,3,1,4,4,1,1,7,7,Utilitarian
+147,AI,TikTok,29,Male,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,5,3,5,4,1,7,2,0.25,0.25,5,5,Deontological
+148,AI,TikTok,28,Male,NA,4,1,1,Bike,ETHIC-AI,Deontological,4,4,4,1,4,4,2,0.53,0.25,2,4,Deontological
+148,AI,TikTok,28,Male,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,4,4,4,4,3,5,3,0.64,0.61,3,3,Utilitarian
+149,AI,TikTok,61,Female,NA,4,1,1,Bike,ETHIC-AI,Utilitarian,3,4,4,2,4,2,5,0.31,0.35,3,2,Utilitarian
+149,AI,TikTok,61,Female,NA,4,1,2,Baby,INTELLI-MORAL,Deontological,4,2,3,5,3,5,5,0.36,0.19,2,4,Deontological
+150,AI,TikTok,26,Female,NA,4,2,1,Bike,ETHIC-AI,Deontological,6,3,5,3,6,2,2,0.16,0.06,3,5,Deontological
+150,AI,TikTok,26,Female,NA,4,2,2,Baby,INTELLI-MORAL,Utilitarian,6,3,5,3,6,2,2,0.68,0.87,5,6,Utilitarian
+151,Human,TikTok,34,Female,NA,4,1,1,Baby,Dr. Smith,Deontological,4,4,4,3,NA,NA,NA,0.48,0.46,1,1,Deontological
+151,Human,TikTok,34,Female,NA,4,1,2,Bike,Dr. Thompson,Utilitarian,2,4,2,7,NA,NA,NA,0,0,6,6,Utilitarian
+152,Human,TikTok,28,Male,NA,3,5,1,Baby,Dr. Smith,Utilitarian,3,5,4,2,NA,NA,NA,0.35,0.42,3,1,Utilitarian
+152,Human,TikTok,28,Male,NA,3,5,2,Bike,Dr. Thompson,Deontological,6,2,6,6,NA,NA,NA,0.34,0.07,3,6,Deontological
+153,Human,TikTok,26,Female,NA,2,1,1,Bike,Dr. Smith,Utilitarian,3,4,4,1,NA,NA,NA,0.41,0.51,1,2,Utilitarian
+153,Human,TikTok,26,Female,NA,2,1,2,Baby,Dr. Thompson,Deontological,3,3,4,3,NA,NA,NA,0.68,0.43,2,1,Deontological
+154,AI,TikTok,31,Female,NA,3,1,1,Bike,INTELLI-MORAL,Deontological,2,4,2,4,4,4,2,0.3,0.31,5,5,Deontological
+154,AI,TikTok,31,Female,NA,3,1,2,Baby,ETHIC-AI,Utilitarian,3,4,2,4,4,5,2,0.26,0.25,6,6,Utilitarian
+155,AI,TikTok,27,Male,NA,4,1,1,Baby,ETHIC-AI,Deontological,4,3,5,3,3,4,2,0.6,0.59,5,4,Deontological
+155,AI,TikTok,27,Male,NA,4,1,2,Bike,INTELLI-MORAL,Utilitarian,3,5,3,5,2,2,4,0.05,0.13,6,6,Utilitarian
+156,AI,TikTok,57,Female,NA,5,2,1,Bike,INTELLI-MORAL,Utilitarian,5,2,3,1,5,5,2,0.8,0.83,5,6,Utilitarian
+156,AI,TikTok,57,Female,NA,5,2,2,Baby,ETHIC-AI,Deontological,6,2,2,6,6,2,2,0.59,0.1,4,6,Deontological
+157,Human,TikTok,62,Prefer to self-describe,Transwoman,2,1,1,Bike,Dr. Smith,Utilitarian,5,3,4,2,NA,NA,NA,0.77,0.88,2,5,Utilitarian
+157,Human,TikTok,62,Prefer to self-describe,Transwoman,2,1,2,Baby,Dr. Thompson,Deontological,2,3,2,6,NA,NA,NA,0.91,1,6,6,Deontological
+158,Human,TikTok,44,Female,NA,5,2,1,Baby,Dr. Thompson,Utilitarian,5,4,5,5,NA,NA,NA,0.8,0.75,2,3,Utilitarian
+158,Human,TikTok,44,Female,NA,5,2,2,Bike,Dr. Smith,Deontological,5,2,4,4,NA,NA,NA,0.6,0.48,2,2,Deontological
+159,Human,TikTok,24,Male,NA,3,1,1,Bike,Dr. Smith,Deontological,4,2,4,6,NA,NA,NA,0.79,0.8,5,5,Deontological
+159,Human,TikTok,24,Male,NA,3,1,2,Baby,Dr. Thompson,Utilitarian,6,1,6,2,NA,NA,NA,0.5,0.59,4,4,Utilitarian
+160,AI,TikTok,53,Female,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,4,4,3,3,3,6,3,0.26,0.42,2,3,Utilitarian
+160,AI,TikTok,53,Female,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,5,3,5,6,5,2,2,0.54,0.32,4,4,Utilitarian
+161,AI,TikTok,53,Female,NA,3,2,1,Baby,INTELLI-MORAL,Deontological,4,2,4,5,4,3,2,0.55,0.53,1,1,Deontological
+161,AI,TikTok,53,Female,NA,3,2,2,Bike,ETHIC-AI,Utilitarian,3,5,4,5,3,5,3,0.36,0.6,2,2,Utilitarian
+162,AI,TikTok,40,Male,NA,3,3,1,Baby,INTELLI-MORAL,Utilitarian,4,3,3,2,1,6,6,0.76,0.79,5,4,Utilitarian
+162,AI,TikTok,40,Male,NA,3,3,2,Bike,ETHIC-AI,Deontological,4,3,2,4,1,6,4,0.86,0.83,5,5,Deontological
+163,AI,TikTok,30,Female,NA,2,1,1,Baby,ETHIC-AI,Utilitarian,2,7,1,6,1,7,6,0.08,0.04,7,7,Utilitarian
+163,AI,TikTok,30,Female,NA,2,1,2,Bike,INTELLI-MORAL,Deontological,5,1,5,6,6,3,2,0.45,0.15,4,4,Deontological
+164,AI,TikTok,56,Male,NA,2,1,1,Baby,INTELLI-MORAL,Utilitarian,7,2,5,2,1,4,1,0.77,0.83,4,5,Utilitarian
+164,AI,TikTok,56,Male,NA,2,1,2,Bike,ETHIC-AI,Deontological,7,3,5,6,1,4,1,0.77,0.65,3,3,Deontological
+165,Human,TikTok,38,Male,NA,3,5,1,Baby,Dr. Smith,Utilitarian,2,6,1,3,NA,NA,NA,0,0.06,5,6,Utilitarian
+165,Human,TikTok,38,Male,NA,3,5,2,Bike,Dr. Thompson,Deontological,6,3,5,4,NA,NA,NA,0.07,0.07,6,6,Deontological
+166,Human,TikTok,23,Female,NA,2,2,1,Bike,Dr. Thompson,Utilitarian,5,1,5,1,NA,NA,NA,0.75,1,5,6,Utilitarian
+166,Human,TikTok,23,Female,NA,2,2,2,Baby,Dr. Smith,Deontological,5,3,5,4,NA,NA,NA,0.16,0.11,4,6,Deontological
+167,Human,TikTok,33,Female,NA,7,1,1,Baby,Dr. Thompson,Deontological,5,5,5,7,NA,NA,NA,0.62,0.56,4,4,Deontological
+167,Human,TikTok,33,Female,NA,7,1,2,Bike,Dr. Smith,Utilitarian,5,3,5,2,NA,NA,NA,0.68,0.66,5,4,Utilitarian
+168,AI,TikTok,52,Male,NA,5,5,1,Bike,INTELLI-MORAL,Utilitarian,7,1,7,1,6,4,1,1,1,7,7,Utilitarian
+168,AI,TikTok,52,Male,NA,5,5,2,Baby,ETHIC-AI,Deontological,7,1,7,3,5,5,3,0.75,0.39,4,6,Deontological
+169,Human,TikTok,44,Female,NA,3,1,1,Baby,Dr. Smith,Deontological,2,3,2,1,NA,NA,NA,0.73,0.73,5,4,Deontological
+169,Human,TikTok,44,Female,NA,3,1,2,Bike,Dr. Thompson,Utilitarian,5,1,6,2,NA,NA,NA,0.9,0.83,6,6,Utilitarian
+170,AI,TikTok,67,Female,NA,4,1,1,Bike,INTELLI-MORAL,Utilitarian,4,4,3,2,1,7,1,0.51,0.58,1,4,Utilitarian
+170,AI,TikTok,67,Female,NA,4,1,2,Baby,ETHIC-AI,Deontological,4,4,4,5,1,7,1,0.66,0,1,4,Deontological
+171,Human,TikTok,33,Male,NA,2,1,1,Bike,Dr. Smith,Deontological,4,5,5,2,NA,NA,NA,0.05,0.07,5,5,Deontological
+171,Human,TikTok,33,Male,NA,2,1,2,Baby,Dr. Thompson,Utilitarian,2,6,2,6,NA,NA,NA,0,0.02,3,3,Utilitarian
+172,AI,TikTok,30,Female,NA,5,1,1,Bike,INTELLI-MORAL,Deontological,2,2,2,6,2,7,4,0.69,0.51,2,1,Deontological
+172,AI,TikTok,30,Female,NA,5,1,2,Baby,ETHIC-AI,Utilitarian,5,1,4,1,1,7,1,1,0.78,5,1,Utilitarian
+173,Human,TikTok,37,Male,NA,3,1,1,Baby,Dr. Thompson,Utilitarian,6,4,4,3,NA,NA,NA,0.58,0.55,1,1,Utilitarian
+173,Human,TikTok,37,Male,NA,3,1,2,Bike,Dr. Smith,Deontological,4,5,2,6,NA,NA,NA,0.74,0.76,5,5,Deontological
+174,AI,TikTok,34,Female,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,4,6,3,5,5,6,2,0.76,0.79,4,5,Utilitarian
+174,AI,TikTok,34,Female,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,4,6,3,5,4,5,3,0.82,0.75,5,5,Deontological
+175,AI,TikTok,34,Male,NA,6,1,1,Baby,ETHIC-AI,Deontological,3,4,2,3,5,2,4,0.38,0.37,3,3,Deontological
+175,AI,TikTok,34,Male,NA,6,1,2,Bike,INTELLI-MORAL,Utilitarian,3,5,3,5,2,5,3,0.73,0.66,5,4,Utilitarian
+176,Human,TikTok,21,Female,NA,4,5,1,Baby,Dr. Smith,Deontological,5,4,5,1,NA,NA,NA,0.21,0.08,4,5,Deontological
+176,Human,TikTok,21,Female,NA,4,5,2,Bike,Dr. Thompson,Utilitarian,2,5,2,6,NA,NA,NA,0.15,0.18,5,5,Utilitarian
+177,AI,TikTok,54,Female,NA,3,3,1,Bike,ETHIC-AI,Deontological,7,2,4,4,6,2,2,0.18,0.05,5,6,Deontological
+177,AI,TikTok,54,Female,NA,3,3,2,Baby,INTELLI-MORAL,Utilitarian,4,4,4,4,1,7,1,0.16,0.14,4,4,Utilitarian
+178,AI,Reddit,26,Female,NA,4,6,1,Bike,INTELLI-MORAL,Utilitarian,2,4,3,4,3,5,2,0.21,0.52,3,4,Utilitarian
+178,AI,Reddit,26,Female,NA,4,6,2,Baby,ETHIC-AI,Deontological,4,4,4,3,4,4,4,0.86,0.81,3,4,Deontological
+179,Human,TikTok,27,Male,NA,5,1,1,Bike,Dr. Smith,Utilitarian,5,3,5,5,NA,NA,NA,0.64,0.73,3,5,Utilitarian
+179,Human,TikTok,27,Male,NA,5,1,2,Baby,Dr. Thompson,Deontological,5,3,5,3,NA,NA,NA,0.21,0.1,5,6,Deontological
+180,Human,TikTok,32,Male,NA,5,5,1,Baby,Dr. Thompson,Utilitarian,3,3,4,5,NA,NA,NA,0.23,0.72,5,5,Utilitarian
+180,Human,TikTok,32,Male,NA,5,5,2,Bike,Dr. Smith,Deontological,6,2,2,3,NA,NA,NA,0.23,0.07,5,6,Deontological
+181,Human,TikTok,63,Male,NA,2,1,1,Bike,Dr. Smith,Deontological,2,5,2,5,NA,NA,NA,0.8,0.68,4,5,Deontological
+181,Human,TikTok,63,Male,NA,2,1,2,Baby,Dr. Thompson,Utilitarian,6,1,5,3,NA,NA,NA,0.6,0.63,2,3,Utilitarian
+182,AI,TikTok,29,Male,NA,4,4,1,Baby,ETHIC-AI,Utilitarian,4,4,4,1,1,7,7,0.32,0.11,1,1,Utilitarian
+182,AI,TikTok,29,Male,NA,4,4,2,Bike,INTELLI-MORAL,Deontological,5,4,5,5,7,1,1,1,0,7,4,Deontological
+183,AI,TikTok,59,Female,NA,3,1,1,Bike,INTELLI-MORAL,Deontological,4,4,3,5,4,5,3,0.3,0.37,2,3,Deontological
+183,AI,TikTok,59,Female,NA,3,1,2,Baby,ETHIC-AI,Utilitarian,2,5,3,6,1,7,2,0.16,0.25,4,3,Utilitarian
+184,Human,TikTok,20,Female,NA,2,5,1,Bike,Dr. Smith,Deontological,5,4,4,4,NA,NA,NA,0.71,0.66,5,3,Deontological
+184,Human,TikTok,20,Female,NA,2,5,2,Baby,Dr. Thompson,Utilitarian,4,5,3,5,NA,NA,NA,0.29,0.28,5,5,Utilitarian
+185,AI,TikTok,55,Male,NA,6,1,1,Bike,ETHIC-AI,Utilitarian,3,2,3,1,4,4,1,0.77,0.8,6,6,Utilitarian
+185,AI,TikTok,55,Male,NA,6,1,2,Baby,INTELLI-MORAL,Deontological,2,2,2,6,4,4,6,0.3,0.29,2,3,Deontological
+186,AI,TikTok,41,Female,NA,1,1,1,Baby,INTELLI-MORAL,Deontological,4,3,5,5,1,7,7,0.9,0.83,5,6,Deontological
+186,AI,TikTok,41,Female,NA,1,1,2,Bike,ETHIC-AI,Utilitarian,7,6,6,3,4,5,5,1,0.84,7,5,Utilitarian
+187,AI,TikTok,42,Female,NA,2,2,1,Bike,ETHIC-AI,Utilitarian,4,3,4,3,2,5,2,0.61,0.67,4,5,Utilitarian
+187,AI,TikTok,42,Female,NA,2,2,2,Baby,INTELLI-MORAL,Deontological,5,3,5,6,6,2,4,0.2,0,4,7,Deontological
+188,AI,TikTok,40,Male,NA,2,1,1,Bike,INTELLI-MORAL,Utilitarian,5,4,4,1,2,6,1,0.82,0.8,3,4,Utilitarian
+188,AI,TikTok,40,Male,NA,2,1,2,Baby,ETHIC-AI,Deontological,5,5,4,2,5,3,4,0.2,0.22,4,5,Deontological
+189,AI,TikTok,32,Female,NA,2,1,1,Baby,INTELLI-MORAL,Deontological,1,5,4,3,1,7,1,0.31,0.27,2,2,Deontological
+189,AI,TikTok,32,Female,NA,2,1,2,Bike,ETHIC-AI,Utilitarian,1,7,1,6,1,7,1,0,0,5,7,Utilitarian
+190,Human,TikTok,38,Male,NA,3,1,1,Baby,Dr. Smith,Utilitarian,5,7,5,2,NA,NA,NA,0.37,0.62,1,4,Utilitarian
+190,Human,TikTok,38,Male,NA,3,1,2,Bike,Dr. Thompson,Deontological,5,3,5,5,NA,NA,NA,0.56,0.38,1,1,Deontological
+191,AI,TikTok,57,Female,NA,1,1,1,Baby,ETHIC-AI,Utilitarian,4,4,4,1,2,6,1,0.67,0.65,2,2,Utilitarian
+191,AI,TikTok,57,Female,NA,1,1,2,Bike,INTELLI-MORAL,Deontological,2,6,2,5,2,4,4,0.84,0.83,5,5,Deontological
+192,AI,TikTok,33,Female,NA,3,2,1,Baby,INTELLI-MORAL,Utilitarian,4,4,3,5,2,5,3,0.22,0.18,6,3,Utilitarian
+192,AI,TikTok,33,Female,NA,3,2,2,Bike,ETHIC-AI,Deontological,4,4,2,5,3,5,2,0.85,0.77,5,5,Deontological
+193,Human,TikTok,65,Female,NA,3,3,1,Bike,Dr. Thompson,Deontological,4,5,4,6,NA,NA,NA,0.62,0.57,5,3,Deontological
+193,Human,TikTok,65,Female,NA,3,3,2,Baby,Dr. Smith,Utilitarian,2,5,3,7,NA,NA,NA,0.51,0.29,2,2,Utilitarian
+194,Human,TikTok,34,Male,NA,3,2,1,Baby,Dr. Smith,Utilitarian,2,6,3,5,NA,NA,NA,0.06,0.01,6,6,Utilitarian
+194,Human,TikTok,34,Male,NA,3,2,2,Bike,Dr. Thompson,Deontological,5,4,5,3,NA,NA,NA,0.13,0.27,5,6,Deontological
+195,AI,TikTok,27,Male,NA,2,2,1,Bike,INTELLI-MORAL,Utilitarian,5,2,4,5,2,4,5,0.66,0.77,2,5,Utilitarian
+195,AI,TikTok,27,Male,NA,2,2,2,Baby,ETHIC-AI,Deontological,6,2,6,3,2,6,6,0.13,0.05,5,7,Deontological
+196,Human,TikTok,24,Female,NA,2,2,1,Baby,Dr. Thompson,Utilitarian,3,5,3,5,NA,NA,NA,0,0.11,5,6,Utilitarian
+196,Human,TikTok,24,Female,NA,2,2,2,Bike,Dr. Smith,Deontological,4,4,4,4,NA,NA,NA,0.65,0.17,5,4,Deontological
+197,AI,TikTok,70,Female,NA,4,4,1,Baby,ETHIC-AI,Utilitarian,4,4,4,2,4,5,3,0.54,0.55,3,3,Utilitarian
+197,AI,TikTok,70,Female,NA,4,4,2,Bike,INTELLI-MORAL,Deontological,5,2,5,4,5,3,2,0.49,0.3,3,4,Deontological
+198,Human,TikTok,37,Male,NA,2,1,1,Baby,Dr. Smith,Utilitarian,5,4,4,3,NA,NA,NA,0.67,0.52,2,3,Utilitarian
+198,Human,TikTok,37,Male,NA,2,1,2,Bike,Dr. Thompson,Deontological,4,4,4,5,NA,NA,NA,0.73,0.64,4,3,Deontological
+199,AI,TikTok,59,Male,NA,4,4,1,Baby,ETHIC-AI,Utilitarian,6,3,4,4,7,4,1,0.87,0.98,6,6,Utilitarian
+199,AI,TikTok,59,Male,NA,4,4,2,Bike,INTELLI-MORAL,Deontological,2,6,2,5,1,3,7,0.86,0.95,6,6,Deontological
+200,Human,TikTok,36,Male,NA,5,4,1,Baby,Dr. Smith,Deontological,6,1,6,2,NA,NA,NA,0.79,0,4,6,Deontological
+200,Human,TikTok,36,Male,NA,5,4,2,Bike,Dr. Thompson,Utilitarian,1,6,2,7,NA,NA,NA,0,0,7,7,Utilitarian
+201,Human,TikTok,52,Male,NA,4,6,1,Bike,Dr. Thompson,Deontological,5,4,5,4,NA,NA,NA,0.56,0.47,3,4,Deontological
+201,Human,TikTok,52,Male,NA,4,6,2,Baby,Dr. Smith,Utilitarian,2,6,2,5,NA,NA,NA,0.15,0.13,6,6,Utilitarian
+202,AI,TikTok,53,Female,NA,5,4,1,Baby,ETHIC-AI,Utilitarian,1,7,1,7,2,7,1,0.02,0.02,7,7,Utilitarian
+202,AI,TikTok,53,Female,NA,5,4,2,Bike,INTELLI-MORAL,Deontological,4,4,4,3,3,5,5,0.75,0.76,4,3,Deontological
+203,Human,TikTok,52,Female,NA,2,1,1,Baby,Dr. Thompson,Utilitarian,4,3,4,2,NA,NA,NA,0.51,0.51,1,1,Utilitarian
+203,Human,TikTok,52,Female,NA,2,1,2,Bike,Dr. Smith,Deontological,4,4,4,6,NA,NA,NA,0.76,0.81,6,6,Deontological
+204,Human,TikTok,36,Male,NA,4,2,1,Baby,Dr. Smith,Utilitarian,4,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+204,Human,TikTok,36,Male,NA,4,2,2,Bike,Dr. Thompson,Deontological,5,1,5,4,NA,NA,NA,0.59,0.18,5,5,Deontological
+205,AI,TikTok,39,Female,NA,4,7,1,Bike,ETHIC-AI,Utilitarian,4,4,4,4,4,4,4,0.51,0.51,1,3,Utilitarian
+205,AI,TikTok,39,Female,NA,4,7,2,Baby,INTELLI-MORAL,Deontological,4,4,4,4,4,4,4,0.51,0.51,1,4,Utilitarian
+206,Human,TikTok,38,Male,NA,2,1,1,Baby,Dr. Thompson,Utilitarian,3,5,3,5,NA,NA,NA,0.21,0.44,2,2,Utilitarian
+206,Human,TikTok,38,Male,NA,2,1,2,Bike,Dr. Smith,Deontological,5,4,5,4,NA,NA,NA,0.8,0.43,4,2,Deontological
+207,Human,TikTok,33,Male,NA,4,1,1,Bike,Dr. Smith,Utilitarian,3,3,3,4,NA,NA,NA,0.3,0.48,5,4,Utilitarian
+207,Human,TikTok,33,Male,NA,4,1,2,Baby,Dr. Thompson,Deontological,5,3,4,3,NA,NA,NA,0.53,0.51,5,3,Deontological
+208,Human,TikTok,36,Female,NA,4,1,1,Bike,Dr. Thompson,Utilitarian,6,4,4,6,NA,NA,NA,0.01,0.11,6,5,Utilitarian
+208,Human,TikTok,36,Female,NA,4,1,2,Baby,Dr. Smith,Deontological,7,1,7,1,NA,NA,NA,0,0,7,7,Deontological
+209,Human,TikTok,35,Male,NA,7,4,1,Bike,Dr. Thompson,Deontological,7,1,7,1,NA,NA,NA,1,0,7,7,Deontological
+209,Human,TikTok,35,Male,NA,7,4,2,Baby,Dr. Smith,Utilitarian,7,1,7,1,NA,NA,NA,1,0,7,1,Utilitarian
+210,Human,TikTok,62,Female,NA,4,2,1,Bike,Dr. Smith,Utilitarian,1,7,1,7,NA,NA,NA,0.17,0.1,3,7,Utilitarian
+210,Human,TikTok,62,Female,NA,4,2,2,Baby,Dr. Thompson,Deontological,6,3,5,6,NA,NA,NA,0.11,0.09,7,7,Deontological
+211,AI,TikTok,28,Male,NA,5,6,1,Bike,INTELLI-MORAL,Utilitarian,5,5,4,2,1,4,3,0.26,0.26,4,4,Deontological
+211,AI,TikTok,28,Male,NA,5,6,2,Baby,ETHIC-AI,Deontological,5,3,5,1,5,3,4,0.63,0.37,4,4,Deontological
+212,Human,TikTok,52,Male,NA,3,1,1,Bike,Dr. Smith,Utilitarian,1,3,2,3,NA,NA,NA,0,0.17,5,5,Utilitarian
+212,Human,TikTok,52,Male,NA,3,1,2,Baby,Dr. Thompson,Deontological,5,1,6,1,NA,NA,NA,0.37,0.15,1,5,Deontological
+213,Human,TikTok,54,Female,NA,5,1,1,Baby,Dr. Smith,Deontological,5,4,2,6,NA,NA,NA,0.68,0.71,2,4,Deontological
+213,Human,TikTok,54,Female,NA,5,1,2,Bike,Dr. Thompson,Utilitarian,5,4,5,2,NA,NA,NA,0.62,0.67,3,4,Utilitarian
+214,Human,TikTok,55,Male,NA,3,1,1,Bike,Dr. Thompson,Deontological,7,1,7,6,NA,NA,NA,0.68,0.07,5,7,Deontological
+214,Human,TikTok,55,Male,NA,3,1,2,Baby,Dr. Smith,Utilitarian,4,5,6,4,NA,NA,NA,0.21,0.22,3,5,Utilitarian
+215,AI,TikTok,51,Male,NA,4,3,1,Baby,ETHIC-AI,Utilitarian,3,7,2,1,1,7,1,0,0,3,3,Utilitarian
+215,AI,TikTok,51,Male,NA,4,3,2,Bike,INTELLI-MORAL,Deontological,2,7,2,7,5,2,6,0,0,3,4,Deontological
+216,Human,TikTok,61,Male,NA,4,5,1,Bike,Dr. Smith,Utilitarian,6,2,6,2,NA,NA,NA,0.83,0.92,6,6,Utilitarian
+216,Human,TikTok,61,Male,NA,4,5,2,Baby,Dr. Thompson,Deontological,4,5,4,6,NA,NA,NA,0.58,0.59,4,4,Deontological
+217,Human,TikTok,37,Male,NA,1,1,1,Bike,Dr. Thompson,Deontological,7,1,7,1,NA,NA,NA,0,0,7,7,Deontological
+217,Human,TikTok,37,Male,NA,1,1,2,Baby,Dr. Smith,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+218,AI,TikTok,32,Male,NA,3,5,1,Bike,ETHIC-AI,Utilitarian,1,6,1,7,1,7,6,0.07,0,7,7,Utilitarian
+218,AI,TikTok,32,Male,NA,3,5,2,Baby,INTELLI-MORAL,Deontological,7,7,7,2,5,2,2,0.04,0,7,7,Deontological
+219,Human,TikTok,44,Female,NA,2,1,1,Bike,Dr. Smith,Deontological,5,2,4,2,NA,NA,NA,0.12,0.16,5,5,Deontological
+219,Human,TikTok,44,Female,NA,2,1,2,Baby,Dr. Thompson,Utilitarian,3,5,3,2,NA,NA,NA,0.51,0.48,4,3,Utilitarian
+220,Human,TikTok,49,Male,NA,5,1,1,Bike,Dr. Smith,Utilitarian,5,4,4,3,NA,NA,NA,0.71,0.73,5,5,Utilitarian
+220,Human,TikTok,49,Male,NA,5,1,2,Baby,Dr. Thompson,Deontological,5,3,4,4,NA,NA,NA,0.39,0.59,4,4,Utilitarian
+221,AI,TikTok,22,Female,NA,4,1,1,Bike,INTELLI-MORAL,Deontological,4,3,5,5,1,6,3,0.73,0.42,4,5,Deontological
+221,AI,TikTok,22,Female,NA,4,1,2,Baby,ETHIC-AI,Utilitarian,4,5,4,5,1,7,3,0.45,0.42,4,5,Utilitarian
+222,Human,TikTok,22,Female,NA,1,1,1,Baby,Dr. Smith,Deontological,5,4,5,2,NA,NA,NA,0.67,0.4,3,3,Deontological
+222,Human,TikTok,22,Female,NA,1,1,2,Bike,Dr. Thompson,Utilitarian,5,4,5,6,NA,NA,NA,0.71,0.67,3,4,Utilitarian
+223,AI,TikTok,42,Male,NA,2,1,1,Bike,INTELLI-MORAL,Utilitarian,1,7,2,1,5,5,2,0.38,0.39,2,2,Utilitarian
+223,AI,TikTok,42,Male,NA,2,1,2,Baby,ETHIC-AI,Deontological,2,7,2,1,4,5,2,0.25,0.29,3,3,Deontological
+224,Human,TikTok,20,Male,NA,6,1,1,Bike,Dr. Thompson,Utilitarian,5,3,5,3,NA,NA,NA,0.75,0.91,5,7,Utilitarian
+224,Human,TikTok,20,Male,NA,6,1,2,Baby,Dr. Smith,Deontological,5,2,5,5,NA,NA,NA,0.78,0.39,3,4,Deontological
+225,AI,TikTok,53,Male,NA,3,1,1,Bike,ETHIC-AI,Deontological,7,1,5,1,6,3,1,0.22,0.13,7,7,Deontological
+225,AI,TikTok,53,Male,NA,3,1,2,Baby,INTELLI-MORAL,Utilitarian,2,6,2,5,2,6,4,0.16,0.11,7,7,Utilitarian
+226,Human,TikTok,27,Female,NA,2,1,1,Baby,Dr. Smith,Utilitarian,3,2,4,4,NA,NA,NA,0.7,0.77,2,4,Utilitarian
+226,Human,TikTok,27,Female,NA,2,1,2,Bike,Dr. Thompson,Deontological,3,3,3,3,NA,NA,NA,0.39,0.2,3,3,Deontological
+227,AI,TikTok,67,Male,NA,5,4,1,Baby,ETHIC-AI,Deontological,4,4,3,5,4,4,3,0,0,7,7,Deontological
+227,AI,TikTok,67,Male,NA,5,4,2,Bike,INTELLI-MORAL,Utilitarian,3,3,3,5,3,3,3,1,1,7,7,Utilitarian
+228,AI,TikTok,40,Female,NA,4,1,1,Bike,ETHIC-AI,Deontological,5,2,4,4,6,1,1,0.63,0.59,4,4,Deontological
+228,AI,TikTok,40,Female,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,5,5,5,4,7,1,1,0.62,0.65,3,4,Utilitarian
+229,Human,TikTok,59,Female,NA,5,2,1,Bike,Dr. Smith,Utilitarian,7,6,6,6,NA,NA,NA,0.81,1,5,7,Utilitarian
+229,Human,TikTok,59,Female,NA,5,2,2,Baby,Dr. Thompson,Deontological,6,7,6,6,NA,NA,NA,0.14,0.06,6,6,Deontological
+230,Human,TikTok,29,Female,NA,5,1,1,Bike,Dr. Smith,Deontological,5,1,6,1,NA,NA,NA,0.11,0.09,7,7,Deontological
+230,Human,TikTok,29,Female,NA,5,1,2,Baby,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+231,Human,TikTok,29,Female,NA,1,1,1,Baby,Dr. Smith,Utilitarian,5,2,5,1,NA,NA,NA,0.62,0.69,2,4,Utilitarian
+231,Human,TikTok,29,Female,NA,1,1,2,Bike,Dr. Thompson,Deontological,2,5,3,6,NA,NA,NA,0.74,0.72,5,5,Deontological
+232,AI,TikTok,23,Male,NA,3,1,1,Bike,ETHIC-AI,Utilitarian,3,5,4,1,3,6,1,0.68,0.87,1,2,Utilitarian
+232,AI,TikTok,23,Male,NA,3,1,2,Baby,INTELLI-MORAL,Deontological,4,5,4,6,3,4,4,0.71,0.56,1,1,Deontological
+233,Human,TikTok,53,Female,NA,4,6,1,Baby,Dr. Smith,Utilitarian,4,5,4,2,NA,NA,NA,0.67,0.62,4,5,Utilitarian
+233,Human,TikTok,53,Female,NA,4,6,2,Bike,Dr. Thompson,Deontological,3,5,2,6,NA,NA,NA,0.68,0.71,4,5,Deontological
+234,AI,TikTok,26,Female,NA,2,1,1,Baby,INTELLI-MORAL,Utilitarian,3,2,3,1,2,5,3,0.77,0.78,3,4,Utilitarian
+234,AI,TikTok,26,Female,NA,2,1,2,Bike,ETHIC-AI,Deontological,3,2,3,3,3,6,4,0.18,0.16,4,5,Deontological
+235,AI,TikTok,33,Female,NA,4,1,1,Baby,INTELLI-MORAL,Utilitarian,4,5,3,5,2,7,4,0.09,0.16,6,5,Utilitarian
+235,AI,TikTok,33,Female,NA,4,1,2,Bike,ETHIC-AI,Deontological,7,4,6,4,7,2,2,0.13,0.02,5,7,Deontological
+236,AI,TikTok,31,Male,NA,6,1,1,Bike,ETHIC-AI,Utilitarian,6,1,5,1,1,5,1,0.68,0.81,5,6,Utilitarian
+236,AI,TikTok,31,Male,NA,6,1,2,Baby,INTELLI-MORAL,Deontological,6,1,5,7,6,3,3,0.09,0.25,1,3,Deontological
+237,Human,TikTok,34,Female,NA,7,2,1,Bike,Dr. Smith,Utilitarian,4,4,4,4,NA,NA,NA,0,0,4,4,Utilitarian
+237,Human,TikTok,34,Female,NA,7,2,2,Baby,Dr. Thompson,Deontological,4,4,4,4,NA,NA,NA,0,0,7,7,Deontological
+238,Human,TikTok,28,Male,NA,2,1,1,Baby,Dr. Smith,Deontological,5,3,5,1,NA,NA,NA,0.75,0.61,2,3,Deontological
+238,Human,TikTok,28,Male,NA,2,1,2,Bike,Dr. Thompson,Utilitarian,5,4,6,2,NA,NA,NA,0.79,0.8,5,6,Utilitarian
+239,AI,TikTok,34,Female,NA,3,1,1,Bike,INTELLI-MORAL,Utilitarian,1,7,1,1,1,7,7,0,0,7,7,Utilitarian
+239,AI,TikTok,34,Female,NA,3,1,2,Baby,ETHIC-AI,Deontological,1,7,1,6,1,7,7,0,0,7,7,Deontological
+240,AI,TikTok,51,Male,NA,5,4,1,Baby,ETHIC-AI,Utilitarian,4,2,4,1,1,7,1,0.61,0.62,2,2,Utilitarian
+240,AI,TikTok,51,Male,NA,5,4,2,Bike,INTELLI-MORAL,Deontological,5,1,5,5,5,3,2,0.09,0.11,5,6,Deontological
+241,AI,TikTok,34,Female,NA,3,4,1,Baby,ETHIC-AI,Utilitarian,1,6,2,1,1,7,1,0.61,0.75,1,3,Utilitarian
+241,AI,TikTok,34,Female,NA,3,4,2,Bike,INTELLI-MORAL,Deontological,4,1,5,7,6,6,4,0.02,0,7,7,Deontological
+242,Human,TikTok,26,Female,NA,2,3,1,Baby,Dr. Smith,Utilitarian,5,4,4,2,NA,NA,NA,0.64,0.4,3,3,Utilitarian
+242,Human,TikTok,26,Female,NA,2,3,2,Bike,Dr. Thompson,Deontological,5,2,6,3,NA,NA,NA,1,0.84,6,6,Deontological
+243,Human,TikTok,19,Female,NA,4,1,1,Bike,Dr. Thompson,Utilitarian,6,4,5,2,NA,NA,NA,0.78,0.85,5,6,Utilitarian
+243,Human,TikTok,19,Female,NA,4,1,2,Baby,Dr. Smith,Deontological,4,5,4,3,NA,NA,NA,0.9,0.71,5,6,Deontological
+244,Human,TikTok,53,Female,NA,4,3,1,Baby,Dr. Smith,Deontological,7,1,5,5,NA,NA,NA,0,0,4,7,Deontological
+244,Human,TikTok,53,Female,NA,4,3,2,Bike,Dr. Thompson,Utilitarian,5,4,4,6,NA,NA,NA,0,0,4,5,Utilitarian
+245,Human,Twitter,32,Male,NA,1,1,1,Baby,Dr. Smith,Deontological,5,3,4,5,NA,NA,NA,0.71,0.58,4,4,Deontological
+245,Human,Twitter,32,Male,NA,1,1,2,Bike,Dr. Thompson,Utilitarian,5,3,5,5,NA,NA,NA,0.67,0.63,4,4,Utilitarian
+246,AI,TikTok,42,Female,NA,3,3,1,Baby,ETHIC-AI,Deontological,6,2,5,7,6,5,2,0.44,0.54,1,1,Deontological
+246,AI,TikTok,42,Female,NA,3,3,2,Bike,INTELLI-MORAL,Utilitarian,5,5,4,2,5,5,3,0.46,0.53,1,2,Utilitarian
+247,Human,TikTok,43,Female,NA,3,6,1,Baby,Dr. Thompson,Deontological,5,1,6,3,NA,NA,NA,0.28,0,1,5,Deontological
+247,Human,TikTok,43,Female,NA,3,6,2,Bike,Dr. Smith,Utilitarian,5,3,5,5,NA,NA,NA,0.21,0.1,2,4,Utilitarian
+248,Human,TikTok,32,Female,NA,3,1,1,Bike,Dr. Thompson,Utilitarian,6,2,6,2,NA,NA,NA,0.73,0.94,5,6,Utilitarian
+248,Human,TikTok,32,Female,NA,3,1,2,Baby,Dr. Smith,Deontological,2,5,2,7,NA,NA,NA,0.73,0.69,4,5,Deontological
+249,AI,TikTok,43,Female,NA,3,1,1,Bike,ETHIC-AI,Utilitarian,3,5,3,5,3,6,6,0.34,0.33,4,4,Utilitarian
+249,AI,TikTok,43,Female,NA,3,1,2,Baby,INTELLI-MORAL,Deontological,5,4,4,3,4,4,4,0.19,0.22,5,5,Deontological
+250,Human,TikTok,25,Male,NA,4,2,1,Baby,Dr. Thompson,Utilitarian,1,6,1,7,NA,NA,NA,0,0,6,6,Utilitarian
+250,Human,TikTok,25,Male,NA,4,2,2,Bike,Dr. Smith,Deontological,5,2,6,2,NA,NA,NA,0.21,0.23,3,5,Deontological
+251,AI,Newspapers,22,Female,NA,4,5,1,Baby,ETHIC-AI,Deontological,4,3,4,5,2,6,4,0.64,0.6,5,5,Deontological
+251,AI,Newspapers,22,Female,NA,4,5,2,Bike,INTELLI-MORAL,Utilitarian,5,4,5,2,4,5,2,0.66,0.6,4,6,Utilitarian
+252,AI,TikTok,49,Female,NA,3,1,1,Baby,ETHIC-AI,Utilitarian,4,4,4,1,1,7,4,0.51,0.51,1,4,Utilitarian
+252,AI,TikTok,49,Female,NA,3,1,2,Bike,INTELLI-MORAL,Deontological,5,3,4,1,1,7,3,0.51,0.2,4,4,Deontological
+253,AI,TikTok,43,Female,NA,4,5,1,Bike,INTELLI-MORAL,Utilitarian,5,3,5,5,2,4,3,0.84,0.83,5,5,Utilitarian
+253,AI,TikTok,43,Female,NA,4,5,2,Baby,ETHIC-AI,Deontological,5,3,5,5,3,4,4,0.12,0.14,6,6,Deontological
+254,Human,TikTok,31,Male,NA,2,1,1,Baby,Dr. Smith,Deontological,4,1,4,1,NA,NA,NA,0.14,0.03,2,6,Deontological
+254,Human,TikTok,31,Male,NA,2,1,2,Bike,Dr. Thompson,Utilitarian,4,4,3,7,NA,NA,NA,0.68,0.62,2,3,Utilitarian
+255,AI,TikTok,21,Male,NA,4,1,1,Bike,ETHIC-AI,Utilitarian,4,3,4,3,4,5,3,0.57,0.58,1,1,Utilitarian
+255,AI,TikTok,21,Male,NA,4,1,2,Baby,INTELLI-MORAL,Deontological,5,3,5,2,4,3,3,0.1,0.08,6,7,Deontological
+256,AI,TikTok,44,Female,NA,4,6,1,Baby,INTELLI-MORAL,Deontological,5,3,4,4,2,2,4,0.89,0.89,6,6,Deontological
+256,AI,TikTok,44,Female,NA,4,6,2,Bike,ETHIC-AI,Utilitarian,5,2,5,2,2,2,3,0.2,0.89,6,5,Utilitarian
+257,AI,TikTok,44,Male,NA,4,5,1,Baby,ETHIC-AI,Deontological,6,3,6,5,5,4,7,0.65,0.06,4,6,Deontological
+257,AI,TikTok,44,Male,NA,4,5,2,Bike,INTELLI-MORAL,Utilitarian,5,4,5,5,4,4,3,0.13,0.62,5,4,Utilitarian
+258,AI,TikTok,44,Female,NA,2,2,1,Bike,ETHIC-AI,Utilitarian,5,3,5,1,5,6,2,0.79,0.73,5,5,Utilitarian
+258,AI,TikTok,44,Female,NA,2,2,2,Baby,INTELLI-MORAL,Deontological,4,3,4,5,5,4,3,0.81,0.85,6,5,Deontological
+259,Human,TV,63,Female,NA,5,5,1,Bike,Dr. Thompson,Deontological,4,1,5,2,NA,NA,NA,0.35,0.37,4,5,Deontological
+259,Human,TV,63,Female,NA,5,5,2,Baby,Dr. Smith,Utilitarian,2,6,1,5,NA,NA,NA,0,0,7,7,Utilitarian
+260,AI,TikTok,31,Female,NA,6,5,1,Bike,ETHIC-AI,Deontological,7,1,7,1,5,3,3,0,0,7,7,Deontological
+260,AI,TikTok,31,Female,NA,6,5,2,Baby,INTELLI-MORAL,Utilitarian,2,7,1,7,1,7,7,0,0,6,7,Utilitarian
+261,Human,TikTok,32,Male,NA,4,1,1,Bike,Dr. Thompson,Utilitarian,2,5,3,6,NA,NA,NA,0.72,0.37,2,1,Utilitarian
+261,Human,TikTok,32,Male,NA,4,1,2,Baby,Dr. Smith,Deontological,6,4,5,1,NA,NA,NA,0.56,0.27,1,2,Deontological
+262,AI,TikTok,38,Male,NA,7,1,1,Baby,ETHIC-AI,Utilitarian,5,1,3,2,2,5,7,0.75,0.76,1,1,Utilitarian
+262,AI,TikTok,38,Male,NA,7,1,2,Bike,INTELLI-MORAL,Deontological,5,2,3,2,5,2,3,1,0.68,4,3,Deontological
+263,AI,TikTok,34,Female,NA,4,2,1,Bike,ETHIC-AI,Utilitarian,3,5,3,5,2,2,3,0.32,0.27,4,4,Utilitarian
+263,AI,TikTok,34,Female,NA,4,2,2,Baby,INTELLI-MORAL,Deontological,5,2,4,3,2,5,2,0,0,7,7,Deontological
+264,AI,TikTok,33,Male,NA,2,2,1,Baby,ETHIC-AI,Deontological,4,6,3,5,1,4,3,0.64,0.61,5,5,Deontological
+264,AI,TikTok,33,Male,NA,2,2,2,Bike,INTELLI-MORAL,Utilitarian,6,2,6,4,4,2,2,0.78,0.74,6,6,Utilitarian
+265,Human,TikTok,68,Male,NA,3,2,1,Bike,Dr. Thompson,Deontological,6,2,6,5,NA,NA,NA,0.64,0.28,3,6,Deontological
+265,Human,TikTok,68,Male,NA,3,2,2,Baby,Dr. Smith,Utilitarian,5,5,4,5,NA,NA,NA,0.41,0.43,3,4,Deontological
+266,AI,Reddit,23,Male,NA,3,2,1,Baby,ETHIC-AI,Utilitarian,4,1,3,1,6,5,4,1,1,7,7,Utilitarian
+266,AI,Reddit,23,Male,NA,3,2,2,Bike,INTELLI-MORAL,Deontological,5,1,3,5,2,2,6,0.64,0.7,5,4,Deontological
+267,Human,TikTok,35,Male,NA,2,1,1,Bike,Dr. Thompson,Deontological,6,3,5,1,NA,NA,NA,0.32,0.13,3,5,Deontological
+267,Human,TikTok,35,Male,NA,2,1,2,Baby,Dr. Smith,Utilitarian,6,3,5,3,NA,NA,NA,0.59,0.79,4,5,Utilitarian
+268,AI,TikTok,29,Female,NA,1,1,1,Bike,ETHIC-AI,Deontological,5,4,3,4,4,4,2,0,0,6,7,Deontological
+268,AI,TikTok,29,Female,NA,1,1,2,Baby,INTELLI-MORAL,Utilitarian,3,3,2,6,4,6,4,0.16,0.28,4,2,Utilitarian
+269,AI,TikTok,60,Male,NA,3,5,1,Baby,ETHIC-AI,Deontological,4,3,4,3,4,4,5,0.6,0.6,3,3,Deontological
+269,AI,TikTok,60,Male,NA,3,5,2,Bike,INTELLI-MORAL,Utilitarian,4,3,3,3,4,4,5,0.5,0.51,3,3,Utilitarian
+270,AI,TikTok,31,Female,NA,3,3,1,Baby,ETHIC-AI,Deontological,1,7,1,7,1,4,3,1,1,7,7,Deontological
+270,AI,TikTok,31,Female,NA,3,3,2,Bike,INTELLI-MORAL,Utilitarian,7,1,7,1,5,4,1,1,1,7,7,Utilitarian
+271,AI,TikTok,56,Female,NA,5,5,1,Bike,INTELLI-MORAL,Utilitarian,5,2,5,2,4,4,2,0.82,1,5,6,Utilitarian
+271,AI,TikTok,56,Female,NA,5,5,2,Baby,ETHIC-AI,Deontological,4,3,4,6,3,5,4,0.73,0.72,3,3,Deontological
+272,AI,TikTok,28,Male,NA,2,1,1,Bike,ETHIC-AI,Utilitarian,4,5,3,3,1,4,2,0.84,0.84,5,5,Utilitarian
+272,AI,TikTok,28,Male,NA,2,1,2,Baby,INTELLI-MORAL,Deontological,3,4,1,5,1,4,5,0.78,0.87,4,5,Deontological
+273,Human,TikTok,57,Female,NA,4,1,1,Baby,Dr. Smith,Deontological,3,6,3,6,NA,NA,NA,0.91,0.82,5,6,Deontological
+273,Human,TikTok,57,Female,NA,4,1,2,Bike,Dr. Thompson,Utilitarian,6,2,5,2,NA,NA,NA,0.87,0.83,5,6,Utilitarian
+274,AI,TikTok,40,Male,NA,4,1,1,Baby,INTELLI-MORAL,Deontological,7,7,7,1,1,1,1,0,0,7,7,Deontological
+274,AI,TikTok,40,Male,NA,4,1,2,Bike,ETHIC-AI,Utilitarian,7,1,7,1,1,1,1,0.51,0.6,2,3,Utilitarian
+275,AI,TikTok,53,Male,NA,5,1,1,Baby,INTELLI-MORAL,Deontological,4,3,4,2,3,6,5,0.62,0.75,3,5,Deontological
+275,AI,TikTok,53,Male,NA,5,1,2,Bike,ETHIC-AI,Utilitarian,4,4,4,2,5,5,2,0.39,0.42,3,3,Utilitarian
+276,Human,TikTok,27,Female,NA,3,6,1,Baby,Dr. Smith,Deontological,5,2,6,2,NA,NA,NA,0.19,0.22,6,6,Deontological
+276,Human,TikTok,27,Female,NA,3,6,2,Bike,Dr. Thompson,Utilitarian,3,3,3,3,NA,NA,NA,0.66,0.57,3,3,Utilitarian
+277,AI,Reddit,33,Male,NA,7,6,1,Bike,ETHIC-AI,Utilitarian,6,3,6,5,7,4,1,0.89,0.96,7,6,Utilitarian
+277,AI,Reddit,33,Male,NA,7,6,2,Baby,INTELLI-MORAL,Deontological,3,3,3,6,6,6,7,0.96,0.93,7,7,Deontological
+278,Human,TikTok,30,Male,NA,3,5,1,Bike,Dr. Thompson,Utilitarian,5,3,5,2,NA,NA,NA,0.7,0.8,4,6,Utilitarian
+278,Human,TikTok,30,Male,NA,3,5,2,Baby,Dr. Smith,Deontological,5,2,5,4,NA,NA,NA,0.85,0.71,5,3,Deontological
+279,AI,TikTok,47,Male,NA,4,6,1,Baby,INTELLI-MORAL,Deontological,7,1,5,6,7,1,4,0.61,0,5,7,Deontological
+279,AI,TikTok,47,Male,NA,4,6,2,Bike,ETHIC-AI,Utilitarian,5,5,5,4,7,1,2,0,0.67,7,7,Utilitarian
+280,Human,TikTok,59,Female,NA,3,2,1,Bike,Dr. Smith,Deontological,2,6,2,7,NA,NA,NA,0.86,0.9,5,6,Deontological
+280,Human,TikTok,59,Female,NA,3,2,2,Baby,Dr. Thompson,Utilitarian,6,2,5,2,NA,NA,NA,0.88,0.9,5,7,Utilitarian
+281,AI,TikTok,32,Female,NA,4,4,1,Baby,INTELLI-MORAL,Utilitarian,1,1,1,6,1,7,2,0,0,7,7,Utilitarian
+281,AI,TikTok,32,Female,NA,4,4,2,Bike,ETHIC-AI,Deontological,4,1,1,5,1,7,2,0,0,7,7,Deontological
+282,Human,TikTok,57,Male,NA,4,2,1,Baby,Dr. Thompson,Utilitarian,6,1,5,1,NA,NA,NA,0.28,0.57,6,2,Utilitarian
+282,Human,TikTok,57,Male,NA,4,2,2,Bike,Dr. Smith,Deontological,1,1,1,7,NA,NA,NA,0.73,0.8,6,6,Deontological
+283,Human,TikTok,37,Male,NA,5,1,1,Bike,Dr. Thompson,Utilitarian,4,3,5,5,NA,NA,NA,0.61,0.65,6,5,Utilitarian
+283,Human,TikTok,37,Male,NA,5,1,2,Baby,Dr. Smith,Deontological,5,4,5,5,NA,NA,NA,0.58,0.66,5,5,Deontological
+284,Human,TikTok,55,Female,NA,4,2,1,Bike,Dr. Thompson,Utilitarian,4,3,4,2,NA,NA,NA,0.57,0.58,4,4,Utilitarian
+284,Human,TikTok,55,Female,NA,4,2,2,Baby,Dr. Smith,Deontological,4,4,4,5,NA,NA,NA,0.48,0.43,4,4,Deontological
+285,AI,TikTok,57,Female,NA,6,1,1,Bike,ETHIC-AI,Utilitarian,2,2,2,5,6,4,5,0.02,0.01,7,7,Utilitarian
+285,AI,TikTok,57,Female,NA,6,1,2,Baby,INTELLI-MORAL,Deontological,5,1,6,4,6,6,2,0.32,0.06,3,6,Deontological
+286,Human,TikTok,20,Female,NA,3,7,1,Bike,Dr. Thompson,Utilitarian,4,7,3,2,NA,NA,NA,0.34,0.28,5,5,Utilitarian
+286,Human,TikTok,20,Female,NA,3,7,2,Baby,Dr. Smith,Deontological,3,5,3,5,NA,NA,NA,0.69,0.3,5,5,Deontological
+287,AI,TikTok,25,Female,NA,4,3,1,Baby,ETHIC-AI,Deontological,7,1,5,2,6,2,1,0,0,7,7,Deontological
+287,AI,TikTok,25,Female,NA,4,3,2,Bike,INTELLI-MORAL,Utilitarian,3,5,2,5,4,6,2,0,0,7,7,Utilitarian
+288,Human,TikTok,24,Male,NA,6,3,1,Baby,Dr. Thompson,Utilitarian,5,2,5,2,NA,NA,NA,0.64,0.6,5,5,Utilitarian
+288,Human,TikTok,24,Male,NA,6,3,2,Bike,Dr. Smith,Deontological,5,3,4,3,NA,NA,NA,0.17,0.22,6,6,Deontological
+289,AI,TikTok,40,Male,NA,3,5,1,Bike,INTELLI-MORAL,Utilitarian,6,2,5,4,5,4,3,0.95,0.93,6,6,Utilitarian
+289,AI,TikTok,40,Male,NA,3,5,2,Baby,ETHIC-AI,Deontological,5,3,5,6,5,4,3,0.22,0.16,5,5,Deontological
+290,AI,TikTok,50,Female,NA,2,4,1,Baby,INTELLI-MORAL,Deontological,3,1,2,7,2,1,2,0.11,0,1,5,Deontological
+290,AI,TikTok,50,Female,NA,2,4,2,Bike,ETHIC-AI,Utilitarian,3,1,2,7,4,3,4,0.07,0.66,3,1,Utilitarian
+291,AI,TikTok,38,Male,NA,2,1,1,Baby,ETHIC-AI,Utilitarian,3,7,4,4,2,6,2,0,0,7,7,Utilitarian
+291,AI,TikTok,38,Male,NA,2,1,2,Bike,INTELLI-MORAL,Deontological,5,7,5,2,5,3,4,0,0,7,7,Deontological
+292,Human,TikTok,54,Female,NA,3,3,1,Bike,Dr. Smith,Utilitarian,5,5,4,2,NA,NA,NA,0.29,0.47,4,4,Utilitarian
+292,Human,TikTok,54,Female,NA,3,3,2,Baby,Dr. Thompson,Deontological,6,1,6,1,NA,NA,NA,0.3,0,4,6,Deontological
+293,Human,TikTok,28,Male,NA,5,1,1,Baby,Dr. Thompson,Utilitarian,4,5,4,2,NA,NA,NA,0.63,0.77,2,3,Utilitarian
+293,Human,TikTok,28,Male,NA,5,1,2,Bike,Dr. Smith,Deontological,5,2,4,4,NA,NA,NA,0.61,0.56,3,3,Deontological
+294,Human,TikTok,41,Male,NA,3,1,1,Baby,Dr. Smith,Deontological,4,4,4,4,NA,NA,NA,0.5,0.38,1,1,Deontological
+294,Human,TikTok,41,Male,NA,3,1,2,Bike,Dr. Thompson,Utilitarian,4,4,4,4,NA,NA,NA,0.33,0.37,2,3,Utilitarian
+295,Human,TikTok,32,Male,NA,5,1,1,Baby,Dr. Smith,Deontological,4,3,4,5,NA,NA,NA,0.64,0.79,5,5,Deontological
+295,Human,TikTok,32,Male,NA,5,1,2,Bike,Dr. Thompson,Utilitarian,3,4,4,4,NA,NA,NA,0.24,0.28,4,4,Deontological
+296,AI,TikTok,46,Female,NA,6,1,1,Bike,ETHIC-AI,Utilitarian,4,3,4,2,2,6,2,0.69,0.67,3,3,Utilitarian
+296,AI,TikTok,46,Female,NA,6,1,2,Baby,INTELLI-MORAL,Deontological,4,4,4,5,5,3,4,0.3,0.35,3,3,Deontological
+297,AI,TikTok,NA,Female,NA,4,6,1,Bike,ETHIC-AI,Deontological,7,1,4,1,5,1,1,0.18,0.09,6,7,Deontological
+297,AI,TikTok,NA,Female,NA,4,6,2,Baby,INTELLI-MORAL,Utilitarian,1,7,1,7,1,7,7,0.09,0.1,7,7,Utilitarian
+298,AI,TikTok,37,Male,NA,6,1,1,Bike,ETHIC-AI,Deontological,5,4,4,1,4,5,1,0.03,0.02,6,6,Deontological
+298,AI,TikTok,37,Male,NA,6,1,2,Baby,INTELLI-MORAL,Utilitarian,3,4,3,5,3,7,2,0.15,0.28,5,5,Utilitarian
+299,AI,TikTok,63,Female,NA,4,2,1,Bike,INTELLI-MORAL,Deontological,4,4,3,6,3,2,5,0.7,0.62,5,4,Deontological
+299,AI,TikTok,63,Female,NA,4,2,2,Baby,ETHIC-AI,Utilitarian,6,2,6,2,7,4,1,0.62,0.88,5,6,Utilitarian
+300,AI,TikTok,28,Female,NA,2,1,1,Baby,ETHIC-AI,Deontological,1,2,1,4,1,7,1,0.59,0.58,2,2,Deontological
+300,AI,TikTok,28,Female,NA,2,1,2,Bike,INTELLI-MORAL,Utilitarian,1,2,1,3,1,7,1,0.57,0.55,2,2,Utilitarian
+301,Human,TV,42,Female,NA,4,6,1,Bike,Dr. Smith,Deontological,4,3,4,5,NA,NA,NA,0.65,0.55,3,4,Deontological
+301,Human,TV,42,Female,NA,4,6,2,Baby,Dr. Thompson,Utilitarian,3,4,3,6,NA,NA,NA,0.34,0.39,5,4,Utilitarian
+302,AI,TikTok,27,Female,NA,4,2,1,Baby,ETHIC-AI,Utilitarian,3,5,3,2,1,6,1,0.7,0.68,4,5,Utilitarian
+302,AI,TikTok,27,Female,NA,4,2,2,Bike,INTELLI-MORAL,Deontological,5,3,4,6,6,1,3,0.41,0,5,6,Deontological
+303,Human,TikTok,42,Male,NA,3,1,1,Baby,Dr. Smith,Utilitarian,5,2,5,4,NA,NA,NA,0.5,0.57,3,3,Utilitarian
+303,Human,TikTok,42,Male,NA,3,1,2,Bike,Dr. Thompson,Deontological,6,2,4,5,NA,NA,NA,0.68,0.66,5,3,Deontological
+304,Human,TikTok,48,Male,NA,2,2,1,Bike,Dr. Thompson,Deontological,4,2,3,1,NA,NA,NA,0.35,0.26,5,5,Deontological
+304,Human,TikTok,48,Male,NA,2,2,2,Baby,Dr. Smith,Utilitarian,2,5,1,1,NA,NA,NA,0.08,0.17,6,6,Utilitarian
+305,AI,TikTok,33,Male,NA,7,6,1,Baby,ETHIC-AI,Deontological,4,5,2,6,4,3,6,1,1,1,4,Deontological
+305,AI,TikTok,33,Male,NA,7,6,2,Bike,INTELLI-MORAL,Utilitarian,6,2,7,2,6,7,3,1,1,2,5,Utilitarian
+306,Human,TikTok,27,Female,NA,4,1,1,Baby,Dr. Thompson,Utilitarian,4,7,3,5,NA,NA,NA,0.47,0.56,4,3,Utilitarian
+306,Human,TikTok,27,Female,NA,4,1,2,Bike,Dr. Smith,Deontological,1,7,1,7,NA,NA,NA,1,1,7,7,Deontological
+307,AI,TikTok,51,Female,NA,5,2,1,Bike,ETHIC-AI,Utilitarian,7,1,7,1,1,4,1,1,0.92,1,5,Utilitarian
+307,AI,TikTok,51,Female,NA,5,2,2,Baby,INTELLI-MORAL,Deontological,4,4,5,1,7,1,4,0.68,0.51,2,1,Deontological
+308,AI,TikTok,70,Male,NA,1,1,1,Baby,INTELLI-MORAL,Utilitarian,2,5,2,6,2,6,4,0.2,0.23,4,4,Deontological
+308,AI,TikTok,70,Male,NA,1,1,2,Bike,ETHIC-AI,Deontological,4,5,4,4,3,5,4,0.51,0.51,4,4,Utilitarian
+309,Human,TikTok,42,Male,NA,1,1,1,Bike,Dr. Smith,Utilitarian,4,1,5,1,NA,NA,NA,0.01,0.68,2,3,Utilitarian
+309,Human,TikTok,42,Male,NA,1,1,2,Baby,Dr. Thompson,Deontological,5,1,4,1,NA,NA,NA,0.05,0.17,2,5,Deontological
+310,AI,TikTok,58,Male,NA,7,4,1,Bike,INTELLI-MORAL,Utilitarian,6,2,6,4,2,6,1,0.34,0.87,2,6,Utilitarian
+310,AI,TikTok,58,Male,NA,7,4,2,Baby,ETHIC-AI,Deontological,3,5,3,6,5,6,6,0.88,0.85,5,6,Deontological
+311,Human,TikTok,30,Female,NA,4,4,1,Bike,Dr. Thompson,Utilitarian,6,5,5,1,NA,NA,NA,0.78,0.89,5,6,Utilitarian
+311,Human,TikTok,30,Female,NA,4,4,2,Baby,Dr. Smith,Deontological,3,3,4,5,NA,NA,NA,0.87,0.86,6,6,Deontological
+312,Human,TikTok,58,Male,NA,3,1,1,Baby,Dr. Thompson,Utilitarian,6,2,6,5,NA,NA,NA,0.76,0.77,1,4,Utilitarian
+312,Human,TikTok,58,Male,NA,3,1,2,Bike,Dr. Smith,Deontological,3,5,3,6,NA,NA,NA,0.79,0.79,4,5,Deontological
+313,Human,TikTok,35,Female,NA,4,5,1,Baby,Dr. Smith,Utilitarian,5,2,5,2,NA,NA,NA,0.64,0.78,5,5,Utilitarian
+313,Human,TikTok,35,Female,NA,4,5,2,Bike,Dr. Thompson,Deontological,5,3,4,4,NA,NA,NA,0.82,0.52,5,4,Deontological
+314,AI,TikTok,48,Female,NA,6,1,1,Bike,ETHIC-AI,Deontological,3,6,4,3,2,6,1,0.12,0.02,5,7,Deontological
+314,AI,TikTok,48,Female,NA,6,1,2,Baby,INTELLI-MORAL,Utilitarian,3,6,2,6,1,7,1,0.23,0.18,5,5,Utilitarian
+315,AI,TikTok,58,Female,NA,2,1,1,Bike,ETHIC-AI,Utilitarian,5,2,5,2,6,6,6,0.78,0.79,1,3,Utilitarian
+315,AI,TikTok,58,Female,NA,2,1,2,Baby,INTELLI-MORAL,Deontological,5,5,5,2,6,6,6,0.2,0.14,1,3,Deontological
+316,AI,TikTok,23,Female,NA,1,1,1,Bike,INTELLI-MORAL,Deontological,3,1,4,6,5,5,3,0.65,0.37,5,4,Deontological
+316,AI,TikTok,23,Female,NA,1,1,2,Baby,ETHIC-AI,Utilitarian,3,2,3,3,3,6,3,0.46,0.41,2,3,Utilitarian
+317,Human,TikTok,54,Male,NA,3,1,1,Bike,Dr. Thompson,Deontological,5,1,6,1,NA,NA,NA,0.78,0.08,4,7,Deontological
+317,Human,TikTok,54,Male,NA,3,1,2,Baby,Dr. Smith,Utilitarian,6,1,7,1,NA,NA,NA,0.95,1,7,7,Utilitarian
+318,Human,TikTok,69,Female,NA,6,4,1,Baby,Dr. Smith,Deontological,4,4,5,4,NA,NA,NA,0.51,0.44,1,1,Deontological
+318,Human,TikTok,69,Female,NA,6,4,2,Bike,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,6,7,Utilitarian
+319,Human,TikTok,33,Female,NA,6,6,1,Baby,Dr. Smith,Deontological,6,2,6,1,NA,NA,NA,0.22,0,6,6,Deontological
+319,Human,TikTok,33,Female,NA,6,6,2,Bike,Dr. Thompson,Utilitarian,5,2,6,1,NA,NA,NA,0.05,0.77,6,4,Utilitarian
+320,Human,TikTok,29,Male,NA,4,7,1,Baby,Dr. Smith,Deontological,7,1,7,5,NA,NA,NA,0,0,7,7,Deontological
+320,Human,TikTok,29,Male,NA,4,7,2,Bike,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+321,Human,TikTok,65,Male,NA,5,3,1,Bike,Dr. Smith,Deontological,5,3,5,2,NA,NA,NA,0.59,0.45,5,5,Deontological
+321,Human,TikTok,65,Male,NA,5,3,2,Baby,Dr. Thompson,Utilitarian,3,3,4,5,NA,NA,NA,0.39,0.43,4,4,Utilitarian
+322,AI,TikTok,54,Male,NA,2,3,1,Bike,ETHIC-AI,Deontological,5,6,5,2,6,5,6,0.2,0.05,5,6,Deontological
+322,AI,TikTok,54,Male,NA,2,3,2,Baby,INTELLI-MORAL,Utilitarian,4,4,4,4,6,6,2,0.11,0.14,4,4,Utilitarian
+323,Human,TikTok,22,Female,NA,2,2,1,Bike,Dr. Smith,Utilitarian,3,3,4,5,NA,NA,NA,0.75,0.69,5,4,Utilitarian
+323,Human,TikTok,22,Female,NA,2,2,2,Baby,Dr. Thompson,Deontological,3,3,2,4,NA,NA,NA,0.59,0.57,4,4,Deontological
+324,Human,TikTok,26,Male,NA,4,4,1,Bike,Dr. Thompson,Utilitarian,3,2,3,3,NA,NA,NA,0.64,0.6,4,4,Utilitarian
+324,Human,TikTok,26,Male,NA,4,4,2,Baby,Dr. Smith,Deontological,4,4,4,5,NA,NA,NA,0,0,7,5,Deontological
+325,Human,TikTok,22,Female,NA,5,2,1,Bike,Dr. Thompson,Utilitarian,6,5,5,6,NA,NA,NA,0.3,0.87,3,5,Utilitarian
+325,Human,TikTok,22,Female,NA,5,2,2,Baby,Dr. Smith,Deontological,5,3,6,2,NA,NA,NA,0.25,0.17,5,6,Deontological
+326,AI,TikTok,56,Female,NA,3,2,1,Baby,ETHIC-AI,Utilitarian,4,5,6,1,1,7,1,0.79,0.81,1,2,Utilitarian
+326,AI,TikTok,56,Female,NA,3,2,2,Bike,INTELLI-MORAL,Deontological,5,6,4,2,1,7,1,0.57,0.59,1,1,Deontological
+327,AI,TikTok,34,Male,NA,4,1,1,Bike,ETHIC-AI,Utilitarian,5,1,5,1,1,6,1,0.69,0.7,2,3,Utilitarian
+327,AI,TikTok,34,Male,NA,4,1,2,Baby,INTELLI-MORAL,Deontological,3,2,5,6,5,3,6,0.28,0.32,5,4,Deontological
+328,AI,TikTok,61,Female,NA,4,2,1,Baby,INTELLI-MORAL,Utilitarian,1,7,2,5,1,7,2,0.23,0.51,1,1,Utilitarian
+328,AI,TikTok,61,Female,NA,4,2,2,Bike,ETHIC-AI,Deontological,2,5,3,5,2,6,2,0.23,0.23,1,1,Deontological
+329,Human,Twitter,54,Male,NA,2,2,1,Bike,Dr. Smith,Deontological,5,1,5,2,NA,NA,NA,0.14,0,2,7,Deontological
+329,Human,Twitter,54,Male,NA,2,2,2,Baby,Dr. Thompson,Utilitarian,2,1,1,6,NA,NA,NA,0,0,7,7,Utilitarian
+330,AI,TikTok,43,Female,NA,5,4,1,Baby,INTELLI-MORAL,Deontological,6,5,5,3,3,2,6,0,0,4,6,Deontological
+330,AI,TikTok,43,Female,NA,5,4,2,Bike,ETHIC-AI,Utilitarian,5,5,4,6,3,2,5,0.96,1,4,5,Utilitarian
+331,AI,TikTok,29,Male,NA,3,3,1,Baby,INTELLI-MORAL,Deontological,6,3,5,6,6,3,1,0.64,0.36,5,6,Deontological
+331,AI,TikTok,29,Male,NA,3,3,2,Bike,ETHIC-AI,Utilitarian,3,5,3,6,3,6,4,0.06,0.32,6,4,Utilitarian
+332,Human,TikTok,32,Female,NA,1,1,1,Bike,Dr. Smith,Deontological,7,1,7,1,NA,NA,NA,0,0,7,7,Deontological
+332,Human,TikTok,32,Female,NA,1,1,2,Baby,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+333,Human,TikTok,58,Male,NA,6,1,1,Baby,Dr. Smith,Deontological,3,5,3,6,NA,NA,NA,0.78,0.83,6,6,Deontological
+333,Human,TikTok,58,Male,NA,6,1,2,Bike,Dr. Thompson,Utilitarian,6,3,6,2,NA,NA,NA,0.72,0.82,5,6,Utilitarian
+334,AI,TikTok,45,Male,NA,5,1,1,Bike,ETHIC-AI,Deontological,6,2,6,4,6,2,2,0.24,0.23,4,6,Deontological
+334,AI,TikTok,45,Male,NA,5,1,2,Baby,INTELLI-MORAL,Utilitarian,6,2,6,5,6,5,2,0.69,0.81,4,6,Utilitarian
+335,AI,TikTok,51,Female,NA,4,1,1,Bike,ETHIC-AI,Utilitarian,1,7,1,1,1,7,1,0.24,0.16,5,6,Utilitarian
+335,AI,TikTok,51,Female,NA,4,1,2,Baby,INTELLI-MORAL,Deontological,4,4,5,2,6,4,2,0.51,0.51,2,2,Deontological
+336,Human,TikTok,22,Male,NA,5,1,1,Baby,Dr. Smith,Utilitarian,4,3,4,3,NA,NA,NA,0.53,0.6,4,4,Utilitarian
+336,Human,TikTok,22,Male,NA,5,1,2,Bike,Dr. Thompson,Deontological,4,3,3,3,NA,NA,NA,0.51,0.51,2,2,Deontological
+337,AI,TikTok,45,Female,NA,4,4,1,Baby,ETHIC-AI,Deontological,5,2,5,4,5,4,4,0.36,0.23,5,6,Deontological
+337,AI,TikTok,45,Female,NA,4,4,2,Bike,INTELLI-MORAL,Utilitarian,4,4,3,5,3,4,4,0.3,0.45,5,4,Utilitarian
+338,AI,TikTok,46,Female,NA,4,1,1,Bike,ETHIC-AI,Deontological,7,2,7,1,6,3,2,0.08,0,6,7,Deontological
+338,AI,TikTok,46,Female,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,2,5,2,7,1,7,4,0.12,0.01,6,7,Utilitarian
+339,Human,TikTok,60,Male,NA,5,3,1,Baby,Dr. Smith,Deontological,4,1,4,1,NA,NA,NA,0.13,0.11,4,5,Deontological
+339,Human,TikTok,60,Male,NA,5,3,2,Bike,Dr. Thompson,Utilitarian,4,3,3,5,NA,NA,NA,0,0.13,6,5,Utilitarian
+340,AI,TikTok,24,Female,NA,5,6,1,Baby,INTELLI-MORAL,Utilitarian,3,3,2,5,1,6,6,0.12,0.16,6,6,Utilitarian
+340,AI,TikTok,24,Female,NA,5,6,2,Bike,ETHIC-AI,Deontological,4,4,3,3,4,4,3,0.58,0.51,4,4,Deontological
+341,AI,TikTok,53,Female,NA,1,5,1,Baby,ETHIC-AI,Utilitarian,4,5,2,1,2,6,2,0.53,0.55,1,1,Utilitarian
+341,AI,TikTok,53,Female,NA,1,5,2,Bike,INTELLI-MORAL,Deontological,4,5,3,2,6,4,2,0.14,0.29,3,3,Deontological
+342,Human,TikTok,60,Female,NA,3,6,1,Bike,Dr. Smith,Deontological,7,1,7,1,NA,NA,NA,1,0,1,7,Deontological
+342,Human,TikTok,60,Female,NA,3,6,2,Baby,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+343,AI,TikTok,48,Male,NA,1,1,1,Baby,INTELLI-MORAL,Deontological,7,1,7,5,7,1,1,0.1,0,7,7,Deontological
+343,AI,TikTok,48,Male,NA,1,1,2,Bike,ETHIC-AI,Utilitarian,6,5,4,6,7,7,4,0,0,7,7,Utilitarian
+344,Human,TikTok,38,Male,NA,4,1,1,Baby,Dr. Thompson,Deontological,5,1,7,1,NA,NA,NA,0.26,0.23,1,5,Deontological
+344,Human,TikTok,38,Male,NA,4,1,2,Bike,Dr. Smith,Utilitarian,1,7,1,7,NA,NA,NA,0.23,0.22,5,5,Utilitarian
+345,Human,TikTok,41,Female,NA,1,1,1,Baby,Dr. Thompson,Deontological,4,4,4,4,NA,NA,NA,0.53,0.55,4,1,Deontological
+345,Human,TikTok,41,Female,NA,1,1,2,Bike,Dr. Smith,Utilitarian,2,4,4,6,NA,NA,NA,0.57,0.24,4,1,Utilitarian
+346,AI,TikTok,42,Female,NA,3,2,1,Baby,ETHIC-AI,Utilitarian,4,3,4,3,2,6,2,0.58,0.56,2,2,Utilitarian
+346,AI,TikTok,42,Female,NA,3,2,2,Bike,INTELLI-MORAL,Deontological,3,5,3,4,3,5,4,0.64,0.58,3,3,Deontological
+347,AI,TikTok,35,Male,NA,4,1,1,Bike,INTELLI-MORAL,Deontological,4,1,3,3,3,5,4,0,0,7,7,Deontological
+347,AI,TikTok,35,Male,NA,4,1,2,Baby,ETHIC-AI,Utilitarian,4,7,3,4,1,7,4,0.29,0.29,3,4,Utilitarian
+348,AI,TikTok,34,Female,NA,4,4,1,Baby,INTELLI-MORAL,Deontological,6,6,5,7,6,5,6,0.05,0.06,6,6,Deontological
+348,AI,TikTok,34,Female,NA,4,4,2,Bike,ETHIC-AI,Utilitarian,2,6,2,7,4,6,6,0.15,0.08,6,6,Utilitarian
+349,Human,TikTok,41,Female,NA,3,3,1,Baby,Dr. Thompson,Utilitarian,4,3,4,2,NA,NA,NA,0.22,0.6,2,3,Utilitarian
+349,Human,TikTok,41,Female,NA,3,3,2,Bike,Dr. Smith,Deontological,3,4,3,5,NA,NA,NA,0.7,0.56,4,2,Deontological
+350,AI,TikTok,43,Female,NA,4,1,1,Bike,ETHIC-AI,Deontological,5,5,5,5,5,5,5,0.08,0.09,7,5,Deontological
+350,AI,TikTok,43,Female,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,2,7,2,6,2,6,6,0.1,0.15,6,6,Utilitarian
+351,Human,TikTok,59,Male,NA,5,2,1,Bike,Dr. Thompson,Deontological,5,1,5,2,NA,NA,NA,0.13,0.1,5,6,Deontological
+351,Human,TikTok,59,Male,NA,5,2,2,Baby,Dr. Smith,Utilitarian,2,3,2,2,NA,NA,NA,0,0,7,7,Utilitarian
+352,Human,TikTok,22,Female,NA,2,1,1,Bike,Dr. Thompson,Deontological,5,2,5,5,NA,NA,NA,0.77,0.6,6,5,Deontological
+352,Human,TikTok,22,Female,NA,2,1,2,Baby,Dr. Smith,Utilitarian,6,2,5,3,NA,NA,NA,0.5,0.67,4,4,Utilitarian
+353,AI,Other,23,Female,NA,1,6,1,Baby,ETHIC-AI,Deontological,3,5,3,1,2,5,2,0,0,7,7,Deontological
+353,AI,Other,23,Female,NA,1,6,2,Bike,INTELLI-MORAL,Utilitarian,2,5,1,2,2,6,2,0.15,0,6,7,Utilitarian
+354,Human,TV,20,Male,NA,3,2,1,Bike,Dr. Thompson,Utilitarian,5,2,5,4,NA,NA,NA,0.41,0.5,2,2,Utilitarian
+354,Human,TV,20,Male,NA,3,2,2,Baby,Dr. Smith,Deontological,2,5,1,6,NA,NA,NA,0.99,0.94,7,6,Deontological
+355,AI,TikTok,23,Female,NA,3,7,1,Bike,INTELLI-MORAL,Utilitarian,4,1,4,1,2,1,1,0,0,7,7,Utilitarian
+355,AI,TikTok,23,Female,NA,3,7,2,Baby,ETHIC-AI,Deontological,7,1,7,1,1,1,1,0,0,7,7,Deontological
+356,AI,TikTok,21,Male,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,4,5,5,4,3,5,3,1,1,6,6,Utilitarian
+356,AI,TikTok,21,Male,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,4,4,5,5,3,5,3,0.11,0.15,5,6,Deontological
+357,Human,Twitter,30,Female,NA,4,5,1,Bike,Dr. Thompson,Utilitarian,5,4,5,2,NA,NA,NA,0.62,0.71,4,5,Utilitarian
+357,Human,Twitter,30,Female,NA,4,5,2,Baby,Dr. Smith,Deontological,7,1,6,2,NA,NA,NA,0,0,7,7,Deontological
+358,Human,TikTok,58,Male,NA,3,1,1,Baby,Dr. Smith,Deontological,3,4,3,5,NA,NA,NA,0.58,0.57,2,2,Deontological
+358,Human,TikTok,58,Male,NA,3,1,2,Bike,Dr. Thompson,Utilitarian,4,4,3,2,NA,NA,NA,0.33,0.31,3,3,Utilitarian
+359,AI,TikTok,28,Male,NA,5,5,1,Bike,ETHIC-AI,Deontological,4,4,3,5,5,4,4,0.58,0.4,5,5,Deontological
+359,AI,TikTok,28,Male,NA,5,5,2,Baby,INTELLI-MORAL,Utilitarian,3,5,3,5,4,5,4,0.49,0.5,3,3,Utilitarian
+360,Human,TikTok,34,Female,NA,5,6,1,Baby,Dr. Thompson,Deontological,4,1,5,6,NA,NA,NA,0,0,3,5,Deontological
+360,Human,TikTok,34,Female,NA,5,6,2,Bike,Dr. Smith,Utilitarian,3,3,3,6,NA,NA,NA,0,0,4,2,Utilitarian
+361,AI,TikTok,31,Female,NA,4,1,1,Baby,ETHIC-AI,Utilitarian,5,1,5,2,1,6,1,0.28,0.31,7,7,Utilitarian
+361,AI,TikTok,31,Female,NA,4,1,2,Bike,INTELLI-MORAL,Deontological,2,1,4,5,1,7,1,0.91,0.83,7,7,Deontological
+362,Human,TikTok,24,Male,NA,5,1,1,Baby,Dr. Smith,Utilitarian,4,4,4,5,NA,NA,NA,0.27,0.38,1,3,Utilitarian
+362,Human,TikTok,24,Male,NA,5,1,2,Bike,Dr. Thompson,Deontological,4,5,3,6,NA,NA,NA,0.74,0.68,5,5,Utilitarian
+363,Human,TikTok,41,Female,NA,5,2,1,Baby,Dr. Smith,Utilitarian,2,6,1,5,NA,NA,NA,0,0,7,7,Utilitarian
+363,Human,TikTok,41,Female,NA,5,2,2,Bike,Dr. Thompson,Deontological,5,2,5,5,NA,NA,NA,0.6,0.17,3,5,Deontological
+364,Human,TikTok,33,Male,NA,4,4,1,Bike,Dr. Thompson,Utilitarian,6,3,6,1,NA,NA,NA,0.71,0.91,5,6,Utilitarian
+364,Human,TikTok,33,Male,NA,4,4,2,Baby,Dr. Smith,Deontological,4,4,4,5,NA,NA,NA,0.64,0.58,4,4,Deontological
+365,Human,TikTok,64,Female,NA,4,2,1,Baby,Dr. Smith,Deontological,2,6,2,7,NA,NA,NA,0.76,0.76,7,6,Deontological
+365,Human,TikTok,64,Female,NA,4,2,2,Bike,Dr. Thompson,Utilitarian,6,1,6,1,NA,NA,NA,0.8,0.83,7,7,Utilitarian
+366,AI,TikTok,64,Male,NA,4,1,1,Bike,ETHIC-AI,Deontological,3,5,4,3,5,4,6,0.75,0.78,6,6,Deontological
+366,AI,TikTok,64,Male,NA,4,1,2,Baby,INTELLI-MORAL,Utilitarian,6,2,6,4,3,4,2,0.39,0.41,4,3,Utilitarian
+367,AI,TikTok,37,Male,NA,2,1,1,Bike,INTELLI-MORAL,Utilitarian,5,3,5,2,5,6,3,0.78,0.87,5,6,Utilitarian
+367,AI,TikTok,37,Male,NA,2,1,2,Baby,ETHIC-AI,Deontological,6,5,4,3,6,7,3,0.26,0.25,3,5,Deontological
+368,AI,TikTok,40,Male,NA,2,1,1,Baby,INTELLI-MORAL,Deontological,5,3,6,4,6,3,2,0.74,0.54,1,2,Deontological
+368,AI,TikTok,40,Male,NA,2,1,2,Bike,ETHIC-AI,Utilitarian,5,3,5,2,4,4,1,0.58,0.59,4,4,Utilitarian
+369,AI,TikTok,33,Male,NA,4,5,1,Bike,INTELLI-MORAL,Utilitarian,4,5,2,1,2,4,2,0,0.03,6,5,Utilitarian
+369,AI,TikTok,33,Male,NA,4,5,2,Baby,ETHIC-AI,Deontological,6,3,6,5,6,2,7,0.69,0.08,4,4,Deontological
+370,Human,Reddit,24,Male,NA,6,3,1,Baby,Dr. Smith,Deontological,2,3,3,2,NA,NA,NA,0.22,0.14,2,2,Deontological
+370,Human,Reddit,24,Male,NA,6,3,2,Bike,Dr. Thompson,Utilitarian,5,2,4,4,NA,NA,NA,0.49,0.5,4,3,Utilitarian
+371,Human,Radio,55,Male,NA,2,1,1,Baby,Dr. Smith,Utilitarian,2,2,2,6,NA,NA,NA,0.07,0.07,6,6,Utilitarian
+371,Human,Radio,55,Male,NA,2,1,2,Bike,Dr. Thompson,Deontological,6,3,6,1,NA,NA,NA,0.09,0.05,6,6,Deontological
+372,Human,TikTok,52,Male,NA,2,1,1,Bike,Dr. Thompson,Deontological,2,6,2,7,NA,NA,NA,0.92,0.94,6,6,Deontological
+372,Human,TikTok,52,Male,NA,2,1,2,Baby,Dr. Smith,Utilitarian,6,2,6,4,NA,NA,NA,0.92,0.93,6,6,Utilitarian
+373,Human,TikTok,67,Male,NA,3,1,1,Bike,Dr. Thompson,Deontological,4,2,2,5,NA,NA,NA,0.87,0.86,5,6,Deontological
+373,Human,TikTok,67,Male,NA,3,1,2,Baby,Dr. Smith,Utilitarian,5,2,5,5,NA,NA,NA,0.64,0.71,4,5,Utilitarian
+374,AI,TikTok,25,Female,NA,1,1,1,Baby,ETHIC-AI,Deontological,4,2,3,3,2,4,3,0.43,0.45,2,2,Deontological
+374,AI,TikTok,25,Female,NA,1,1,2,Bike,INTELLI-MORAL,Utilitarian,3,2,3,3,1,4,2,0.58,0.54,3,3,Utilitarian
+375,Human,TikTok,31,Female,NA,3,1,1,Bike,Dr. Smith,Utilitarian,3,7,3,6,NA,NA,NA,0.05,0.07,7,7,Utilitarian
+375,Human,TikTok,31,Female,NA,3,1,2,Baby,Dr. Thompson,Deontological,5,3,5,4,NA,NA,NA,0.22,0.25,5,5,Deontological
+376,Human,TikTok,28,Female,NA,4,1,1,Bike,Dr. Smith,Deontological,7,1,5,1,NA,NA,NA,0,0,7,7,Deontological
+376,Human,TikTok,28,Female,NA,4,1,2,Baby,Dr. Thompson,Utilitarian,1,7,1,7,NA,NA,NA,0,0,7,7,Utilitarian
+377,AI,TikTok,65,Male,NA,5,5,1,Bike,ETHIC-AI,Utilitarian,6,1,6,1,6,4,1,0.89,0.96,6,6,Utilitarian
+377,AI,TikTok,65,Male,NA,5,5,2,Baby,INTELLI-MORAL,Deontological,7,1,6,5,4,7,2,0.01,0.03,7,6,Deontological
+378,Human,TikTok,69,Female,NA,3,3,1,Bike,Dr. Smith,Deontological,7,1,5,2,NA,NA,NA,0.21,0.08,3,6,Deontological
+378,Human,TikTok,69,Female,NA,3,3,2,Baby,Dr. Thompson,Utilitarian,4,5,4,6,NA,NA,NA,0.4,0.26,1,3,Utilitarian
+379,AI,TikTok,33,Female,NA,3,1,1,Baby,INTELLI-MORAL,Deontological,4,5,3,5,2,6,4,0.62,0.6,4,4,Deontological
+379,AI,TikTok,33,Female,NA,3,1,2,Bike,ETHIC-AI,Utilitarian,4,5,4,4,1,5,4,0.58,0.63,4,5,Utilitarian
+380,AI,TikTok,72,Male,NA,3,1,1,Baby,ETHIC-AI,Deontological,3,6,3,7,1,4,2,1,1,7,7,Deontological
+380,AI,TikTok,72,Male,NA,3,1,2,Bike,INTELLI-MORAL,Utilitarian,5,5,5,2,2,4,1,0,0.97,7,6,Utilitarian
+381,Human,TikTok,35,Male,NA,3,1,1,Bike,Dr. Thompson,Deontological,5,1,5,3,NA,NA,NA,0.3,0.11,2,5,Deontological
+381,Human,TikTok,35,Male,NA,3,1,2,Baby,Dr. Smith,Utilitarian,2,6,2,5,NA,NA,NA,0.32,0.16,2,2,Utilitarian
+382,AI,TikTok,51,Female,NA,4,5,1,Baby,ETHIC-AI,Utilitarian,5,3,5,2,3,6,1,0.6,0.63,1,1,Utilitarian
+382,AI,TikTok,51,Female,NA,4,5,2,Bike,INTELLI-MORAL,Deontological,5,3,5,3,4,3,4,0.25,0.27,5,5,Deontological
+383,AI,TikTok,28,Female,NA,2,1,1,Bike,INTELLI-MORAL,Utilitarian,2,2,2,1,1,7,1,0.68,0.64,4,4,Utilitarian
+383,AI,TikTok,28,Female,NA,2,1,2,Baby,ETHIC-AI,Deontological,4,4,4,6,6,2,4,0.51,0.51,1,1,Deontological
+384,Human,TikTok,41,Male,NA,1,1,1,Bike,Dr. Smith,Deontological,6,1,5,1,NA,NA,NA,0.07,0.14,5,3,Deontological
+384,Human,TikTok,41,Male,NA,1,1,2,Baby,Dr. Thompson,Utilitarian,2,6,2,7,NA,NA,NA,0,0,7,7,Utilitarian
+385,AI,TikTok,28,Female,NA,6,5,1,Bike,ETHIC-AI,Utilitarian,6,1,7,1,2,2,1,0.95,1,6,7,Utilitarian
+385,AI,TikTok,28,Female,NA,6,5,2,Baby,INTELLI-MORAL,Deontological,2,6,1,7,1,3,7,0.96,0.97,6,6,Deontological
+386,AI,TikTok,48,Male,NA,2,1,1,Bike,INTELLI-MORAL,Deontological,1,7,1,7,2,6,6,0.98,0.99,6,6,Deontological
+386,AI,TikTok,48,Male,NA,2,1,2,Baby,ETHIC-AI,Utilitarian,5,4,4,4,5,3,3,0.51,0.51,4,4,Utilitarian
+387,Human,TikTok,59,Female,NA,3,3,1,Baby,Dr. Thompson,Deontological,4,4,3,5,NA,NA,NA,0.66,0.63,2,2,Deontological
+387,Human,TikTok,59,Female,NA,3,3,2,Bike,Dr. Smith,Utilitarian,4,2,4,5,NA,NA,NA,0.19,0.37,5,3,Utilitarian
+388,AI,TikTok,39,Female,NA,4,2,1,Bike,INTELLI-MORAL,Utilitarian,3,7,1,6,1,4,3,0.13,0.07,6,6,Utilitarian
+388,AI,TikTok,39,Female,NA,4,2,2,Baby,ETHIC-AI,Deontological,5,1,4,5,1,5,3,0.24,0.04,5,5,Deontological
+389,Human,TikTok,66,Male,NA,2,1,1,Baby,Dr. Smith,Utilitarian,6,4,4,2,NA,NA,NA,0.53,0.53,2,2,Utilitarian
+389,Human,TikTok,66,Male,NA,2,1,2,Bike,Dr. Thompson,Deontological,6,4,4,6,NA,NA,NA,0.65,0.6,4,3,Deontological
+390,AI,TikTok,27,Male,NA,4,5,1,Baby,ETHIC-AI,Deontological,5,6,5,3,4,5,3,0.3,0.32,3,5,Deontological
+390,AI,TikTok,27,Male,NA,4,5,2,Bike,INTELLI-MORAL,Utilitarian,5,5,5,3,5,5,2,0.84,0.75,5,5,Utilitarian
+391,Human,TikTok,53,Male,NA,6,1,1,Bike,Dr. Thompson,Utilitarian,3,5,2,6,NA,NA,NA,0.25,0.27,5,6,Utilitarian
+391,Human,TikTok,53,Male,NA,6,1,2,Baby,Dr. Smith,Deontological,5,2,5,2,NA,NA,NA,0.62,0.3,4,5,Deontological
+392,Human,TikTok,35,Male,NA,3,3,1,Bike,Dr. Thompson,Utilitarian,6,6,6,6,NA,NA,NA,0.75,0.98,3,6,Utilitarian
+392,Human,TikTok,35,Male,NA,3,3,2,Baby,Dr. Smith,Deontological,6,6,6,6,NA,NA,NA,0,0,5,6,Deontological
+393,Human,TikTok,57,Female,NA,5,2,1,Bike,Dr. Smith,Deontological,5,3,5,2,NA,NA,NA,0.72,0.27,4,5,Deontological
+393,Human,TikTok,57,Female,NA,5,2,2,Baby,Dr. Thompson,Utilitarian,4,4,5,5,NA,NA,NA,0.37,0.6,4,4,Utilitarian
+394,Human,TikTok,43,Male,NA,4,5,1,Bike,Dr. Thompson,Utilitarian,5,5,5,5,NA,NA,NA,0.62,0.64,5,5,Utilitarian
+394,Human,TikTok,43,Male,NA,4,5,2,Baby,Dr. Smith,Deontological,5,3,5,3,NA,NA,NA,0.23,0,6,6,Deontological
+395,AI,TikTok,38,Male,NA,4,1,1,Baby,INTELLI-MORAL,Utilitarian,6,4,4,7,2,6,1,0.01,0.3,5,4,Utilitarian
+395,AI,TikTok,38,Male,NA,4,1,2,Bike,ETHIC-AI,Deontological,5,3,5,4,2,6,1,1,0.79,6,5,Deontological
+396,Human,TikTok,32,Female,NA,1,5,1,Bike,Dr. Thompson,Utilitarian,4,3,4,3,NA,NA,NA,0.49,0.52,2,2,Utilitarian
+396,Human,TikTok,32,Female,NA,1,5,2,Baby,Dr. Smith,Deontological,5,2,5,4,NA,NA,NA,0.27,0.16,2,4,Deontological
+397,AI,TikTok,49,Female,NA,2,1,1,Bike,ETHIC-AI,Deontological,4,4,4,6,3,5,2,0.7,0.66,4,4,Deontological
+397,AI,TikTok,49,Female,NA,2,1,2,Baby,INTELLI-MORAL,Utilitarian,4,4,4,6,2,5,2,0.58,0.63,3,3,Utilitarian
+398,AI,TikTok,40,Female,NA,4,3,1,Bike,ETHIC-AI,Deontological,3,5,1,7,2,6,5,0.78,0.79,3,6,Deontological
+398,AI,TikTok,40,Female,NA,4,3,2,Baby,INTELLI-MORAL,Utilitarian,6,2,6,1,5,3,1,0.64,0.62,2,2,Utilitarian
+399,Human,TikTok,25,Female,NA,4,5,1,Baby,Dr. Thompson,Utilitarian,3,6,2,3,NA,NA,NA,1,0.21,7,4,Deontological
+399,Human,TikTok,25,Female,NA,4,5,2,Bike,Dr. Smith,Deontological,4,5,3,3,NA,NA,NA,0.71,0.61,5,4,Utilitarian
+400,AI,TikTok,30,Male,NA,4,7,1,Bike,ETHIC-AI,Deontological,7,1,7,3,7,1,1,0.91,0.82,6,5,Deontological
+400,AI,TikTok,30,Male,NA,4,7,2,Baby,INTELLI-MORAL,Utilitarian,1,7,1,7,1,7,7,0.03,0,7,7,Utilitarian
