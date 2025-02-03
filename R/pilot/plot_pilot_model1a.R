@@ -25,7 +25,7 @@ plot_pilot_model1a <- function(pilot_data, pilot_means1) {
       mapping = aes(
         x = fct_rev(treatment),
         y = value,
-        colour = advice
+        colour = paste(advice, "advice")
       ),
       position = position_jitterdodge(
         jitter.height = 0.4,
@@ -33,7 +33,8 @@ plot_pilot_model1a <- function(pilot_data, pilot_means1) {
         dodge.width = 0.8
         ),
       alpha = 0.1,
-      size = 0.2
+      size = 0.2,
+      show.legend = FALSE
     ) +
     geom_pointrange(
       data = pilot_means1,
@@ -42,10 +43,11 @@ plot_pilot_model1a <- function(pilot_data, pilot_means1) {
         y = estimate,
         ymin = lower,
         ymax = upper,
-        colour = advice
+        colour = paste(advice, "advice")
       ),
       position = position_dodge(width = 0.8),
-      size = 0.3
+      size = 0.3,
+      show.legend = TRUE
     ) +
     facet_wrap(
       . ~ resp,
@@ -59,17 +61,19 @@ plot_pilot_model1a <- function(pilot_data, pilot_means1) {
       oob = scales::squish
     ) +
     xlab(NULL) +
+    guides(colour = guide_legend(byrow = TRUE)) +
     theme_classic() +
     theme(
       strip.background = element_blank(),
       strip.placement = "outside",
-      legend.title = element_blank()
+      legend.title = element_blank(),
+      legend.position = "bottom"
       )
   # save
   ggsave(
     plot = p,
-    filename = "plots/pilot_results1.pdf",
-    width = 6,
+    filename = "plots/pilot_results1a.pdf",
+    width = 4,
     height = 4
   )
   return(p)
