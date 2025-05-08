@@ -13,10 +13,10 @@ list(
   # power analysis ids
   tar_target(power_id, 1:100),
   # power with mixed design
-  tar_target(power_mixed, run_power_analysis_mixed(power_id, n = 400),
+  tar_target(power_mixed, run_power_analysis_mixed(power_id, n = 500),
              pattern = map(power_id)),
   # power with fully-between design
-  tar_target(power_between, run_power_analysis_between(power_id, n = 400),
+  tar_target(power_between, run_power_analysis_between(power_id, n = 500),
              pattern = map(power_id)),
   # load pilot data
   tar_target(pilot_data_file, "data/pilot/pilot_data_clean.csv",
