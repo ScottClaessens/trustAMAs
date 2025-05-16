@@ -50,6 +50,14 @@ list(
   tar_target(data_full, load_data(data_file)),
   # exclude comprehension failures
   tar_target(data, filter(data_full, comprehension_check == "Correct")),
+  # plot sample and representativeness
+  tar_target(plot_sample, plot_sample_overall(data_full)),
+  tar_target(quotas_file, "data/quotas/quotas.csv", format = "file"),
+  tar_target(quotas, read_csv(quotas_file, show_col_types = FALSE)),
+  tar_target(
+    plot_sample_representative,
+    plot_sample_representativeness(data_full, quotas)
+    ),
   # plot overall likerts
   tar_target(plot_likerts, plot_likerts_overall(data)),
   # plot initial judgements for each dilemma

@@ -286,6 +286,10 @@ plot4_judgement_bike|stem|38f42dfd03d327a7|63641ee9bd3bb567|6e9724df3bb61ff8|120
 plot4_judgement_shift|stem|114d21eda97ec62d|a34e9fde4dbc730d|cd1df476a83257c7|-2057021077||t20223.6952818747s|s13590845b|13590845|rds|local|vector|||0.812|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.. Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
 plot4_confidence_bike|stem|b64ef84c344d4819|9a1a95041ad18b44|014aa06f99dd0b3b|-676673733||t20223.6973581795s|s20066308b|20066308|rds|local|vector|||1.61|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
 plot4_confidence_baby|stem|0e359a1d373f34d3|b0f668beff56d8fa|014aa06f99dd0b3b|1615459857||t20223.6973902905s|s20082019b|20082019|rds|local|vector|||0.86||
+plot_sample|stem|055c16e75de6b692|f4f99a019d800230|eb9f0228ac6f2925|-1970076201||t20224.5043771126s|s1943557b|1943557|rds|local|vector|||0.844|Removed 18 rows containing nonfinite outside the scale range stat_count.. Removed 10 rows containing nonfinite outside the scale range stat_count.. Removed 516 rows containing nonfinite outside the scale rangestat_count.|
+quotas_file|stem|dcbb903433f5f947|a0cad1622e1374da|2c530c1562a7fbd1|337730633|data/quotas/quotas.csv|t20224.572379545s|s3972b|3972|file|local|vector|||1.609|package brms was built under R version 4.4.3. package ggnewscale was built under R version 4.4.3. package patchwork was built under R version 4.4.3. package cmdstanr was built under R version 4.4.3. package posterior was built under R version 4.4.3|
+quotas|stem|87b07e0285663441|52384dbbaa6f1511|0757a08e721761d0|970822152||t20224.5724862297s|s1616b|1616|rds|local|vector|||0.094||
+plot_sample_representative|stem|fcd78f566f80a70c|25d82731b8f31eef|63add52a5f1361bc|-1650641017||t20224.5848236665s|s410502b|410502|rds|local|vector|||1.25||
 extract_means_model4|function|16776032a360043c
 create_table_model_comparison_dilemma|function|0ce055f6148aecbc
 run_power_analysis_mixed|function|d9035ad9cd01cffb
@@ -309,8 +313,10 @@ plot_model4_judgement_shift|function|7319738fa2743045
 run_power_analysis_between|function|e90fbf5a6fc74a83
 plot_model4_confidence|function|cc1418ff564c2f15
 fit_model1|function|1d157cb44c34e4cf
-plot_pilot_model2a|function|18cf349962067a8c
 fit_model2|function|03beec569c879662
+plot_pilot_model2a|function|18cf349962067a8c
+plot_sample_representativeness|function|4881697a67d26da7
+plot_sample_overall|function|41e88f12c0e961bd
 fit_model3|function|93c828dc12d76ba3
 fit_pilot_model1|function|ea4c9dafbc7b9766
 plot_pilot_model2b|function|31c58fb5b8fc37fe
