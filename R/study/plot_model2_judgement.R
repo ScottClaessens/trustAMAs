@@ -41,11 +41,7 @@ plot_model2_judgement <- function(means2) {
       linewidth = 0.5
       ) +
     facet_wrap(. ~ treatment) +
-    xlab("Country") +
-    scale_x_discrete(
-      name = NULL,
-      labels = function(x) ifelse(x == "Overall", "**Overall**", x)
-    ) +
+    xlab(NULL) +
     scale_y_continuous(
       name = expression("Deontological Judgement" %<->% "Utilitarian Judgement"),
       limits = c(0, 1)
@@ -55,7 +51,6 @@ plot_model2_judgement <- function(means2) {
     theme_classic() +
     theme(
       axis.text.x = element_text(size = 8),
-      axis.text.y = ggtext::element_markdown(),
       legend.position = "bottom"
       )
   # save and return

@@ -2,17 +2,243 @@
 title: "Trust in Artificial Moral Advisors across Cultures"
 subtitle: "Analysis Summary"
 author: "Scott Claessens"
-date: "`r Sys.Date()`"
-format: html
+date: "`{r} Sys.Date()`"
+format:
+  html:
+    html-table-processing: none
+toc: true
+execute:
+  echo: false
+  warning: false
+  error: false
 ---
 
-This document summarises the analyses so far for the cross-cultural project on
-trust in artificial moral advisors across cultures. Data collection for this
-project finished on 03-05-2025.
+```{r}
+library(forcats)
+library(kableExtra)
+library(targets)
+```
+
+This document summarises the analyses so far for the project on trust in 
+artificial moral advisors across cultures. Data collection for this project 
+finished on May 3, 2025.
+
+Data and analysis code are available here:
+<https://github.com/ScottClaessens/trustAMAs>
 
 # Sample information
 
-- table of countries and sample characteristics
-- representativeness by country
+After exclusions, we have `{r} length(unique(tar_read(data)$id))` participants 
+in our dataset. Here are the sample characteristics, overall and split by 
+country:
 
-...
+```{r}
+#| label: fig-sample
+#| fig-cap: "Overall characteristics of the sample"
+
+tar_read(plot_sample)
+```
+
+```{r}
+#| label: tbl-sample
+#| tbl-cap: "Characteristics of the sample split by country (percentages and SDs in brackets)"
+
+tar_read(table_sample) %>%
+  dplyr::select(Country:`SES (1-10)`) %>%
+  kable() %>%
+  kable_classic()
+```
+
+The sample is close to our age and gender quotas for most countries.
+
+```{r}
+#| label: fig-sample-representativeness
+#| fig-cap: "Representativeness of the sample (bars) compared to quotas (lines)"
+
+tar_read(plot_sample_representative)
+```
+
+# Analyses: Perceptions of the advisors
+
+## Overall
+
+Replicating the findings from Myers and Everett (2025), we find that:
+ 
+- utilitarian advisors are perceived as less trustworthy than deontological
+advisors (main effect of advisor judgement)
+- AI advisors are perceived as less trustworthy than human advisors (main 
+effect of advisor type)
+- there is no interaction between advisor judgement and advisor type for
+trustworthiness
+- people are blamed more for following utilitarian advice (vs. deontological 
+advice) and advice from an AI (vs. a human)
+- people are more surprised when the deontological advisor is an AI
+ 
+In addition, we also show that:
+ 
+- utilitarian advisors are perceived as less human-like (more computer-like)
+
+```{r}
+#| label: fig-overall-means
+#| fig-cap: "Overall distributions and model-estimated means for perceptions of the advisors"
+
+tar_read(plot_means)
+```
+
+```{r}
+#| label: tbl-pairwise-contrasts
+#| tbl-cap: "Overall log-odds pairwise contrasts for perceptions of the advisors (median posterior estimates with 95% credible intervals)"
+
+tar_read(table_pairwise_contrasts) %>%
+  kable() %>%
+  kable_classic(font_size = 13.5) %>%
+  add_header_above(header = c(" " = 1, "Perceptions" = 5)) %>%
+  pack_rows(
+    index = c(
+      "Effect of advice type" = 2,
+      "Effect of advisor" = 2,
+      "Interaction effect"
+    ),
+    label_row_css = "text-align: left;"
+  )
+```
+
+## Split by country
+
+These results are relatively robust across countries. For example, here are the
+model coefficients for trustworthiness, overall and split by country:
+
+```{r}
+#| label: fig-model1-coef
+#| fig-cap: "Model coefficients for the effects of human (vs. AI) advisors and utilitarian (vs. deontological) advice, overall and split by country"
+#| fig-height: 4
+#| fig-width: 9
+
+tar_read(plot1_trustworthy)
+```
+
+And here are the distributions and model-estimated means for trustworthiness,
+split by country:
+
+```{r}
+#| label: fig-model1-means
+#| fig-cap: "Distributions and model-estimated means for trustworthiness, split by country"
+
+tar_read(plot1_by_country_trustworthy)
+```
+
+We find similar patterns for the other response variables.
+
+## Split by dilemma
+
+Model comparison revealed that additionally splitting by moral dilemma improves
+model fit. Indeed, it appears that the general patterns tend to be stronger for
+the baby dilemma compared to the bike dilemma:
+
+```{r}
+#| label: fig-means-by-dilemma
+#| fig-cap: "Distributions and model-estimated means for perceptions of the advisors, split by moral dilemma"
+
+tar_read(plot_means_by_dilemma)
+```
+
+## Controlling for agreement
+
+It is important to ensure that differences in perceptions of trustworthiness are
+not being driven by people simply being more likely to agree with deontological
+advice. To test this, we analysed how the experimental effects varied across 
+different levels of *agreement* with the advisor.
+
+We calculated agreement from participants' initial judgements of the moral 
+dilemma on a 0-1 sliding scale. When agreement = 0, the participant's initial 
+judgement was maximally different from the advice that they went on to see 
+(e.g., they made a completely utilitarian judgement and then saw deontological 
+advice). When agreement = 1, the participant's initial judgement was perfectly
+in line with the advice that they went on to see (e.g., they made a completely
+deontological judgement and then saw deontological advice).
+
+We find that participants trust the deontological advisor more than the 
+utilitarian advisor when they disagree with the advisor (agreement = 0) and
+when they are neutral (agreement = 0.5). However, when they agree with the 
+advisor (agreement = 1), the 95% credible interval for the effect includes zero.
+
+```{r}
+#| label: fig-model5-trustworthy
+#| fig-cap: "The estimated difference in trustworthiness between deontological and utilitarian advisors (on a 1-7 Likert scale) across different levels of agreement with the advisor"
+
+tar_read(plot5_trustworthy)
+```
+
+# Analyses: Judgements for the moral dilemmas
+
+## Overall and by country
+
+Given that participants trust artificial moral advisors less than human 
+advisors, we might predict that they should also be less likely to follow AI
+advice. To test this, we looked at participants' judgements of the moral
+dilemmas (0-1 sliding scale) before and after seeing the advice. Do participants
+update their judgements in line with AI/human advice?
+
+Yes. After seeing advice from either an AI or a human advisor, participants
+shift their judgement in the direction of the advice given.
+
+```{r}
+#| label: fig-model2-judgement-shift
+#| fig-cap: "Pre-post shift in judgements after seeing the moral advice"
+#| fig-width: 7
+#| fig-height: 2.5
+
+tar_read(plot2_judgement_shift)
+```
+
+This pattern is robust across countries.
+
+```{r}
+#| label: fig-model2-judgement
+#| fig-cap: "Pre-post shift in judgements after seeing the moral advice, split by country"
+
+tar_read(plot2_judgement)
+```
+
+Participants also become more confident when they revise their judgement after 
+seeing the advice, regardless of the direction of the advice and whether it was 
+from a human or an AI.
+
+```{r}
+#| label: fig-model2-confidence
+#| fig-cap: "Increase in confidence (on 1-7 Likert scale) after seeing the moral advice"
+
+tar_read(plot2_confidence)
+```
+
+## Split by dilemma
+
+Even when splitting by dilemma, we find that participants update their judgement
+in the direction of the advice, regardless of whether the advisor was AI or 
+human.
+
+```{r}
+#| label: fig-model4-judgement-shift
+#| fig-cap: "Pre-post shift in judgements after seeing the moral advice, split by dilemma"
+
+tar_read(plot4_judgement_shift)
+```
+
+# Conclusions
+
+People across cultures appear to trust artificial moral advisors less than 
+human advisors, especially when they give utilitarian advice. They also blame
+people more for following AI moral advice. Nonetheless, we find that 
+people seem to listen to moral advice from AI: across cultures, participants
+updated their judgement of the moral dilemma in the direction of the advice that
+they saw, regardless of whether the advice was from an AI or a human.
+
+# Future analyses
+
+We plan to:
+
+- test for any order effects in the data
+- test whether the results hold when retaining participants who fail 
+comprehension checks
+- test whether the experimental effects vary by demographic characteristics, AI
+familiarity and usage, and cultural variables

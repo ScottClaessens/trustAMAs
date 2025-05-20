@@ -39,20 +39,14 @@ plot_model4_confidence <- function(means4, split_dilemma) {
     ) +
     facet_wrap(. ~ treatment) +
     scale_colour_manual(values = c("#E69F00", "#56B4E9")) +
-    scale_y_discrete(
-      name = NULL,
-      labels = function(x) ifelse(x == "Overall", "**Overall**", x)
-    ) +
+    ylab(NULL) +
     xlab(
       paste0("Increase in confidence after seeing advice\n",
              "(on a 7-point Likert scale)")
       ) +
     ggtitle(paste0(split_dilemma, " dilemma only")) +
     theme_classic() +
-    theme(
-      axis.text.y = ggtext::element_markdown(),
-      legend.position = "bottom"
-      )
+    theme(legend.position = "bottom")
   # save and return
   ggsave(
     plot = out,

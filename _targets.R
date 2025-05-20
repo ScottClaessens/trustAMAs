@@ -6,8 +6,8 @@ library(tidyverse)
 
 # set targets options
 tar_option_set(
-  packages = c("brms", "ggnewscale", "knitr", "ordinal", "patchwork", 
-               "rethinking", "tidybayes", "tidyverse")
+  packages = c("brms", "forcats", "ggnewscale", "kableExtra", "knitr", 
+               "ordinal", "patchwork", "rethinking", "tidybayes", "tidyverse")
   )
 tar_source()
 
@@ -50,13 +50,15 @@ list(
   tar_target(data_full, load_data(data_file)),
   # exclude comprehension failures
   tar_target(data, filter(data_full, comprehension_check == "Correct")),
+  # create table of sample characteristics
+  tar_target(table_sample, create_table_sample_characteristics(data)),
   # plot sample and representativeness
-  tar_target(plot_sample, plot_sample_overall(data_full)),
+  tar_target(plot_sample, plot_sample_overall(data)),
   tar_target(quotas_file, "data/quotas/quotas.csv", format = "file"),
   tar_target(quotas, read_csv(quotas_file, show_col_types = FALSE)),
   tar_target(
     plot_sample_representative,
-    plot_sample_representativeness(data_full, quotas)
+    plot_sample_representativeness(data, quotas)
     ),
   # plot overall likerts
   tar_target(plot_likerts, plot_likerts_overall(data)),
@@ -81,6 +83,7 @@ list(
   tar_target(loo2, loo(model2)),
   tar_target(means2, extract_means_model2(model2)),
   tar_target(plot2_judgement, plot_model2_judgement(means2)),
+  tar_target(plot2_judgement_shift, plot_model2_judgement_shift(means2)),
   tar_target(plot2_confidence, plot_model2_confidence(means2)),
   # plot overall distributions and model means
   tar_target(
@@ -90,6 +93,13 @@ list(
                       means1_trust_other_issues, means1_surprise,
                       means1_humanlike)
       )
+    ),
+  # create table of pairwise contrasts
+  tar_target(
+    table_pairwise_contrasts,
+    create_table_pairwise_contrasts(model1_trustworthy, model1_blame, 
+                                    model1_trust_other_issues, model1_surprise,
+                                    model1_humanlike)
     ),
   
   ### analyses split by dilemma
@@ -124,21 +134,12 @@ list(
     ),
   # plot overall distributions and model means split by dilemma
   tar_target(
-    plot_means_bike,
+    plot_means_by_dilemma,
     plot_means_overall(
       data,
       bind_rows(means3_trustworthy, means3_blame, means3_trust_other_issues, 
                 means3_surprise, means3_humanlike),
-      split_dilemma = "Bike"
-      )
-    ),
-  tar_target(
-    plot_means_baby,
-    plot_means_overall(
-      data,
-      bind_rows(means3_trustworthy, means3_blame, means3_trust_other_issues,
-                means3_surprise, means3_humanlike),
-      split_dilemma = "Baby"
+      split_dilemma = TRUE
       )
     ),
   
@@ -155,6 +156,6 @@ list(
   ### analysis summary
   
   # render quarto file
-  tar_render(summary, "quarto/summary/summary.qmd")
+  tar_quarto(summary, "quarto/summary/summary.qmd", quiet = FALSE)
   
 )

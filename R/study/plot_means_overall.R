@@ -1,10 +1,5 @@
 # function to plot overall distributions and model means
-plot_means_overall <- function(data, means, split_dilemma = NULL) {
-  # split by dilemma if specified
-  if (!is.null(split_dilemma)) {
-    data <- filter(data, dilemma == split_dilemma)
-    means <- filter(means, dilemma == split_dilemma)
-  }
+plot_means_overall <- function(data, means, split_dilemma = FALSE) {
   # internal plotting function
   plot_fun <- function(response) {
     # rename advice column
@@ -18,8 +13,9 @@ plot_means_overall <- function(data, means, split_dilemma = NULL) {
       "surprise" = "Surprise",
       "humanlike" = "Human-like"
     )
-    # return plot
-    ggplot() +
+    # plot
+    out <-
+      ggplot() +
       # add boxplots
       geom_boxplot(
         data = data,
@@ -46,6 +42,14 @@ plot_means_overall <- function(data, means, split_dilemma = NULL) {
       ) +
       xlab("Advisor") +
       theme_classic()
+    # split by dilemma?
+    if (split_dilemma) {
+      out <- 
+        out + 
+        facet_wrap(. ~ dilemma) +
+        theme(strip.background = element_blank())
+      }
+    return(out)
   }
   # get plots
   pA <- plot_fun("trustworthy")
@@ -61,17 +65,12 @@ plot_means_overall <- function(data, means, split_dilemma = NULL) {
       axis_titles = "collect",
       nrow = 2
       )
-  # if split by dilemma, add explanatory title
-  if (!is.null(split_dilemma)) {
-    out <- out + plot_annotation(title = paste0(split_dilemma, " dilemma only"))
-  }
   # save and return
   ggsave(
     plot = out,
     file = paste0(
       "plots/overall_means",
-      ifelse(is.null(split_dilemma), "", "_"),
-      split_dilemma,
+      ifelse(split_dilemma, "_by_dilemma", ""),
       ".pdf"
       ),
     height = 5,

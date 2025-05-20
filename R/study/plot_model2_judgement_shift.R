@@ -1,8 +1,8 @@
-# function to plot estimated shifts in judgement from model 4
-plot_model4_judgement_shift <- function(means4) {
+# function to plot estimated shifts in judgement from model 2
+plot_model2_judgement_shift <- function(means2) {
   # plot
   out <- 
-    means4 %>%
+    means2 %>%
     # judgements across all countries
     filter(resp == "judgement" & country == "Overall") %>%
     # get pre-post differences
@@ -16,12 +16,10 @@ plot_model4_judgement_shift <- function(means4) {
     dplyr::select(!c(pre, post)) %>%
     unnest(diff) %>%
     rename(Advice = advice) %>%
-    mutate(dilemma = paste0(dilemma, " dilemma")) %>%
     # plot
     ggplot(mapping = aes(x = diff, y = treatment, fill = Advice)) +
     geom_vline(xintercept = 0, colour = "white", linetype = "dashed") +
     stat_halfeye() +
-    facet_grid(dilemma ~ .) +
     scale_x_continuous(
       name = expression(
         atop(
@@ -40,9 +38,9 @@ plot_model4_judgement_shift <- function(means4) {
   # save and return
   ggsave(
     plot = out,
-    file = "plots/model4_judgement_shift.pdf",
+    file = "plots/model2_judgement_shift.pdf",
     width = 7,
-    height = 4
+    height = 2.5
   )
   return(out)
 }
