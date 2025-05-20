@@ -6,8 +6,8 @@ library(tidyverse)
 
 # set targets options
 tar_option_set(
-  packages = c("brms", "ggnewscale", "ordinal", "patchwork", "rethinking", 
-               "tidybayes", "tidyverse")
+  packages = c("brms", "ggnewscale", "knitr", "ordinal", "patchwork", 
+               "rethinking", "tidybayes", "tidyverse")
   )
 tar_source()
 
@@ -140,5 +140,21 @@ list(
                 means3_surprise, means3_humanlike),
       split_dilemma = "Baby"
       )
-    )
+    ),
+  
+  ### controlling for agreement
+  
+  # model 5 - trustworthiness controlling for agreement
+  tar_map(
+    values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
+                             "surprise", "humanlike")),
+    tar_target(model5, fit_model5(data, resp))
+  ),
+  tar_target(plot5_trustworthy, plot_model5(model5_trustworthy)),
+  
+  ### analysis summary
+  
+  # render quarto file
+  tar_render(summary, "quarto/summary/summary.qmd")
+  
 )

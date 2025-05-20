@@ -290,6 +290,12 @@ plot_sample|stem|055c16e75de6b692|f4f99a019d800230|eb9f0228ac6f2925|-1970076201|
 quotas_file|stem|dcbb903433f5f947|a0cad1622e1374da|2c530c1562a7fbd1|337730633|data/quotas/quotas.csv|t20224.572379545s|s3972b|3972|file|local|vector|||1.609|package brms was built under R version 4.4.3. package ggnewscale was built under R version 4.4.3. package patchwork was built under R version 4.4.3. package cmdstanr was built under R version 4.4.3. package posterior was built under R version 4.4.3|
 quotas|stem|87b07e0285663441|52384dbbaa6f1511|0757a08e721761d0|970822152||t20224.5724862297s|s1616b|1616|rds|local|vector|||0.094||
 plot_sample_representative|stem|fcd78f566f80a70c|25d82731b8f31eef|63add52a5f1361bc|-1650641017||t20224.5848236665s|s410502b|410502|rds|local|vector|||1.25||
+model5_trustworthy|stem|c716675dd34940f7|60b661480fe31c6e|c73278a65edbfcc2|734516279||t20224.6471002767s|s430648883b|430648883|rds|local|vector|||3219.125|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+model5_surprise|stem|9c1397f1d12089ec|55f1907be64b9129|c73278a65edbfcc2|1491087810||t20224.6939464682s|s430839235b|430839235|rds|local|vector|||4035.141|Rows containing NAs were excluded from the model.|
+model5_blame|stem|6e2fa5f784caf183|2540f19d0c1a4694|c73278a65edbfcc2|393764738||t20224.7308027705s|s430673085b|430673085|rds|local|vector|||3171.797|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
+model5_humanlike|stem|f3d7c74fd2d8d440|895765eb8b9df243|c73278a65edbfcc2|746123853||t20224.7722878756s|s431606870b|431606870|rds|local|vector|||3571.485|Rows containing NAs were excluded from the model.|
+model5_trust_other_issues|stem|9f7efcdbbbd2ee7b|aec0e9170b0f1e8a|c73278a65edbfcc2|-3230212||t20224.8181901018s|s431600485b|431600485|rds|local|vector|||3953.641|Rows containing NAs were excluded from the model.|
+plot5_trustworthy|stem|7d111d9fcbc08cae|829a7485c509b7ad|bd3a232d3405be2d|1049487886||t20227.41567832s|s501218633b|501218633|rds|local|vector|||2.797||
 extract_means_model4|function|16776032a360043c
 create_table_model_comparison_dilemma|function|0ce055f6148aecbc
 run_power_analysis_mixed|function|d9035ad9cd01cffb
@@ -299,29 +305,32 @@ plot_means_overall|function|6990531642f6c8e1
 plot_model1|function|87977fd25f805083
 pivot_pilot_data_longer|function|786ac240a9070313
 plot_model4_judgement|function|9038e8ae9ecef6b7
-load_data|function|fdc891c9e6e8a10f
 plot_likerts_overall|function|3ceed78aa7253db7
+load_data|function|fdc891c9e6e8a10f
 plot_judgements_by_dilemma|function|6a99caf37064b91c
 plot_model3|function|22c9147526ec9568
+plot_model5|function|a2aef4f724073ba2
 plot_model2_judgement|function|ea4297289f210fda
 load_pilot_data|function|06b8b0dcbc3227bc
 extract_means_pilot_model1|function|f157ffa156833875
 plot_pilot_model1a|function|ce55ebd61dd919c4
 extract_means_pilot_model2|function|dacbe490b2def06b
-plot_pilot_model1b|function|6597f8749a97ccfe
 plot_model4_judgement_shift|function|7319738fa2743045
+plot_pilot_model1b|function|6597f8749a97ccfe
 run_power_analysis_between|function|e90fbf5a6fc74a83
 plot_model4_confidence|function|cc1418ff564c2f15
 fit_model1|function|1d157cb44c34e4cf
-fit_model2|function|03beec569c879662
-plot_pilot_model2a|function|18cf349962067a8c
 plot_sample_representativeness|function|4881697a67d26da7
+plot_pilot_model2a|function|18cf349962067a8c
+fit_model2|function|03beec569c879662
 plot_sample_overall|function|41e88f12c0e961bd
-fit_model3|function|93c828dc12d76ba3
-fit_pilot_model1|function|ea4c9dafbc7b9766
 plot_pilot_model2b|function|31c58fb5b8fc37fe
-fit_model4|function|3c0d2ec8c11836b2
+fit_pilot_model1|function|ea4c9dafbc7b9766
+fit_model3|function|93c828dc12d76ba3
 fit_pilot_model2|function|55d4b6081f9571d4
+fit_model4|function|3c0d2ec8c11836b2
+fit_model5|function|941dbd15f65984e1
 extract_means_model1|function|7284f12b7207d9eb
 extract_means_model2|function|334c9da3b3508593
 extract_means_model3|function|75ca33d7b061f432
+summary|stem|807808e608b92f0d|740aed32d0814e0e|2c530c1562a7fbd1|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20227.7516688383s|s624297b|624297|file|local|vector|||4.438|package brms was built under R version 4.4.3. package ggnewscale was built under R version 4.4.3. package knitr was built under R version 4.4.3. package patchwork was built under R version 4.4.3. package cmdstanr was built under R version 4.4.3. package posterior was built under R version 4.4.3|

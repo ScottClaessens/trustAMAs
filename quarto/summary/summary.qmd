@@ -1,0 +1,18 @@
+---
+title: "Trust in Artificial Moral Advisors across Cultures"
+subtitle: "Analysis Summary"
+author: "Scott Claessens"
+date: "`r Sys.Date()`"
+format: html
+---
+
+This document summarises the analyses so far for the cross-cultural project on
+trust in artificial moral advisors across cultures. Data collection for this
+project finished on 03-05-2025.
+
+# Sample information
+
+- table of countries and sample characteristics
+- representativeness by country
+
+...
