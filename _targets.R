@@ -155,7 +155,7 @@ list(
   
   ### testing for order effects
   
-  # model 6 - trustworthiness, etc. split by order
+  # model 6 - trustworthiness, etc. split by dilemma and order
   tar_map(
     values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
                              "surprise", "humanlike")),

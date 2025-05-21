@@ -6,6 +6,7 @@ date: "`{r} Sys.Date()`"
 format:
   html:
     html-table-processing: none
+    embed-resources: true
 toc: true
 execute:
   echo: false
