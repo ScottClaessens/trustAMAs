@@ -153,6 +153,16 @@ list(
   ),
   tar_target(plot5_trustworthy, plot_model5(model5_trustworthy)),
   
+  ### testing for order effects
+  
+  # model 6 - trustworthiness, etc. split by order
+  tar_map(
+    values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
+                             "surprise", "humanlike")),
+    tar_target(model6, fit_model6(data, resp)),
+    tar_target(loo6, loo(model6))
+  ),
+  
   ### analysis summary
   
   # render quarto file

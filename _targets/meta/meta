@@ -299,8 +299,18 @@ plot2_judgement|stem|6f73b450d7e5aab5|9805e7bc937e51f9|a4161f141e0eef72|30675698
 plot4_judgement_bike|stem|fe062307ce20a0af|63641ee9bd3bb567|ea7f87be2c919d9b|1205252981||t20228.6130906702s|s21660140b|21660140|rds|local|vector|||0.25||
 plot4_judgement_baby|stem|1d7f343f24b37311|188fb8069e9240a7|ea7f87be2c919d9b|-1854967422||t20228.6131051808s|s21708341b|21708341|rds|local|vector|||0.265||
 summary|stem|ba97ec15adc63ee9|263690b94755766a|87c2bf667008e2a6|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20228.6730230874s|s51311b|51311|file|local|vector|||24.453||
+model6_trust_other_issues|stem|de7cac1e33ef8c73|24acbb442d28b72c|d4ba32b9228d9c45|-720143512||t20228.8878029229s|s433245118b|433245118|rds|local|vector|||2683.094|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
+model6_humanlike|stem|2c088382df1d37e1|b4d2b087bd9368b5|d4ba32b9228d9c45|1067763742||t20228.9174754836s|s433991173b|433991173|rds|local|vector|||2550.532|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+model6_surprise|stem|23b76cef9a0f76c5|4833eb5ad5780629|d4ba32b9228d9c45|1734801543||t20228.9476020051s|s433447600b|433447600|rds|local|vector|||2589.89|Rows containing NAs were excluded from the model.|
+model6_trustworthy|stem|fb4509bdcc522700|b705f980c2f94d5f|d4ba32b9228d9c45|1446989733||t20228.9805191202s|s433609824b|433609824|rds|local|vector|||2831.547|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
+model6_blame|stem|889ba2c36f7bcf8f|1c4a6e3f68ed1e9a|d4ba32b9228d9c45|-578183693||t20229.0110164799s|s433589423b|433589423|rds|local|vector|||2622.219|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+loo6_trust_other_issues|stem|21ad85b37a5c307a|2a49c5da92bcbedc|c4bb08b0a8070194|512803074||t20229.0116740443s|s729853b|729853|rds|local|vector|||56.593||
+loo6_humanlike|stem|25d33dc460b667c8|c1845f84cbf72d96|647330c61d6524ee|1920849880||t20229.0123146166s|s731795b|731795|rds|local|vector|||55.265||
+loo6_surprise|stem|a16ddc3e0138058c|a2803bc22373a1bb|4ddf9642998f5d7f|869797349||t20229.012945372s|s730825b|730825|rds|local|vector|||54.437||
+loo6_trustworthy|stem|cc255282157c1471|2978b457d7ccab04|400bc55b1461212b|949075745||t20229.0135834789s|s725132b|725132|rds|local|vector|||55.062||
+loo6_blame|stem|d8858ebcca558915|e86449c1d89f6f8d|426732d097459b6e|1920286695||t20229.0142188255s|s730065b|730065|rds|local|vector|||54.828||
 plot_model1|function|87977fd25f805083
-.Random.seed|object|c3968744f3594250
+.Random.seed|object|81d0e694977ca52c
 create_table_pairwise_contrasts|function|e5a840b85895b9b5
 plot_model4_confidence|function|70975548620d421c
 plot_model3|function|22c9147526ec9568
@@ -319,6 +329,7 @@ plot_model2_confidence|function|292287834d276b0c
 extract_means_model1|function|7284f12b7207d9eb
 fit_model5|function|941dbd15f65984e1
 extract_means_model2|function|334c9da3b3508593
+fit_model6|function|c7538dcdb97b6439
 load_pilot_data|function|06b8b0dcbc3227bc
 extract_means_model3|function|75ca33d7b061f432
 extract_means_model4|function|16776032a360043c
