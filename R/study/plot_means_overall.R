@@ -10,8 +10,7 @@ plot_means_overall <- function(data, means, split_dilemma = FALSE) {
       "trustworthy" = "Trustworthy",
       "blame" = "Blame",
       "trust_other_issues" = "Trust on other issues",
-      "surprise" = "Surprise",
-      "humanlike" = "Human-like"
+      "surprise" = "Surprise"
     )
     # plot
     out <-
@@ -36,7 +35,9 @@ plot_means_overall <- function(data, means, split_dilemma = FALSE) {
       ) +
       scale_colour_manual(values = c("#E69F00", "#56B4E9")) +
       scale_y_continuous(
-        name = ylabs[response],
+        name = ifelse(response == "humanlike", 
+                      expression("Machine-like" %<->% "Human-like"), 
+                      ylabs[response]),
         limits = c(1, 7),
         breaks = 1:7
       ) +
@@ -48,7 +49,11 @@ plot_means_overall <- function(data, means, split_dilemma = FALSE) {
         out + 
         facet_wrap(. ~ dilemma) +
         theme(strip.background = element_blank())
-      }
+    }
+    # if human-like
+    if (response == "humanlike") {
+      out <- out + theme(axis.title.y = element_text(size = 9))
+    }
     return(out)
   }
   # get plots

@@ -8,8 +8,7 @@ plot_means_by_country <- function(data, means, response) {
     "trustworthy" = "Trustworthy",
     "blame" = "Blame",
     "trust_other_issues" = "Trust on other issues",
-    "surprise" = "Surprise",
-    "humanlike" = "Human-like"
+    "surprise" = "Surprise"
   )
   # plot
   out <-
@@ -34,7 +33,9 @@ plot_means_by_country <- function(data, means, response) {
     ) +
     scale_colour_manual(values = c("#E69F00", "#56B4E9")) +
     scale_y_continuous(
-      name = ylabs[response],
+      name = ifelse(response == "humanlike", 
+                    expression("Machine-like" %<->% "Human-like"), 
+                    ylabs[response]),
       limits = c(1, 7),
       breaks = 1:7
     ) +

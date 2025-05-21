@@ -76,7 +76,7 @@ advice) and advice from an AI (vs. a human)
  
 In addition, we also show that:
  
-- utilitarian advisors are perceived as less human-like (more computer-like)
+- utilitarian advisors are perceived as less human-like (more machine-like)
 
 ```{r}
 #| label: fig-overall-means

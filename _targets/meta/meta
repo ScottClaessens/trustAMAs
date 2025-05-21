@@ -227,11 +227,6 @@ means1_blame|stem|93c7f735a1d65389|c387ac803d35955f|6524611bd6031b16|1495995085|
 means1_surprise|stem|34d67874ba6bfca5|1a45eece2bbfe1d7|1bcf90332a2e2257|1730756641||t20217.5873590752s|s1507150b|1507150|rds|local|vector|||9.468||
 means1_trustworthy|stem|563dd838a74b6932|1d20df0859ef1daa|f1dfe39fa2798dd2|-58101230||t20217.5874917805s|s1499369b|1499369|rds|local|vector|||9.125||
 means1_humanlike|stem|88605a8f6c52209a|a6326346e856534c|86070b87d3b6911a|829594583||t20217.5876576578s|s1508123b|1508123|rds|local|vector|||11.781||
-plot1_by_country_blame|stem|2b1c1d7c902de321|ef17057c22854edc|2c88c1d94c76bdbb|668397006||t20217.6549255389s|s8325893b|8325893|rds|local|vector|||1.079|Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
-plot1_by_country_trust_other_issues|stem|ae1643b64101c100|0b4cd6b3913c3c38|a210dd5e5a32fde8|194382126||t20217.6549434894s|s8288179b|8288179|rds|local|vector|||0.828|Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
-plot1_by_country_surprise|stem|520f144347004ff0|f5224c80744782e0|00db0d2efdcdc389|-701935215||t20217.6549621871s|s8305183b|8305183|rds|local|vector|||0.719|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
-plot1_by_country_humanlike|stem|8439331761434a46|06ef33cbe8b8df16|17f2f062de59929c|-901831713||t20217.6549865424s|s8310143b|8310143|rds|local|vector|||0.859|Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
-plot1_by_country_trustworthy|stem|f4466da671dd5ea1|ae01ab7da1c4ea07|04b6699136166e79|-1315611394||t20217.6550128275s|s8265702b|8265702|rds|local|vector|||1.093|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
 model2|stem|113e24d0d848fdea|802731715298e5b8|12e9ef81bbed8393|1717633288||t20218.7075965811s|s2138612595b|2138612595|rds|local|vector|||25221.531|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
 means2|stem|f984abde1ca4988d|c57ca6a768e64590|1c231a119a06fbd5|1950106093||t20220.3581044763s|s6036071b|6036071|rds|local|vector|||118.234||
 model3_surprise|stem|da94d4bc2aba5e8d|e9f854d5c26039d1|9ec90d13eeba5793|-1954099792||t20220.6055923273s|s433293373b|433293373|rds|local|vector|||3073.89|Rows containing NAs were excluded from the model.|
@@ -288,8 +283,6 @@ plot_sample|stem|c673aa7579b24386|412c6cb0ba06f81d|ff6cff28eb29bd07|-1970076201|
 table_sample|stem|d07c006d60dbf276|fbd3109622c155a3|853b04483c8e0b88|1398670521||t20228.3937284761s|s713b|713|rds|local|vector|||0.36||
 plot_sample_representative|stem|b17a9c1df7c064c5|a26315455facb017|07cea0e1ed773653|-1650641017||t20228.3937367116s|s401074b|401074|rds|local|vector|||0.562||
 table_pairwise_contrasts|stem|ab4f1d0616d14442|7c356c7c87bc89aa|08391ed110a3bc02|2059424515||t20228.4635749273s|s547b|547|rds|local|vector|||5.703|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
-plot_means|stem|87f13d7d9ea1426d|0ccf88a67559e304|602d27ee447f3b0c|435881336||t20228.5541253809s|s53008033b|53008033|rds|local|vector|||1.718|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
-plot_means_by_dilemma|stem|9035fad61a05fda4|e036c659521d5ce3|d78078289da27a00|979801273||t20228.5542345074s|s100965097b|100965097|rds|local|vector|||1.39|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
 plot2_judgement_shift|stem|6f9d291a58738de9|b36983bbd7ae202a|d6e4b12073792deb|343894964||t20228.5860550238s|s6868583b|6868583|rds|local|vector|||0.765|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
 plot4_judgement_shift|stem|e9c6015977739fc1|a34e9fde4dbc730d|72dba2fe0ddc046b|-2057021077||t20228.5860714641s|s13590535b|13590535|rds|local|vector|||0.484|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
 plot2_confidence|stem|f6c2e9b2c85c0c2c|94357b37e84e632c|3c5d4c4f04466d02|1989689177||t20228.5975829096s|s13934682b|13934682|rds|local|vector|||1.328|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
@@ -298,7 +291,6 @@ plot4_confidence_baby|stem|d2be683e652dd5d5|b0f668beff56d8fa|065366789bf76605|16
 plot2_judgement|stem|6f73b450d7e5aab5|9805e7bc937e51f9|a4161f141e0eef72|306756983||t20228.6130735805s|s21595113b|21595113|rds|local|vector|||0.547||
 plot4_judgement_bike|stem|fe062307ce20a0af|63641ee9bd3bb567|ea7f87be2c919d9b|1205252981||t20228.6130906702s|s21660140b|21660140|rds|local|vector|||0.25||
 plot4_judgement_baby|stem|1d7f343f24b37311|188fb8069e9240a7|ea7f87be2c919d9b|-1854967422||t20228.6131051808s|s21708341b|21708341|rds|local|vector|||0.265||
-summary|stem|ba97ec15adc63ee9|263690b94755766a|87c2bf667008e2a6|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20228.6730230874s|s51311b|51311|file|local|vector|||24.453||
 model6_trust_other_issues|stem|de7cac1e33ef8c73|24acbb442d28b72c|d4ba32b9228d9c45|-720143512||t20228.8878029229s|s433245118b|433245118|rds|local|vector|||2683.094|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
 model6_humanlike|stem|2c088382df1d37e1|b4d2b087bd9368b5|d4ba32b9228d9c45|1067763742||t20228.9174754836s|s433991173b|433991173|rds|local|vector|||2550.532|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
 model6_surprise|stem|23b76cef9a0f76c5|4833eb5ad5780629|d4ba32b9228d9c45|1734801543||t20228.9476020051s|s433447600b|433447600|rds|local|vector|||2589.89|Rows containing NAs were excluded from the model.|
@@ -309,8 +301,16 @@ loo6_humanlike|stem|25d33dc460b667c8|c1845f84cbf72d96|647330c61d6524ee|192084988
 loo6_surprise|stem|a16ddc3e0138058c|a2803bc22373a1bb|4ddf9642998f5d7f|869797349||t20229.012945372s|s730825b|730825|rds|local|vector|||54.437||
 loo6_trustworthy|stem|cc255282157c1471|2978b457d7ccab04|400bc55b1461212b|949075745||t20229.0135834789s|s725132b|725132|rds|local|vector|||55.062||
 loo6_blame|stem|d8858ebcca558915|e86449c1d89f6f8d|426732d097459b6e|1920286695||t20229.0142188255s|s730065b|730065|rds|local|vector|||54.828||
+plot1_by_country_trustworthy|stem|0a38c91eedf882e7|ae01ab7da1c4ea07|643424f0cb3d5f94|-1315611394||t20229.3849602057s|s8254436b|8254436|rds|local|vector|||1.141|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
+plot1_by_country_humanlike|stem|dab2cd99ac85dab5|06ef33cbe8b8df16|1ba2c4368a0d5b6d|-901831713||t20229.384984542s|s8310292b|8310292|rds|local|vector|||1.094|Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
+plot1_by_country_surprise|stem|dc556f24abfcc068|f5224c80744782e0|256de1c9dcab8799|-701935215||t20229.3850065098s|s8305534b|8305534|rds|local|vector|||0.812|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
+plot1_by_country_trust_other_issues|stem|263c5e8b37dca58d|0b4cd6b3913c3c38|627a002ee1b66a66|194382126||t20229.3851501284s|s8288216b|8288216|rds|local|vector|||0.922|Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
+plot1_by_country_blame|stem|c62da75a4f402273|ef17057c22854edc|3d29ac1e21869f4c|668397006||t20229.3851700993s|s8336670b|8336670|rds|local|vector|||0.765|Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
+plot_means_by_dilemma|stem|e42b5b02e3324d23|e036c659521d5ce3|12c74aef2f46e80d|979801273||t20229.4011474246s|s100968577b|100968577|rds|local|vector|||2.985|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
+plot_means|stem|c2c126fc0f6148ef|0ccf88a67559e304|243e65640e63ecf8|435881336||t20229.4012525125s|s53010419b|53010419|rds|local|vector|||1.187|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
+summary|stem|c7f1e598feefc5bc|1703ec0aa14db903|26bf3093072f9601|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20229.4019468568s|s51309b|51309|file|local|vector|||40.625||
 plot_model1|function|87977fd25f805083
-.Random.seed|object|81d0e694977ca52c
+.Random.seed|object|047aaa7c805498c5
 create_table_pairwise_contrasts|function|e5a840b85895b9b5
 plot_model4_confidence|function|70975548620d421c
 plot_model3|function|22c9147526ec9568
@@ -334,14 +334,14 @@ load_pilot_data|function|06b8b0dcbc3227bc
 extract_means_model3|function|75ca33d7b061f432
 extract_means_model4|function|16776032a360043c
 load_data|function|fdc891c9e6e8a10f
-plot_means_by_country|function|cd6bfb61789582c0
+plot_means_by_country|function|98e22f69f177d830
 plot_pilot_model1a|function|ce55ebd61dd919c4
 create_table_sample_characteristics|function|3db4962aabd9fce9
 pivot_pilot_data_longer|function|786ac240a9070313
 plot_pilot_model1b|function|6597f8749a97ccfe
 fit_pilot_model1|function|ea4c9dafbc7b9766
 run_power_analysis_between|function|e90fbf5a6fc74a83
-plot_means_overall|function|4ee76c308267df43
+plot_means_overall|function|c3f4f37d798744f1
 fit_pilot_model2|function|55d4b6081f9571d4
 plot_model4_judgement_shift|function|e7586ecaf11c0e32
 run_power_analysis_mixed|function|d9035ad9cd01cffb

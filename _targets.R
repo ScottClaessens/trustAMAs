@@ -166,6 +166,6 @@ list(
   ### analysis summary
   
   # render quarto file
-  tar_quarto(summary, "quarto/summary/summary.qmd", quiet = FALSE)
+  tar_quarto(summary, "quarto/summary/summary.qmd")
   
 )
