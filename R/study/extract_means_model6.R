@@ -1,5 +1,5 @@
-# function to extract means from model 3
-extract_means_model3 <- function(model3, resp) {
+# function to extract means from model 6
+extract_means_model6 <- function(model6, resp) {
   # internal function
   extract_fun <- function(country = "Overall") {
     # new data
@@ -7,14 +7,14 @@ extract_means_model3 <- function(model3, resp) {
       country = country,
       treatment = c("AI", "Human"),
       advice = c("Deontological", "Utilitarian"),
-      dilemma = c("Bike", "Baby")
+      order = as.character(1:2)
     )
     # get fitted values
     f <- fitted(
-      object = model3,
+      object = model6,
       newdata = newdata,
       re_formula = as.formula(
-        ifelse(country == "Overall", "~0", "~(1 + treatment*advice*dilemma | country)")
+        ifelse(country == "Overall", "~0", "~(1 + treatment*advice*order | country)")
       ),
       summary = FALSE
     )
@@ -40,7 +40,7 @@ extract_means_model3 <- function(model3, resp) {
   }
   # get means overall and by country
   out <- extract_fun()
-  for (country in unique(model3$data$country)) {
+  for (country in unique(model6$data$country)) {
     out <- bind_rows(out, extract_fun(country))
   }
   return(out)

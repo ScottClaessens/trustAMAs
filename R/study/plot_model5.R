@@ -63,7 +63,6 @@ plot_model5 <- function(model5_trustworthy) {
     geom_ribbon(data = filter(d, sig), fill = "#D3D3D3", alpha = 0.5) +
     geom_line() +
     facet_wrap(. ~ treatment) +
-    scale_fill_manual(values = c("#f8f8f8", "")) +
     labs(
       x = "Agreement with the advisor",
       y = paste0(

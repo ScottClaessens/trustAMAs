@@ -155,13 +155,61 @@ list(
   
   ### testing for order effects
   
-  # model 6 - trustworthiness, etc. split by dilemma and order
+  # model 6 - trustworthiness, etc. split by order
   tar_map(
     values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
                              "surprise", "humanlike")),
     tar_target(model6, fit_model6(data, resp)),
-    tar_target(loo6, loo(model6))
+    tar_target(loo6, loo(model6)),
+    tar_target(means6, extract_means_model6(model6, resp))
   ),
+  # plot overall distributions and model means split by order
+  tar_target(
+    plot_means_by_order,
+    plot_means_overall(
+      data,
+      bind_rows(means6_trustworthy, means6_blame, means6_trust_other_issues, 
+                means6_surprise, means6_humanlike),
+      split_order = TRUE
+    )
+  ),
+  
+  ### individual differences in experimental effects
+  
+  # model 7 - trustworthiness split by demographics and AI variables
+  tar_map(
+    values = tibble(
+      pred1 = c("advice", "advice", "treatment", "treatment"),
+      pred2 = c("religiosity", "political_ideology", 
+                "AI_familiarity", "AI_frequency")
+      ),
+    names = pred2,
+    tar_target(model7, fit_model7(data, pred1, pred2)),
+    tar_target(means7, extract_means_model7(model7, pred1, pred2)),
+    tar_target(plot7, plot_model7(means7, pred1, pred2))
+  ),
+  tar_target(
+    plot7_combined,
+    plot_model7_combined(plot7_religiosity, plot7_political_ideology,
+                         plot7_AI_familiarity, plot7_AI_frequency)
+    ),
+  
+  ### cross-cultural differences in experimental effects
+  
+  # load cultural data
+  tar_target(cultural_data_file, "data/cultural/cultural.csv", format = "file"),
+  tar_target(cultural_data, read_csv(cultural_data_file, show_col_types = FALSE)),
+  # model 8 - trustworthiness split by cross-cultural variables
+  #!!!!!!!!! control for networks???
+  #tar_map(
+  #  values = tibble(
+  #    pred1 = c("advice", "advice", "advice", "treatment", "treatment"),
+  #    pred2 = c("relational_mobility_latent", "tightness",
+  #              "individualism", "AI_readiness", "AI_index")
+  #    ),
+  #  names = pred2,
+  #  tar_target(model8, fit_model8(data, cultural_data, pred1, pred2))
+  #),
   
   ### analysis summary
   

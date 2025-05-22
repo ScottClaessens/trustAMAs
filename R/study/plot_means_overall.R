@@ -1,10 +1,16 @@
 # function to plot overall distributions and model means
-plot_means_overall <- function(data, means, split_dilemma = FALSE) {
+plot_means_overall <- function(data, means, split_dilemma = FALSE,
+                               split_order = FALSE) {
   # internal plotting function
   plot_fun <- function(response) {
     # rename advice column
     data <- rename(data, Advice = advice)
     means <- rename(means, Advice = advice)
+    # if splitting by order, edit order variable
+    if (split_order) {
+      data <- mutate(data, order = paste0("Block ", order))
+      means <- mutate(means, order = paste0("Block ", order))
+    }
     # y-axis labels
     ylabs <- c(
       "trustworthy" = "Trustworthy",
@@ -43,11 +49,16 @@ plot_means_overall <- function(data, means, split_dilemma = FALSE) {
       ) +
       xlab("Advisor") +
       theme_classic()
-    # split by dilemma?
+    # split by dilemma or order?
     if (split_dilemma) {
       out <- 
         out + 
         facet_wrap(. ~ dilemma) +
+        theme(strip.background = element_blank())
+    } else if (split_order) {
+      out <- 
+        out + 
+        facet_wrap(. ~ order) +
         theme(strip.background = element_blank())
     }
     # if human-like
@@ -76,6 +87,7 @@ plot_means_overall <- function(data, means, split_dilemma = FALSE) {
     file = paste0(
       "plots/overall_means",
       ifelse(split_dilemma, "_by_dilemma", ""),
+      ifelse(split_order, "_by_order", ""),
       ".pdf"
       ),
     height = 5,
