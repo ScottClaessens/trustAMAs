@@ -248,21 +248,6 @@ loo3_blame|stem|03c48394f0adfcd0|66a0e8d2baa4104a|ed769c065ea006ea|588586384||t2
 loo3_trustworthy|stem|45192c3ec932935d|a2e854076196cc14|28e135897283be9c|-1074600358||t20221.7073341274s|s723988b|723988|rds|local|vector|||52.532||
 loo4|stem|264994b02b83f188|ad2ac2515e467586|6166e6030eb8d82c|-900341377||t20221.7095069714s|s1463789b|1463789|rds|local|vector|||187.625|Found 3219 observations with a pareto_k  0.7 in model model4. We recommend to set moment_match  TRUE in order to perform moment matching for problematic observations.|
 table_model_comparison_dilemma|stem|a7eaab42bd284070|48e35cb02bc5e629|406d818dd529a3ca|1042977696||t20222.5870704811s|s364b|364|rds|local|vector|||0.031||
-plot3_baby_trust_other_issues|stem|832cf3cfd0ad75e9|d38f3cb6aa1b51ec|87026f59b8e6e2a4|-917508528||t20223.6099866815s|s505146014b|505146014|rds|local|vector|||3.375|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
-plot3_bike_trust_other_issues|stem|cf7e3a84eee32f50|5736890b1957367f|87026f59b8e6e2a4|2035709140||t20223.6102116807s|s505385165b|505385165|rds|local|vector|||3.594||
-plot3_baby_blame|stem|7f21fe61453960c2|5582d992d5c49d78|4b5526204632eeae|-2090530278||t20223.6104519442s|s505531219b|505531219|rds|local|vector|||3.078||
-plot3_bike_blame|stem|d62802fff184325d|e448713072190cc6|4b5526204632eeae|-283502319||t20223.6106724166s|s505552560b|505552560|rds|local|vector|||2.922||
-plot3_bike_surprise|stem|6cc15a8471e247cc|cd28a77d4e099ec4|feed110e02cdd0f5|370020257||t20223.6109072367s|s505076069b|505076069|rds|local|vector|||2.766||
-plot3_baby_surprise|stem|2ff3aff89bdd3019|ab06ed57b7fe946e|feed110e02cdd0f5|1256267539||t20223.6111156906s|s504900030b|504900030|rds|local|vector|||2.203||
-plot3_baby_trustworthy|stem|009f3d5667fdd621|fb9028a0d84dfa35|d669c619dd375e3f|-1082637371||t20223.6113425794s|s505580088b|505580088|rds|local|vector|||2.797||
-plot3_bike_trustworthy|stem|2ef4c4d3ea60f4d4|c05fe9200fb1d167|d669c619dd375e3f|-401240727||t20223.6115413801s|s505678623b|505678623|rds|local|vector|||2.578||
-plot3_bike_humanlike|stem|528e08d2ba195697|208a4fbd2ef8d94d|a013056bb29a8286|970641644||t20223.6117805871s|s505557983b|505557983|rds|local|vector|||3.344||
-plot3_baby_humanlike|stem|998789ae236fa759|5a7e624d84501204|a013056bb29a8286|-1102616204||t20223.6119848063s|s505292416b|505292416|rds|local|vector|||2.782||
-plot1_surprise|stem|a65dda4ff9717c98|23b83965948041e4|d2c2fdf2f4f18526|-1047463223||t20223.6143418342s|s462180116b|462180116|rds|local|vector|||3.469|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
-plot1_humanlike|stem|9190d7b4dd73046c|d5dc414de0258949|5ba641248812a54b|1518871173||t20223.6145657812s|s462954559b|462954559|rds|local|vector|||3||
-plot1_blame|stem|a50a8312f60cf59a|57d99bef9ee1c631|c6504491f2a133fa|-1613154228||t20223.6148082332s|s462543879b|462543879|rds|local|vector|||3.547||
-plot1_trustworthy|stem|a1a23b546ed5f7b1|a027aff4b659d76a|70f9ae14b1feb578|-1477954251||t20223.6150242875s|s462645539b|462645539|rds|local|vector|||2.938||
-plot1_trust_other_issues|stem|7e5ca623a0061c73|8595fde6c3fd9402|4f22a8d6bd604e06|1289544526||t20223.6152364168s|s462559269b|462559269|rds|local|vector|||2.688||
 plot_judgements_bike|stem|bd26609aacee3da4|0a3c19fdaef9da0d|270757d18d5010dd|1828270350||t20223.6381290503s|s986537b|986537|rds|local|vector|||0.969|Removed 43 rows containing nonfinite outside the scale range stat_bin.|
 plot_judgements_baby|stem|165bc9d94d93cbf3|a358d5c66c99be97|270757d18d5010dd|-1908073061||t20223.6381390781s|s976574b|976574|rds|local|vector|||0.469|Removed 48 rows containing nonfinite outside the scale range stat_bin.|
 means4|stem|f523594f3dba5721|80c7f1b00db8d76b|c5b42b28323c00bf|708619096||t20223.6457703127s|s12114926b|12114926|rds|local|vector|||128||
@@ -334,7 +319,6 @@ cultural_data|stem|3b5b5faf107705f7|38c3e5898d0a8208|20bb3c2fb0361611|25648991||
 model8_relational_mobility_latent|stem|b44ba9300f310bbb|03c6301e251d1253|64c80cf28c1dbb81|-2091030608||t20230.6470124285s|s328038145b|328038145|rds|local|vector|||5136.297|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
 model8_AI_readiness|stem|01a7ce20a5d76acc|9c1a29bbdfeb7f70|64c80cf28c1dbb81|-533592519||t20230.7280514858s|s430229679b|430229679|rds|local|vector|||6986.266|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
 model8_individualism|stem|64064ad5435ea89a|de07c591b3b09347|64c80cf28c1dbb81|1163073976||t20230.8121936052s|s357264141b|357264141|rds|local|vector|||7258.234|Rows containing NAs were excluded from the model.. The largest Rhat is NA, indicating chains have not mixed.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlrhat. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
-model8_tightness|stem|cf5e8abb7fd32af4|f6542cfad7358817|64c80cf28c1dbb81|-1040550595||t20230.8844075251s|s357455261b|357455261|rds|local|vector|||6226.5|Rows containing NAs were excluded from the model.. The largest Rhat is NA, indicating chains have not mixed.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlrhat. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
 model8_AI_index|stem|0be9c935be82081e|8a96a0cfed213b89|64c80cf28c1dbb81|704136968||t20230.9749836979s|s430583158b|430583158|rds|local|vector|||7810.5|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
 plot8_relational_mobility_latent|stem|b179d4a6b45c4b6d|57a0f8dbbf99017a|5aff21202a6c3c00|18255544||t20231.4348586998s|s387738692b|387738692|rds|local|vector|||12||
 plot8_AI_readiness|stem|c5055d0605599439|a42d96df4418c55e|9eacd16af6360a3f|597674353||t20231.4362267534s|s489217062b|489217062|rds|local|vector|||10.203||
@@ -357,8 +341,10 @@ plot_means_itt|stem|19ff059c708c58c3|a3041e9e1ceb5d00|588d96e0b124efa1|-13877810
 plot_means|stem|0abd0b53f294c46b|0ccf88a67559e304|f74eccebb823fae0|435881336||t20235.5512044632s|s53011949b|53011949|rds|local|vector|||0.703|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
 plot_means_by_dilemma|stem|112eb1dc5e6fb974|e036c659521d5ce3|3ecf3393bcd594de|979801273||t20235.5512885973s|s100882246b|100882246|rds|local|vector|||1.031|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
 plot_means_by_order|stem|2025dee2fc273490|d8dccbd4d29c55c2|35e21796c55bc2d4|-2106646417||t20235.5513757028s|s100882762b|100882762|rds|local|vector|||1.109|Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 4 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 3 rows containing nonfinite outside the scale rangenew_stat_boxplot.. Removed 1 row containing nonfinite outside the scale rangenew_stat_boxplot.|
-summary|stem|8002ee883c8c82f0|1703ec0aa14db903|4960fd16f951311e|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20235.5518852053s|s1568244b|1568244|file|local|vector|||34.469||
 plot_overview|stem|64433e027dc01320|0a47e9bec7acdb61|ab558426afd68414|126835773||t20235.5564367825s|s8060591b|8060591|rds|local|vector|||2.937|package brms was built under R version 4.4.3. package ggnewscale was built under R version 4.4.3. package kableExtra was built under R version 4.4.3. package knitr was built under R version 4.4.3. package patchwork was built under R version 4.4.3. package pdftools was built under R version 4.4.3. package cmdstanr was built under R version 4.4.3. package posterior was built under R version 4.4.3|
+model8_tightness|stem|655659685dfe743b|f6542cfad7358817|08a387c68ec988d6|-1040550595||t20235.6351285849s|s535116269b|535116269|rds|local|vector|||6290.75|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+table_pairwise_contrasts_by_dilemma|stem|59677d15f26e87dc|8ce7aa70bdd38865|9f3a23b21ede51b4|2014864665||t20235.6648838296s|s706b|706|rds|local|vector|||6.047|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
+table_pairwise_contrasts_by_order|stem|702875403fd59347|caa70accb9170c3f|035c37ee4e127b95|-2058409508||t20235.6894656084s|s700b|700|rds|local|vector|||4.031|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
 plot_model4_judgement_shift|function|e7586ecaf11c0e32
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -376,14 +362,14 @@ extract_means_pilot_model2|function|dacbe490b2def06b
 plot_study_overview|function|f69118e088b5881a
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5a9d029ad4d0e808
-.Random.seed|object|7f5a41abb20bbaf4
+.Random.seed|object|b7b827a1d6643257
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
 fit_model1|function|1d157cb44c34e4cf
-plot_model1|function|87977fd25f805083
+plot_model1|function|5953b6d341aa1dfd
 fit_model2|function|03beec569c879662
 fit_model3|function|93c828dc12d76ba3
-plot_model3|function|22c9147526ec9568
+plot_model3|function|092db480fd94b16a
 create_table_pairwise_contrasts|function|e5a840b85895b9b5
 fit_model4|function|3c0d2ec8c11836b2
 plot_pilot_model1a|function|ce55ebd61dd919c4
@@ -394,11 +380,12 @@ fit_model6|function|c7538dcdb97b6439
 fit_model7|function|f50a4051cae7640b
 plot_model7|function|eab9c8d69c486b41
 plot_means_overall|function|efa47ae573cafdf7
-fit_model8|function|02d9599d7019d57a
+fit_model8|function|6a28a98bb8d4fcbc
 plot_model8|function|99b5814ec56c8189
 plot_model2_confidence|function|292287834d276b0c
 load_country_network|function|f32f4fae35f1344d
 plot_model7_combined|function|a35a08d415e54adc
+create_table_pairwise_contrasts_by_dilemma|function|811422fafc21f255
 extract_means_model1|function|7284f12b7207d9eb
 run_power_analysis_between|function|e90fbf5a6fc74a83
 extract_means_model2|function|334c9da3b3508593
@@ -406,8 +393,25 @@ extract_means_model3|function|3e556417f07a6df2
 extract_means_model4|function|16776032a360043c
 extract_means_model6|function|7ba910cf775c5d47
 extract_means_model7|function|386aebdde5100928
+plot_model8_combined|function|366d28f3392a40e9
 run_power_analysis_mixed|function|d9035ad9cd01cffb
 plot_model2_judgement|function|70cbfb9a7e3840d9
-plot_model8_combined|function|366d28f3392a40e9
 load_data|function|fdc891c9e6e8a10f
+create_table_pairwise_contrasts_by_order|function|2b4ab60bab95f7c5
 create_table_sample_characteristics|function|3db4962aabd9fce9
+plot3_bike_surprise|stem|cee185e67daf6b4e|cd28a77d4e099ec4|d4ca9193c1322753|370020257||t20235.8044182297s|s505004526b|505004526|rds|local|vector|||5.094|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
+plot3_baby_surprise|stem|f082d31b0368b736|ab06ed57b7fe946e|d4ca9193c1322753|1256267539||t20235.8046744165s|s504828448b|504828448|rds|local|vector|||3.406||
+plot1_humanlike|stem|46f85ff3d9081899|d5dc414de0258949|788f24320c54503f|1518871173||t20235.8049413622s|s462884390b|462884390|rds|local|vector|||3.609||
+plot3_baby_trustworthy|stem|1c3ed8cc8b366929|fb9028a0d84dfa35|6dd4e625b3b8d29a|-1082637371||t20235.8052293017s|s505514460b|505514460|rds|local|vector|||3.812||
+plot3_bike_trustworthy|stem|e2bed79e70470de6|c05fe9200fb1d167|6dd4e625b3b8d29a|-401240727||t20235.8054753625s|s505611740b|505611740|rds|local|vector|||4.172||
+plot1_trustworthy|stem|938fa496b8137835|a027aff4b659d76a|d1a195efcf6b6765|-1477954251||t20235.805684417s|s462581213b|462581213|rds|local|vector|||2.578||
+plot3_baby_blame|stem|a87818aa53e27525|5582d992d5c49d78|19c058a8e17ab7d8|-2090530278||t20235.8059134038s|s505457040b|505457040|rds|local|vector|||2.734||
+plot3_bike_blame|stem|575d28336dcf8e93|e448713072190cc6|19c058a8e17ab7d8|-283502319||t20235.8061144699s|s505480997b|505480997|rds|local|vector|||2.281||
+plot1_surprise|stem|0bb026a1498454ff|23b83965948041e4|45e4efaa8579e888|-1047463223||t20235.8063354061s|s462111183b|462111183|rds|local|vector|||2.141||
+plot3_bike_humanlike|stem|9f5a31f2b817f13e|208a4fbd2ef8d94d|b0cad310240d9667|970641644||t20235.806559373s|s505485118b|505485118|rds|local|vector|||2.562||
+plot3_baby_humanlike|stem|09a8b1618782dbbd|5a7e624d84501204|b0cad310240d9667|-1102616204||t20235.8067639864s|s505220976b|505220976|rds|local|vector|||2.468||
+plot1_trust_other_issues|stem|9aea085f993db136|8595fde6c3fd9402|ad3c0defafe08728|1289544526||t20235.8069850585s|s462482472b|462482472|rds|local|vector|||2.969||
+plot3_bike_trust_other_issues|stem|04be67df0e3afc2f|5736890b1957367f|0f5cce15db75badf|2035709140||t20235.8072166019s|s505314401b|505314401|rds|local|vector|||2.859||
+plot3_baby_trust_other_issues|stem|2cd3528a0e60ff67|d38f3cb6aa1b51ec|0f5cce15db75badf|-917508528||t20235.8074146293s|s505076060b|505076060|rds|local|vector|||2.328||
+plot1_blame|stem|0f2d72a33d71babb|57d99bef9ee1c631|2ed6be9d018869d4|-1613154228||t20235.8076295092s|s462471110b|462471110|rds|local|vector|||2.672||
+summary|stem|05421f02f1e19659|1703ec0aa14db903|288ac6658d8018d7|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20235.8080008013s|s1571736b|1571736|file|local|vector|||26.688||

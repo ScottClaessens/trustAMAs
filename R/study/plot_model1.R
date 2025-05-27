@@ -71,11 +71,7 @@ plot_model1 <- function(model1, resp) {
             fill = country == "Overall"
           )
         ) +
-        stat_halfeye(
-          height = 0.85,
-          size = 2,
-          .width = 0.95
-          ) +
+        stat_halfeye(height = 0.85) +
         geom_vline(
           xintercept = 0,
           linetype = "dashed",
@@ -87,11 +83,10 @@ plot_model1 <- function(model1, resp) {
         scale_fill_manual(
           values = c("#cccccc", "#ffcccc")
         ) +
-        ylab(NULL) +
-        scale_x_continuous(
-          name = xlabs[par],
-          limits = c(-2.5, 2.5)
-        ) +
+        labs(
+          x = xlabs[par],
+          y = NULL
+          ) +
         theme_classic() +
         theme(
           legend.position = "none",

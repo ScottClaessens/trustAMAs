@@ -15,7 +15,9 @@ tar_source()
 # pipeline
 list(
   
+  
   #### Pilot study ####
+  
   
   # power analysis ids
   tar_target(power_id, 1:100),
@@ -43,7 +45,9 @@ list(
   tar_target(pilot_plot2a, plot_pilot_model2a(pilot_data_long, pilot_means2)),
   tar_target(pilot_plot2b, plot_pilot_model2b(pilot_data_long, pilot_means2)),
   
+  
   #### Main study ####
+  
   
   # load full dataset
   tar_target(data_file, "data/study/trustAMAs_data_clean.csv",
@@ -69,7 +73,9 @@ list(
   tar_target(plot_judgements_bike, plot_judgements_by_dilemma(data, "Bike")),
   tar_target(plot_judgements_baby, plot_judgements_by_dilemma(data, "Baby")),
   
-  ### primary analyses
+  
+  ##### Primary analyses #####
+  
   
   # model 1 - trustworthiness, etc.
   tar_map(
@@ -105,7 +111,9 @@ list(
                                     model1_humanlike)
     ),
   
-  ### analyses split by dilemma
+  
+  ##### Analyses split by dilemma #####
+  
   
   # model 3 - trustworthiness, etc. split by dilemma
   tar_map(
@@ -145,8 +153,18 @@ list(
       split_dilemma = TRUE
       )
     ),
+  # create table of pairwise contrasts split by dilemma
+  tar_target(
+    table_pairwise_contrasts_by_dilemma,
+    create_table_pairwise_contrasts_by_dilemma(
+      model3_trustworthy, model3_blame, model3_trust_other_issues, 
+      model3_surprise, model3_humanlike
+      )
+  ),
   
-  ### controlling for agreement
+  
+  ##### Analyses controlling for agreement #####
+  
   
   # model 5 - trustworthiness controlling for agreement
   tar_map(
@@ -156,7 +174,9 @@ list(
   ),
   tar_target(plot5_trustworthy, plot_model5(model5_trustworthy)),
   
-  ### testing for order effects
+  
+  ##### Analyses testing for order effects #####
+  
   
   # model 6 - trustworthiness, etc. split by order
   tar_map(
@@ -176,8 +196,18 @@ list(
       split_order = TRUE
     )
   ),
+  # create table of pairwise contrasts split by order
+  tar_target(
+    table_pairwise_contrasts_by_order,
+    create_table_pairwise_contrasts_by_order(
+      model6_trustworthy, model6_blame, model6_trust_other_issues, 
+      model6_surprise, model6_humanlike
+    )
+  ),
   
-  ### individual differences in experimental effects
+  
+  ##### Individual differences in experimental effects #####
+  
   
   # model 7 - trustworthiness split by demographics and AI variables
   tar_map(
@@ -197,7 +227,7 @@ list(
                          plot7_AI_familiarity, plot7_AI_frequency)
     ),
   
-  ### cross-cultural differences in experimental effects
+  ##### Cross-cultural differences in experimental effects #####
   
   # load cultural data
   tar_target(cultural_data_file, "data/cultural/cultural.csv", format = "file"),
@@ -236,7 +266,7 @@ list(
                          plot8_AI_index)
     ),
   
-  ### intention-to-treat analyses
+  ##### Intention-to-treat analyses #####
   
   # model 9 - intention-to-treat analyses including comp failures
   tar_map(
@@ -263,7 +293,7 @@ list(
                                     model9_humanlike)
   ),
   
-  ### analysis summary
+  #### Analysis summary ####
   
   # render quarto file
   tar_quarto(summary, "quarto/summary/summary.qmd")
