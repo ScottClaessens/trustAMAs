@@ -1,7 +1,7 @@
 country,ISO,GDP_per_capita,HDI,gini,relational_mobility_latent,relational_mobility_raw,tightness,individualism,AI_readiness,AI_index
 Brazil,BR,10294.90,0.786,52,0.203,4.419,1.69,38,65.89,12
 Chile,CL,17067.80,0.878,43,0.109,4.3,1.68,23,63.19,11
-China,CH,12614.10,0.797,35.7,,,2.05,20,72.01,54
+China,CN,12614.10,0.797,35.7,,,2.05,20,72.01,54
 France,FR,44690.90,0.92,31.5,0.213,4.451,,,79.36,28
 Germany,DE,54343.20,0.959,32.4,-0.011,4.194,2.03,67,76.9,27
 India,IN,2480.80,0.685,32.8,,,2.48,48,62.81,24

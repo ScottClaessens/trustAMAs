@@ -1,13 +1,16 @@
 # load packages
 options(tidyverse.quiet = TRUE)
+library(crew)
 library(targets)
 library(tarchetypes)
 library(tidyverse)
 
 # set targets options
 tar_option_set(
-  packages = c("brms", "forcats", "ggnewscale", "kableExtra", "knitr", 
-               "ordinal", "patchwork", "rethinking", "tidybayes", "tidyverse")
+  packages = c("brms", "forcats", "ggnewscale", "ggrepel", "kableExtra", 
+               "knitr", "ordinal", "patchwork", "readxl", "rethinking", 
+               "tidybayes", "tidyverse"),
+  controller = crew_controller_local(workers = 2)
   )
 tar_source()
 
@@ -199,17 +202,65 @@ list(
   # load cultural data
   tar_target(cultural_data_file, "data/cultural/cultural.csv", format = "file"),
   tar_target(cultural_data, read_csv(cultural_data_file, show_col_types = FALSE)),
+  # load country networks
+  tar_target(
+    spatial_file,
+    "data/country_networks/1F Population Distance.xlsx",
+    format = "file"
+    ),
+  tar_target(
+    linguistic_file,
+    "data/country_networks/2F Country Distance 1pml adj.xlsx",
+    format = "file"
+  ),
+  tar_target(spatial_network, load_country_network(spatial_file, log = TRUE)),
+  tar_target(linguistic_network, load_country_network(linguistic_file)),
   # model 8 - trustworthiness split by cross-cultural variables
-  #!!!!!!!!! control for networks???
-  #tar_map(
-  #  values = tibble(
-  #    pred1 = c("advice", "advice", "advice", "treatment", "treatment"),
-  #    pred2 = c("relational_mobility_latent", "tightness",
-  #              "individualism", "AI_readiness", "AI_index")
-  #    ),
-  #  names = pred2,
-  #  tar_target(model8, fit_model8(data, cultural_data, pred1, pred2))
-  #),
+  tar_map(
+    values = tibble(
+      pred1 = c("advice", "advice", "advice", "treatment", "treatment"),
+      pred2 = c("relational_mobility_latent", "tightness",
+                "individualism", "AI_readiness", "AI_index")
+      ),
+    names = pred2,
+    tar_target(model8, fit_model8(data, cultural_data, spatial_network, 
+                                  linguistic_network, pred1, pred2)),
+    tar_target(plot8, plot_model8(model8, data, cultural_data, pred1, pred2))
+  ),
+  tar_target(
+    plot8_combined,
+    plot_model8_combined(plot8_relational_mobility_latent,
+                         plot8_tightness,
+                         plot8_individualism,
+                         plot8_AI_readiness,
+                         plot8_AI_index)
+    ),
+  
+  ### intention-to-treat analyses
+  
+  # model 9 - intention-to-treat analyses including comp failures
+  tar_map(
+    values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
+                             "surprise", "humanlike")),
+    tar_target(model9, fit_model1(data_full, resp)),
+    tar_target(means9, extract_means_model1(model9, resp))
+  ),
+  # plot overall distributions and model means
+  tar_target(
+    plot_means_itt,
+    plot_means_overall(
+      data_full, bind_rows(means9_trustworthy, means9_blame, 
+                           means9_trust_other_issues, means9_surprise,
+                           means9_humanlike)
+    )
+  ),
+  # create table of pairwise contrasts
+  tar_target(
+    table_pairwise_contrasts_itt,
+    create_table_pairwise_contrasts(model9_trustworthy, model9_blame, 
+                                    model9_trust_other_issues, model9_surprise,
+                                    model9_humanlike)
+  ),
   
   ### analysis summary
   

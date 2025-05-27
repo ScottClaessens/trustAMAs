@@ -1,5 +1,6 @@
 # function to fit model 8 to data from the main study
-fit_model8 <- function(data, cultural_data, pred1, pred2) {
+fit_model8 <- function(data, cultural_data, spatial_network, linguistic_network,
+                       pred1, pred2) {
   # standardise cultural data for modelling
   cultural_data <- mutate(
     cultural_data,
@@ -10,11 +11,15 @@ fit_model8 <- function(data, cultural_data, pred1, pred2) {
   )
   # join datasets
   data <- left_join(data, cultural_data, by = "country")
+  # create duplicate iso column for modelling
+  data$ISO2 <- data$ISO
   # set up the brms formula
   formula <- bf(
-    paste(
+    paste0(
       "trustworthy ~ 1 + ", pred1, " * ", pred2, " + (1 | id)",
-      "+ (1 + ", pred1, " | country)"
+      " + (1 + ", pred1, " | gr(ISO, cov = spatial_network))",
+      " + (1 + ", pred1, " | gr(ISO2, cov = linguistic_network))",
+      " + (1 + ", pred1, " | country)"
       )
     )
   # set up priors
@@ -28,6 +33,10 @@ fit_model8 <- function(data, cultural_data, pred1, pred2) {
   brm(
     formula = formula,
     data = data,
+    data2 = list(
+      spatial_network = spatial_network,
+      linguistic_network = linguistic_network
+    ),
     family = cumulative,
     prior = priors,
     cores = 4,

@@ -300,8 +300,6 @@ plot1_by_country_trust_other_issues|stem|263c5e8b37dca58d|0b4cd6b3913c3c38|627a0
 plot1_by_country_blame|stem|c62da75a4f402273|ef17057c22854edc|3d29ac1e21869f4c|668397006||t20229.3851700993s|s8336670b|8336670|rds|local|vector|||0.765|Removed 5 rows containing nonfinite outside the scale rangenew_stat_boxplot.|
 model6_trustworthy|stem|6df42ca6a8a1c682|b705f980c2f94d5f|d4ba32b9228d9c45|1446989733||t20229.5984709008s|s433518877b|433518877|rds|local|vector|||2942.422|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
 loo6_trustworthy|stem|cc255282157c1471|2978b457d7ccab04|1c5df3f56ce934dc|949075745||t20229.5991108927s|s725132b|725132|rds|local|vector|||54.984||
-cultural_data_file|stem|a8963900ad51f244|71886a193d9b91f0|2c530c1562a7fbd1|-248065372|data/cultural/cultural.csv|t20229.5766754435s|s795b|795|file|local|vector|||6.188|package brms was built under R version 4.4.3. package ggnewscale was built under R version 4.4.3. package kableExtra was built under R version 4.4.3. package knitr was built under R version 4.4.3. package patchwork was built under R version 4.4.3. package cmdstanr was built under R version 4.4.3. package posterior was built under R version 4.4.3|
-cultural_data|stem|7f713883260db6ea|38c3e5898d0a8208|d914c457e209df1a|25648991||t20229.7116943089s|s1072b|1072|rds|local|vector|||0.375||
 model7_advice_political_ideology|stem|4283648ad8312a62|03c3828dcafb19a2|a34c9b3e1f8dd423|1325160650||t20229.8769186135s|s398369987b|398369987|rds|local|vector|||3995.188|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
 model7_political_ideology|stem|d615627246958367|03c3828dcafb19a2|a34c9b3e1f8dd423|-151822686||t20229.9460187621s|s398374722b|398374722|rds|local|vector|||4073.187|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
 model7_AI_frequency|stem|7fe2527ca1c77435|e9d6f03fe3f56af1|a34c9b3e1f8dd423|-1933148978||t20229.9834801422s|s429521637b|429521637|rds|local|vector|||3224.078|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
@@ -331,14 +329,33 @@ plot7_political_ideology|stem|d2d1584a9de370bd|2f9a63bc849bfb64|6aa8bd60d8feb462
 plot5_trustworthy|stem|e295097e07865b17|829a7485c509b7ad|b5dd16fbf5d9820c|1049487886||t20230.4859404024s|s501201139b|501201139|rds|local|vector|||15.75||
 summary|stem|43ece882ef8a9f59|1703ec0aa14db903|e41eda49ef9aa141|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20230.4867416956s|s1568244b|1568244|file|local|vector|||52.969||
 plot7_combined|stem|577d5e0d4589f315|4522f56b2606ed23|50343f2fe0a0ac04|-703753325||t20230.4873436895s|s22881281b|22881281|rds|local|vector|||0.781||
+spatial_file|stem|3b34f8ff9c4f7434|1a1aee6b18eeffdd|2c530c1562a7fbd1|550027880|data/country_networks/1F Population Distance.xlsx|t20230.5360392859s|s1004634b|1004634|file|local|vector|||4.828|package brms was built under R version 4.4.3. package ggnewscale was built under R version 4.4.3. package kableExtra was built under R version 4.4.3. package knitr was built under R version 4.4.3. package patchwork was built under R version 4.4.3. package cmdstanr was built under R version 4.4.3. package posterior was built under R version 4.4.3|
+linguistic_file|stem|8dcaa6829b20e15a|c3e1cdb69cf57a4f|2c530c1562a7fbd1|400190491|data/country_networks/2F Country Distance 1pml adj.xlsx|t20230.5361056864s|s779851b|779851|file|local|vector|||0||
+cultural_data_file|stem|d36f711f51114ba7|71886a193d9b91f0|2c530c1562a7fbd1|-248065372|data/cultural/cultural.csv|t20230.5405955344s|s795b|795|file|local|vector|||0||
+spatial_network|stem|31cd0951124450e5|51ce202d8866308d|2e372c33ac9839c1|89875917||t20230.5468545584s|s836b|836|rds|local|vector|||0.125||
+linguistic_network|stem|f80ad70139cc55b0|73e915c640949818|88e2bd4bfbda219f|421953072||t20230.5468558799s|s812b|812|rds|local|vector|||0.094||
+cultural_data|stem|3b5b5faf107705f7|38c3e5898d0a8208|20bb3c2fb0361611|25648991||t20230.5468646769s|s1071b|1071|rds|local|vector|||0.719||
+model8_relational_mobility_latent|stem|b44ba9300f310bbb|03c6301e251d1253|64c80cf28c1dbb81|-2091030608||t20230.6470124285s|s328038145b|328038145|rds|local|vector|||5136.297|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+model8_AI_readiness|stem|01a7ce20a5d76acc|9c1a29bbdfeb7f70|64c80cf28c1dbb81|-533592519||t20230.7280514858s|s430229679b|430229679|rds|local|vector|||6986.266|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+model8_individualism|stem|64064ad5435ea89a|de07c591b3b09347|64c80cf28c1dbb81|1163073976||t20230.8121936052s|s357264141b|357264141|rds|local|vector|||7258.234|Rows containing NAs were excluded from the model.. The largest Rhat is NA, indicating chains have not mixed.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlrhat. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
+model8_tightness|stem|cf5e8abb7fd32af4|f6542cfad7358817|64c80cf28c1dbb81|-1040550595||t20230.8844075251s|s357455261b|357455261|rds|local|vector|||6226.5|Rows containing NAs were excluded from the model.. The largest Rhat is NA, indicating chains have not mixed.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlrhat. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
+model8_AI_index|stem|0be9c935be82081e|8a96a0cfed213b89|64c80cf28c1dbb81|704136968||t20230.9749836979s|s430583158b|430583158|rds|local|vector|||7810.5|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+plot8_relational_mobility_latent|stem|b179d4a6b45c4b6d|57a0f8dbbf99017a|5aff21202a6c3c00|18255544||t20231.4348586998s|s387738692b|387738692|rds|local|vector|||12||
+plot8_AI_readiness|stem|c5055d0605599439|a42d96df4418c55e|9eacd16af6360a3f|597674353||t20231.4362267534s|s489217062b|489217062|rds|local|vector|||10.203||
+plot8_AI_index|stem|03b0a379a3d53267|b031808a737630dc|f986998857abd545|1736934785||t20231.4375732239s|s489643683b|489643683|rds|local|vector|||9.797||
+plot8_tightness|stem|2fd9c407dc02de5b|9910eafcf00a9fd5|fb68850ffe05361f|1330090826||t20231.4386813161s|s417110178b|417110178|rds|local|vector|||7.438||
+plot8_individualism|stem|d79cca1a4eaf773c|a0cd4549cc85f73d|1e7b098d20f8996e|1219493099||t20231.439794713s|s417037699b|417037699|rds|local|vector|||7.797||
+plot8_combined|stem|0a6b987e68205c54|1e1d0d3f208b70a4|9aa69b8efffdb767|1717984541||t20231.4439497207s|s2200020447b|2200020447|rds|local|vector|||4.907|Removed 3 rows containing missing values or values outside the scale rangegeom_point.. Removed 3 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.|
 plot_model1|function|87977fd25f805083
-.Random.seed|object|1e70e68aea3f9eab
+.Random.seed|object|5853bd71345f3e5a
 create_table_pairwise_contrasts|function|e5a840b85895b9b5
 plot_model4_confidence|function|70975548620d421c
 plot_model3|function|22c9147526ec9568
+plot_model8_combined|function|366d28f3392a40e9
 plot_model5|function|28b2351732e2fb51
 plot_model7|function|eab9c8d69c486b41
 plot_sample_overall|function|41e88f12c0e961bd
+plot_model8|function|99b5814ec56c8189
 plot_likerts_overall|function|3ceed78aa7253db7
 fit_model1|function|1d157cb44c34e4cf
 fit_model2|function|03beec569c879662
@@ -357,7 +374,7 @@ load_pilot_data|function|06b8b0dcbc3227bc
 extract_means_model3|function|3e556417f07a6df2
 fit_model7|function|f50a4051cae7640b
 plot_model7_combined|function|a35a08d415e54adc
-fit_model8|function|5c469c0ff7340c8d
+fit_model8|function|02d9599d7019d57a
 extract_means_model4|function|16776032a360043c
 load_data|function|fdc891c9e6e8a10f
 plot_means_by_country|function|98e22f69f177d830
@@ -365,13 +382,14 @@ plot_pilot_model1a|function|ce55ebd61dd919c4
 create_table_sample_characteristics|function|3db4962aabd9fce9
 pivot_pilot_data_longer|function|786ac240a9070313
 extract_means_model6|function|7ba910cf775c5d47
-plot_pilot_model1b|function|6597f8749a97ccfe
 extract_means_model7|function|386aebdde5100928
+plot_pilot_model1b|function|6597f8749a97ccfe
 plot_means_overall|function|f26d04a401c99d36
 run_power_analysis_between|function|e90fbf5a6fc74a83
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
 plot_model4_judgement_shift|function|e7586ecaf11c0e32
+load_country_network|function|f32f4fae35f1344d
 run_power_analysis_mixed|function|d9035ad9cd01cffb
 plot_pilot_model2a|function|18cf349962067a8c
 plot_pilot_model2b|function|31c58fb5b8fc37fe

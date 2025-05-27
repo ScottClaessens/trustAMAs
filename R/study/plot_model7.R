@@ -1,6 +1,6 @@
 # function to plot results of model 7
 plot_model7 <- function(means, pred1, pred2) {
-  # xlabs
+  # x-axis labels
   xlabs <- c(
     "religiosity" = "Religiosity",
     "political_ideology" = "Political ideology (conservatism)",
