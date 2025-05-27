@@ -1,6 +1,5 @@
 # load packages
 options(tidyverse.quiet = TRUE)
-library(crew)
 library(targets)
 library(tarchetypes)
 library(tidyverse)
@@ -8,9 +7,8 @@ library(tidyverse)
 # set targets options
 tar_option_set(
   packages = c("brms", "forcats", "ggnewscale", "ggrepel", "kableExtra", 
-               "knitr", "ordinal", "patchwork", "readxl", "rethinking", 
-               "tidybayes", "tidyverse"),
-  controller = crew_controller_local(workers = 2)
+               "knitr", "magick", "maps", "ordinal", "patchwork", "pdftools", 
+               "readxl", "rethinking", "tidybayes", "tidyverse")
   )
 tar_source()
 
@@ -251,7 +249,8 @@ list(
     plot_means_overall(
       data_full, bind_rows(means9_trustworthy, means9_blame, 
                            means9_trust_other_issues, means9_surprise,
-                           means9_humanlike)
+                           means9_humanlike),
+      itt = TRUE
     )
   ),
   # create table of pairwise contrasts
