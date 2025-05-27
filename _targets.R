@@ -51,6 +51,8 @@ list(
   tar_target(data_full, load_data(data_file)),
   # exclude comprehension failures
   tar_target(data, filter(data_full, comprehension_check == "Correct")),
+  # plot study overview
+  tar_target(plot_overview, plot_study_overview()),
   # create table of sample characteristics
   tar_target(table_sample, create_table_sample_characteristics(data)),
   # plot sample and representativeness
