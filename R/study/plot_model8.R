@@ -109,7 +109,7 @@ plot_model8 <- function(model8, data, cultural_data, pred1, pred2) {
         "Trust in deontological advisor\ncompared to utilitarian advisor",
         "Trust in human advisor\ncompared to AI advisor"
       ),
-      limits = if (pred1 == "advice") c(-1.5, 2.5) else c(-0.25, 0.75)
+      limits = if (pred1 == "advice") c(-1.5, 2.5) else c(-0.25, 0.8)
     ) +
     theme_classic() +
     theme(legend.position = "none")

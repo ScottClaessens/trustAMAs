@@ -316,16 +316,6 @@ cultural_data_file|stem|d36f711f51114ba7|71886a193d9b91f0|2c530c1562a7fbd1|-2480
 spatial_network|stem|31cd0951124450e5|51ce202d8866308d|2e372c33ac9839c1|89875917||t20230.5468545584s|s836b|836|rds|local|vector|||0.125||
 linguistic_network|stem|f80ad70139cc55b0|73e915c640949818|88e2bd4bfbda219f|421953072||t20230.5468558799s|s812b|812|rds|local|vector|||0.094||
 cultural_data|stem|3b5b5faf107705f7|38c3e5898d0a8208|20bb3c2fb0361611|25648991||t20230.5468646769s|s1071b|1071|rds|local|vector|||0.719||
-model8_relational_mobility_latent|stem|b44ba9300f310bbb|03c6301e251d1253|64c80cf28c1dbb81|-2091030608||t20230.6470124285s|s328038145b|328038145|rds|local|vector|||5136.297|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
-model8_AI_readiness|stem|01a7ce20a5d76acc|9c1a29bbdfeb7f70|64c80cf28c1dbb81|-533592519||t20230.7280514858s|s430229679b|430229679|rds|local|vector|||6986.266|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
-model8_individualism|stem|64064ad5435ea89a|de07c591b3b09347|64c80cf28c1dbb81|1163073976||t20230.8121936052s|s357264141b|357264141|rds|local|vector|||7258.234|Rows containing NAs were excluded from the model.. The largest Rhat is NA, indicating chains have not mixed.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlrhat. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess. Tail Effective Samples Size ESS is too low, indicating posterior variances and tail quantiles may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmltailess|
-model8_AI_index|stem|0be9c935be82081e|8a96a0cfed213b89|64c80cf28c1dbb81|704136968||t20230.9749836979s|s430583158b|430583158|rds|local|vector|||7810.5|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
-plot8_relational_mobility_latent|stem|b179d4a6b45c4b6d|57a0f8dbbf99017a|5aff21202a6c3c00|18255544||t20231.4348586998s|s387738692b|387738692|rds|local|vector|||12||
-plot8_AI_readiness|stem|c5055d0605599439|a42d96df4418c55e|9eacd16af6360a3f|597674353||t20231.4362267534s|s489217062b|489217062|rds|local|vector|||10.203||
-plot8_AI_index|stem|03b0a379a3d53267|b031808a737630dc|f986998857abd545|1736934785||t20231.4375732239s|s489643683b|489643683|rds|local|vector|||9.797||
-plot8_tightness|stem|2fd9c407dc02de5b|9910eafcf00a9fd5|fb68850ffe05361f|1330090826||t20231.4386813161s|s417110178b|417110178|rds|local|vector|||7.438||
-plot8_individualism|stem|d79cca1a4eaf773c|a0cd4549cc85f73d|1e7b098d20f8996e|1219493099||t20231.439794713s|s417037699b|417037699|rds|local|vector|||7.797||
-plot8_combined|stem|0a6b987e68205c54|1e1d0d3f208b70a4|9aa69b8efffdb767|1717984541||t20231.4439497207s|s2200020447b|2200020447|rds|local|vector|||4.907|Removed 3 rows containing missing values or values outside the scale rangegeom_point.. Removed 3 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.|
 model9_blame|stem|45078d9555012c94|60d038b97bf0ee46|1272e42115d6456b|520581843||t20235.4120961636s|s440940891b|440940891|rds|local|vector|||2420.609|Rows containing NAs were excluded from the model.|
 model9_humanlike|stem|57b24b262c222d0a|0741acac26848d69|1272e42115d6456b|-2122597970||t20235.4448132612s|s441879428b|441879428|rds|local|vector|||2810.094|Rows containing NAs were excluded from the model.|
 model9_surprise|stem|80376e0e3389cb2f|1486d1b051572afa|1272e42115d6456b|-1680208620||t20235.4761700103s|s441364334b|441364334|rds|local|vector|||2696.844|Rows containing NAs were excluded from the model.|
@@ -345,6 +335,32 @@ plot_overview|stem|64433e027dc01320|0a47e9bec7acdb61|ab558426afd68414|126835773|
 model8_tightness|stem|655659685dfe743b|f6542cfad7358817|08a387c68ec988d6|-1040550595||t20235.6351285849s|s535116269b|535116269|rds|local|vector|||6290.75|Rows containing NAs were excluded from the model.. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
 table_pairwise_contrasts_by_dilemma|stem|59677d15f26e87dc|8ce7aa70bdd38865|9f3a23b21ede51b4|2014864665||t20235.6648838296s|s706b|706|rds|local|vector|||6.047|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
 table_pairwise_contrasts_by_order|stem|702875403fd59347|caa70accb9170c3f|035c37ee4e127b95|-2058409508||t20235.6894656084s|s700b|700|rds|local|vector|||4.031|Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.. Method posterior_samples is deprecated. Please see as_draws for recommended alternatives.|
+plot3_bike_surprise|stem|cee185e67daf6b4e|cd28a77d4e099ec4|d4ca9193c1322753|370020257||t20235.8044182297s|s505004526b|505004526|rds|local|vector|||5.094|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
+plot3_baby_surprise|stem|f082d31b0368b736|ab06ed57b7fe946e|d4ca9193c1322753|1256267539||t20235.8046744165s|s504828448b|504828448|rds|local|vector|||3.406||
+plot1_humanlike|stem|46f85ff3d9081899|d5dc414de0258949|788f24320c54503f|1518871173||t20235.8049413622s|s462884390b|462884390|rds|local|vector|||3.609||
+plot3_baby_trustworthy|stem|1c3ed8cc8b366929|fb9028a0d84dfa35|6dd4e625b3b8d29a|-1082637371||t20235.8052293017s|s505514460b|505514460|rds|local|vector|||3.812||
+plot3_bike_trustworthy|stem|e2bed79e70470de6|c05fe9200fb1d167|6dd4e625b3b8d29a|-401240727||t20235.8054753625s|s505611740b|505611740|rds|local|vector|||4.172||
+plot1_trustworthy|stem|938fa496b8137835|a027aff4b659d76a|d1a195efcf6b6765|-1477954251||t20235.805684417s|s462581213b|462581213|rds|local|vector|||2.578||
+plot3_baby_blame|stem|a87818aa53e27525|5582d992d5c49d78|19c058a8e17ab7d8|-2090530278||t20235.8059134038s|s505457040b|505457040|rds|local|vector|||2.734||
+plot3_bike_blame|stem|575d28336dcf8e93|e448713072190cc6|19c058a8e17ab7d8|-283502319||t20235.8061144699s|s505480997b|505480997|rds|local|vector|||2.281||
+plot1_surprise|stem|0bb026a1498454ff|23b83965948041e4|45e4efaa8579e888|-1047463223||t20235.8063354061s|s462111183b|462111183|rds|local|vector|||2.141||
+plot3_bike_humanlike|stem|9f5a31f2b817f13e|208a4fbd2ef8d94d|b0cad310240d9667|970641644||t20235.806559373s|s505485118b|505485118|rds|local|vector|||2.562||
+plot3_baby_humanlike|stem|09a8b1618782dbbd|5a7e624d84501204|b0cad310240d9667|-1102616204||t20235.8067639864s|s505220976b|505220976|rds|local|vector|||2.468||
+plot1_trust_other_issues|stem|9aea085f993db136|8595fde6c3fd9402|ad3c0defafe08728|1289544526||t20235.8069850585s|s462482472b|462482472|rds|local|vector|||2.969||
+plot3_bike_trust_other_issues|stem|04be67df0e3afc2f|5736890b1957367f|0f5cce15db75badf|2035709140||t20235.8072166019s|s505314401b|505314401|rds|local|vector|||2.859||
+plot3_baby_trust_other_issues|stem|2cd3528a0e60ff67|d38f3cb6aa1b51ec|0f5cce15db75badf|-917508528||t20235.8074146293s|s505076060b|505076060|rds|local|vector|||2.328||
+plot1_blame|stem|0f2d72a33d71babb|57d99bef9ee1c631|2ed6be9d018869d4|-1613154228||t20235.8076295092s|s462471110b|462471110|rds|local|vector|||2.672||
+summary|stem|05421f02f1e19659|1703ec0aa14db903|288ac6658d8018d7|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20235.8080008013s|s1571736b|1571736|file|local|vector|||26.688||
+model8_AI_readiness|stem|84ae5012ef0677c8|9c1a29bbdfeb7f70|08a387c68ec988d6|-533592519||t20235.902903222s|s644697141b|644697141|rds|local|vector|||4897.421|Rows containing NAs were excluded from the model.. There were 2 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+model8_individualism|stem|506edf51fff35ca6|de07c591b3b09347|08a387c68ec988d6|1163073976||t20235.9804881148s|s535079914b|535079914|rds|local|vector|||6688.344|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems. The largest Rhat is NA, indicating chains have not mixed.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlrhat. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+model8_AI_index|stem|6c24cecbd19ce1a7|8a96a0cfed213b89|08a387c68ec988d6|704136968||t20236.0439590667s|s644877217b|644877217|rds|local|vector|||5466.531|Rows containing NAs were excluded from the model.|
+model8_relational_mobility_latent|stem|7756f91ce6a3787b|03c6301e251d1253|08a387c68ec988d6|-2091030608||t20236.2631692478s|s491383382b|491383382|rds|local|vector|||18927.063|Rows containing NAs were excluded from the model.. There were 8 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems. Bulk Effective Samples Size ESS is too low, indicating posterior means and medians may be unreliable.Running the chains for more iterations may help. Seehttpsmcstan.orgmiscwarnings.htmlbulkess|
+plot8_AI_readiness|stem|2368879b3dcd5b31|a42d96df4418c55e|a4e5ba10e04a7c9e|597674353||t20236.2681324218s|s732931540b|732931540|rds|local|vector|||2.547||
+plot8_individualism|stem|04950becc6e4f2ed|a0cd4549cc85f73d|09209c31a1c3f25c|1219493099||t20236.2684569691s|s624513746b|624513746|rds|local|vector|||1.625||
+plot8_AI_index|stem|b2e2e0a9fc9aedbc|b031808a737630dc|d0c567a9254d6d44|1736934785||t20236.2688989655s|s733232151b|733232151|rds|local|vector|||2.266||
+plot8_tightness|stem|6102386aa23c5826|9910eafcf00a9fd5|cd7485cbec346db8|1330090826||t20236.2692574037s|s624350705b|624350705|rds|local|vector|||1.828||
+plot8_relational_mobility_latent|stem|f7f16c33db1e6f2d|57a0f8dbbf99017a|a2e990d1a6ed5a15|18255544||t20236.2696090227s|s580706771b|580706771|rds|local|vector|||1.922||
+plot8_combined|stem|99131c8d8f3df934|1e1d0d3f208b70a4|d0063db5512ab1e6|1717984541||t20236.2710493933s|s3295011266b|3295011266|rds|local|vector|||0.907|Removed 3 rows containing missing values or values outside the scale rangegeom_point.. Removed 3 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.|
 plot_model4_judgement_shift|function|e7586ecaf11c0e32
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -362,7 +378,7 @@ extract_means_pilot_model2|function|dacbe490b2def06b
 plot_study_overview|function|f69118e088b5881a
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5a9d029ad4d0e808
-.Random.seed|object|b7b827a1d6643257
+.Random.seed|object|44daa59345ce84fe
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
 fit_model1|function|1d157cb44c34e4cf
@@ -381,7 +397,7 @@ fit_model7|function|f50a4051cae7640b
 plot_model7|function|eab9c8d69c486b41
 plot_means_overall|function|efa47ae573cafdf7
 fit_model8|function|6a28a98bb8d4fcbc
-plot_model8|function|99b5814ec56c8189
+plot_model8|function|be2acd58605c4e15
 plot_model2_confidence|function|292287834d276b0c
 load_country_network|function|f32f4fae35f1344d
 plot_model7_combined|function|a35a08d415e54adc
@@ -399,19 +415,3 @@ plot_model2_judgement|function|70cbfb9a7e3840d9
 load_data|function|fdc891c9e6e8a10f
 create_table_pairwise_contrasts_by_order|function|2b4ab60bab95f7c5
 create_table_sample_characteristics|function|3db4962aabd9fce9
-plot3_bike_surprise|stem|cee185e67daf6b4e|cd28a77d4e099ec4|d4ca9193c1322753|370020257||t20235.8044182297s|s505004526b|505004526|rds|local|vector|||5.094|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
-plot3_baby_surprise|stem|f082d31b0368b736|ab06ed57b7fe946e|d4ca9193c1322753|1256267539||t20235.8046744165s|s504828448b|504828448|rds|local|vector|||3.406||
-plot1_humanlike|stem|46f85ff3d9081899|d5dc414de0258949|788f24320c54503f|1518871173||t20235.8049413622s|s462884390b|462884390|rds|local|vector|||3.609||
-plot3_baby_trustworthy|stem|1c3ed8cc8b366929|fb9028a0d84dfa35|6dd4e625b3b8d29a|-1082637371||t20235.8052293017s|s505514460b|505514460|rds|local|vector|||3.812||
-plot3_bike_trustworthy|stem|e2bed79e70470de6|c05fe9200fb1d167|6dd4e625b3b8d29a|-401240727||t20235.8054753625s|s505611740b|505611740|rds|local|vector|||4.172||
-plot1_trustworthy|stem|938fa496b8137835|a027aff4b659d76a|d1a195efcf6b6765|-1477954251||t20235.805684417s|s462581213b|462581213|rds|local|vector|||2.578||
-plot3_baby_blame|stem|a87818aa53e27525|5582d992d5c49d78|19c058a8e17ab7d8|-2090530278||t20235.8059134038s|s505457040b|505457040|rds|local|vector|||2.734||
-plot3_bike_blame|stem|575d28336dcf8e93|e448713072190cc6|19c058a8e17ab7d8|-283502319||t20235.8061144699s|s505480997b|505480997|rds|local|vector|||2.281||
-plot1_surprise|stem|0bb026a1498454ff|23b83965948041e4|45e4efaa8579e888|-1047463223||t20235.8063354061s|s462111183b|462111183|rds|local|vector|||2.141||
-plot3_bike_humanlike|stem|9f5a31f2b817f13e|208a4fbd2ef8d94d|b0cad310240d9667|970641644||t20235.806559373s|s505485118b|505485118|rds|local|vector|||2.562||
-plot3_baby_humanlike|stem|09a8b1618782dbbd|5a7e624d84501204|b0cad310240d9667|-1102616204||t20235.8067639864s|s505220976b|505220976|rds|local|vector|||2.468||
-plot1_trust_other_issues|stem|9aea085f993db136|8595fde6c3fd9402|ad3c0defafe08728|1289544526||t20235.8069850585s|s462482472b|462482472|rds|local|vector|||2.969||
-plot3_bike_trust_other_issues|stem|04be67df0e3afc2f|5736890b1957367f|0f5cce15db75badf|2035709140||t20235.8072166019s|s505314401b|505314401|rds|local|vector|||2.859||
-plot3_baby_trust_other_issues|stem|2cd3528a0e60ff67|d38f3cb6aa1b51ec|0f5cce15db75badf|-917508528||t20235.8074146293s|s505076060b|505076060|rds|local|vector|||2.328||
-plot1_blame|stem|0f2d72a33d71babb|57d99bef9ee1c631|2ed6be9d018869d4|-1613154228||t20235.8076295092s|s462471110b|462471110|rds|local|vector|||2.672||
-summary|stem|05421f02f1e19659|1703ec0aa14db903|288ac6658d8018d7|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20235.8080008013s|s1571736b|1571736|file|local|vector|||26.688||
