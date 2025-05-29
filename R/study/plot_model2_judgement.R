@@ -41,9 +41,14 @@ plot_model2_judgement <- function(means2) {
       linewidth = 0.5
       ) +
     facet_wrap(. ~ treatment) +
-    xlab(NULL) +
+    xlab("Country") +
     scale_y_continuous(
-      name = expression("Deontological Judgement" %<->% "Utilitarian Judgement"),
+      name = expression(
+        atop(
+          "Moral judgement (0-1 scale)",
+          paste("Deontological" %<->% "Utilitarian")
+        )
+      ),
       limits = c(0, 1)
     ) +
     scale_colour_manual(values = c("#E69F00", "#56B4E9")) +

@@ -19,13 +19,18 @@ plot_model4_judgement_shift <- function(means4) {
     mutate(dilemma = paste0(dilemma, " dilemma")) %>%
     # plot
     ggplot(mapping = aes(x = diff, y = treatment, fill = Advice)) +
-    geom_vline(xintercept = 0, colour = "white", linetype = "dashed") +
-    stat_halfeye() +
+    geom_vline(
+      xintercept = 0,
+      colour = "white",
+      linetype = "dashed",
+      linewidth = 0.5
+      ) +
+    stat_halfeye(size = 1) +
     facet_grid(dilemma ~ .) +
     scale_x_continuous(
       name = expression(
         atop(
-          "Pre-post shift in judgement after seeing advice (0-1 scale)",
+          "Pre-post shift in judgement (0-1 scale)",
           paste("Deontological" %<->% "Utilitarian")
         )
       ),
@@ -33,15 +38,18 @@ plot_model4_judgement_shift <- function(means4) {
     ) +
     scale_fill_manual(values = c("#E69F00", "#56B4E9")) +
     ylab("Advisor") +
+    ggtitle("Split by dilemma") +
     theme(
       panel.grid = element_blank(),
-      axis.ticks = element_blank()
+      axis.ticks = element_blank(),
+      legend.position = "bottom",
+      strip.text = element_text(size = 8)
       )
   # save and return
   ggsave(
     plot = out,
     file = "plots/model4_judgement_shift.pdf",
-    width = 7,
+    width = 6,
     height = 4
   )
   return(out)

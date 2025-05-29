@@ -18,12 +18,17 @@ plot_model2_judgement_shift <- function(means2) {
     rename(Advice = advice) %>%
     # plot
     ggplot(mapping = aes(x = diff, y = treatment, fill = Advice)) +
-    geom_vline(xintercept = 0, colour = "white", linetype = "dashed") +
-    stat_halfeye() +
+    geom_vline(
+      xintercept = 0,
+      colour = "white",
+      linetype = "dashed",
+      linewidth = 0.5
+      ) +
+    stat_halfeye(size = 1) +
     scale_x_continuous(
       name = expression(
         atop(
-          "Pre-post shift in judgement after seeing advice (0-1 scale)",
+          "Pre-post shift in judgement (0-1 scale)",
           paste("Deontological" %<->% "Utilitarian")
         )
       ),
@@ -31,16 +36,18 @@ plot_model2_judgement_shift <- function(means2) {
     ) +
     scale_fill_manual(values = c("#E69F00", "#56B4E9")) +
     ylab("Advisor") +
+    ggtitle("Overall") +
     theme(
       panel.grid = element_blank(),
-      axis.ticks = element_blank()
+      axis.ticks = element_blank(),
+      legend.position = "bottom"
       )
   # save and return
   ggsave(
     plot = out,
     file = "plots/model2_judgement_shift.pdf",
-    width = 7,
-    height = 2.5
+    width = 6,
+    height = 3
   )
   return(out)
 }

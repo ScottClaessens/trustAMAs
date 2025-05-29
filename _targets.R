@@ -161,6 +161,13 @@ list(
       model3_surprise, model3_humanlike
       )
   ),
+  # combine pre-post judgement plots
+  tar_target(
+    plot_judgement_combined,
+    plot_judgements_combined(plot2_judgement_shift,
+                             plot4_judgement_shift,
+                             plot2_judgement)
+    ),
   
   
   ##### Analyses controlling for agreement #####
