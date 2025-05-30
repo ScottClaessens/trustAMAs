@@ -21,9 +21,9 @@ plot_model4_judgement_shift <- function(means4) {
     ggplot(mapping = aes(x = diff, y = treatment, fill = Advice)) +
     geom_vline(
       xintercept = 0,
-      colour = "white",
+      colour = "lightgrey",
       linetype = "dashed",
-      linewidth = 0.5
+      linewidth = 0.4
       ) +
     stat_halfeye(size = 1) +
     facet_grid(dilemma ~ .) +
@@ -39,11 +39,12 @@ plot_model4_judgement_shift <- function(means4) {
     scale_fill_manual(values = c("#E69F00", "#56B4E9")) +
     ylab("Advisor") +
     ggtitle("Split by dilemma") +
+    theme_classic() +
     theme(
       panel.grid = element_blank(),
-      axis.ticks = element_blank(),
       legend.position = "bottom",
-      strip.text = element_text(size = 8)
+      strip.text = element_text(size = 8),
+      strip.background = element_blank()
       )
   # save and return
   ggsave(

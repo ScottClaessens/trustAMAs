@@ -20,9 +20,9 @@ plot_model2_judgement_shift <- function(means2) {
     ggplot(mapping = aes(x = diff, y = treatment, fill = Advice)) +
     geom_vline(
       xintercept = 0,
-      colour = "white",
+      colour = "lightgrey",
       linetype = "dashed",
-      linewidth = 0.5
+      linewidth = 0.4
       ) +
     stat_halfeye(size = 1) +
     scale_x_continuous(
@@ -37,9 +37,9 @@ plot_model2_judgement_shift <- function(means2) {
     scale_fill_manual(values = c("#E69F00", "#56B4E9")) +
     ylab("Advisor") +
     ggtitle("Overall") +
+    theme_classic() +
     theme(
       panel.grid = element_blank(),
-      axis.ticks = element_blank(),
       legend.position = "bottom"
       )
   # save and return
