@@ -300,6 +300,13 @@ list(
                                     model9_humanlike)
   ),
   
+  #### Judgements and confidence in first block only ####
+  
+  # model 10 - judgements and confidence, pre-post advice, first block only
+  tar_target(model10, fit_model2(filter(data, order == 1))),
+  tar_target(means10, extract_means_model2(model10)),
+  
+  
   #### Analysis summary ####
   
   # render quarto file

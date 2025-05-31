@@ -359,6 +359,10 @@ plot8_relational_mobility_latent|stem|f7f16c33db1e6f2d|57a0f8dbbf99017a|a2e990d1
 plot8_combined|stem|99131c8d8f3df934|1e1d0d3f208b70a4|d0063db5512ab1e6|1717984541||t20236.2710493933s|s3295011266b|3295011266|rds|local|vector|||0.907|Removed 3 rows containing missing values or values outside the scale rangegeom_point.. Removed 3 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.|
 plot_model2_model4_combined|function|afd21a24c7e01240|||||||||||||||
 plot2_judgement|stem|c1b5c31a68933226|9805e7bc937e51f9|8c0cfdb136f08e24|306756983||t20236.3748246461s|s21595311b|21595311|rds|local|vector|||0.453||
+plot2_judgement_shift|stem|06a64cf10e8dfe70|b36983bbd7ae202a|4f58d50342b9f059|343894964||t20238.609741563s|s6876090b|6876090|rds|local|vector|||2.219|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
+plot4_judgement_shift|stem|3e49336d89c41add|a34e9fde4dbc730d|6371234e2e945021|-2057021077||t20238.6098440888s|s13597770b|13597770|rds|local|vector|||3.594|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
+summary|stem|c699cd6e9765e008|1703ec0aa14db903|4e98c66a12abc7a2|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20238.6113455104s|s51309b|51309|file|local|vector|||86||
+plot_judgement_combined|stem|25b5286317541c5d|1332fd76b1f6a712|6be0510a32c9d477|1402134560||t20238.6114190845s|s41892351b|41892351|rds|local|vector|||1.671|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
 plot_model4_judgement_shift|function|7a25097e00adc074
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -376,7 +380,7 @@ extract_means_pilot_model2|function|dacbe490b2def06b
 plot_study_overview|function|f69118e088b5881a
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|737236ab4e08cfcb
-.Random.seed|object|ecbcb4f848e5ec49
+.Random.seed|object|cf0c1febb674279c
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
 fit_model1|function|1d157cb44c34e4cf
@@ -414,7 +418,5 @@ run_power_analysis_mixed|function|d9035ad9cd01cffb
 load_data|function|fdc891c9e6e8a10f
 create_table_pairwise_contrasts_by_order|function|2b4ab60bab95f7c5
 create_table_sample_characteristics|function|3db4962aabd9fce9
-plot2_judgement_shift|stem|06a64cf10e8dfe70|b36983bbd7ae202a|4f58d50342b9f059|343894964||t20238.609741563s|s6876090b|6876090|rds|local|vector|||2.219|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
-plot4_judgement_shift|stem|3e49336d89c41add|a34e9fde4dbc730d|6371234e2e945021|-2057021077||t20238.6098440888s|s13597770b|13597770|rds|local|vector|||3.594|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
-summary|stem|c699cd6e9765e008|1703ec0aa14db903|4e98c66a12abc7a2|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20238.6113455104s|s51309b|51309|file|local|vector|||86||
-plot_judgement_combined|stem|25b5286317541c5d|1332fd76b1f6a712|6be0510a32c9d477|1402134560||t20238.6114190845s|s41892351b|41892351|rds|local|vector|||1.671|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
+model10|stem|9e9e0f0320731c11|1bd94ad975509e60|12e9ef81bbed8393|-1850304684||t20238.9709867479s|s1927900200b|1927900200|rds|local|vector|||20602.234|Rows containing NAs were excluded from the model.|
+means10|stem|4e9fb1eaf2367636|c4c6080b4f87740d|cc3af5ad46bd94aa|-1977142526||t20238.9720226543s|s6074467b|6074467|rds|local|vector|||88.531||
