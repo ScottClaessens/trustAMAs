@@ -41,7 +41,7 @@ fit_model8 <- function(data, cultural_data, spatial_network, linguistic_network,
     prior = priors,
     cores = 4,
     control = list(adapt_delta = 0.95),
-    iter = 3000,
+    iter = 4000,
     seed = 2113
   )
 }
