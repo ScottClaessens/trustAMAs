@@ -1,5 +1,5 @@
 # function to plot estimated shifts in judgement from model 2
-plot_model2_judgement_shift <- function(means2) {
+plot_model2_judgement_shift <- function(means2, first_block_only = FALSE) {
   # plot
   out <- 
     means2 %>%
@@ -45,7 +45,11 @@ plot_model2_judgement_shift <- function(means2) {
   # save and return
   ggsave(
     plot = out,
-    file = "plots/model2_judgement_shift.pdf",
+    file = paste0(
+      "plots/model",
+      ifelse(first_block_only, "10", "2"),
+      "_judgement_shift.pdf"
+      ),
     width = 6,
     height = 3
   )

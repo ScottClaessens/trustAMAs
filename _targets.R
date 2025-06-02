@@ -305,6 +305,13 @@ list(
   # model 10 - judgements and confidence, pre-post advice, first block only
   tar_target(model10, fit_model2(filter(data, order == 1))),
   tar_target(means10, extract_means_model2(model10)),
+  tar_target(
+    plot10_judgement_shift,
+    plot_model2_judgement_shift(
+      means10,
+      first_block_only = TRUE
+      )
+    ),
   
   
   #### Analysis summary ####

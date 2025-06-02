@@ -348,10 +348,7 @@ plot3_baby_trust_other_issues|stem|2cd3528a0e60ff67|d38f3cb6aa1b51ec|0f5cce15db7
 plot1_blame|stem|0f2d72a33d71babb|57d99bef9ee1c631|2ed6be9d018869d4|-1613154228||t20235.8076295092s|s462471110b|462471110|rds|local|vector|||2.672||
 plot_model2_model4_combined|function|afd21a24c7e01240|||||||||||||||
 plot2_judgement|stem|c1b5c31a68933226|9805e7bc937e51f9|8c0cfdb136f08e24|306756983||t20236.3748246461s|s21595311b|21595311|rds|local|vector|||0.453||
-plot2_judgement_shift|stem|06a64cf10e8dfe70|b36983bbd7ae202a|4f58d50342b9f059|343894964||t20238.609741563s|s6876090b|6876090|rds|local|vector|||2.219|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
 plot4_judgement_shift|stem|3e49336d89c41add|a34e9fde4dbc730d|6371234e2e945021|-2057021077||t20238.6098440888s|s13597770b|13597770|rds|local|vector|||3.594|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
-summary|stem|c699cd6e9765e008|1703ec0aa14db903|4e98c66a12abc7a2|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20238.6113455104s|s51309b|51309|file|local|vector|||86||
-plot_judgement_combined|stem|25b5286317541c5d|1332fd76b1f6a712|6be0510a32c9d477|1402134560||t20238.6114190845s|s41892351b|41892351|rds|local|vector|||1.671|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
 model10|stem|9e9e0f0320731c11|1bd94ad975509e60|12e9ef81bbed8393|-1850304684||t20238.9709867479s|s1927900200b|1927900200|rds|local|vector|||20602.234|Rows containing NAs were excluded from the model.|
 means10|stem|4e9fb1eaf2367636|c4c6080b4f87740d|cc3af5ad46bd94aa|-1977142526||t20238.9720226543s|s6074467b|6074467|rds|local|vector|||88.531||
 model8_AI_readiness|stem|486c2bfce8fe083c|9c1a29bbdfeb7f70|e18e2f3a2dc4c67d|-533592519||t20239.3957949593s|s858856570b|858856570|rds|local|vector|||6543|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
@@ -365,6 +362,10 @@ plot8_tightness|stem|1e12101df0eeb310|9910eafcf00a9fd5|0bde65c6f0cd6911|13300908
 plot8_individualism|stem|820d0c3ae7e2d07d|a0cd4549cc85f73d|96dacd130bed737c|1219493099||t20239.7820153343s|s831902912b|831902912|rds|local|vector|||1.859||
 plot8_relational_mobility_latent|stem|4b99f9fe373ff2fa|57a0f8dbbf99017a|9cc371558d354177|18255544||t20239.782318108s|s773403385b|773403385|rds|local|vector|||1.672||
 plot8_combined|stem|d2ad9b254b12a343|1e1d0d3f208b70a4|c89ae77004734574|1717984541||t20239.7839123253s|s4388167405b|4388167405|rds|local|vector|||1.219|Removed 3 rows containing missing values or values outside the scale rangegeom_point.. Removed 3 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.. Removed 2 rows containing missing values or values outside the scale rangegeom_point.. Removed 2 rows containing missing values or values outside the scale rangegeom_text_repel.|
+plot2_judgement_shift|stem|88b96bf7f7822693|b36983bbd7ae202a|01d4704a7bec1ca1|343894964||t20241.4313151478s|s6876584b|6876584|rds|local|vector|||0.671|Using the size aesthetic with geom_segment was deprecated in ggplot2 3.4.0.ℹ Please use the linewidth aesthetic instead.|
+plot10_judgement_shift|stem|4bc5cb708564a55b|8d58a3b161f5605d|0013458fca1139b3|-1555118264||t20241.4313250863s|s6917946b|6917946|rds|local|vector|||0.391|Removed 1 row containing missing values or values outside the scale rangestat_slabinterval.|
+plot_judgement_combined|stem|92343430cd9ce383|1332fd76b1f6a712|05330290bd59f9bc|1402134560||t20241.4313646567s|s42078447b|42078447|rds|local|vector|||0.797|Removed 3 rows containing missing values or values outside the scale rangestat_slabinterval.|
+summary|stem|e15d743b70eaf053|1703ec0aa14db903|ddfbdc012676a613|-1884548258|quarto/summary/summary.html*quarto/summary/summary.qmd|t20241.4317988644s|s51309b|51309|file|local|vector|||24.438||
 plot_model4_judgement_shift|function|7a25097e00adc074
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -381,8 +382,8 @@ extract_means_pilot_model1|function|f157ffa156833875
 extract_means_pilot_model2|function|dacbe490b2def06b
 plot_study_overview|function|f69118e088b5881a
 plot_model4_judgement|function|9bf1478f2f944aea
-plot_model2_judgement_shift|function|737236ab4e08cfcb
-.Random.seed|object|ae917d53382e6585
+plot_model2_judgement_shift|function|5b45d634589ccbd9
+.Random.seed|object|7f558d627f3d6d8f
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
 fit_model1|function|1d157cb44c34e4cf
