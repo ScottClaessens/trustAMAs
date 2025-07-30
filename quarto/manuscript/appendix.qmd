@@ -1,0 +1,415 @@
+\vspace*{30mm}
+
+# Supplementary Materials
+
+# Moral Dilemma Wordings
+
+:::{.NoIndent}
+The wording for the "Baby" dilemma was as follows:
+:::
+
+> Enemy soldiers have taken over David's village. They have orders to kill all 
+remaining civilians over the age of two. David and some of his townspeople have 
+sought refuge in two rooms of the cellar of a large house. Outside, he hears the
+voices of soldiers who have come to search the house for valuables. David's baby,
+who is with him in the room, begins to cry loudly. David puts his hand over the
+baby's mouth to block the sound. If David removes his hand from the baby's
+mouth, its crying will summon the attention of the soldiers who will spare his 
+baby's life, but will kill David and the others hiding in both rooms. To save 
+himself and the others, David must keep his hand on the baby's mouth and smother
+the baby to death.
+
+:::{.NoIndent}
+The wording for the "Bike" dilemma was as follows:
+:::
+
+> James is an expert motorcycle rider who has gone on vacation in order to 
+participate in Bike Week. Thousands of other motorcycle riders from across the 
+country have come to ride in this event. As he is riding down the road in front
+of a large group of other riders, he sees that someone up ahead is losing
+control of their bike. As he speeds up to pull alongside the unstable rider, he
+realizes that this person is going to crash at any second. This would certainly
+result in a large pile-up and several deaths as the riders behind James run over
+each other trying to avoid the crashed rider. James realizes that he could
+physically run this rider off the road and into some trees. This would cause the
+other rider to crash and, at his current speed, almost certainly die, but it
+would prevent a crash in the middle of the street and the large pile-up of 
+riders.
+
+\newpage
+
+# Supplementary Figures
+
+::: {#suppfig-means-by-dilemma suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=7}
+tar_read(plot_means_by_dilemma)
+```
+
+Perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian advice (blue), pooling across countries and split by dilemma. Box 
+and whisker plots show the distributions of the data, with horizontal lines 
+representing sample medians, boxes representing interquartile ranges, and 
+whiskers representing ranges. Point ranges show model-estimated marginal means,
+with points representing posterior medians and line ranges representing 95% 
+credible intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-means-by-order suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=7}
+tar_read(plot_means_by_order)
+```
+
+Perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian advice (blue), pooling across dilemmas and countries and split by 
+the first and second experimental blocks. Box and whisker plots show the 
+distributions of the data, with horizontal lines representing sample medians, 
+boxes representing interquartile ranges, and whiskers representing ranges. Point
+ranges show model-estimated marginal means, with points representing posterior
+medians and line ranges representing 95% credible intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-means-itt suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=7}
+tar_read(plot_means_itt)
+```
+
+Perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian advice (blue), pooling across dilemmas and countries and including
+participants who failed the comprehension checks ("intention to treat" analysis).
+Box and whisker plots show the distributions of the data, with horizontal lines 
+representing sample medians, boxes representing interquartile ranges, and 
+whiskers representing ranges. Point ranges show model-estimated marginal means,
+with points representing posterior medians and line ranges representing 95% 
+credible intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-ind-diffs suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=5}
+tar_read(plot7_combined)
+```
+
+Variation in the experimental effects across individuals. The top row shows how
+the estimated difference in trust (on a 1-7 Likert scale) between deontological
+and utilitarian advisors changes with participants' religiosity and political 
+conservatism. The bottom row shows how the estimated difference in trust (on a 
+1-7 Likert scale) between human and AI advisors changes with participants' 
+familiarity with AI and frequency of AI use. Lines and shaded areas reflect 
+posterior medians and 50% and 95% credible intervals. Dashed horizontal lines 
+indicate no difference.
+
+:::
+
+\newpage
+
+::: {#suppfig-country-slopes-blame suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=9}
+tar_read(plot1_blame)
+```
+
+Variation in model parameters across countries. Estimates are the varying 
+log-odds slopes from our multilevel model predicting blame, alongside overall 
+fixed effects (red). Points and line ranges reflect posterior medians and 66% 
+and 95% credible intervals, respectively. Densities reflect samples from the 
+posterior distribution.
+
+:::
+
+\newpage
+
+::: {#suppfig-country-slopes-trust-other-issues suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=9}
+tar_read(plot1_trust_other_issues)
+```
+
+Variation in model parameters across countries. Estimates are the varying 
+log-odds slopes from our multilevel model predicting trust on other issues, 
+alongside overall fixed effects (red). Points and line ranges reflect posterior
+medians and 66% and 95% credible intervals, respectively. Densities reflect 
+samples from the posterior distribution.
+
+:::
+
+\newpage
+
+::: {#suppfig-country-slopes-surprise suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=9}
+tar_read(plot1_surprise)
+```
+
+Variation in model parameters across countries. Estimates are the varying 
+log-odds slopes from our multilevel model predicting surprise, alongside overall
+fixed effects (red). Points and line ranges reflect posterior medians and 66% 
+and 95% credible intervals, respectively. Densities reflect samples from the 
+posterior distribution.
+
+:::
+
+\newpage
+
+::: {#suppfig-country-slopes-humanlike suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=9}
+tar_read(plot1_humanlike)
+```
+
+Variation in model parameters across countries. Estimates are the varying 
+log-odds slopes from our multilevel model predicting human-like perceptions, 
+alongside overall fixed effects (red). Points and line ranges reflect posterior
+medians and 66% and 95% credible intervals, respectively. Densities reflect 
+samples from the posterior distribution.
+
+:::
+
+\newpage
+
+::: {#suppfig-cross-cultural suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot8_combined)
+```
+
+Variation in the experimental effects across different cultural variables. The 
+top row shows how the estimated difference in trust (on a 1-7 Likert scale) 
+between deontological and utilitarian advisors varies by relational mobility, 
+tightness-looseness, and individualism. The bottom row shows how the estimated 
+difference in trust (on a 1-7 Likert scale) between human and AI advisors varies
+by government AI readiness and the global AI index. Lines and shaded areas 
+reflect posterior medians and 50% and 95% credible intervals. Letters are ISO-2
+country codes. All models control for spatial and cultural non-independence 
+between countries.
+
+:::
+
+\newpage
+
+::: {#suppfig-judgment-shift-block1 suppfig-pos="H"}
+
+```{r, fig.height=3, fig.width=6}
+tar_read(plot10_judgement_shift)
+```
+
+Effects of moral advice on participant judgments in the first block only. 
+Estimated pre-post shifts in judgments on a 0-1 sliding scale, for human and AI
+advisors giving deontological and utilitarian advice. The grey dashed line 
+indicates no pre-post shift in judgment. Points, line ranges, and densities 
+reflect posterior medians, 95% credible intervals, and samples from the 
+posterior distribution, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-confidence suppfig-pos="H"}
+
+```{r, fig.height=4.5, fig.width=6}
+tar_read(plot2_confidence)
+```
+
+Pre-post increase in participants' confidence in their judgment after seeing the
+moral advice. Points and line ranges represent posterior medians and 50% and 95%
+credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-confidence-baby suppfig-pos="H"}
+
+```{r, fig.height=4.5, fig.width=6}
+tar_read(plot4_confidence_baby)
+```
+
+Pre-post increase in participants' confidence in their judgment after seeing the
+moral advice, for the Baby dilemma only. Points and line ranges represent 
+posterior medians and 50% and 95% credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-confidence-bike suppfig-pos="H"}
+
+```{r, fig.height=4.5, fig.width=6}
+tar_read(plot4_confidence_bike)
+```
+
+Pre-post increase in participants' confidence in their judgment after seeing the
+moral advice, for the Bike dilemma only. Points and line ranges represent 
+posterior medians and 50% and 95% credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-sample suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_sample)
+```
+
+Overall characteristics of the sample
+
+:::
+
+\newpage
+
+::: {#suppfig-sample-representativeness suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot_sample_representative)
+```
+
+Representativeness of the final sample. Bars show the observed proportions in 
+each age-gender category, lines show the targeted proportions in our 
+nationally representative quotas. Differences between observed and targeted 
+proportions in each quota category were less than 10% for all countries except 
+China, which was skewed slightly towards younger participants.
+
+:::
+
+\newpage
+
+# Supplementary Tables
+
+::: {.landscape}
+
+::: {#supptbl-contrasts-by-dilemma supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_pairwise_contrasts_by_dilemma) %>%
+  mutate(
+    group = c(
+      rep("Baby dilemma", 5),
+      rep("Bike dilemma", 5)
+      )
+    ) %>%
+  as_grouped_data(groups = "group") %>%
+  as_flextable(hide_grouplabel = TRUE) %>%
+  theme_apa() %>%
+  width(width = c(2.7, rep(1.3, 5))) %>%
+  bold(i = ~ !is.na(group)) %>%
+  add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+  align(i = 1, j = NULL, align = "center", part = "header") %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  line_spacing() %>%
+  fontsize(size = 9)
+```
+
+Pairwise contrasts for perceptions of the moral advisors, pooling across 
+countries and split by dilemma. Numbers reflect differences in marginal means on
+the log-odds scale. The interaction effects represent the interaction between 
+advisor type and advice type (i.e., the difference between the differences in 
+the rows above). Main numbers are posterior medians, numbers in square brackets 
+are 95% credible intervals.
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-contrasts-by-order supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_pairwise_contrasts_by_order) %>%
+  mutate(
+    group = c(
+      rep("Block 1", 5),
+      rep("Block 2", 5)
+      )
+    ) %>%
+  as_grouped_data(groups = "group") %>%
+  as_flextable(hide_grouplabel = TRUE) %>%
+  theme_apa() %>%
+  width(width = c(2.7, rep(1.3, 5))) %>%
+  bold(i = ~ !is.na(group)) %>%
+  add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+  align(i = 1, j = NULL, align = "center", part = "header") %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  line_spacing() %>%
+  fontsize(size = 9)
+```
+
+Pairwise contrasts for perceptions of the moral advisors, pooling across 
+dilemmas and countries and split by the first and second experimental blocks.
+Numbers reflect differences in marginal means on the log-odds scale. The 
+interaction effects represent the interaction between advisor type and advice 
+type (i.e., the difference between the differences in the rows above). Main 
+numbers are posterior medians, numbers in square brackets are 95% credible 
+intervals.
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-contrasts-itt supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_pairwise_contrasts_itt) %>%
+  mutate(
+    group = c(
+      rep("Effect of advice type", 2),
+      rep("Effect of advisor type", 2),
+      "Interaction effect"
+      )
+    ) %>%
+  as_grouped_data(groups = "group") %>%
+  as_flextable(hide_grouplabel = TRUE) %>%
+  theme_apa() %>%
+  width(width = c(2.7, rep(1.3, 5))) %>%
+  bold(i = ~ !is.na(group)) %>%
+  add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+  align(i = 1, j = NULL, align = "center", part = "header") %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  line_spacing() %>%
+  fontsize(size = 9)
+```
+
+Pairwise contrasts for perceptions of the moral advisors, pooling across 
+dilemmas and countries and including participants who failed the comprehension 
+checks ("intention to treat" analysis). Numbers reflect differences in marginal
+means on the log-odds scale. The bottom row represents the interaction between
+advisor type and advice type (i.e., the difference between the differences in
+the rows above). Main numbers are posterior medians, numbers in square brackets
+are 95% credible intervals.
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-sample-by-country supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_sample) %>%
+  flextable() %>%
+  theme_apa() %>%
+  fontsize(size = 9) %>%
+  line_spacing() %>%
+  autofit()
+```
+
+Breakdown of the sample by country
+
+:::
+
+:::

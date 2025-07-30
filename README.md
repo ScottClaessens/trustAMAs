@@ -8,15 +8,23 @@ To run this code, you will need to [install R](https://www.r-project.org/) and
 the following R packages:
 
 ```r
-install.packages(c("targets", "tarchetypes", "tidyverse"))
+install.packages(
+  c("brms", "crew", "forcats", "ggnewscale", "ggrepel", "kableExtra",
+    "knitr", "magick", "maps", "ordinal", "patchwork", "pdftools",
+    "readxl", "tarchetypes", "targets", "tidybayes", "tidyverse")
+)
 ```
+
+You must also install the `rethinking` package following the instructions 
+[here](https://github.com/rmcelreath/rethinking).
 
 ### Executing code
 
-1. Set the working directory to this code repository
-2. Load the `targets` package with `library(targets)`
-3. To run all analyses, run `tar_make()`
-4. To load individual targets into your environment, run `tar_load(targetName)`
+1. Clone this repository to your local machine
+2. Open the R Project file `trustAMAs.Rproj`
+4. In the console, run the analysis pipeline with `targets::tar_make()`
+5. To load individual targets into your environment, run 
+`targets::tar_load(targetName)`
 
 ## Help
 

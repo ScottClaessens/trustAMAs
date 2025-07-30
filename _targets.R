@@ -1,5 +1,6 @@
 # load packages
 options(tidyverse.quiet = TRUE)
+library(crew)
 library(targets)
 library(tarchetypes)
 library(tidyverse)
@@ -91,6 +92,7 @@ list(
   tar_target(model2, fit_model2(data)),
   tar_target(loo2, loo(model2)),
   tar_target(means2, extract_means_model2(model2)),
+  tar_target(absolute_diffs2, calculate_absolute_diffs_model2(means2)),
   tar_target(plot2_judgement, plot_model2_judgement(means2)),
   tar_target(plot2_judgement_shift, plot_model2_judgement_shift(means2)),
   tar_target(plot2_confidence, plot_model2_confidence(means2)),
@@ -226,7 +228,11 @@ list(
     names = pred2,
     tar_target(model7, fit_model7(data, pred1, pred2)),
     tar_target(means7, extract_means_model7(model7, pred1, pred2)),
-    tar_target(plot7, plot_model7(means7, pred1, pred2))
+    tar_target(plot7, plot_model7(means7, pred1, pred2)),
+    tar_target(
+      interaction_effect,
+      extract_interaction_effect_model7(model7, pred1, pred2)
+      )
   ),
   tar_target(
     plot7_combined,
@@ -262,7 +268,11 @@ list(
     names = pred2,
     tar_target(model8, fit_model8(data, cultural_data, spatial_network, 
                                   linguistic_network, pred1, pred2)),
-    tar_target(plot8, plot_model8(model8, data, cultural_data, pred1, pred2))
+    tar_target(plot8, plot_model8(model8, data, cultural_data, pred1, pred2)),
+    tar_target(
+      interaction_effect,
+      extract_interaction_effect_model8(model8, pred1, pred2)
+    )
   ),
   tar_target(
     plot8_combined,
@@ -300,7 +310,7 @@ list(
                                     model9_humanlike)
   ),
   
-  #### Judgements and confidence in first block only ####
+  ##### Judgements and confidence in first block only #####
   
   # model 10 - judgements and confidence, pre-post advice, first block only
   tar_target(model10, fit_model2(filter(data, order == 1))),
@@ -317,6 +327,12 @@ list(
   #### Analysis summary ####
   
   # render quarto file
-  tar_quarto(summary, "quarto/summary/summary.qmd")
+  tar_quarto(summary, "quarto/summary/summary.qmd"),
+  
+  
+  #### Manuscript ####
+  
+  # render manuscript
+  tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE)
   
 )

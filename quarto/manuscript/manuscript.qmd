@@ -1,0 +1,1130 @@
+---
+title: "Trust in Artificial Moral Advisors across Cultures"
+shorttitle: "Trust in AMAs"
+author:
+  - name: Scott Claessens
+    corresponding: false
+    orcid: 0000-0002-3562-6981
+    email: scott.claessens@gmail.com
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: United Kingdom
+        postal-code: CT2 7NP
+    role:
+      - conceptualization
+      - data curation
+      - formal analysis
+      - investigation
+      - methodology
+      - visualization
+      - writing
+      - editing
+  - name: Konrad Bocian
+    corresponding: false
+    orcid: 0000-0002-8652-0167
+    affiliations:
+      - name: SWPS University
+        department: Department of Psychology in Sopot
+    role:
+      - methodology
+      - editing
+  - name: Paulo Sérgio Boggio
+    corresponding: false
+    orcid: 0000-0002-6109-0447
+    affiliations:
+      - name: Mackenzie Presbyterian University
+        department: Social and Cognitive Neuroscience Laboratory
+      - name: National Institute of Science and Technology on Social and Affective Neuroscience (INCT-SANI)
+    role:
+      - methodology
+      - editing
+  - name: Grégory Fiorio
+    corresponding: false
+    orcid: 0009-0008-3731-5678
+    affiliations:
+      - name: Université PSL
+        department: Institut Jean Nicod, Département d’Études Cognitives, École Normale Supérieure
+    role:
+      - methodology
+      - editing
+  - name: Léo Fitouchi
+    corresponding: false
+    orcid: 0000-0002-1724-0129
+    affiliations:
+      - name: Toulouse School of Economics
+        department: Institute for Advanced Study in Toulouse, Department of Social and Behavioral Sciences
+    role:
+      - methodology
+      - editing
+  - name: Zeynep Genç
+    corresponding: false
+    orcid: 0009-0004-8586-5771
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: United Kingdom
+        postal-code: CT2 7NP
+    role:
+      - methodology
+      - editing
+  - name: Ivar R. Hannikainen
+    corresponding: false
+    orcid: 0000-0003-0623-357X
+    affiliations:
+      - name: University of Granada
+        department: Department of Philosophy
+    role:
+      - methodology
+      - editing
+  - name: Lea C. Kamitz
+    corresponding: false
+    orcid: 0000-0003-1290-5088
+    affiliations:
+      - name: Anglia Ruskin University
+        department: IPPPRI
+    role:
+      - methodology
+      - editing
+  - name: Tamino Konur
+    corresponding: false
+    orcid: 0009-0005-4706-1200
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: United Kingdom
+        postal-code: CT2 7NP
+    role:
+      - methodology
+      - editing
+  - name: Ethan Landes
+    corresponding: false
+    orcid: 0000-0002-1186-1717
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: United Kingdom
+        postal-code: CT2 7NP
+    role:
+      - methodology
+      - editing
+  - name: Peng Liu
+    corresponding: false
+    orcid: 0000-0003-4929-0531
+    affiliations:
+      - name: Zhejiang University
+        department: Center for Psychological Sciences
+      - name: National University of Singapore
+        department: Centre for Biomedical Ethics, Yong Loo Lin School of Medicine
+    role:
+      - methodology
+      - editing
+  - name: Katarzyna Miazek
+    corresponding: false
+    orcid: 0000-0001-9072-2688
+    affiliations:
+      - name: SWPS University
+        department: Department of Psychology in Sopot
+    role:
+      - methodology
+      - editing
+  - name: Waldir M. Sampaio
+    corresponding: false
+    orcid: 0000-0002-6066-4314
+    affiliations:
+      - name: Mackenzie Presbyterian University
+        department: Social and Cognitive Neuroscience Laboratory
+      - name: National Institute of Science and Technology on Social and Affective Neuroscience (INCT-SANI)
+    role:
+      - methodology
+      - editing
+  - name: Jorge Suárez
+    corresponding: false
+    orcid: 0000-0002-6215-2064
+    affiliations:
+      - name: University of Granada
+        department: Department of Philosophy
+    role:
+      - methodology
+      - editing
+  - name: Pierce Veitch
+    corresponding: false
+    orcid: 0009-0005-3364-7470
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: United Kingdom
+        postal-code: CT2 7NP
+    role:
+      - methodology
+      - editing
+  - name: Onurcan Yilmaz
+    corresponding: false
+    orcid: 0000-0002-6094-7162
+    affiliations:
+      - name: Kadir Has University
+        department: Department of Psychology
+    role:
+      - methodology
+      - editing
+  - name: Hongbo Yu
+    corresponding: false
+    orcid: 0000-0002-3384-7772
+    affiliations:
+      - name: University of California Santa Barbara
+        department: Department of Psychological and Brain Sciences
+    role:
+      - methodology
+      - editing
+  - name: Jim A.C. Everett
+    corresponding: true
+    orcid: 0000-0003-2801-5426
+    email: j.a.c.everett@kent.ac.uk
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: United Kingdom
+        postal-code: CT2 7NP
+    role:
+      - conceptualization
+      - funding acquisition
+      - methodology
+      - supervision
+      - writing
+      - editing
+author-note:
+  status-changes: 
+    affiliation-change: ~
+    deceased: ~
+  disclosures:
+    study-registration: This pre-print is currently not yet peer-reviewed and may differ from the final version.
+    data-sharing: Word count (excl. abstract, methods, figure legends, and references) = 4,908 words.
+    related-report: ~
+    conflict-of-interest: ~
+    financial-support: ~
+    gratitude: ~
+    authorship-agreements: ~
+abstract: "Developers of artificial intelligence are already building prototypes for artificial moral advisors: autonomous systems designed to provide humans with recommendations on ethical issues. Yet it remains unclear whether people will actually trust and adopt these technologies. Here, we investigate perceptions of human and artificial moral advisors in a large-scale cross-cultural experiment (12 countries; *N* = 6,896). We show that people trust artificial advisors less than human ones, especially when their advice aligns with utilitarian rather than deontological principles. Nonetheless, people update their own moral judgments in the direction of the advice -- regardless of whether it came from a human or AI advisor -- and do so more when the advice is deontological. These findings reveal a psychological paradox: people trust artificial moral advisors less, yet still defer to them in practice. This dissociation raises serious questions about the potential influence of machines on human morality, with implications for AI governance."
+keywords: [artificial intelligence, morality, trust, moral influence]
+bibliography: bibliography.bib
+engine: knitr
+format:
+  apaquarto-docx:
+    fig-dpi: 300
+execute:
+  echo: false
+  warning: false
+  error: false
+crossref:
+  custom:
+    - kind: float
+      key: suppfig
+      latex-env: suppfig
+      reference-prefix: Supplementary Figure
+      space-before-numbering: true
+      latex-list-of-description: Supplementary Figure
+      caption-location: bottom
+    - kind: float
+      key: supptbl
+      latex-env: supptbl
+      reference-prefix: Supplementary Table
+      space-before-numbering: true
+      latex-list-of-description: Supplementary Table
+      caption-location: top
+floatsintext: true
+csl: nature.csl
+---
+
+```{r}
+library(flextable)
+library(targets)
+library(tidyverse)
+
+# rounding function to use throughout (2 decimal places)
+roundd <- function(x) as.character(format(round(x, 2), nsmall = 2))
+```
+
+Artificial intelligence (AI) – any system that uses an algorithm or a 
+statistical model to perform tasks that usually require human intelligence – is 
+reshaping the world around us. By leveraging the computational power of AI 
+agents, we are able to build on our own skills and therefore perform tasks more 
+easily, more quickly, and perhaps even better than we could alone. Students use 
+large language models (LLMs) to help them write assignments, banks rely on AI to
+help with credit checks, and hospitals use AI tools to provide diagnoses for 
+diseases. But could artificial intelligence also be used to help us make better
+moral decisions?
+
+Artificial moral advisors (AMAs) refer to AI systems designed to assist humans 
+in making ethical decisions, leveraging artificial intelligence to analyse moral
+dilemmas, engage in Socratic dialogue about moral matters [@Lara2020], and/or 
+provide recommendations based on established ethical theories, principles, and 
+guidelines [@Giubilini2018]. The idea, at root, is simple: Artificial 
+intelligence provides a tool that can help enhance human activity in many 
+different domains, so why not use AI to help people make better moral decisions?
+Given that human moral judgments are influenced by a variety of factors of 
+questionable normative relevance [@Haidt2001], AMAs could instead serve a 
+function akin to the "ideal observer" [@Firth1952] by offering dispassionate and
+consistent judgments free from human biases [@Giubilini2018; @Sinnott2021]. Over
+the last decade, there has been growing philosophical attention to the possible
+future role of AMAs [@Giubilini2018; @Landes2025; @Lara2020; @Liu2022; 
+@Sinnott2021], and now with the release of openly available LLMs like ChatGPT, 
+Gemini, and Claude, this interest has rapidly moved from hypothetical to 
+practical.
+
+While contemporary LLMs like ChatGPT are not designed specifically to assist in 
+morality, their flexibility and accessibility means that they do already give 
+advice on moral dilemmas [@Krugel2023]. Perhaps concerningly, ethical advice 
+surreptitiously written by ChatGPT is rated as more moral, thoughtful, and 
+correct than advice written by a human moral expert [@Dillion2025]. Beyond 
+general-purpose LLMs, companies are already working on prototypes for AI-powered
+systems designed specifically to model morality. For example, the Allen 
+Institute's Delphi [@Jiang2025] is trained on a large corpus of moral judgments,
+and it is now even possible to converse with an AI chatbot trained on the 
+writings of the renowned ethicist Peter Singer (<https://www.petersinger.ai/>).
+
+Questions about how we should create AMAs, whether we should at all, and the 
+long-term consequences of these technologies remain very much open [@Lara2020; 
+@Landes_preprint; @Liu2022]. However, even if we set aside the crucial question
+of whether people *should* trust AMAs, it still remains unclear whether people 
+will actually trust and adopt AMAs in practice. We can broadly define trust as 
+"accept[ing] vulnerability based upon positive expectations of the intentions or
+behaviour of another" [@Rousseau1998], but how this will apply to people's 
+interactions with AMAs is far from clear. Even if people report that they trust
+AMAs, there is no guarantee that they would actually listen to the moral advice
+by changing their judgment, and indeed theoretical models of trust in AI often
+distinguish between attitudinal trust and its behavioral consequences, such as 
+willingness to use the technology [@Lalot2024]. Given the increasing role that 
+AI plays in life, and in particular claims that AI-powered moral advisors could
+help us make better moral judgments, we need to understand whether people trust 
+AMAs, whether this trust depends on the kinds of moral decisions that the AMAs 
+make, and whether people will actually defer to AMAs on moral issues. Our paper
+addresses all of these questions.
+
+Will people trust AMAs? A large body of research, mostly conducted prior to the
+release of contemporary LLMs, has documented the phenomenon of algorithm
+aversion: the tendency for individuals to distrust AI relative to humans, even
+when the AI boasts identical or even superior performance [@Dawes1979; 
+@Dietvorst2015; @Meehl1954; @Meehl1957]. This algorithm aversion leads to a 
+specific distrust in AI making moral decisions, driven by the perception that AI
+lacks internal experience [@Bigman2018]. These results suggest that people will
+distrust AI models that give advice on moral issues. However, these findings may
+no longer generalize in a post-ChatGPT era in which people are interacting
+with LLMs on a regular basis. Moreover, what limited research there has been on
+trust in AI in the moral domain has tended to focus narrowly on Western 
+populations [@Henrich2010], while moral norms, prevalence of AI, and 
+morally relevant cultural values vary dramatically across societies 
+[@Barnes2024; @Inglehart2000; @Jackson2024]. It therefore remains unclear 
+whether people around the world will trust AMAs and whether levels of trust will
+vary across cultures.
+
+Will people trust AMAs differently depending on the moral decisions that they 
+make? For AMAs to be trustworthy, they must be aligned with some normative 
+standard, and there is unsurprisingly a great deal of interest in how AI can and
+should be aligned with our moral values -- and which ones specifically. A 
+fundamental challenge that developers of AMAs will face is determining which 
+kind of ethical framework to benchmark against, especially in moral dilemmas 
+where different ethical frameworks endorse mutually exclusive actions. For 
+example, is it morally acceptable to break normal prohibitions against murder in
+order to prevent harm to a greater number? Consequentialist theories such as 
+utilitarianism focus on the 'greatest good for the greatest number', positing 
+that only consequences matter when making moral decisions [@Bentham1983; 
+@Mill1863; @Singer1993]. In contrast, non-utilitarian deontological theories 
+claim that we also have to consider rights, duties, and obligations when making
+moral judgments: for example, even if murder might bring about good 
+consequences, it should still be judged as wrong since we have a moral duty not
+to harm others [@Fried1978; @Kant2002; @Ross1930]. AMAs could theoretically 
+provide advice in line with either of these philosophical frameworks, and given
+the ubiquity of moral dilemmas in everyday life, an artificial moral advisor
+will be expected to advise on the appropriate action in these fault lines of 
+our morality.
+
+Deontological and utilitarian theories are both ethical theories, and so 
+competing judgments in moral dilemmas can therefore be described as "moral" in 
+the sense that they align with normatively sensitive standards of moral 
+behavior. And yet, we know that people do not judge other humans who endorse 
+deontological and utilitarian decisions as equally moral and trustworthy. In 
+particular, a growing body of work suggests that people who give 
+characteristically deontological responses to sacrificial moral dilemmas 
+(by rejecting instrumental harm) are seen as more trustworthy than those who 
+give characteristically utilitarian responses (by endorsing instrumental harm) 
+[@Brown2019; @Crockett2021; @Everett2016; @Everett2018; @Everett2021; @Rom2017; 
+@Sacco2017]. A potential explanation for this asymmetry is that people who make
+deontological decisions are perceived as warmer, more predictable, and more 
+committed to their social partners [@Everett2016; @Everett2018; @Rom2017; 
+@Turpin2021], whereas people who make utilitarian decisions are perceived as 
+colder, less moral, and less empathic [@Kreps2014; @Rom2017; @Uhlmann2013].
+
+Based on this previous work, we might assume that people will trust AMAs that 
+give deontological moral advice more than AMAs that give utilitarian advice, 
+just as they do for humans [@Everett2016; @Everett2018; @Everett2021]. However, 
+there is also evidence that preferences for deontological decision-makers can be
+sensitive to the type of role one is judging. For example, people show an
+increased preference for deontological decision-making in close personal
+relationships, but show more acceptability for utilitarian decision-making from
+political leaders in impartial roles [@Everett2018]. Moreover, people are more
+likely to make utilitarian judgments when they want to signal their competence,
+rather than their warmth [@Rom2018]. Given that AMAs are proposed to be able to
+provide more impartial and competent advice in line with the idea of an ideal
+observer, it is therefore possible that people might actually prefer more
+utilitarian advice from AMAs. This would be in line with work showing that
+people trust autonomous vehicles more when they make utilitarian decisions,
+rather than deontological decisions, in switch-style sacrificial dilemmas
+[@Young2019].
+
+Of most relevance to this paper, Myers and Everett [@Myers2025] presented the 
+results of four pre-registered studies looking at how people trust AMAs compared
+to humans. In a sample of British participants, they found that participants 
+trusted AMAs less than humans who gave the same moral advice; that participants
+trusted AMAs less if they endorsed rather than rejected instrumental harm 
+(in line with utilitarian philosophy); that even when participants agreed with 
+the specific decision that the AMA gave, there remained a tendency to expect
+that they would disagree with decisions made by the AMA in future; and that 
+participants not only distrusted utilitarian AMAs, but expected AI to give 
+utilitarian advice.
+
+While these results are important in helping us understand how AMAs are 
+differently trusted based on the kinds of decisions they make, there is still 
+much we do not know. First, Myers and Everett [@Myers2025] only looked at 
+participants in the UK, limiting cross-cultural generalizability. While 
+cross-cultural research has shown that countries differ in their cooperation 
+with AI [@Karpus2025], fears of it occupying various positions [@Dong2024], and 
+legal concerns [@Ikkatai2024], it remains unclear how people across different 
+countries that vary across different cultural indices perceive AMAs. Second, 
+Myers and Everett [@Myers2025] examined ratings of trustworthiness, willingness
+to trust the AI on other issues, and expected agreement in the future; however, 
+we do not know if people will actually follow the advice from AMAs.
+
+Will people listen to the advice provided by AMAs? Even if people report that
+they trust AMAs, this stated trust may not lead people to actually defer to 
+the moral advice from AMAs in practice: perceived trustworthiness does not 
+always entail trusting behavior. However, there is increasing evidence 
+that people can be persuaded by contemporary consumer-grade LLMs in small but 
+significant ways [@Schoenegger2025]. When directed to argue for a point in the 
+non-moral domain, LLMs are capable of changing political beliefs [@Durmus2024; 
+@Hackenburg2024; @Hackenburg2025], such as views on smoking bans and assault 
+weapons bans [@Bai2023], and can even reduce endorsement of conspiracy theories
+[@Costello2024]. There is less work on AI persuasion in the moral domain, but 
+some research suggests that American participants listen to pre-generated LLM 
+advice in sacrificial moral dilemmas by giving judgments in line with the advice
+provided [@Krugel2023] and other work suggests that British participants update
+their moral judgments in everyday moral dilemmas when given advice from LLMs 
+[@Landes_under_review]. This raises an important question: will people listen to
+AMAs less than humans, and might this vary depending on whether the AMAs give 
+deontological or utilitarian advice?
+
+## The Present Research
+
+In this research, we explore whether people trust AMAs compared to human moral 
+experts, whether this trust differs based on the kind of moral advice that the 
+AMA gives in a sacrificial moral dilemma, and whether people update their own 
+moral judgments when provided with advice from AMAs. Using a large 
+cross-cultural sample (@fig-study-overview), we explore the generalizability of
+these effects across individuals and populations.
+
+```{r, fig.height=4, fig.width=7}
+#| label: fig-study-overview
+#| fig-cap: Overview of the study
+#| fig-align: center
+#| apa-note: (a) The flow of the experiment. We presented participants with a sacrificial moral dilemma (either the Bike dilemma or the Baby dilemma; within-subjects) and asked participants for their own moral judgment and their confidence in their judgment. We then presented participants with deontological or utilitarian advice (within-subjects) from either a human or an AI advisor (between-subjects). The advice was followed by several questions about the perceptions of the advisor, such as trust, and questions about participants’ revised moral judgment and confidence. Participants then repeated this flow for the other moral dilemma and the other direction of advice. (b) Examples of the deontological (orange) and utilitarian (blue) advice given by human and AI advisors in the study. (c) Countries included in the sample.
+
+tar_read(plot_overview)
+```
+
+<br>
+
+The flow of the experiment is shown in @fig-study-overview. We presented 
+participants with one of two sacrificial dilemmas reflecting a tension between 
+utilitarian and deontological theories about the acceptability of harm to one to
+save a greater number of others (the “Bike” dilemma and the “Baby” dilemma; see
+Methods for more details). After asking participants what they thought should be
+done in the moral dilemma, we then presented participants with moral advice from
+an advisor that was described as either a human moral expert or an artificial 
+moral advisor (between-subjects). The advisor either gave characteristically 
+utilitarian advice to endorse the harm, justifying this in terms of maximizing 
+the greater good, or gave characteristically deontological advice to reject the 
+harm, appealing to certain moral actions being wrong even if they have good 
+consequences. We asked participants to rate various perceptions of the advisor, 
+such as trust. Participants were then presented with the dilemma again, and 
+asked if, having seen this advice, they wanted to update their initial judgment.
+Finally, participants repeated this flow for the other sacrificial dilemma and 
+the other direction of advice: for example, if participants initially saw an 
+advisor give deontological advice for the “Bike” dilemma, they then saw a 
+different advisor give utilitarian advice for the “Baby” dilemma. We conducted 
+the experiment in 12 countries (Brazil, Chile, China, France, Germany, India, 
+Mexico, Poland, South Africa, Turkey, UK, USA; overall *N* = 6,896) chosen to 
+maximize variation in geographic spread, cultural backgrounds, and levels of AI
+progress according to global indices. In our pre-registration, we hypothesized
+that participants would trust AMAs less than human advisors, and utilitarian 
+advisors less than deontological advisors (<https://osf.io/qa7gn/>).
+
+# Results
+
+## Perceptions of the Moral Advisors
+
+We first looked at participants' overall perceptions of the moral advisors, 
+pooling across dilemmas and countries (@fig-means; @tbl-contrasts). We found 
+that the type of advice given (deontological vs. utilitarian) influenced 
+participants' perceptions of the advisors. In line with our pre-registered 
+predictions, advisors who gave utilitarian advice in the sacrificial dilemmas 
+were trusted less than advisors who gave deontological advice. Participants 
+reported that they would blame someone else more for following utilitarian 
+advice. In contrast to previous work [@Myers2025], we did not find that people 
+were more surprised when the AI gave deontological advice rather than 
+utilitarian advice. However, we found that advisors were perceived as more 
+machine-like when they gave utilitarian advice, suggesting at least some belief 
+about the association of machines with utilitarian decision making.
+
+```{r, fig.height=5, fig.width=7}
+#| label: fig-means
+#| fig-cap: Perceptions of AI and human moral advisors giving deontological (orange) and utilitarian advice (blue), pooling across dilemmas and countries
+#| fig-align: center
+#| apa-note: Box and whisker plots show the distributions of the data, with horizontal lines representing sample medians, boxes representing interquartile ranges, and whiskers representing ranges. Point ranges show model-estimated marginal means, with points representing posterior medians and line ranges representing 95% credible intervals.
+
+tar_read(plot_means)
+```
+
+::: {.landscape}
+
+```{r}
+#| label: tbl-contrasts
+#| tbl-cap: Pairwise contrasts for perceptions of the moral advisors, pooling across dilemmas and countries
+#| apa-note: Numbers reflect differences in marginal means on the log-odds scale. For reference, on the log-odds scale, 0.23 is considered a small effect size, 0.54 a medium effect size, and 0.83 a large effect size [@Chen2010]. The bottom row represents the interaction between advisor type and advice type (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in square brackets are 95% credible intervals.
+
+tar_read(table_pairwise_contrasts) %>%
+    mutate(
+        group = c(
+            rep("Effect of advice type", 2),
+            rep("Effect of advisor type", 2),
+            "Interaction effect"
+        )
+    ) %>%
+    as_grouped_data(groups = "group") %>%
+    as_flextable(hide_grouplabel = TRUE) %>%
+    theme_apa() %>%
+    width(width = c(2.7, rep(1.3, 5))) %>%
+    bold(i = ~ !is.na(group)) %>%
+    add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+    align(i = 1, j = NULL, align = "center", part = "header") %>%
+    align(i = NULL, j = 1, align = "left", part = "all") %>%
+    line_spacing() %>%
+    fontsize(size = 10)
+```
+
+:::
+
+In addition, we found that the type of advisor (human vs. AI) influenced 
+participants' perceptions. In line with our pre-registered predictions and with 
+previous work on algorithm aversion in the moral domain [@Bigman2018], 
+artificial moral advisors were perceived as less trustworthy than human 
+advisors. Participants reported that they would blame someone else more for 
+following moral advice from an AI. Unsurprisingly, human advisors were seen as
+more human-like than AI advisors, especially when they gave deontological 
+advice. Participants were also more surprised when deontological advice came 
+from an AI, rather than from a human.
+
+In addition to our main pre-registered analyses, we assessed the robustness of 
+these effects in several ways. First, we looked at the results split across the
+two sacrificial dilemmas (@suppfig-means-by-dilemma; 
+@supptbl-contrasts-by-dilemma). We found the same broad pattern of results for 
+both dilemmas, though the type of advice (deontological vs. utilitarian) had a 
+stronger influence on perceptions in the Baby dilemma compared to the Bike 
+dilemma. Second, we looked at the results split by the order of the two blocks, 
+finding little evidence of order effects (@suppfig-means-by-order; 
+@supptbl-contrasts-by-order). Third, we determined whether the effects held in 
+an "intention-to-treat" analysis, finding that our results did not differ when 
+we included participants that we had excluded due to comprehension failures 
+(@suppfig-means-itt; @supptbl-contrasts-itt).
+
+## Variation across Individuals and Countries
+
+```{r}
+tar_load(
+  c(
+    interaction_effect_religiosity,
+    interaction_effect_political_ideology,
+    interaction_effect_AI_familiarity,
+    interaction_effect_AI_frequency,
+    interaction_effect_tightness
+  )
+)
+
+# reverse direction when predicting preference for deontological advisor
+interaction_effect_religiosity        <- -interaction_effect_religiosity
+interaction_effect_political_ideology <- -interaction_effect_political_ideology
+interaction_effect_tightness          <- -interaction_effect_tightness
+```
+
+While overall effects capture broad trends, it is possible that our experimental 
+manipulations worked differently for individuals with different demographics and 
+moral preferences, and for countries with different cultural backgrounds. To 
+investigate this potential heterogeneity, we ran several exploratory models 
+including individual-level and cultural-level variables as moderators of the 
+experimental effects, focusing on trust in the moral advisors as the outcome.
+
+We first explored whether the experimental effects varied by demographics and 
+other individual-level characteristics. In particular, we allowed participants'
+religiosity and political ideology to moderate the effect of advice type 
+(deontological vs. utilitarian) and allowed participants' familiarity with AI 
+and frequency of AI use to moderate the effect of advisor type (human vs. AI). 
+We found tentative evidence that the experimental effects varied across these 
+individual-level variables (@suppfig-ind-diffs). In particular, we found that 
+people trusted the deontological advisor more than the utilitarian advisor if 
+they were more religious (interaction effect = 
+`r roundd(median(interaction_effect_religiosity))`, 95% credible interval 
+[`r roundd(quantile(interaction_effect_religiosity, 0.025))` 
+`r roundd(quantile(interaction_effect_religiosity, 0.975))`]) and more 
+politically left-leaning (interaction effect = 
+`r roundd(median(interaction_effect_political_ideology))`, 95% CI 
+[`r roundd(quantile(interaction_effect_political_ideology, 0.025))` 
+`r roundd(quantile(interaction_effect_political_ideology, 0.975))`]).
+We also found that people trusted the human advisor more than the AI advisor if
+they had less familiarity with AI (interaction effect = 
+`r roundd(median(interaction_effect_AI_familiarity))`, 95% CI 
+[`r roundd(quantile(interaction_effect_AI_familiarity, 0.025))` 
+`r roundd(quantile(interaction_effect_AI_familiarity, 0.975))`]) and if
+they used AI less frequently (interaction effect = 
+`r roundd(median(interaction_effect_AI_frequency))`, 95% CI 
+[`r roundd(quantile(interaction_effect_AI_frequency, 0.025))` 
+`r roundd(quantile(interaction_effect_AI_frequency, 0.975))`]). However, these
+exploratory results should be interpreted cautiously as the credible intervals
+include zero.
+
+Following previous work [@Myers2025], we also explored whether the experimental
+effects varied depending on the participant's own agreement with the moral 
+advice. We were interested in participants' agreement for two key reasons. 
+First, the artificial moral advisors of the future are unlikely to know a 
+specific user's own preferences in a given moral dilemma in advance; and second,
+even if they could, the key theoretical appeal of artificial moral advisors is
+that they are thought to be able to provide impartial, disinterested advice that
+draws on normative principles, not merely repeat back what users already think.
+To explore the moderating role of agreement, we constructed an “agreement”
+variable from participants' initial moral judgments, with zero indicating
+maximal disagreement with the moral advice and one indicating maximal agreement
+with the advice. In line with previous work [@Myers2025], when we included this
+agreement variable as a moderator we found that participants trusted the 
+deontological advisor more than the utilitarian advisor when they disagreed with
+the advisor (agreement = 0) and when they were neutral (agreement = 0.5; 
+@fig-agreement). However, when they agreed with the advisor (agreement = 1), the
+95% credible interval for the effect included zero. In other words, while 
+participants trust advisors equally if their advice aligns with their own 
+judgments, a relative distrust of utilitarian advisors over deontological
+advisors emerges when participants disagree with the advisor.
+
+```{r, fig.height=3, fig.width=6}
+#| label: fig-agreement
+#| fig-cap: The estimated difference in trustworthiness between deontological and utilitarian advisors (on a 1-7 Likert scale) across different levels of agreement with the advisor
+#| fig-align: center
+#| apa-note: The dashed horizontal line indicates no difference in trust between deontological and utilitarian advisors. The dashed vertical line indicates that the participant is neutral with regards to agreement with the advisor. Lines and shaded areas represent posterior medians and 95% credible intervals, respectively. Shaded areas become more transparent when the 95% credible intervals begin to include zero.
+
+tar_read(plot5_trustworthy)
+```
+
+<br>
+
+Finally, we explored whether the experimental effects varied across countries 
+with different cultural backgrounds. Extracting the varying slopes from our 
+multilevel model, we found that the experimental effects of advisor type 
+(human vs. AI) and advice type (deontological vs. utilitarian) were relatively
+robust across countries (@fig-country-slopes-trust; see Supplementary Figures 
+[-@suppfig-country-slopes-blame] - [-@suppfig-country-slopes-humanlike] for 
+other perceptions variables). However, there were some notable exceptions -- the
+95% CIs for the effect of advisor type included zero for India, Chile, China, 
+and Mexico, and the 95% CIs for the effect of advice type included zero for 
+India, China, and the USA. To explain the variation across countries, we 
+explored whether the experimental effects varied by cultural factors highlighted
+by previous research [@Awad2020; @Graham2016]. Accounting for the geographic and 
+cultural non-independence of countries [@Claessens2023], we included global 
+indices of AI progress and government readiness as moderators of the effect of 
+advisor type (human vs. AI) and relational mobility, cultural 
+tightness-looseness, and individualism as moderators of the effect of advice 
+type (deontological vs. utilitarian). Of these cultural factors, we only found 
+evidence that the experimental effects varied by tightness-looseness. Looser 
+countries, like Brazil, Mexico, and Chile, trusted the deontological advisor
+relatively more than tighter countries like India and China (interaction effect 
+= `r roundd(median(interaction_effect_tightness))`, 95% CI 
+[`r roundd(quantile(interaction_effect_tightness, 0.025))` 
+`r roundd(quantile(interaction_effect_tightness, 0.975))`]). Other cultural 
+factors did not moderate the experimental effects (@suppfig-cross-cultural).
+
+```{r, fig.height=4, fig.width=9}
+#| label: fig-country-slopes-trust
+#| fig-cap: Variation in model parameters across countries
+#| fig-align: center
+#| apa-note: Estimates are the varying log-odds slopes from our multilevel model predicting trust, alongside overall fixed effects (red). Points and line ranges reflect posterior medians and 66% and 95% credible intervals, respectively. Grey densities reflect samples from the posterior distribution.
+
+tar_read(plot1_trustworthy)
+```
+
+<br>
+
+## Effects of Advice on Moral Judgment Updating
+
+Given that participants generally trust artificial moral advisors less than 
+human advisors, we might predict that they should also be less likely to follow
+AI advice. To test this, we looked at participants' judgments of the moral 
+dilemmas before and after seeing the advice. Do participants update their moral
+judgments in line with human and AI advice?
+
+```{r}
+# get absolute pre-post shifts
+d <- 
+  tar_read(absolute_diffs2) %>%
+  filter(country == "Overall") %>%
+  dplyr::select(!diff)
+
+# differences in pre-post shifts between deontological and utilitarian advisors
+diffs_advice <-
+  d %>%
+  pivot_wider(
+    names_from = "advice",
+    values_from = "absolute_diff"
+    ) %>%
+  rowwise() %>%
+  mutate(diff = list(Deontological - Utilitarian)) %>%
+  dplyr::select(!c(Deontological, Utilitarian))
+
+# differences in pre-post shifts between human and AI advisors
+diffs_treatment <-
+  d %>%
+  pivot_wider(
+    names_from = "treatment",
+    values_from = "absolute_diff"
+    ) %>%
+  rowwise() %>%
+  mutate(diff = list(Human - AI)) %>%
+  dplyr::select(!c(Human, AI))
+```
+
+
+Yes. We found that participants listened to the moral advice, shifting their 
+judgments in the direction of the deontological or utilitarian advice that they
+received ([@fig-judgment-shift]a). This was true for both artificial moral 
+advisors and for human advisors, revealing a dissociation between the difference
+in rated trust and advice-updating for human vs. AI. In line with the finding 
+that participants perceived advisors who gave utilitarian judgments to be less 
+trustworthy, the absolute size of the pre-post shifts revealed that participants
+shifted their judgments more after receiving deontological advice compared to 
+utilitarian advice, both when the advisor was human (difference in absolute 
+shift = 
+`r roundd(median(diffs_advice$diff[diffs_advice$treatment == "Human"][[1]]))`, 
+95% CI 
+[`r roundd(quantile(diffs_advice$diff[diffs_advice$treatment == "Human"][[1]], 0.025))` 
+`r roundd(quantile(diffs_advice$diff[diffs_advice$treatment == "Human"][[1]], 0.975))`
+]) and when the advisor was AI (difference in absolute shift = 
+`r roundd(median(diffs_advice$diff[diffs_advice$treatment == "AI"][[1]]))`, 
+95% CI 
+[`r roundd(quantile(diffs_advice$diff[diffs_advice$treatment == "AI"][[1]], 0.025))` 
+`r roundd(quantile(diffs_advice$diff[diffs_advice$treatment == "AI"][[1]], 0.975))`
+]). By contrast, the absolute size of the pre-post shifts did not differ between
+human and AI advisors, either when they gave deontological advice (difference in
+absolute shift = 
+`r roundd(median(diffs_treatment$diff[diffs_treatment$advice == "Deontological"][[1]]))`, 
+95% CI 
+[`r roundd(quantile(diffs_treatment$diff[diffs_treatment$advice == "Deontological"][[1]], 0.025))` 
+`r roundd(quantile(diffs_treatment$diff[diffs_treatment$advice == "Deontological"][[1]], 0.975))`
+]) or utilitarian advice (difference in absolute shift = 
+`r roundd(median(diffs_treatment$diff[diffs_treatment$advice == "Utilitarian"][[1]]))`, 
+95% CI 
+[`r roundd(quantile(diffs_treatment$diff[diffs_treatment$advice == "Utilitarian"][[1]], 0.025))` 
+`r roundd(quantile(diffs_treatment$diff[diffs_treatment$advice == "Utilitarian"][[1]], 0.975))`
+]). This suggests that while people listened to advice, they particularly 
+listened to deontological advice -- but it did not matter whether this came from
+a human or an AI. This pattern of results was robust across both sacrificial 
+dilemmas, though the advice tended to be more persuasive in the Bike dilemma 
+compared to the Baby dilemma ([@fig-judgment-shift]b). The pattern also held 
+across all the countries in our sample ([@fig-judgment-shift]c) and when we 
+restricted our analysis to judgments in the first experimental block only, 
+before participants knew they would be given the opportunity to revise their 
+judgments (@suppfig-judgment-shift-block1).
+
+```{r, fig.height=5, fig.width=9.5}
+#| label: fig-judgment-shift
+#| fig-cap: Effects of moral advice on participant judgments
+#| fig-align: center
+#| apa-note: (a) Estimated pre-post shifts in judgments on a 0-1 sliding scale, for human and AI advisors giving deontological and utilitarian advice. The grey dashed line indicates no pre-post shift in judgment. Points, line ranges, and densities reflect posterior medians, 95% credible intervals, and samples from the posterior distribution, respectively. (b) Estimated pre-post shifts in judgments, split by moral dilemma. (c) Estimated pre-post shifts in judgments, split by country. The grey dashed line indicates neutral judgments. Points and arrows reflect posterior median estimates before and after seeing the advice, respectively.
+
+tar_read(plot_judgement_combined)
+```
+
+<br>
+
+As well as shifting their judgments, participants' confidence in their judgment
+increased after receiving the moral advice (@suppfig-confidence). This pre-post 
+increase in confidence was again slightly greater after seeing deontological 
+advice compared to utilitarian advice, but did not differ between human and AI 
+advisors. This pattern was robust across dilemmas and countries (Supplementary 
+Figures [-@suppfig-confidence-baby] and [-@suppfig-confidence-bike]).
+
+# Discussion
+
+Can AI tools help us in the moral domain? Some have proposed that they can -- 
+and should [@Giubilini2018; @Lara2020; @Sinnott2021]. But it has remained 
+unclear whether and how people trust AI advisors in the moral domain, and how 
+the kind of normative ethical advice that the AI provides might influence this 
+trust. In a large-scale, pre-registered experiment across 12 countries, we 
+studied people's trust in, and deference to, artificial moral advisors who give
+advice aligned with different ethical theories. We found that participants 
+trusted artificial moral advisors less than humans, particularly when they gave 
+advice based on utilitarian principles. Despite this relative distrust, however,
+people still listened to the moral advice from AI by updating their own moral
+judgments, especially when the advice was in line with deontological principles.
+Importantly, this judgment updating was observed regardless of whether the 
+advice came from a human or an AI advisor. Taken together, these findings 
+suggest that artificial moral advisors may yet play an influential role in human
+morality, for better or worse.
+
+Our first key finding, that participants trusted artificial moral advisors 
+less than humans, replicates previous work on algorithm aversion in general 
+[@Dawes1979; @Dietvorst2015; @Meehl1954; @Meehl1957] and emerging findings in 
+the moral domain [@Bigman2018; @Myers2025]. The relative distrust of AMAs was 
+more pronounced for those who had less familiarity with AI and used AI less 
+frequently, suggesting that as AI use becomes more widespread, negativity 
+towards AMAs might reduce. We found that this pattern was observed for most of 
+the countries in our sample and was not moderated by global indices of AI 
+progress and government AI readiness.
+
+Our second key finding is that the direction of advice affected participants'
+perceptions of the advisors. Participants trusted AI (and human) advisors who 
+gave characteristically deontological advice more than advisors who gave 
+utilitarian advice. These results were observed overall and found when 
+accounting for participants' own moral judgments. We also found that looser 
+countries like Brazil, Mexico, and Chile trusted deontological advisors 
+relatively more than tighter countries like India and China, which may reflect a
+greater focus on preventing negative outcomes in tighter countries 
+[@Gelfand2006]. Together, these findings suggest that for AI, like for humans, 
+not all "moral" decisions equally signal trustworthiness [@Everett2016; 
+@Everett2018; @Everett2021]. AMAs that are built to align with impartial 
+utilitarian ethics may be particularly distrusted. By contrast, artificial moral
+advice that aligns with human norms of integrity and respect for persons may be
+better received by a public uneasy with AI's perceived cold rationality, raising
+challenges to those who believe that utilitarianism is the correct normative 
+standpoint by which AMAs should be programmed.
+
+Our third key finding is that participants listened to the moral advice by 
+updating their own moral judgments, regardless of whether the advisor was human
+or AI -- but did so especially when the advice was deontological, in line with 
+the effects on perceived trustworthiness. This finding extends the growing 
+literature on the persuasive potential of AI [@Bai2023; @Costello2024; 
+@Durmus2024; @Hackenburg2024; @Hackenburg2025; @Krugel2023; @Schoenegger2025] 
+into the moral domain and reveals a psychological paradox: people may claim to 
+distrust AI relative to humans, yet still update their moral views based on AI 
+advice. This is good news for those who argue for the possibility of AI to 
+enhance moral judgments [@Giubilini2018; @Sinnott2021], but is likely to ring
+alarm bells for those who have expressed concerns about outsourcing moral 
+judgments to AI, including concerns about the lack of epistemic agency involved,
+the risk of moral deskilling, and potential issues with offloading moral 
+responsibility onto machines [@Landes2025; @Landes_preprint; @Liu2022; 
+@Vallor2024]. These concerns could be compounded if people follow advice from 
+AMAs that they claim not to trust. For AI developers and policy-makers, our 
+results suggest that further safeguards should be put in place for emerging AMA
+technologies, especially those operating in high-stakes domains like healthcare,
+military ethics, and criminal justice. When testing these systems, developers
+should be cautious not to conflate expressed trust with actual behavioral
+impact.
+
+Our fourth key finding is that people seem to implicitly associate 
+utilitarianism with being more machine-like. Utilitarianism, with its impartial 
+focus on calculating predicted welfare and assessing consequences, has often 
+been criticized for the way it seems to diminish humanity through its focus on 
+algorithms -- that it is a "a civilization of 'things' and not of 'persons'"
+[@JohnPaulII1995] and that when utilitarians make moral decisions by rationally
+calculating outcomes they are having "one thought too many" [@Williams1981] 
+rather than acting instinctively based on the pull of human ties.
+Unsurprisingly then, with its focus on computations of overall welfare and 
+consequences, the utilitarian decision-making process is sometimes seen as akin
+to what a machine, not a human, would do. Indeed, there is evidence that people
+expect AI to be more utilitarian [@Malle2015; @Myers2025] and here we show that
+people were more surprised when deontological advice came from an AI rather than
+a human; that humans who made utilitarian judgments were seen to be more
+machine-like than those who made deontological judgments; and that AI systems
+which made deontological judgments were seen as more human-like. This
+association between utilitarianism and machine-likeness highlights the broader
+challenges AI systems face in appearing not just intelligent, but *humane*. If
+AI developers want artificial moral advisors to be accepted, and this is by no 
+means a given, then they should build systems that can do more than merely 
+compute outcomes -- the systems must also communicate care, character, and moral
+understanding in ways that align with human moral psychology.
+
+Future work should build on these findings in several ways. First, as discussed
+above, artificial moral advisors need to be aligned with a normative standard,
+but there are many different ethical frameworks that AMAs could be aligned to 
+provide advice from. While our results cohere with previous work showing that 
+utilitarian advisors are trusted less [@Everett2018; @Everett2021; @Myers2025],
+it will be important to explore how AMAs will be judged when their advice aligns
+with other philosophical theories, such as virtue ethics, in line with more 
+general calls to move beyond sacrificial dilemmas as the workhorse of moral 
+psychology [@Kahane2023]. Second, future work should assess the generalizability
+of these findings beyond abstract sacrificial dilemmas to everyday moral 
+situations. While much discussion about AMAs has focused on moral dilemmas where
+normative theories conflict [@Tasioulas2019] or in complex multi-chain cases
+where AMAs may be particularly helpful (e.g., kidney donation [@Sinnott2021]), 
+research should explore how people trust AI advisors in the kinds of everyday 
+moral situations that LLMs are increasingly being used to used to provide advice
+for, such as parenting, workplace fairness, and relationships. These real-world 
+contexts may trigger different patterns of trust and influence than abstract 
+dilemmas. Third, future work should explore how and why people listen to AMAs 
+and what the boundary conditions of these effects are. Philosophers have 
+expressed concern about the possibility of people deferring entirely to AI 
+advisors instead of critically evaluating the reasons that they give [@Lara2020;
+@Landes2025]. Our finding that people listened more to deontological than 
+utilitarian advice suggests both that our results are not merely due to demand 
+characteristics and that people are actively attending to the content of the 
+advice. Still, it will be important for future work to look at the precise 
+mechanism of belief change, the persistence of these effects over time, and 
+potential influences of AMA advice on behavior in the real world when there is
+greater perceived risk -- and reward -- from receiving AI advice.
+
+Overall, our findings reveal a paradox: people distrust artificial moral 
+advisors relative to humans, and particularly distrust utilitarian advisors, yet
+still change their judgments in response to AI advice. This tension underscores
+both the promise and peril of using AI in the moral domain. As artificial moral
+advisors become more embedded in everyday life, it becomes ever more imperative
+that they do more than calculate, but align with the moral intuitions, emotions,
+and values that make us human.
+
+# Methods
+
+## Ethical Approval
+
+Ethical approval was granted for the study by the University of Kent's 
+Psychology Research Ethics Panel (protocol ID: 202517411704229833). All 
+participants provided informed consent at the beginning of the survey and were 
+debriefed at the end of the survey.
+
+## Participants and Sampling
+
+To determine our sample size, we conducted a power simulation informed by the 
+effect sizes from a previous study [@Myers2025]. This previous study found a 
+small main effect of advice type (deontological vs. utilitarian) and a small
+main effect of advisor type (human vs. AI) on trust. Our simulation suggested
+that we would require 500 participants to detect both of these effects with
+90% power in our proposed design. We aimed to recruit at least this number of
+participants in each country (overall minimum N = 6000 for 12 countries) to
+ensure that we were adequately powered within each country. After excluding and
+replacing participants who failed our exclusion criteria (see Exclusions), our
+final sample size was *N* = 6,896 (see @suppfig-sample for overall sample 
+characteristics and @supptbl-sample-by-country for a breakdown of the sample by
+country). These data were collected over a 23-day period from 8 April to 1 May
+2025.
+
+We recruited participants from 12 countries -- Brazil, Chile, China, France, 
+Germany, India, Mexico, Poland, South Africa, Turkey, the United Kingdom, and 
+the United States -- through the online panel aggregator Prime Panels 
+(<https://www.cloudresearch.com/products/prime-panels/>; 
+[@fig-study-overview]c). We chose this set of countries to maximize variation in
+geographic spread, cultural backgrounds, and levels of AI progress according to
+global indices (@suppfig-cross-cultural). We used quotas to target 
+nationally representative samples with respect to age and gender, relaxing these
+quotas when data collection slowed in the final 15% of participants in each 
+country. Despite relaxing the quotas, we found that the differences between 
+observed and targeted proportions in each quota category were less than 10% for
+all countries except China, which was skewed slightly towards younger 
+participants (@suppfig-sample-representativeness).
+
+## Design
+
+The general flow of the experiment is presented in [@fig-study-overview]a. The 
+experiment followed a mixed design. We randomized participants to see advice 
+from either human advisors or AI advisors throughout the whole experiment 
+(between-subjects). We then presented participants with two experimental blocks
+in a within-subjects design. In the first block, participants saw either
+deontological or utilitarian advice (randomly counterbalanced) for either the
+Baby dilemma or the Bike dilemma (randomly counterbalanced; see Procedure for
+more details about the dilemmas). In the second block, participants then saw the
+other direction of advice for the other moral dilemma.
+
+## Procedure
+
+Participants completed the survey experiment in Qualtrics 
+(<https://www.qualtrics.com/>). At the beginning of the survey, participants 
+chose their survey language, completed a Captcha verification question, provided
+informed consent, reported whether they currently lived in the country of 
+intended recruitment, provided their age and gender, and answered two attention
+check questions (see Supplementary Materials for attention check wording).
+Participants were unable to proceed with the survey if they met any of the
+following criteria: (1) they had a Captcha score of less than 0.5, (2) they did
+not provide informed consent, (3) they stated that they lived in a different
+country to that of intended recruitment, (4) they were in an age/gender quota
+group that had already been filled, or (5) they failed either of our two
+attention check questions.
+
+If participants proceeded with the survey, we presented them with the two 
+experimental blocks. At the start of each block, we presented participants with
+the sacrificial dilemma (see Supplementary Materials for full dilemma wordings). 
+The Baby dilemma described a situation where townspeople are hiding from enemy 
+soldiers, and someone must choose between smothering their crying baby to save 
+everyone or letting the baby cry and risking everyone's death. The Bike dilemma 
+described a situation where a motorcycle rider is about to crash on the road, 
+and someone must choose between causing the rider's likely death by forcing them
+off the road or allowing a crash that could result in the deaths of many other
+riders behind them. These dilemmas were replicated from Myers and Everett's 
+[@Myers2025] Study 2. On the same page as the dilemma, we asked participants for 
+their own judgment on what they thought should be done in the dilemma, rated on 
+a 0-1 sliding scale from deontological judgment (not smothering the baby, not 
+crashing the rider) to utilitarian judgment (smothering the baby, crashing the 
+rider). We also asked participants how confident they were in their judgment on
+a 1-7 Likert scale.
+
+On the following page, we presented participants with advice about the dilemma 
+from a moral advisor. In the human condition, we told participants that Dr. 
+Johnson or Dr. Smith (names randomly counterbalanced across blocks) drew on 
+their extensive ethical and philosophical training. In the AI condition, we told 
+participants that ETHIC-AI or VIRTUE-BOT (names counterbalanced) drew on 
+advancements in machine learning about moral cases. We then presented the moral
+advice ([@fig-study-overview]b). When giving deontological advice, the advisor
+stated that "an important principle in ethics is that killing people is just 
+wrong, and this duty to not kill should apply even if killing has good 
+consequences in a specific case." When giving utilitarian advice, the advisor 
+stated that "an important principle in ethics is to think about the greater 
+good, and in this specific case killing the one person would bring about better
+consequences overall." On the same page as the advice, we then asked 
+participants the following questions about their perceptions of the advisor on 
+1-7 Likert scales:
+
+- How trustworthy do you think [the advisor] is?
+- How much would you blame someone if they followed [the advisor's] 
+recommendation?
+- Based on their advice, how willing would you be to trust [the advisor] on 
+other issues?
+- How surprised were you at [the advisor's] recommendation?
+- How well do the following words describe [the advisor]? Machine-like ↔ 
+human-like
+
+<br>
+
+On the next page, we reminded participants about the moral advice and then asked
+them again to judge what they thought should be done (0-1 sliding scale) and 
+report how confident they were in their judgment (1-7 Likert). Then on the final
+page of the block, we asked participants a binary-choice comprehension question
+("What did the advisor recommend in this dilemma?") to check that they could 
+correctly recall the deontological or utilitarian advice. After seeing the first 
+experimental block, participants repeated this process in a second experimental
+block with the other direction of advice and the other moral dilemma.
+
+After the two experimental blocks, we asked participants some general questions
+about "AI tools like ChatGPT", including how familiar they were with AI tools,
+how frequently they used AI tools, and how trustworthy they thought AI tools
+were. We then asked participants several demographic questions, including their
+highest education level, their subjective social status (measured with the
+MacArthur ladder), their political ideology (from left-wing to right-wing; not
+asked in China), and their religiosity. We then debriefed participants about the
+purpose of the study and gave them an open-ended form to leave any comments or
+remarks about the study.
+
+## Translations
+
+In non-English-speaking countries, we translated the survey using a forward- and 
+back-translation procedure. First, a native speaker translated the survey from 
+English into the target language. Then, another native speaker (who had not yet
+seen the survey) translated the survey back into English. Any discrepancies were
+discussed between forward- and back-translators and any issues were resolved.
+All translators then checked the final Qualtrics surveys to ensure that the
+translations had been implemented correctly.
+
+## Pre-registration
+
+We pre-registered our hypotheses, study design, sampling plan, exclusion
+criteria, and analysis plan on the Open Science Framework on 8 April 2025 
+(<https://osf.io/qa7gn/>).
+
+## Exclusions
+
+We excluded and replaced participants who completed the survey but met any of 
+the following criteria: (1) they had taken the survey more than once as 
+indicated by duplicate IP addresses or assignment IDs, (2) they straight-lined
+on both of the advisor-perceptions survey pages by providing the same responses
+to all items, (3) they sped through the survey, either by completing the survey
+in less than 100 seconds (~2 seconds per question/text) or completing the survey
+at least two median absolute deviations faster than the median response time,
+(4) they took more than 24 hours to complete the survey, (5) they failed to
+answer more than 50% of the questions in the survey, or (6) they wrote
+nonsensical responses in our open-ended question, as independently judged by
+translators who were blind to experimental condition and responses to our
+primary measures.
+
+We also excluded responses to moral dilemmas if the participant failed the 
+comprehension question for that moral dilemma. This exclusion strategy resulted
+in our final sample size of 6,896 participants. However, in additional 
+"intention-to-treat" analyses, we retained these comprehension failures,
+resulting in a larger sample size of 7,096 participants.
+
+## Statistical Analysis
+
+To analyse the perceptions of the advisors, we fitted Bayesian cumulative-link
+ordinal models to the Likert scale data, modelling the interaction between
+advice type (deontological vs. utilitarian) and advisor type (human vs. AI). To
+split by moral dilemma, we included dilemma (Baby vs. Bike) as an additional
+moderator. In exploratory models, we interacted one or both of the experimental
+effects with individual-level characteristics (agreement with the advisor,
+religiosity, political ideology, familiarity with AI, frequency of AI use) or 
+cultural-level variables (relational mobility [@Thomson2018],
+tightness-looseness [@Eriksson2021], individualism [@Hofstede2010], the global 
+AI index [@TortoiseMedia], AI readiness [@OxfordInsights]).
+
+To analyse participants' judgments and confidence, we fitted Bayesian 
+zero-one-inflated beta models to the 0-1 slider data and Bayesian 
+cumulative-link ordinal models to the Likert scale data, modelling the
+interaction between time (pre- vs. post- advice), advice type (deontological vs. 
+utilitarian), and advisor type (human vs. AI). To split by moral dilemma, we 
+included dilemma (Baby vs. Bike) as an additional moderator.
+
+For all models, we included varying intercepts for participants and varying 
+intercepts and slopes for countries. When analyzing the moderating effects of 
+cultural variables, we controlled for the non-independence of countries by 
+allowing the country-level varying effects to covary according to geographic and
+linguistic proximity matrices constructed in previous research [@Claessens2023].
+We used regularizing priors for all models to impose conservatism on parameter
+estimates. We used 95% credible intervals as the inference criteria. All models
+converged normally ($\hat{R}$ ≤ 1.01).
+
+## Reproducibility
+
+We conducted all analyses in R version 4.4.2 [@RCoreTeam]. We fitted Bayesian
+regression models using the *brms* [@Burkner2017] package. We produced 
+visualizations using the *ggdist* [@Kay2024], *ggplot2* [@Wickham2016], and 
+*patchwork* [@Pedersen2025] packages. We reproducibly generated the manuscript 
+using the *targets* [@Landau2021] package and *quarto* [@Allaire2024]. All data,
+materials, and code to reproduce the analyses and figures in this paper can be 
+found here: <https://github.com/ScottClaessens/trustAMAs>
+
+\newpage
+
+# Acknowledgements
+
+This work was generously supported by funding from the Economic and Social 
+Research Council (ES/V015176/1), a Philip Leverhulme Prize (PLP-2021-095), and
+the Horizon Europe UK Guarantee via the UKRI (EP/Y00440X/1) awarded to JACE.
+
+# Data and Code Availability
+
+All data and original code can be found here:
+<https://github.com/ScottClaessens/trustAMAs>
+
+# Statement of Interests
+
+The authors have no conflicts of interest to disclose.
+
+\newpage
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+::: {#refs}
+:::
+
+\newpage
+
+{{< include appendix.qmd >}}

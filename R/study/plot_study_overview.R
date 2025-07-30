@@ -14,7 +14,10 @@ plot_study_overview <- function() {
   world_map <- 
     map_data("world") %>%
     filter(region != "Antarctica") %>%
-    mutate(in_study = region %in% countries)
+    mutate(
+      in_study = region %in% countries,
+      region = ifelse(region == "China", "PR China", region)
+      )
   labels <-
     world_map %>%
     filter(in_study) %>%
