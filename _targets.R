@@ -333,6 +333,15 @@ list(
   #### Manuscript ####
   
   # render manuscript
-  tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE)
+  tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE),
+  
+  
+  #### Session info ####
+  
+  # print session info for reproducibility
+  tar_target(
+    sessionInfo,
+    writeLines(capture.output(sessionInfo()), "sessionInfo.txt")
+  )
   
 )

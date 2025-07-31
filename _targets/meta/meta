@@ -394,7 +394,7 @@ plot_study_overview|function|4fd96d1f140e20f8
 extract_interaction_effect_model7|function|4d69562eda8bf1dc
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5b45d634589ccbd9
-.Random.seed|object|d3f0673f81c4ff76
+.Random.seed|object|819e867dd0e99a5b
 extract_interaction_effect_model8|function|c2f433236c17db9f
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
@@ -433,3 +433,4 @@ plot_model8_combined|function|366d28f3392a40e9
 load_data|function|fdc891c9e6e8a10f
 create_table_pairwise_contrasts_by_order|function|2b4ab60bab95f7c5
 create_table_sample_characteristics|function|3db4962aabd9fce9
+sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20300.4701923651s|s44b|44|rds|local|vector|||5.219|package 'brms' was built under R version 4.4.3. package 'ggnewscale' was built under R version 4.4.3. package 'kableExtra' was built under R version 4.4.3. package 'knitr' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'pdftools' was built under R version 4.4.3. package 'cmdstanr' was built under R version 4.4.3. package 'posterior' was built under R version 4.4.3|
