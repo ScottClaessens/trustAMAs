@@ -960,13 +960,12 @@ Participants completed the survey experiment in Qualtrics
 chose their survey language, completed a Captcha verification question, provided
 informed consent, reported whether they currently lived in the country of 
 intended recruitment, provided their age and gender, and answered two attention
-check questions (see Supplementary Materials for attention check wording).
-Participants were unable to proceed with the survey if they met any of the
-following criteria: (1) they had a Captcha score of less than 0.5, (2) they did
-not provide informed consent, (3) they stated that they lived in a different
-country to that of intended recruitment, (4) they were in an age/gender quota
-group that had already been filled, or (5) they failed either of our two
-attention check questions.
+check questions. Participants were unable to proceed with the survey if they met
+any of the following criteria: (1) they had a Captcha score of less than 0.5,
+(2) they did not provide informed consent, (3) they stated that they lived in a
+different country to that of intended recruitment, (4) they were in an
+age/gender quota group that had already been filled, or (5) they failed either
+of our two attention check questions.
 
 If participants proceeded with the survey, we presented them with the two 
 experimental blocks. At the start of each block, we presented participants with

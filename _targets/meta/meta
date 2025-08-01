@@ -375,7 +375,7 @@ interaction_effect_tightness|stem|d518f46fb08e3960|617cfb838f2ba9c4|68d585497cc0
 absolute_diffs2|stem|9d9afe7e85eb28b2|5184312464c320eb|8aff1987666cf955|255937143||t20255.4955991242s|s3060456b|3060456|rds|local|vector|||0.047||
 plot_overview|stem|5cc85a5f17b4cae5|0a47e9bec7acdb61|a842f4d52ca4f243|126835773||t20272.6800335264s|s8223659b|8223659|rds|local|vector|||3.125|package 'brms' was built under R version 4.4.3. package 'ggnewscale' was built under R version 4.4.3. package 'kableExtra' was built under R version 4.4.3. package 'knitr' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'pdftools' was built under R version 4.4.3. package 'cmdstanr' was built under R version 4.4.3. package 'posterior' was built under R version 4.4.3|
 sessionInfo|stem|4d420e734d24941e|6f338939dd102f8f|2c530c1562a7fbd1|1164010252||t20300.4701923651s|s44b|44|rds|local|vector|||5.219|package 'brms' was built under R version 4.4.3. package 'ggnewscale' was built under R version 4.4.3. package 'kableExtra' was built under R version 4.4.3. package 'knitr' was built under R version 4.4.3. package 'patchwork' was built under R version 4.4.3. package 'pdftools' was built under R version 4.4.3. package 'cmdstanr' was built under R version 4.4.3. package 'posterior' was built under R version 4.4.3|
-manuscript|stem|eed9697915617859|08322fab317afa80|345d9bd21b077cc0|-1793997187|quarto/manuscript/manuscript.docx*quarto/manuscript/appendix.qmd*quarto/manuscript/manuscript.qmd|t20301.6739215565s|s2956281b|2956281|file|local|vector|||83.547||
+manuscript|stem|a4b12e7b4a801845|08322fab317afa80|345d9bd21b077cc0|-1793997187|quarto/manuscript/manuscript.docx*quarto/manuscript/appendix.qmd*quarto/manuscript/manuscript.qmd|t20301.715350337s|s2957387b|2957387|file|local|vector|||95.547||
 plot_model4_judgement_shift|function|7a25097e00adc074
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -395,7 +395,7 @@ plot_study_overview|function|4fd96d1f140e20f8
 extract_interaction_effect_model7|function|4d69562eda8bf1dc
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5b45d634589ccbd9
-.Random.seed|object|48c0faf9acce390c
+.Random.seed|object|40f9b1af1fed359a
 extract_interaction_effect_model8|function|c2f433236c17db9f
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
