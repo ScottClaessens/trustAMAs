@@ -252,8 +252,10 @@ library(flextable)
 library(targets)
 library(tidyverse)
 
-# rounding function to use throughout (2 decimal places)
-roundd <- function(x) as.character(format(round(x, 2), nsmall = 2))
+# rounding function to use throughout (2 decimal places by default)
+roundd <- function(x, digits = 2) {
+  as.character(format(round(x, digits), nsmall = digits))
+}
 ```
 
 Artificial intelligence (AI) – any system that uses an algorithm or a 
@@ -655,8 +657,15 @@ countries, like Brazil, Mexico, and Chile, trusted the deontological advisor
 relatively more than tighter countries like India and China (interaction effect 
 = `r roundd(median(interaction_effect_tightness))`, 95% CI 
 [`r roundd(quantile(interaction_effect_tightness, 0.025))` 
-`r roundd(quantile(interaction_effect_tightness, 0.975))`]). Other cultural 
-factors did not moderate the experimental effects (@suppfig-cross-cultural).
+`r roundd(quantile(interaction_effect_tightness, 0.975))`]). Although the 
+equal-tailed credible interval for this interaction effect included zero,
+`r roundd(mean(interaction_effect_tightness < 0) * 100, digits = 0)`% of the
+posterior distribution was negative and the 95% highest posterior density
+interval excluded zero (95% HPDI 
+[`r roundd(rethinking::HPDI(interaction_effect_tightness, prob = 0.95)[[1]])` 
+`r roundd(rethinking::HPDI(interaction_effect_tightness, prob = 0.95)[[2]], digits = 3)`]),
+indicating an association. Other cultural factors did not moderate the 
+experimental effects (@suppfig-cross-cultural).
 
 ```{r, fig.height=4, fig.width=9}
 #| label: fig-country-slopes-trust
@@ -785,15 +794,12 @@ advice came from a human or an AI advisor. Taken together, these findings
 suggest that artificial moral advisors may yet play an influential role in human
 morality, for better or worse.
 
-Our first key finding, that participants trusted artificial moral advisors 
-less than humans, replicates previous work on algorithm aversion in general 
+Our first key finding is that participants trusted artificial moral advisors 
+less than humans. This replicates previous work on algorithm aversion in general 
 [@Dawes1979; @Dietvorst2015; @Meehl1954; @Meehl1957] and emerging findings in 
-the moral domain [@Bigman2018; @Myers2025]. The relative distrust of AMAs was 
-more pronounced for those who had less familiarity with AI and used AI less 
-frequently, suggesting that as AI use becomes more widespread, negativity 
-towards AMAs might reduce. We found that this pattern was observed for most of 
-the countries in our sample and was not moderated by global indices of AI 
-progress and government AI readiness.
+the moral domain [@Bigman2018; @Myers2025]. We found that this pattern was 
+observed for most of the countries in our sample and was not moderated by global
+indices of AI progress or government AI readiness.
 
 Our second key finding is that the direction of advice affected participants'
 perceptions of the advisors. Participants trusted AI (and human) advisors who 
@@ -802,15 +808,15 @@ utilitarian advice. These results were observed overall and found when
 accounting for participants' own moral judgments. We also found that looser 
 countries like Brazil, Mexico, and Chile trusted deontological advisors 
 relatively more than tighter countries like India and China, which may reflect a
-greater focus on preventing negative outcomes in tighter countries 
-[@Gelfand2006]. Together, these findings suggest that for AI, like for humans, 
-not all "moral" decisions equally signal trustworthiness [@Everett2016; 
-@Everett2018; @Everett2021]. AMAs that are built to align with impartial 
-utilitarian ethics may be particularly distrusted. By contrast, artificial moral
-advice that aligns with human norms of integrity and respect for persons may be
-better received by a public uneasy with AI's perceived cold rationality, raising
-challenges to those who believe that utilitarianism is the correct normative 
-standpoint by which AMAs should be programmed.
+reduced focus on preventing negative outcomes (e.g., the utilitarian option) in 
+looser countries [@Gelfand2006]. Together, these findings suggest that for AI, 
+like for humans, not all "moral" decisions equally signal trustworthiness 
+[@Everett2016; @Everett2018; @Everett2021]. AMAs that are built to align with 
+impartial utilitarian ethics may be particularly distrusted. By contrast, 
+artificial moral advice that aligns with human norms of integrity and respect
+for persons may be better received by a public uneasy with AI's perceived cold
+rationality, raising challenges to those who believe that utilitarianism is the
+correct normative standpoint by which AMAs should be programmed.
 
 Our third key finding is that participants listened to the moral advice by 
 updating their own moral judgments, regardless of whether the advisor was human
@@ -916,7 +922,9 @@ ensure that we were adequately powered within each country. After excluding and
 replacing participants who failed our exclusion criteria (see Exclusions), our
 final sample size was *N* = 6,896 (see @suppfig-sample for overall sample 
 characteristics and @supptbl-sample-by-country for a breakdown of the sample by
-country). These data were collected over a 23-day period from 8 April to 1 May
+country). 3,467 of these participants were randomly allocated to the AI advisor
+condition and 3,429 participants were randomly allocated to the human advisor
+condition. These data were collected over a 23-day period from 8 April to 1 May
 2025.
 
 We recruited participants from 12 countries -- Brazil, Chile, China, France, 
@@ -1086,8 +1094,8 @@ cultural variables, we controlled for the non-independence of countries by
 allowing the country-level varying effects to covary according to geographic and
 linguistic proximity matrices constructed in previous research [@Claessens2023].
 We used regularizing priors for all models to impose conservatism on parameter
-estimates. We used 95% credible intervals as the inference criteria. All models
-converged normally ($\hat{R}$ ≤ 1.01).
+estimates. We used 95% equal-tailed credible intervals as the inference 
+criteria. All models converged normally ($\hat{R}$ ≤ 1.01).
 
 ## Reproducibility
 
