@@ -172,16 +172,33 @@ list(
     ),
   
   
-  ##### Analyses controlling for agreement #####
+  ##### Analyses controlling for own judgements #####
   
   
-  # model 5 - trustworthiness controlling for agreement
+  # model 5 - trustworthiness controlling for own judgements
   tar_map(
     values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
                              "surprise", "humanlike")),
-    tar_target(model5, fit_model5(data, resp))
+    tar_target(model5, fit_model5(data, resp)),
+    tar_target(means5, extract_means_model5(model5, resp))
   ),
-  tar_target(plot5_trustworthy, plot_model5(model5_trustworthy)),
+  # plot overall distributions and model means
+  tar_target(
+    plot_means_control_judgement,
+    plot_means_overall(
+      data, bind_rows(means5_trustworthy, means5_blame, 
+                      means5_trust_other_issues, means5_surprise,
+                      means5_humanlike),
+      control_judgements = TRUE
+    )
+  ),
+  # create table of pairwise contrasts
+  tar_target(
+    table_pairwise_contrasts_control_judgement,
+    create_table_pairwise_contrasts(model5_trustworthy, model5_blame, 
+                                    model5_trust_other_issues, model5_surprise,
+                                    model5_humanlike)
+  ),
   
   
   ##### Analyses testing for order effects #####
@@ -324,16 +341,10 @@ list(
     ),
   
   
-  #### Analysis summary ####
-  
-  # render quarto file
-  tar_quarto(summary, "quarto/summary/summary.qmd"),
-  
-  
   #### Manuscript ####
   
   # render manuscript
-  tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE),
+  #tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE),
   
   
   #### Session info ####
