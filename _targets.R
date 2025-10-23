@@ -257,7 +257,9 @@ list(
                          plot7_AI_familiarity, plot7_AI_frequency)
     ),
   
+  
   ##### Cross-cultural differences in experimental effects #####
+  
   
   # load cultural data
   tar_target(cultural_data_file, "data/cultural/cultural.csv", format = "file"),
@@ -300,7 +302,9 @@ list(
                          plot8_AI_index)
     ),
   
+  
   ##### Intention-to-treat analyses #####
+  
   
   # model 9 - intention-to-treat analyses including comp failures
   tar_map(
@@ -327,7 +331,9 @@ list(
                                     model9_humanlike)
   ),
   
+  
   ##### Judgements and confidence in first block only #####
+  
   
   # model 10 - judgements and confidence, pre-post advice, first block only
   tar_target(model10, fit_model2(filter(data, order == 1))),
@@ -341,13 +347,27 @@ list(
     ),
   
   
+  ##### Cross-cultural differences in judgement updating #####
+  
+  
+  # model 11 - judgement updating moderated by cross-cultural variables
+  tar_map(
+    values = tibble(pred = c("tightness")),
+    tar_target(model11, fit_model11(data, cultural_data, spatial_network, 
+                                    linguistic_network, pred)),
+    tar_target(plot11, plot_model11(data, cultural_data, model11, pred))
+  ),
+  
+  
   #### Manuscript ####
+  
   
   # render manuscript
   #tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE),
   
   
   #### Session info ####
+  
   
   # print session info for reproducibility
   tar_target(

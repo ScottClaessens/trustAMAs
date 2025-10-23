@@ -383,6 +383,9 @@ plot_means_by_dilemma|stem|c6e67e1df4e1f5c1|e036c659521d5ce3|9ddf8b16eb52368a|97
 plot_means|stem|9679d5c990711095|0ccf88a67559e304|47f82b654bdfd107|435881336||t20383.4264311603s|s53023586b|53023586|rds|local|vector|||1.391|Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 5 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 4 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 1 row containing non-finite outside the scale range (`new_stat_boxplot()`).|
 plot_means_by_order|stem|a774047b654cc55d|d8dccbd4d29c55c2|56909925acd94643|-2106646417||t20383.4265697381s|s100895753b|100895753|rds|local|vector|||1.547|Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 5 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 4 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 1 row containing non-finite outside the scale range (`new_stat_boxplot()`).|
 plot_means_control_judgement|stem|04b85a70e0b082b1|7b4790e782f0eb84|ee8f675b4767c505|1150035769||t20383.4266475513s|s53123966b|53123966|rds|local|vector|||0.859|Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 5 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 4 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 1 row containing non-finite outside the scale range (`new_stat_boxplot()`).|
+table_pairwise_contrasts_control_judgement|stem|02728e1d7a4af22b|c931bf5dbfe38051|41488f605d6b4897|567778542||t20383.4297925027s|s544b|544|rds|local|vector|||9.922|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+model11_tightness|stem|b0882a64eb110680|e1286774e2a20d9b|118f3138e2ac2a07|1222880048||t20384.1969293346s|s1432219700b|1432219700|rds|local|vector|||56542.266|Rows containing NAs were excluded from the model.. There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+plot11_tightness|stem|d9c343463bb1b1d8|6344ed70c75da437|a1370cb6eaf6b113|-126487027||t20384.4576013422s|s344886093b|344886093|rds|local|vector|||9.219|Removed 8 rows containing missing values or values outside the scale range (`geom_point()`).. Removed 8 rows containing missing values or values outside the scale range (`geom_text_repel()`).|
 plot_model4_judgement_shift|function|7a25097e00adc074
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -402,7 +405,7 @@ plot_study_overview|function|4fd96d1f140e20f8
 extract_interaction_effect_model7|function|4d69562eda8bf1dc
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5b45d634589ccbd9
-.Random.seed|object|0ea33bd95b1cf70b
+.Random.seed|object|d356fe9444e571cd
 extract_interaction_effect_model8|function|c2f433236c17db9f
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
@@ -426,6 +429,8 @@ plot_model8|function|be2acd58605c4e15
 plot_model2_confidence|function|292287834d276b0c
 load_country_network|function|f32f4fae35f1344d
 plot_model7_combined|function|a35a08d415e54adc
+plot_model11|function|5d899666d9c126e7
+fit_model11|function|84390530bdcf23bf
 create_table_pairwise_contrasts_by_dilemma|function|811422fafc21f255
 extract_means_model1|function|7284f12b7207d9eb
 run_power_analysis_between|function|e90fbf5a6fc74a83
@@ -441,4 +446,3 @@ plot_model8_combined|function|366d28f3392a40e9
 load_data|function|fdc891c9e6e8a10f
 create_table_pairwise_contrasts_by_order|function|2b4ab60bab95f7c5
 create_table_sample_characteristics|function|3db4962aabd9fce9
-table_pairwise_contrasts_control_judgement|stem|02728e1d7a4af22b|c931bf5dbfe38051|41488f605d6b4897|567778542||t20383.4297925027s|s544b|544|rds|local|vector|||9.922|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
