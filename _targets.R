@@ -352,10 +352,22 @@ list(
   
   # model 11 - judgement updating moderated by cross-cultural variables
   tar_map(
-    values = tibble(pred = c("tightness")),
+    values = tibble(pred = c("relational_mobility_latent", "tightness",
+                             "individualism", "AI_readiness", "AI_index")),
     tar_target(model11, fit_model11(data, cultural_data, spatial_network, 
                                     linguistic_network, pred)),
-    tar_target(plot11, plot_model11(data, cultural_data, model11, pred))
+    tar_target(plot11, plot_model11(data, cultural_data, model11, pred)),
+    tar_target(table11, extract_interaction_effects_model11(model11, pred))
+  ),
+  tar_target(
+    table11,
+    bind_rows(
+      table11_relational_mobility_latent,
+      table11_tightness,
+      table11_individualism,
+      table11_AI_readiness,
+      table11_AI_index
+    )
   ),
   
   

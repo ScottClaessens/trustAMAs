@@ -385,10 +385,26 @@ plot_means_by_order|stem|a774047b654cc55d|d8dccbd4d29c55c2|56909925acd94643|-210
 plot_means_control_judgement|stem|04b85a70e0b082b1|7b4790e782f0eb84|ee8f675b4767c505|1150035769||t20383.4266475513s|s53123966b|53123966|rds|local|vector|||0.859|Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 5 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 4 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 3 rows containing non-finite outside the scale range (`new_stat_boxplot()`).. Removed 1 row containing non-finite outside the scale range (`new_stat_boxplot()`).|
 table_pairwise_contrasts_control_judgement|stem|02728e1d7a4af22b|c931bf5dbfe38051|41488f605d6b4897|567778542||t20383.4297925027s|s544b|544|rds|local|vector|||9.922|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.. Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 model11_tightness|stem|b0882a64eb110680|e1286774e2a20d9b|118f3138e2ac2a07|1222880048||t20384.1969293346s|s1432219700b|1432219700|rds|local|vector|||56542.266|Rows containing NAs were excluded from the model.. There were 2 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
-plot11_tightness|stem|d9c343463bb1b1d8|6344ed70c75da437|a1370cb6eaf6b113|-126487027||t20384.4576013422s|s344886093b|344886093|rds|local|vector|||9.219|Removed 8 rows containing missing values or values outside the scale range (`geom_point()`).. Removed 8 rows containing missing values or values outside the scale range (`geom_text_repel()`).|
+plot11_tightness|stem|cc5388f8cd83a021|6344ed70c75da437|e8dd4c2db6befe11|-126487027||t20384.6846702923s|s344890077b|344890077|rds|local|vector|||25.563|Removed 8 rows containing missing values or values outside the scale range (`geom_point()`).. Removed 8 rows containing missing values or values outside the scale range (`geom_text_repel()`).|
+model11_relational_mobility_latent|stem|3a6e6e512e471ca7|12a35cf19b770fa6|118f3138e2ac2a07|-1615713844||t20385.3400393283s|s1313541701b|1313541701|rds|local|vector|||55944.265|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+plot11_relational_mobility_latent|stem|be401fa0591264c1|57790ea3d6baf035|b86c822b781ee50c|11770099||t20385.3409869674s|s345698360b|345698360|rds|local|vector|||14.203|Removed 12 rows containing missing values or values outside the scale range (`geom_point()`).. Removed 12 rows containing missing values or values outside the scale range (`geom_text_repel()`).|
+model11_individualism|stem|411f26d7e76384ce|d25331394d7c6587|118f3138e2ac2a07|-1893309292||t20386.3589970927s|s1431311184b|1431311184|rds|local|vector|||58759.593|Rows containing NAs were excluded from the model.. There were 9 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+plot11_individualism|stem|86d27e91daeb48da|47870cb561dd7774|278695d6fc6403c8|-709558269||t20386.5193150676s|s345591534b|345591534|rds|local|vector|||13.954|Removed 8 rows containing missing values or values outside the scale range (`geom_point()`).. Removed 8 rows containing missing values or values outside the scale range (`geom_text_repel()`).|
+model11_AI_index|stem|42bea9a96484d19a|6db5ddeed7ecc2d7|118f3138e2ac2a07|1121573617||t20387.7902522106s|s1724677811b|1724677811|rds|local|vector|||77831.219|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. See https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup to find out why this is a problem and how to eliminate them.. Examine the pairs() plot to diagnose sampling problems|
+plot11_AI_index|stem|af75cb3ded6107bd|f928fcc7ab2863d1|54f874ef2134b371|1095550822||t20387.7965560675s|s343691366b|343691366|rds|local|vector|||7.422||
+model11_AI_readiness|stem|8df2f77f8acb7878|794120116e434ac1|118f3138e2ac2a07|1897135452||t20388.6817162943s|s1723446226b|1723446226|rds|local|vector|||76317.625|Rows containing NAs were excluded from the model.|
+plot11_AI_readiness|stem|32b5a34244e3c16d|276106dfc624f948|422de2680f0184c1|1549549728||t20388.6822566071s|s344386690b|344386690|rds|local|vector|||6.672||
+extract_interaction_effect_model11|function|d48781cd258ca1df
+table11_AI_index|stem|93b63d42102d6c84|e1807031a1a0c4a7|e4134b54c8c38df0|-1911609488||t20388.7519817536s|s268b|268|rds|local|vector|||7.985|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+table11_relational_mobility_latent|stem|fdda45a722aaf86c|779baf59f483b111|597f4dbf2aee180e|-568419141||t20388.7521806807s|s279b|279|rds|local|vector|||6.422|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+table11_tightness|stem|2769a9b39ef0bd79|465ee283ec4baa0a|eb4603b64af7900f|276524535||t20388.7523830809s|s269b|269|rds|local|vector|||6.203|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+table11_AI_readiness|stem|19504fca3d2b9a49|e3d48feff9a16a6a|080b95128d3856fe|2066248304||t20388.7526243785s|s283b|283|rds|local|vector|||6.469|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+table11_individualism|stem|b87fe21e7246d6ba|6d7220d0e7fd9c6c|40170501bde5ee60|-283080572||t20388.7529039854s|s259b|259|rds|local|vector|||6.797|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
+table11|stem|ba29e3dcc99545ce|ddf9382789bb049d|619b7039cbc5a1eb|-1243443393||t20388.7529052225s|s472b|472|rds|local|vector|||0||
 plot_model4_judgement_shift|function|7a25097e00adc074
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
+extract_interaction_effects_model11|function|d48781cd258ca1df
 load_pilot_data|function|06b8b0dcbc3227bc
 plot_likerts_overall|function|3ceed78aa7253db7
 plot_pilot_model2a|function|18cf349962067a8c
@@ -405,7 +421,7 @@ plot_study_overview|function|4fd96d1f140e20f8
 extract_interaction_effect_model7|function|4d69562eda8bf1dc
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5b45d634589ccbd9
-.Random.seed|object|d356fe9444e571cd
+.Random.seed|object|0e0239f2c55da021
 extract_interaction_effect_model8|function|c2f433236c17db9f
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
@@ -429,7 +445,7 @@ plot_model8|function|be2acd58605c4e15
 plot_model2_confidence|function|292287834d276b0c
 load_country_network|function|f32f4fae35f1344d
 plot_model7_combined|function|a35a08d415e54adc
-plot_model11|function|5d899666d9c126e7
+plot_model11|function|a1349447365b90a0
 fit_model11|function|84390530bdcf23bf
 create_table_pairwise_contrasts_by_dilemma|function|811422fafc21f255
 extract_means_model1|function|7284f12b7207d9eb

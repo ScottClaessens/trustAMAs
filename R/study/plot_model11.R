@@ -67,7 +67,9 @@ plot_model11 <- function(data, cultural_data, model11, pred) {
     ggplot() +
     geom_hline(
       yintercept = 0,
-      colour = "white"
+      colour = "grey20",
+      linetype = "dashed",
+      linewidth = 0.2
     ) +
     geom_point(
       data = data,
@@ -115,13 +117,14 @@ plot_model11 <- function(data, cultural_data, model11, pred) {
       ),
       limits = c(-0.22, 0.22)
     ) +
+    theme_bw() +
     theme(panel.grid = element_blank())
   # save
   ggsave(
     plot = p,
     filename = paste0("plots/model11_", pred, ".pdf"),
-    width = 6,
-    height = 5
+    width = 4.5,
+    height = 4
   )
   return(p)
 }
