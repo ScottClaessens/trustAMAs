@@ -371,12 +371,42 @@ list(
   ),
   
   
-  #### Differences in judgement updating by trustworthiness ####
+  ##### Differences in judgement updating by trustworthiness #####
   
   
   # model 12 - judgement updating moderator by trustworthiness
   tar_target(model12, fit_model12(data)),
   tar_target(plot12, plot_model12(model12)),
+  
+  
+  ##### Prior sensitivity analysis for primary models #####
+  
+  
+  # model 13 - main models with wider slope prior
+  tar_map(
+    values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
+                             "surprise", "humanlike")),
+    tar_target(model13, fit_model13(data, resp)),
+    tar_target(means13, extract_means_model1(model13, resp))
+  ),
+  # plot overall distributions and model means
+  tar_target(
+    plot_means_prior_sensitivity,
+    plot_means_overall(
+      data, bind_rows(means13_trustworthy, means13_blame, 
+                      means13_trust_other_issues, means13_surprise,
+                      means13_humanlike),
+      prior_sensitivity = TRUE
+    )
+  ),
+  # create table of pairwise contrasts
+  tar_target(
+    table_pairwise_contrasts_prior_sensitivity,
+    create_table_pairwise_contrasts(model13_trustworthy, model13_blame, 
+                                    model13_trust_other_issues,
+                                    model13_surprise,
+                                    model13_humanlike)
+  ),
   
   
   #### Manuscript ####

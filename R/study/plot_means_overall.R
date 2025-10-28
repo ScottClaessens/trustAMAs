@@ -1,7 +1,8 @@
 # function to plot overall distributions and model means
 plot_means_overall <- function(data, means, split_dilemma = FALSE,
                                split_order = FALSE, itt = FALSE,
-                               control_judgements = FALSE) {
+                               control_judgements = FALSE,
+                               prior_sensitivity = FALSE) {
   # internal plotting function
   plot_fun <- function(response) {
     # rename advice column
@@ -91,6 +92,7 @@ plot_means_overall <- function(data, means, split_dilemma = FALSE,
       ifelse(split_order, "_by_order", ""),
       ifelse(itt, "_itt", ""),
       ifelse(control_judgements, "_control_judgements", ""),
+      ifelse(prior_sensitivity, "_prior_sensitivity", ""),
       ".pdf"
       ),
     height = 5,
