@@ -371,6 +371,14 @@ list(
   ),
   
   
+  #### Differences in judgement updating by trustworthiness ####
+  
+  
+  # model 12 - judgement updating moderator by trustworthiness
+  tar_target(model12, fit_model12(data)),
+  tar_target(plot12, plot_model12(model12)),
+  
+  
   #### Manuscript ####
   
   

@@ -401,6 +401,8 @@ table11_tightness|stem|2769a9b39ef0bd79|465ee283ec4baa0a|eb4603b64af7900f|276524
 table11_AI_readiness|stem|19504fca3d2b9a49|e3d48feff9a16a6a|080b95128d3856fe|2066248304||t20388.7526243785s|s283b|283|rds|local|vector|||6.469|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 table11_individualism|stem|b87fe21e7246d6ba|6d7220d0e7fd9c6c|40170501bde5ee60|-283080572||t20388.7529039854s|s259b|259|rds|local|vector|||6.797|Method 'posterior_samples' is deprecated. Please see ?as_draws for recommended alternatives.|
 table11|stem|ba29e3dcc99545ce|ddf9382789bb049d|619b7039cbc5a1eb|-1243443393||t20388.7529052225s|s472b|472|rds|local|vector|||0||
+model12|stem|1e962d3ca7156a33|3631fbc547784b59|3d358b4c97efd5da|125476662||t20389.4306463863s|s1720679518b|1720679518|rds|local|vector|||57563.015|Rows containing NAs were excluded from the model.|
+plot12|stem|8362c67cae29838b|ac64c35000fa6913|fd0ac7a92d86fb9f|1107874243||t20389.5205824418s|s14209952b|14209952|rds|local|vector|||5.5||
 plot_model4_judgement_shift|function|7a25097e00adc074
 fit_pilot_model1|function|ea4c9dafbc7b9766
 fit_pilot_model2|function|55d4b6081f9571d4
@@ -421,7 +423,7 @@ plot_study_overview|function|4fd96d1f140e20f8
 extract_interaction_effect_model7|function|4d69562eda8bf1dc
 plot_model4_judgement|function|9bf1478f2f944aea
 plot_model2_judgement_shift|function|5b45d634589ccbd9
-.Random.seed|object|0e0239f2c55da021
+.Random.seed|object|a882d31fc508ec68
 extract_interaction_effect_model8|function|c2f433236c17db9f
 plot_means_by_country|function|98e22f69f177d830
 plot_judgements_by_dilemma|function|6a99caf37064b91c
@@ -447,8 +449,10 @@ load_country_network|function|f32f4fae35f1344d
 plot_model7_combined|function|a35a08d415e54adc
 plot_model11|function|a1349447365b90a0
 fit_model11|function|84390530bdcf23bf
-create_table_pairwise_contrasts_by_dilemma|function|811422fafc21f255
+plot_model12|function|ce4a169b5f7b703a
+fit_model12|function|2373f09037994d31
 extract_means_model1|function|7284f12b7207d9eb
+create_table_pairwise_contrasts_by_dilemma|function|811422fafc21f255
 run_power_analysis_between|function|e90fbf5a6fc74a83
 extract_means_model2|function|334c9da3b3508593
 extract_means_model3|function|3e556417f07a6df2
@@ -456,8 +460,8 @@ extract_means_model4|function|16776032a360043c
 extract_means_model5|function|02a66e9f15c7f8a4
 extract_means_model6|function|7ba910cf775c5d47
 extract_means_model7|function|386aebdde5100928
-plot_model2_judgement|function|5abc88059d73a956
 run_power_analysis_mixed|function|d9035ad9cd01cffb
+plot_model2_judgement|function|5abc88059d73a956
 plot_model8_combined|function|366d28f3392a40e9
 load_data|function|fdc891c9e6e8a10f
 create_table_pairwise_contrasts_by_order|function|2b4ab60bab95f7c5
