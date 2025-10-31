@@ -67,9 +67,15 @@ create_table_pairwise_contrasts_by_dilemma <- function(model3_trustworthy,
         {{resp}} := paste0(
           format(round(median(value), 2), nsmall = 2),
           " [",
-          format(round(quantile(value, 0.025), 2), nsmall = 2),
+          format(
+            round(rethinking::HPDI(value, prob = 0.95)[[1]], 2),
+            nsmall = 2
+          ),
           ", ",
-          format(round(quantile(value, 0.975), 2), nsmall = 2),
+          format(
+            round(rethinking::HPDI(value, prob = 0.95)[[2]], 2),
+            nsmall = 2
+          ),
           "]"
           )
         )

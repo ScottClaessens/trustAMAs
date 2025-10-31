@@ -47,6 +47,8 @@ plot_model8 <- function(model8, data, cultural_data, pred1, pred2) {
     re_formula = NA,
     summary = FALSE
   )
+  # clean up
+  rm(model8)
   # calculate posterior means
   post <- matrix(0, nrow = nrow(f), ncol = ncol(f))
   for (i in 1:7) post <- post + (f[, , i] * i)

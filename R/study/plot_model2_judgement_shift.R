@@ -24,7 +24,10 @@ plot_model2_judgement_shift <- function(means2, first_block_only = FALSE) {
       linetype = "dashed",
       linewidth = 0.4
       ) +
-    stat_halfeye(size = 1) +
+    stat_halfeye(
+      size = 1,
+      point_interval = "median_hdi"
+    ) +
     scale_x_continuous(
       name = expression(
         atop(

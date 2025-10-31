@@ -23,10 +23,10 @@ plot_model7 <- function(means, pred1, pred2) {
     dplyr::select(pred1, pred2, country, !!sym(pred2), diff) %>%
     mutate(
       Estimate = median(diff),
-      Q2.5     = quantile(diff, 0.025),
-      Q25      = quantile(diff, 0.25),
-      Q75      = quantile(diff, 0.75),
-      Q97.5    = quantile(diff, 0.975)
+      Q2.5     = rethinking::HPDI(diff, prob = 0.95)[[1]],
+      Q25      = rethinking::HPDI(diff, prob = 0.50)[[1]],
+      Q75      = rethinking::HPDI(diff, prob = 0.50)[[2]],
+      Q97.5    = rethinking::HPDI(diff, prob = 0.95)[[2]]
     ) %>%
     ggplot(mapping = aes(x = !!sym(pred2))) +
     geom_hline(

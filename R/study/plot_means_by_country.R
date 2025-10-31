@@ -17,7 +17,8 @@ plot_means_by_country <- function(data, means, response) {
     geom_boxplot(
       data = data,
       aes(x = treatment, y = !!sym(response), colour = Advice, fill = Advice),
-      show.legend = FALSE
+      show.legend = FALSE,
+      outlier.shape = NA
     ) +
     # full opaque colours: orange = #E69F00, blue = #56B4E9
     scale_colour_manual(values = c("#FFE5AB", "#CCE8F8")) +

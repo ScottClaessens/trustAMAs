@@ -14,8 +14,8 @@ plot_model4_confidence <- function(means4, split_dilemma) {
     mutate(
       diff = list(post - pre),
       med = median(diff),
-      q2.5 = quantile(diff, 0.025),
-      q97.5 = quantile(diff, 0.975)
+      q2.5 = rethinking::HPDI(diff, prob = 0.95)[[1]],
+      q97.5 = rethinking::HPDI(diff, prob = 0.95)[[2]]
       ) %>%
     dplyr::select(!c(pre, post)) %>%
     unnest(diff) %>%
@@ -35,7 +35,8 @@ plot_model4_confidence <- function(means4, split_dilemma) {
       colour = "lightgrey"
     ) +
     stat_pointinterval(
-      position = position_dodge(width = 0.5)
+      position = position_dodge(width = 0.5),
+      point_interval = "median_hdi"
     ) +
     facet_wrap(. ~ treatment) +
     scale_colour_manual(values = c("#E69F00", "#56B4E9")) +

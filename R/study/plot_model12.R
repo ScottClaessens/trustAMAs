@@ -28,8 +28,8 @@ plot_model12 <- function(model12) {
       diff = list(post - pre),
       Estimate = mean(diff),
       Est.Error = sd(diff),
-      Q2.5 = quantile(diff, 0.025),
-      Q97.5 = quantile(diff, 0.975),
+      Q2.5 = rethinking::HPDI(diff, prob = 0.95)[[1]],
+      Q97.5 = rethinking::HPDI(diff, prob = 0.95)[[2]],
       treatment = paste0("Advisor = ", treatment),
       advice = paste0("Advice = ", advice)
     ) %>%

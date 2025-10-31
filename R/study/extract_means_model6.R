@@ -14,7 +14,11 @@ extract_means_model6 <- function(model6, resp) {
       object = model6,
       newdata = newdata,
       re_formula = as.formula(
-        ifelse(country == "Overall", "~0", "~(1 + treatment*advice*order | country)")
+        ifelse(
+          country == "Overall",
+          "~0",
+          "~(1 + treatment*advice*order | country)"
+        )
       ),
       summary = FALSE
     )
@@ -32,8 +36,8 @@ extract_means_model6 <- function(model6, resp) {
         post = list(post),
         Estimate = mean(post),
         Est.Error = sd(post),
-        Q2.5 = quantile(post, 0.025),
-        Q97.5 = quantile(post, 0.975)
+        Q2.5 = rethinking::HPDI(post, prob = 0.95)[[1]],
+        Q97.5 = rethinking::HPDI(post, prob = 0.95)[[2]]
       ) %>%
       ungroup() %>%
       dplyr::select(resp, everything())

@@ -37,8 +37,8 @@ extract_means_model7 <- function(model7, pred1, pred2) {
         post = list(post),
         Estimate = mean(post),
         Est.Error = sd(post),
-        Q2.5 = quantile(post, 0.025),
-        Q97.5 = quantile(post, 0.975)
+        Q2.5 = rethinking::HPDI(post, prob = 0.95)[[1]],
+        Q97.5 = rethinking::HPDI(post, prob = 0.95)[[2]]
       ) %>%
       ungroup() %>%
       dplyr::select(pred1, pred2, everything())

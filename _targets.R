@@ -262,8 +262,15 @@ list(
   
   
   # load cultural data
-  tar_target(cultural_data_file, "data/cultural/cultural.csv", format = "file"),
-  tar_target(cultural_data, read_csv(cultural_data_file, show_col_types = FALSE)),
+  tar_target(
+    cultural_data_file,
+    "data/cultural/cultural.csv",
+    format = "file"
+  ),
+  tar_target(
+    cultural_data,
+    read_csv(cultural_data_file, show_col_types = FALSE)
+  ),
   # load country networks
   tar_target(
     spatial_file,

@@ -29,9 +29,15 @@ extract_interaction_effects_model11 <- function(model11, pred) {
     paste0(
       format(round(median(int), digits = 2), nsmall = 2),
       " [",
-      format(round(quantile(int, 0.025), digits = 2), nsmall = 2),
+      format(
+        round(rethinking::HPDI(int, prob = 0.95)[[1]], digits = 2),
+        nsmall = 2
+      ),
       ", ",
-      format(round(quantile(int, 0.975), digits = 2), nsmall = 2),
+      format(
+        round(rethinking::HPDI(int, prob = 0.95)[[2]], digits = 2),
+        nsmall = 2
+      ),
       "]"
     )
   }

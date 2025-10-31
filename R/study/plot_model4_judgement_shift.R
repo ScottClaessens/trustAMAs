@@ -25,7 +25,10 @@ plot_model4_judgement_shift <- function(means4) {
       linetype = "dashed",
       linewidth = 0.4
       ) +
-    stat_halfeye(size = 1) +
+    stat_halfeye(
+      size = 1,
+      point_interval = "median_hdi"
+    ) +
     facet_grid(dilemma ~ .) +
     scale_x_continuous(
       name = expression(

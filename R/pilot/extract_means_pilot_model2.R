@@ -36,10 +36,10 @@ extract_means_pilot_model2 <- function(pilot_model2) {
       rowwise() %>%
       mutate(
         estimate = median(post),
-        lower50 = quantile(post, 0.250),
-        lower95 = quantile(post, 0.025),
-        upper50 = quantile(post, 0.750),
-        upper95 = quantile(post, 0.975)
+        lower50 = rethinking::HPDI(post, prob = 0.50)[[1]],
+        lower95 = rethinking::HPDI(post, prob = 0.95)[[1]],
+        upper50 = rethinking::HPDI(post, prob = 0.50)[[2]],
+        upper95 = rethinking::HPDI(post, prob = 0.95)[[2]]
       ) %>%
       ungroup() %>%
       dplyr::select(resp, everything())

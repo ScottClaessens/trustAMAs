@@ -111,7 +111,10 @@ plot_model3 <- function(model3, resp, dilemma) {
             fill = country == "Overall"
           )
         ) +
-        stat_halfeye(height = 0.85) +
+        stat_halfeye(
+          height = 0.85,
+          point_interval = "median_hdi"
+        ) +
         geom_vline(
           xintercept = 0,
           linetype = "dashed",
