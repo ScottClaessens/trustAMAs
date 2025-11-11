@@ -86,7 +86,9 @@ list(
     tar_target(loo1, loo(model1)),
     tar_target(means1, extract_means_model1(model1, resp)),
     tar_target(plot1, plot_model1(model1, resp)),
-    tar_target(plot1_by_country, plot_means_by_country(data, means1, resp))
+    tar_target(plot1_by_country, plot_means_by_country(data, means1, resp)),
+    tar_target(plot1_trace, plot_trace1(model1, resp)),
+    tar_target(plot1_pp_check, plot_model1_pp_check(model1, resp))
     ),
   # model 2 - judgements and confidence, pre-post advice
   tar_target(model2, fit_model2(data)),
@@ -96,6 +98,7 @@ list(
   tar_target(plot2_judgement, plot_model2_judgement(means2)),
   tar_target(plot2_judgement_shift, plot_model2_judgement_shift(means2)),
   tar_target(plot2_confidence, plot_model2_confidence(means2)),
+  tar_target(plot2_trace, plot_trace2(model2)),
   # plot overall distributions and model means
   tar_target(
     plot_means,
@@ -112,6 +115,28 @@ list(
                                     model1_trust_other_issues, model1_surprise,
                                     model1_humanlike)
     ),
+  # plot prior predictive check
+  tar_target(
+    model1_prior_only,
+    update(model1_trustworthy, sample_prior = "only", cores = 4, seed = 2113)
+  ),
+  tar_target(
+    means1_prior_only,
+    extract_means_model1(model1_prior_only, resp = "Prior")
+  ),
+  tar_target(plot1_prior_only, plot_means_prior_only(means1_prior_only)),
+  # plot posterior predictive checks
+  tar_target(
+    plot1_pp_check,
+    plot_model1_pp_check_combined(
+      plot1_pp_check_trustworthy,
+      plot1_pp_check_blame,
+      plot1_pp_check_trust_other_issues,
+      plot1_pp_check_surprise,
+      plot1_pp_check_humanlike
+    )
+  ),
+  tar_target(plot2_pp_check, plot_model2_pp_check(model2)),
   
   
   ##### Analyses split by dilemma #####
@@ -420,7 +445,7 @@ list(
   
   
   # render manuscript
-  #tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE),
+  tar_quarto(manuscript, "quarto/manuscript/manuscript.qmd", quiet = FALSE),
   
   
   #### Session info ####

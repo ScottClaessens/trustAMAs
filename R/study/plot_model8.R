@@ -108,8 +108,16 @@ plot_model8 <- function(model8, data, cultural_data, pred1, pred2) {
     scale_y_continuous(
       name = ifelse(
         pred1 == "advice",
-        "Trust in deontological advisor\ncompared to utilitarian advisor",
-        "Trust in human advisor\ncompared to AI advisor"
+        paste0(
+          "Perceived trustworthiness\n",
+          "of deontological advisor\n",
+          "relative to utilitarian advisor"
+        ),
+        paste0(
+          "Perceived trustworthiness\n",
+          "of human advisor\n",
+          "relative to AI advisor"
+        )
       ),
       limits = if (pred1 == "advice") c(-1.5, 2.5) else c(-0.25, 0.8)
     ) +

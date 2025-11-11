@@ -52,9 +52,17 @@ plot_model7 <- function(means, pred1, pred2) {
     scale_y_continuous(
       name = ifelse(
         pred1 == "advice",
-        "Trust in deontological advisor\ncompared to utilitarian advisor",
-        "Trust in human advisor\ncompared to AI advisor"
+        paste0(
+          "Perceived trustworthiness\n",
+          "of deontological advisor\n",
+          "relative to utilitarian advisor"
         ),
+        paste0(
+          "Perceived trustworthiness\n",
+          "of human advisor\n",
+          "relative to AI advisor"
+        )
+      ),
       limits = if (str_starts(pred2, fixed("AI"))) c(-0.1, 0.6) else c(-0.1, 1.2)
     ) +
     theme_classic() +

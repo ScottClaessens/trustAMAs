@@ -2,7 +2,9 @@
 
 # Supplementary Materials
 
-# Moral Dilemma Wordings
+# Supplementary Methods
+
+## Moral Dilemma Wordings
 
 :::{.NoIndent}
 The wording for the "Baby" dilemma was as follows:
@@ -36,6 +38,97 @@ other rider to crash and, at his current speed, almost certainly die, but it
 would prevent a crash in the middle of the street and the large pile-up of 
 riders.
 
+## Specifications for Statistical Models
+
+We used the *brms* R package to fit the Bayesian models in this paper. Below, we
+outline the R code for the different models that we fitted.
+
+Since the perceptions of the moral advisors (perceived trustworthiness, blame, 
+trusting on other issues, surprise, and human-like perceptions) were measured on
+1-7 Likert scales, we used the following cumulative-link ordinal model to 
+analyse these outcome variables, including the interaction between advisor type 
+and advice type:
+
+```{r echo=TRUE, eval=FALSE}
+brm(
+  formula = response ~ 1 + advisor * advice + (1 | id) + 
+    (1 + advisor * advice | country),
+  data = data,
+  family = cumulative,
+  prior = c(
+    prior(normal(0, 2), class = Intercept),
+    prior(normal(0, 1), class = b),
+    prior(exponential(2), class = sd),
+    prior(lkj(2), class = cor)
+  ),
+  ...
+)
+```
+
+When modelling participants' moral judgements on a 0-1 slider scale, we used a 
+zero-one-inflated beta model, since this model is uniquely suited to the 
+constraints of 0-1 bounded data (see 
+[here](https://vuorre.com/posts/analyze-analog-scale-ratings-with-zero-one-inflated-beta-models/index.html)).
+With this model, it is possible to simultaneously model the location and 
+precision (phi) of the data within the bounds of 0 and 1, as well as the 
+probability of zero-one-inflation (zoi) and the conditional probability of 
+observing a zero or a one (coi). We take this approach here, allowing the time
+period (pre vs. post) to interact with advisor type and advice type:
+
+```{r echo=TRUE, eval=FALSE}
+brm(
+  formula = bf(
+    judgement ~ 1 + time * advisor * advice + (1 | id) + 
+      (1 + time * advisor * advice | country),
+    phi ~ 1 + time * advisor * advice + (1 | id) + (1 | country),
+    zoi ~ 1 + time * advisor * advice + (1 | id) + (1 | country),
+    coi ~ 1 + time * advisor * advice + (1 | id) + (1 | country)
+  ),
+  data = data,
+  family = zero_one_inflated_beta,
+  prior = c(
+    prior(normal(0, 1), class = Intercept),
+    prior(normal(0, 1), class = Intercept, dpar = phi),
+    prior(normal(0, 1), class = Intercept, dpar = zoi),
+    prior(normal(0, 1), class = Intercept, dpar = coi),
+    prior(normal(0, 1), class = b),
+    prior(normal(0, 1), class = b, dpar = phi),
+    prior(normal(0, 1), class = b, dpar = zoi),
+    prior(normal(0, 1), class = b, dpar = coi),
+    prior(exponential(2), class = sd),
+    prior(exponential(2), class = sd, dpar = phi),
+    prior(exponential(2), class = sd, dpar = zoi),
+    prior(exponential(2), class = sd, dpar = coi),
+    prior(lkj(3), class = cor)
+  ),
+  ...
+)
+```
+
+Finally, when modelling participants' shift in confidence after seeing the
+advice, we fitted the following cumulative-link ordinal model to the 1-7 Likert
+scale data:
+
+```{r echo=TRUE, eval=FALSE}
+brm(
+  formula = confidence ~ 1 + time * advisor * advice + (1 | id) + 
+    (1 + time * advisor * advice | country),
+  data = data,
+  family = cumulative,
+  prior = c(
+    prior(normal(0, 2), class = Intercept),
+    prior(normal(0, 1), class = b),
+    prior(exponential(2), class = sd),
+    prior(lkj(3), class = cor)
+  ),
+  ...
+)
+```
+
+For more details about these models, and for variants of these models that 
+include additional moderators, see here: 
+<https://github.com/ScottClaessens/trustAMAs>
+
 \newpage
 
 # Supplementary Figures
@@ -47,12 +140,12 @@ tar_read(plot_means_by_dilemma)
 ```
 
 Perceptions of AI and human moral advisors giving deontological (orange) and 
-utilitarian advice (blue), pooling across countries and split by dilemma. Box 
+utilitarian (blue) advice, pooling across countries and split by dilemma. Box 
 and whisker plots show the distributions of the data, with horizontal lines 
 representing sample medians, boxes representing interquartile ranges, and 
 whiskers representing ranges. Point ranges show model-estimated marginal means,
 with points representing posterior medians and line ranges representing 95% 
-credible intervals.
+highest posterior density intervals.
 
 :::
 
@@ -65,12 +158,31 @@ tar_read(plot_means_by_order)
 ```
 
 Perceptions of AI and human moral advisors giving deontological (orange) and 
-utilitarian advice (blue), pooling across dilemmas and countries and split by 
+utilitarian (blue) advice, pooling across dilemmas and countries and split by 
 the first and second experimental blocks. Box and whisker plots show the 
 distributions of the data, with horizontal lines representing sample medians, 
 boxes representing interquartile ranges, and whiskers representing ranges. Point
 ranges show model-estimated marginal means, with points representing posterior
-medians and line ranges representing 95% credible intervals.
+medians and line ranges representing 95% highest posterior density intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-means-control-judgement suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=7}
+tar_read(plot_means_control_judgement)
+```
+
+Perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian (blue) advice, pooling across dilemmas and countries and controlling
+for participants' own pre-advice moral judgments. Box and whisker plots show 
+the distributions of the data, with horizontal lines representing sample 
+medians, boxes representing interquartile ranges, and whiskers representing 
+ranges. Point ranges show model-estimated marginal means, with points 
+representing posterior medians and line ranges representing 95% highest 
+posterior density intervals.
 
 :::
 
@@ -83,13 +195,13 @@ tar_read(plot_means_itt)
 ```
 
 Perceptions of AI and human moral advisors giving deontological (orange) and 
-utilitarian advice (blue), pooling across dilemmas and countries and including
+utilitarian (blue) advice, pooling across dilemmas and countries and including
 participants who failed the comprehension checks ("intention to treat" analysis).
 Box and whisker plots show the distributions of the data, with horizontal lines 
 representing sample medians, boxes representing interquartile ranges, and 
 whiskers representing ranges. Point ranges show model-estimated marginal means,
 with points representing posterior medians and line ranges representing 95% 
-credible intervals.
+highest posterior density intervals.
 
 :::
 
@@ -101,14 +213,14 @@ credible intervals.
 tar_read(plot7_combined)
 ```
 
-Variation in the experimental effects across individuals. The top row shows how
-the estimated difference in trust (on a 1-7 Likert scale) between deontological
-and utilitarian advisors changes with participants' religiosity and political 
-conservatism. The bottom row shows how the estimated difference in trust (on a 
-1-7 Likert scale) between human and AI advisors changes with participants' 
-familiarity with AI and frequency of AI use. Lines and shaded areas reflect 
-posterior medians and 50% and 95% credible intervals. Dashed horizontal lines 
-indicate no difference.
+Assessing variation in the experimental effects across individuals. The top row 
+shows how the estimated difference in perceived trustworthiness (on a 1-7 Likert 
+scale) between deontological and utilitarian advisors changes with participants' 
+religiosity and political conservatism. The bottom row shows how the estimated 
+difference in perceived trustworthiness (on a 1-7 Likert scale) between human 
+and AI advisors changes with participants' familiarity with AI and frequency of 
+AI use. Lines and shaded areas reflect posterior medians and 50% and 95% highest 
+posterior density intervals. Dashed horizontal lines indicate no difference.
 
 :::
 
@@ -123,8 +235,8 @@ tar_read(plot1_blame)
 Variation in model parameters across countries. Estimates are the varying 
 log-odds slopes from our multilevel model predicting blame, alongside overall 
 fixed effects (red). Points and line ranges reflect posterior medians and 66% 
-and 95% credible intervals, respectively. Densities reflect samples from the 
-posterior distribution.
+and 95% highest posterior density intervals, respectively. Densities reflect 
+samples from the posterior distribution.
 
 :::
 
@@ -139,8 +251,8 @@ tar_read(plot1_trust_other_issues)
 Variation in model parameters across countries. Estimates are the varying 
 log-odds slopes from our multilevel model predicting trust on other issues, 
 alongside overall fixed effects (red). Points and line ranges reflect posterior
-medians and 66% and 95% credible intervals, respectively. Densities reflect 
-samples from the posterior distribution.
+medians and 66% and 95% highest posterior density intervals, respectively. 
+Densities reflect samples from the posterior distribution.
 
 :::
 
@@ -155,8 +267,8 @@ tar_read(plot1_surprise)
 Variation in model parameters across countries. Estimates are the varying 
 log-odds slopes from our multilevel model predicting surprise, alongside overall
 fixed effects (red). Points and line ranges reflect posterior medians and 66% 
-and 95% credible intervals, respectively. Densities reflect samples from the 
-posterior distribution.
+and 95% highest posterior density intervals, respectively. Densities reflect 
+samples from the posterior distribution.
 
 :::
 
@@ -171,8 +283,8 @@ tar_read(plot1_humanlike)
 Variation in model parameters across countries. Estimates are the varying 
 log-odds slopes from our multilevel model predicting human-like perceptions, 
 alongside overall fixed effects (red). Points and line ranges reflect posterior
-medians and 66% and 95% credible intervals, respectively. Densities reflect 
-samples from the posterior distribution.
+medians and 66% and 95% highest posterior density intervals, respectively. 
+Densities reflect samples from the posterior distribution.
 
 :::
 
@@ -184,15 +296,16 @@ samples from the posterior distribution.
 tar_read(plot8_combined)
 ```
 
-Variation in the experimental effects across different cultural variables. The 
-top row shows how the estimated difference in trust (on a 1-7 Likert scale) 
-between deontological and utilitarian advisors varies by relational mobility, 
-tightness-looseness, and individualism. The bottom row shows how the estimated 
-difference in trust (on a 1-7 Likert scale) between human and AI advisors varies
-by government AI readiness and the global AI index. Lines and shaded areas 
-reflect posterior medians and 50% and 95% credible intervals. Letters are ISO-2
-country codes. All models control for spatial and cultural non-independence 
-between countries.
+Assessing variation in the experimental effects across different cultural 
+variables. The top row shows how the estimated difference in perceived 
+trustworthiness (on a 1-7 Likert scale) between deontological and utilitarian
+advisors varies by relational mobility, tightness-looseness, and individualism.
+The bottom row shows how the estimated difference in perceived trustworthiness
+(on a 1-7 Likert scale) between human and AI advisors varies by government AI 
+readiness and the global AI index. Lines and shaded areas reflect posterior 
+medians and 50% and 95% credible intervals for visualization purposes. Letters 
+are ISO-2 country codes. All models control for spatial and cultural 
+non-independence between countries.
 
 :::
 
@@ -208,8 +321,96 @@ Effects of moral advice on participant judgments in the first block only.
 Estimated pre-post shifts in judgments on a 0-1 sliding scale, for human and AI
 advisors giving deontological and utilitarian advice. The grey dashed line 
 indicates no pre-post shift in judgment. Points, line ranges, and densities 
-reflect posterior medians, 95% credible intervals, and samples from the 
-posterior distribution, respectively.
+reflect posterior medians, 95% highest posterior density intervals, and samples 
+from the posterior distribution, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-judgment-shift-relational-mobility suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4.5}
+tar_read(plot11_relational_mobility_latent)
+```
+
+The relationship between relational mobility and pre-post shifts in moral 
+judgments on a 0-1 sliding scale. Negative pre-post shifts indicate judgment 
+updating towards the deontological option, positive pre-post shifts indicate 
+judgment updating towards the utilitarian option. Lines and shaded areas reflect 
+posterior medians and 50% and 95% credible intervals for visualization purposes. 
+Points are country averages. Letters are ISO-2 country codes. The model controls
+for spatial and cultural non-independence between countries.
+
+:::
+
+\newpage
+
+::: {#suppfig-judgment-shift-tightness suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4.5}
+tar_read(plot11_tightness)
+```
+
+The relationship between cultural tightness and pre-post shifts in moral 
+judgments on a 0-1 sliding scale. Negative pre-post shifts indicate judgment 
+updating towards the deontological option, positive pre-post shifts indicate 
+judgment updating towards the utilitarian option. Lines and shaded areas reflect 
+posterior medians and 50% and 95% credible intervals for visualization purposes. 
+Points are country averages. Letters are ISO-2 country codes. The model controls
+for spatial and cultural non-independence between countries.
+
+:::
+
+\newpage
+
+::: {#suppfig-judgment-shift-individualism suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4.5}
+tar_read(plot11_individualism)
+```
+
+The relationship between individualism and pre-post shifts in moral judgments on
+a 0-1 sliding scale. Negative pre-post shifts indicate judgment updating towards
+the deontological option, positive pre-post shifts indicate judgment updating 
+towards the utilitarian option. Lines and shaded areas reflect posterior medians
+and 50% and 95% credible intervals for visualization purposes. Points are 
+country averages. Letters are ISO-2 country codes. The model controls for 
+spatial and cultural non-independence between countries.
+
+:::
+
+\newpage
+
+::: {#suppfig-judgment-shift-AI-readiness suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4.5}
+tar_read(plot11_AI_readiness)
+```
+
+The relationship between AI government readiness and pre-post shifts in moral 
+judgments on a 0-1 sliding scale. Negative pre-post shifts indicate judgment 
+updating towards the deontological option, positive pre-post shifts indicate 
+judgment updating towards the utilitarian option. Lines and shaded areas reflect 
+posterior medians and 50% and 95% credible intervals for visualization purposes. 
+Points are country averages. Letters are ISO-2 country codes. The model controls
+for spatial and cultural non-independence between countries.
+
+:::
+
+::: {#suppfig-judgment-shift-AI-index suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4.5}
+tar_read(plot11_AI_index)
+```
+
+The relationship between the global AI index and pre-post shifts in moral 
+judgments on a 0-1 sliding scale. Negative pre-post shifts indicate judgment 
+updating towards the deontological option, positive pre-post shifts indicate
+judgment updating towards the utilitarian option. Lines and shaded areas reflect 
+posterior medians and 50% and 95% credible intervals for visualization purposes. 
+Points are country averages. Letters are ISO-2 country codes. The model controls
+for spatial and cultural non-independence between countries.
 
 :::
 
@@ -223,7 +424,7 @@ tar_read(plot2_confidence)
 
 Pre-post increase in participants' confidence in their judgment after seeing the
 moral advice. Points and line ranges represent posterior medians and 50% and 95%
-credible intervals, respectively.
+highest posterior density intervals, respectively.
 
 :::
 
@@ -237,7 +438,8 @@ tar_read(plot4_confidence_baby)
 
 Pre-post increase in participants' confidence in their judgment after seeing the
 moral advice, for the Baby dilemma only. Points and line ranges represent 
-posterior medians and 50% and 95% credible intervals, respectively.
+posterior medians and 50% and 95% highest posterior density intervals, 
+respectively.
 
 :::
 
@@ -251,7 +453,8 @@ tar_read(plot4_confidence_bike)
 
 Pre-post increase in participants' confidence in their judgment after seeing the
 moral advice, for the Bike dilemma only. Points and line ranges represent 
-posterior medians and 50% and 95% credible intervals, respectively.
+posterior medians and 50% and 95% highest posterior density intervals, 
+respectively.
 
 :::
 
@@ -280,6 +483,151 @@ each age-gender category, lines show the targeted proportions in our
 nationally representative quotas. Differences between observed and targeted 
 proportions in each quota category were less than 10% for all countries except 
 China, which was skewed slightly towards younger participants.
+
+:::
+
+\newpage
+
+::: {#suppfig-prior-check suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4}
+tar_read(plot1_prior_only)
+```
+
+Prior predictive check for the pre-registered models. These models analyse 
+perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian (blue) advice, pooling across dilemmas and countries. Point ranges 
+show marginal means from the model before seeing the data, with points 
+representing prior medians and line ranges representing 95% highest posterior 
+density intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-means-prior-sensitivity suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=7}
+tar_read(plot_means_prior_sensitivity)
+```
+
+Perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian (blue) advice, pooling across dilemmas and countries and using a 
+wider prior on the experimental effects - Normal(0, 2) instead of Normal(0, 1). 
+Box and whisker plots show the distributions of the data, with horizontal lines 
+representing sample medians, boxes representing interquartile ranges, and 
+whiskers representing ranges. Point ranges show model-estimated marginal means, 
+with points representing posterior medians and line ranges representing 95% 
+highest posterior density intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-trace-trustworthy suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot1_trace_trustworthy)
+```
+
+MCMC trace plot of post-warmup iterations for the model predicting 
+trustworthiness ratings.
+
+:::
+
+\newpage
+
+::: {#suppfig-trace-blame suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot1_trace_blame)
+```
+
+MCMC trace plot of post-warmup iterations for the model predicting blame 
+ratings.
+
+:::
+
+\newpage
+
+::: {#suppfig-trace-trust-other-issues suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot1_trace_trust_other_issues)
+```
+
+MCMC trace plot of post-warmup iterations for the model predicting "trust on 
+other issues" ratings.
+
+:::
+
+\newpage
+
+::: {#suppfig-trace-surprise suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot1_trace_surprise)
+```
+
+MCMC trace plot of post-warmup iterations for the model predicting surprise 
+ratings.
+
+:::
+
+\newpage
+
+::: {#suppfig-trace-humanlike suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot1_trace_humanlike)
+```
+
+MCMC trace plot of post-warmup iterations for the model predicting human-like 
+vs. machine-like ratings.
+
+:::
+
+\newpage
+
+::: {#suppfig-trace-judgements suppfig-pos="H"}
+
+```{r, fig.height=6, fig.width=6}
+tar_read(plot2_trace)
+```
+
+MCMC trace plot of post-warmup iterations for the model predicting judgment 
+updating. Note that only fixed effects from the beta component of the model are
+presented here for space reasons.
+
+:::
+
+\newpage
+
+::: {#suppfig-pp-check-ordinal suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
+tar_read(plot1_pp_check)
+```
+
+Posterior predictive checks for models predicting perceptions of the moral
+advisors. Light blue bars represent observed data counts, dark blue point ranges
+represent simulated data from the posterior predictive distribution, with points
+reflecting posterior medians and line ranges reflecting 90% credible intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-pp-check-judgements suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=4.5}
+tar_read(plot2_pp_check)
+```
+
+Posterior predictive check from the zero-one-inflated beta model predicting 
+moral judgments on the 0-1 sliding scale. The dark blue density represents the 
+distribution of the observed data. The light blue densities represent different 
+draws from the posterior predictive distribution.
 
 :::
 
@@ -316,7 +664,7 @@ countries and split by dilemma. Numbers reflect differences in marginal means on
 the log-odds scale. The interaction effects represent the interaction between 
 advisor type and advice type (i.e., the difference between the differences in 
 the rows above). Main numbers are posterior medians, numbers in square brackets 
-are 95% credible intervals.
+are 95% highest posterior density intervals.
 
 :::
 
@@ -351,8 +699,45 @@ dilemmas and countries and split by the first and second experimental blocks.
 Numbers reflect differences in marginal means on the log-odds scale. The 
 interaction effects represent the interaction between advisor type and advice 
 type (i.e., the difference between the differences in the rows above). Main 
-numbers are posterior medians, numbers in square brackets are 95% credible 
-intervals.
+numbers are posterior medians, numbers in square brackets are 95% highest 
+posterior density intervals.
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-contrasts-control-judgement supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_pairwise_contrasts_control_judgement) %>%
+  mutate(
+    group = c(
+      rep("Effect of advice type", 2),
+      rep("Effect of advisor type", 2),
+      "Interaction effect"
+      )
+    ) %>%
+  as_grouped_data(groups = "group") %>%
+  as_flextable(hide_grouplabel = TRUE) %>%
+  theme_apa() %>%
+  width(width = c(2.7, rep(1.3, 5))) %>%
+  bold(i = ~ !is.na(group)) %>%
+  add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+  align(i = 1, j = NULL, align = "center", part = "header") %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  line_spacing() %>%
+  fontsize(size = 9)
+```
+
+Pairwise contrasts for perceptions of the moral advisors, pooling across 
+dilemmas and countries and controlling for participants' pre-advice moral 
+judgments. Numbers reflect differences in marginal means on the log-odds scale.
+The interaction effects represent the interaction between advisor type and 
+advice type (i.e., the difference between the differences in the rows above). 
+Main numbers are posterior medians, numbers in square brackets are 95% highest 
+posterior density intervals.
 
 :::
 
@@ -389,7 +774,30 @@ checks ("intention to treat" analysis). Numbers reflect differences in marginal
 means on the log-odds scale. The bottom row represents the interaction between
 advisor type and advice type (i.e., the difference between the differences in
 the rows above). Main numbers are posterior medians, numbers in square brackets
-are 95% credible intervals.
+are 95% highest posterior density intervals.
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-model11 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table11) %>%
+  flextable() %>%
+  theme_apa() %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  fontsize(size = 10) %>%
+  line_spacing() %>%
+  autofit()
+```
+
+Interaction effects for different country-level variables predicting pre-post
+shifts in judgment updating on a 0-1 sliding scale. Numbers reflect interaction
+effects on the log-odds scale. Main numbers are posterior medians, numbers in 
+square brackets are 95% highest posterior density intervals.
 
 :::
 
@@ -409,6 +817,43 @@ tar_read(table_sample) %>%
 ```
 
 Breakdown of the sample by country
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-contrasts-prior-sensitivity supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_pairwise_contrasts_prior_sensitivity) %>%
+  mutate(
+    group = c(
+      rep("Effect of advice type", 2),
+      rep("Effect of advisor type", 2),
+      "Interaction effect"
+      )
+    ) %>%
+  as_grouped_data(groups = "group") %>%
+  as_flextable(hide_grouplabel = TRUE) %>%
+  theme_apa() %>%
+  width(width = c(2.7, rep(1.3, 5))) %>%
+  bold(i = ~ !is.na(group)) %>%
+  add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+  align(i = 1, j = NULL, align = "center", part = "header") %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  line_spacing() %>%
+  fontsize(size = 9)
+```
+
+Pairwise contrasts for perceptions of the moral advisors, pooling across 
+dilemmas and countries and using a wider prior on the experimental effects - 
+Normal(0, 2) instead of Normal(0, 1). Numbers reflect differences in marginal
+means on the log-odds scale. The bottom row represents the interaction between
+advisor type and advice type (i.e., the difference between the differences in
+the rows above). Main numbers are posterior medians, numbers in square brackets
+are 95% highest posterior density intervals.
 
 :::
 
