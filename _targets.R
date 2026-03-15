@@ -7,10 +7,11 @@ library(tidyverse)
 
 # set targets options
 tar_option_set(
-  packages = c("brms", "forcats", "ggnewscale", "ggrepel", "kableExtra", 
-               "knitr", "magick", "maps", "ordinal", "patchwork", "pdftools", 
-               "readxl", "rethinking", "tidybayes", "tidyverse")
-  )
+  packages = c("brms", "flextable", "forcats", "ggnewscale", "ggrepel", 
+               "kableExtra", "knitr", "magick", "maps", "ordinal", "patchwork", 
+               "pdftools", "readxl", "rethinking", "tidybayes", "tidyverse"),
+  controller = crew_controller_local(workers = 2)
+)
 tar_source()
 
 # pipeline
@@ -438,6 +439,55 @@ list(
                                     model13_trust_other_issues,
                                     model13_surprise,
                                     model13_humanlike)
+  ),
+  
+  
+  #### Follow-up study ####
+  
+  
+  # load follow-up study data
+  tar_target(followup_data_file, "data/followup/followup_data_clean.csv",
+             format = "file"),
+  tar_target(followup_data, load_followup_data(followup_data_file)),
+  # model 1 - trustworthiness, etc. split by wordings
+  tar_map(
+    values = tibble(resp = c("trustworthy", "blame", "trust_other_issues",
+                             "surprise", "humanlike")),
+    tar_target(followup_model1, fit_followup_model1(followup_data, resp)),
+    tar_target(
+      followup_means1,
+      extract_means_followup_model1(followup_model1, resp)
+    )
+  ),
+  # plot overall distributions and model means split by wording
+  tar_target(
+    plot_followup_means_by_wording,
+    plot_followup_means_overall_by_wording(
+      followup_data,
+      bind_rows(
+        followup_means1_trustworthy,
+        followup_means1_blame,
+        followup_means1_trust_other_issues, 
+        followup_means1_surprise,
+        followup_means1_humanlike
+      )
+    )
+  ),
+  # create table of pairwise contrasts split by wording
+  tar_target(
+    table_pairwise_contrasts_by_wording,
+    create_table_pairwise_contrasts_by_wording(
+      followup_model1_trustworthy, followup_model1_blame, 
+      followup_model1_trust_other_issues, followup_model1_surprise,
+      followup_model1_humanlike
+    )
+  ),
+  # model 2 - judgements and confidence, split by wordings
+  tar_target(followup_model2, fit_followup_model2(followup_data)),
+  tar_target(followup_means2, extract_means_followup_model2(followup_model2)),
+  tar_target(
+    plot_followup_model2_judgements,
+    plot_followup_model2_judgement_shift(followup_means2)
   ),
   
   
