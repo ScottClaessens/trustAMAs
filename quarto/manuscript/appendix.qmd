@@ -129,6 +129,47 @@ For more details about these models, and for variants of these models that
 include additional moderators, see here: 
 <https://github.com/ScottClaessens/trustAMAs>
 
+## Follow-Up Study
+
+After conducting the cross-cultural study, an anonymous reviewer raised the
+concern that differences in the descriptions of human and AI advisors could be 
+driving the results. In particular, while human advisors were described as 
+having "extensive ethical and philosophical training", the AI advisors were only 
+described as having "human-level moral reasoning", without clarifying how the 
+models were trained or how they gained their expertise. The anonymous reviewer 
+argued that this could have resulted in differing perceptions of moral expertise
+between the two experimental conditions, which could have driven the differences
+in perceived trustworthiness between human and AI advisors.
+
+To address this concern, we conducted a follow-up study with a convenience 
+sample of 953 participants from the United Kingdom, sampled via Prolific. The
+follow-up study was identical to the main study, but we revised the study 
+preamble text in the human and AI conditions as follows:
+
+- **Human condition:** "Moral Advisors are human moral experts with extensive 
+training in ethics and moral philosophy. They use their advanced knowledge of 
+ethical principles and moral reasoning to evaluate difficult situations and 
+recommend what they believe is the morally correct course of action."
+- **AI condition:** "Artificial Moral Advisors are artificial intelligence moral
+experts extensively trained on large collections of ethical and philosophical 
+materials, including examples of expert human judgments. They use advanced 
+statistical and machine learning techniques to evaluate difficult situations and 
+recommend what they judge to be the morally correct course of action."
+
+<br>
+
+In the follow-up study, we deployed the original and revised wordings in a 
+randomised between-subjects design, such that 505 participants saw the original
+wording and 448 participants saw the revised wording.
+
+The results of the follow-up study replicated the results from the main study
+with both the original wording and the revised wording, with no difference
+between the wording conditions (Supplementary Figures 
+[-@suppfig-means-by-wording] and [-@suppfig-judgment-shift-wording]; 
+@supptbl-contrasts-wording). These follow-up results suggest that the results in
+the main study are due to general algorithm aversion rather than the particular
+descriptions of human and AI advisors that we used.
+
 \newpage
 
 # Supplementary Figures
@@ -633,6 +674,41 @@ draws from the posterior predictive distribution.
 
 \newpage
 
+::: {#suppfig-means-by-wording suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=7}
+tar_read(plot_followup_means_by_wording)
+```
+
+Perceptions of AI and human moral advisors giving deontological (orange) and 
+utilitarian (blue) advice, pooling across dilemmas and split by the original and
+revised wordings in a follow-up study. Box and whisker plots show the 
+distributions of the data, with horizontal lines representing sample medians, 
+boxes representing interquartile ranges, and whiskers representing ranges. Point
+ranges show model-estimated marginal means, with points representing posterior
+medians and line ranges representing 95% highest posterior density intervals.
+
+:::
+
+\newpage
+
+::: {#suppfig-judgment-shift-wording suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_followup_model2_judgements)
+```
+
+Effects of moral advice on participant judgments, split by original and revised
+wording in a follow-up study. Estimated pre-post shifts in judgments on a 0-1 
+sliding scale, for human and AI advisors giving deontological and utilitarian 
+advice. The grey dashed line indicates no pre-post shift in judgment. Points, 
+line ranges, and densities reflect posterior medians, 95% highest posterior 
+density intervals, and samples from the posterior distribution, respectively.
+
+:::
+
+\newpage
+
 # Supplementary Tables
 
 ::: {.landscape}
@@ -854,6 +930,44 @@ means on the log-odds scale. The bottom row represents the interaction between
 advisor type and advice type (i.e., the difference between the differences in
 the rows above). Main numbers are posterior medians, numbers in square brackets
 are 95% highest posterior density intervals.
+
+:::
+
+:::
+
+::: {.landscape}
+
+::: {#supptbl-contrasts-wording supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_pairwise_contrasts_by_wording) %>%
+  mutate(
+    Contrast = str_replace_all(Contrast, fixed("Original - "), ""),
+    Contrast = str_replace_all(Contrast, fixed("Revised - "), ""),
+    group = c(
+      rep("Original wording", 5),
+      rep("Revised wording", 5)
+      )
+    ) %>%
+  as_grouped_data(groups = "group") %>%
+  as_flextable(hide_grouplabel = TRUE) %>%
+  theme_apa() %>%
+  width(width = c(2.7, rep(1.3, 5))) %>%
+  bold(i = ~ !is.na(group)) %>%
+  add_header_row(values = c("", "Response"), colwidths = c(1, 5)) %>%
+  align(i = 1, j = NULL, align = "center", part = "header") %>%
+  align(i = NULL, j = 1, align = "left", part = "all") %>%
+  line_spacing() %>%
+  fontsize(size = 9)
+```
+
+Pairwise contrasts for perceptions of the moral advisors, pooling across 
+dilemmas and split by original and revised wordings in a follow-up study. 
+Numbers reflect differences in marginal means on the log-odds scale. The bottom 
+row represents the interaction between advisor type and advice type (i.e., the 
+difference between the differences in the rows above). Main numbers are 
+posterior medians, numbers in square brackets are 95% highest posterior density
+intervals.
 
 :::
 

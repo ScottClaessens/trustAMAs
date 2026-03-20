@@ -210,13 +210,13 @@ author-note:
     deceased: ~
   disclosures:
     study-registration: This pre-print is currently not yet peer-reviewed and may differ from the final version.
-    data-sharing: Word count (excl. abstract, methods, figure legends, and references) = 5,112 words.
+    data-sharing: Word count (excl. abstract, methods, figure legends, and references) = 5,640 words.
     related-report: ~
     conflict-of-interest: ~
     financial-support: ~
     gratitude: ~
     authorship-agreements: ~
-abstract: "Developers of artificial intelligence are already building prototypes for artificial moral advisors: autonomous systems designed to provide humans with recommendations on ethical issues. Yet it remains unclear whether people will actually trust and adopt these technologies. Here, we investigate perceptions of human and artificial moral advisors in a large-scale cross-cultural experiment (12 countries; *N* = 6,896). We show that people trust artificial advisors less than human ones, especially when their advice aligns with utilitarian rather than deontological principles. Nonetheless, people update their own moral judgments in the direction of the advice -- regardless of whether it came from a human or AI advisor -- and do so more when the advice is deontological. These findings reveal a psychological paradox: people trust artificial moral advisors less, yet still defer to them in practice. This dissociation raises serious questions about the potential influence of machines on human morality, with implications for AI governance."
+abstract: "Developers of artificial intelligence are already building prototypes for artificial moral advisors: autonomous systems designed to provide humans with recommendations on ethical issues. Yet it remains unclear whether people will trust and adopt these technologies. In a large-scale cross-cultural experiment (12 countries; *N* = 6,896), we investigate perceptions of human and artificial moral advisors who give advice in moral dilemmas based on competing ethical principles. We show that people trust artificial advisors less than human ones, especially when their advice aligns with utilitarian rather than deontological principles. Nonetheless, people update their own moral judgments in the direction of advice from AI advisors, and do so more when the advice is deontological. Our findings raise challenges for the design, development, and deployment of artificial moral advisors and pose serious questions about the potential influence of machines on human morality, with implications for AI governance."
 keywords: [artificial intelligence, morality, trust, moral influence]
 bibliography: bibliography.bib
 engine: knitr
@@ -271,7 +271,7 @@ diseases. But could -- and should -- AI also be used to help us make better
 moral decisions [@Giubilini2018; @Lara2020; @Sinnott2021]?
 
 Artificial moral advisors (AMAs) refer to AI systems that could assist humans 
-in making ethical decisions, leveraging artificial intelligence to analyse moral
+in making ethical decisions, leveraging artificial intelligence to analyze moral
 dilemmas, engage in Socratic dialogue about moral matters [@Lara2020], and/or 
 provide recommendations based on established ethical theories, principles, and 
 guidelines [@Giubilini2018]. The idea, at root, is simple: AI provides a tool 
@@ -288,9 +288,9 @@ rapidly moved from hypothetical to practical.
 
 While contemporary LLMs like ChatGPT are not designed specifically to assist in 
 morality, their flexibility and accessibility means that they do already give 
-advice on moral dilemmas [@Krugel2023]. Perhaps concerningly, ethical advice 
-surreptitiously written by ChatGPT is rated as more moral, thoughtful, and 
-correct than advice written by a human moral expert [@Dillion2025]. Beyond 
+advice on moral dilemmas [@Krugel2023; @Haas2026]. Perhaps concerningly, ethical
+advice surreptitiously written by ChatGPT is rated as more moral, thoughtful, 
+and correct than advice written by a human moral expert [@Dillion2025]. Beyond 
 general-purpose LLMs, companies are already working on prototypes for AI-powered
 systems designed specifically to model morality. For example, the Allen 
 Institute's Delphi [@Jiang2025] is trained on a large corpus of moral judgments,
@@ -299,46 +299,52 @@ writings of the renowned ethicist Peter Singer (<https://www.petersinger.ai/>).
 
 Questions about how we should create AMAs, whether we should at all, and the 
 long-term consequences of these technologies remain very much open [@Lara2020; 
-@Landes_preprint; @Liu2022]. However, even if we set aside the crucial question
-of whether people *should* trust AMAs, it remains unclear whether people will 
-actually trust and adopt AMAs in practice. We can broadly define trust as 
-"accept[ing] vulnerability based upon positive expectations of the intentions or
-behavior of another" [@Rousseau1998], where this trust is typically understood 
-as being driven by a perception of the agent's trustworthiness. While some 
-philosophers have argued that concepts like trust and trustworthiness should 
-not be applied to AI since machines lack the necessary agential capacities to be
-genuinely trusted [@Metzinger2019], others have argued that people can and do 
-trust AI in a manner akin to trust in other humans [@Lalot2024; @Malle2021]. But
-how this trust will apply to people's interactions with AMAs is far from clear.
-Even if people report that they trust AMAs, there is no guarantee that they
-would listen to the moral advice by changing their judgment. Indeed, theoretical
-models of trust in AI often distinguish between attitudinal trust and its 
-antecedents, such as the perceived trustworthiness of the AI system, and 
-behavioral consequences, such as willingness to use or rely on the technology in
-practice [@Hoff2015; @Lalot2024; @Lee2004; @Schlicker2025; @Vereschak2021; 
-@Wischnewski2023]. Given the increasing role that AI plays in life, and in 
-particular claims that AI-powered moral advisors could help us make better moral
-judgments, we need to understand whether people trust AMAs, whether this trust
-depends on the kinds of moral decisions that the AMAs make, and whether people
+@Landes_preprint; @Liu2022]. However, even if we set aside the normative 
+question of whether people *should* trust AMAs, the psychological question of 
+whether people will trust and adopt AMAs in practice remains. If AMAs are to 
+serve their purported purpose of helping people make moral decisions, it is 
+imperative that people trust them. In the context of AI, trust can refer to 
+different things: an assessment of an agent's capacities that make it worthy of
+trust, a self-report judgment indicating a willingness to rely on an agent in 
+cases of uncertainty, and a behavioral manifestation of this expression of 
+reliance, such as listening to an AI model's recommendations [@Everett_in_prep; 
+@Hoff2015; @Lalot2024; @Lee2004; @Schlicker2025; @Vereschak2021; 
+@Wischnewski2023]. Following classic models of interpersonal trust, a perception
+of an agent's trustworthiness typically leads to an attitude of trust, which in
+turn leads to trusting behavior [@Mayer1995]. While some philosophers have 
+argued that concepts like trust and trustworthiness should not be applied to AI 
+since machines lack the necessary agential capacities to be genuinely trusted 
+[@Metzinger2019], others have argued that people can and do trust AI in a manner
+akin to trust in other humans [@Lalot2024; @Malle2021], perhaps because they are 
+perceived as social agents. But how this trust will apply to people's 
+interactions with AMAs is far from clear. It is not clear whether people will 
+trust AMAs differently based on the kinds of moral judgments they make in moral
+dilemmas, and even if people report that they trust AMAs, there is no guarantee
+that they would listen to the moral advice by changing their judgment. Given the 
+increasing role that AI plays in life, and in particular claims that AI-powered
+moral advisors could help us make better moral judgments, we need to understand
+whether people trust AMAs, whether this trust depends on the kinds of moral 
+decisions that the AMAs make in response to moral dilemmas, and whether people
 will actually defer to AMAs on moral issues. Our paper addresses all these 
 questions.
 
-On the question of whether people will trust AMAs, a large body of research, 
-mostly conducted prior to the release of contemporary LLMs, has documented the 
-phenomenon of algorithm aversion: the tendency for individuals to distrust AI 
-relative to humans, even when the AI boasts identical or even superior 
-performance [@Dawes1979; @Dietvorst2015; @Meehl1954; @Meehl1957]. This algorithm
-aversion leads to a specific distrust in AI making moral decisions, driven by
-the perception that AI lacks internal experience [@Bigman2018]. These results 
-suggest that people will distrust AI models that give advice on moral issues. 
-However, these findings may no longer generalize in a post-ChatGPT era in which
-people are interacting with LLMs on a regular basis. Moreover, the limited 
-research there has been on trust in AI in the moral domain has tended to focus 
-narrowly on Western populations [@Henrich2010], while moral norms, prevalence of
-AI, and morally relevant cultural values vary dramatically across societies 
-[@Barnes2024; @Dang2025; @Inglehart2000; @Jackson2024]. It therefore remains 
-unclear whether people around the world will trust AMAs and whether levels of 
-trust will vary across cultures.
+If AI systems acting as moral advisors are to serve a role of supporting ethical
+decision making, they must be seen as trustworthy and trusted. Yet there is 
+long-standing evidence, mostly conducted prior to the release of contemporary 
+LLMs, documenting the phenomenon of algorithm aversion: the tendency for 
+individuals to distrust AI relative to humans, even when the AI boasts identical
+or even superior performance [@Dawes1979; @Dietvorst2015; @Meehl1954; 
+@Meehl1957]. This algorithm aversion leads to a specific distrust in AI making
+moral decisions, driven by the perception that AI lacks internal experience 
+[@Bigman2018]. These results suggest that people will distrust AI models that 
+give advice on moral issues. However, these findings may no longer generalize in
+a post-ChatGPT era in which people are interacting with LLMs on a regular basis. 
+Moreover, the limited research there has been on trust in AI in the moral domain
+has tended to focus narrowly on Western populations [@Henrich2010], while moral
+norms, prevalence of AI, and morally relevant cultural values vary dramatically
+across societies [@Barnes2024; @Dang2025; @Inglehart2000; @Jackson2024]. It 
+therefore remains unclear whether people around the world will trust AMAs and 
+whether levels of trust will vary across cultures.
 
 There is reason to believe that people will trust AMAs differently depending on 
 the moral decisions that they make. For AMAs to be trustworthy, they must be 
@@ -457,17 +463,29 @@ human advisors, and utilitarian advisors less than deontological advisors
 ## Perceptions of the Moral Advisors
 
 We first looked at participants' overall perceptions of the moral advisors, 
-pooling across dilemmas and countries (@fig-means; @tbl-contrasts). We found 
-that the type of advice given (deontological vs. utilitarian) influenced 
-participants' perceptions of the advisors. In line with our pre-registered 
-predictions, advisors who gave utilitarian advice in the sacrificial dilemmas 
-were perceived as less trustworthy than advisors who gave deontological advice.
-Participants reported that they would blame someone else more for following 
-utilitarian advice. In contrast to previous work [@Myers2025], we did not find 
-that people were more surprised when the AI gave deontological advice rather 
-than utilitarian advice. However, we found that advisors were perceived as more 
-machine-like when they gave utilitarian advice, suggesting at least some belief 
-about the association of machines with utilitarian decision making.
+pooling across dilemmas and countries (@fig-means; @tbl-contrasts). In line with
+our pre-registered predictions and with previous work on algorithm aversion in 
+the moral domain [@Bigman2018], we found that artificial moral advisors were 
+perceived as less trustworthy than human advisors. Participants reported they 
+would trust AI advisors less than humans on other issues and that they would 
+blame someone else more for following moral advice from an AI. We also found 
+that trust in the AI systems was not uniform but was influenced by the kind of 
+moral advice given (deontological vs. utilitarian). In line with our 
+pre-registered predictions, advisors -- both human and AI -- who gave 
+utilitarian advice in the sacrificial dilemmas were perceived as less 
+trustworthy than advisors who gave deontological advice. Participants reported 
+they would trust utilitarian advisors less on other issues and that they would 
+blame someone else more for following utilitarian advice, from either an AI or 
+a human. In contrast to previous work [@Myers2025], we did not find that people
+were more surprised when the AI gave deontological advice rather than 
+utilitarian advice. However, we found that advisors were perceived as more 
+machine-like when they gave utilitarian advice, suggesting at least some belief
+about the association of machines with utilitarian decision making. Overall, 
+then, with a large sample of participants across 12 countries with multiple 
+dilemmas for generalizability, we found that participants reported trusting AI 
+advisors less than humans, and that AI advisors who gave moral advice aligned 
+with utilitarian principles of instrumental harm were trusted less than those 
+who endorsed deontological principles.
 
 ```{r, fig.height=5, fig.width=7}
 #| label: fig-means
@@ -506,16 +524,6 @@ tar_read(table_pairwise_contrasts) %>%
 ```
 
 :::
-
-In addition, we found that the type of advisor (human vs. AI) influenced 
-participants' perceptions. In line with our pre-registered predictions and with 
-previous work on algorithm aversion in the moral domain [@Bigman2018], 
-artificial moral advisors were perceived as less trustworthy than human 
-advisors. Participants reported that they would blame someone else more for 
-following moral advice from an AI. Human advisors were seen as more human-like 
-than AI advisors, especially when they gave deontological advice. Participants 
-were also more surprised when deontological advice came from an AI, rather than
-from a human.
 
 In addition to our main pre-registered analyses, we assessed the robustness of 
 these effects in several ways. First, we looked at the results split across the
@@ -611,8 +619,8 @@ deontological advisor relatively more than tighter countries like India and
 China (interaction effect = 
 `r roundd(median(interaction_effect_tightness))`, 95% HPDI 
 [`r roundd(HPDI(interaction_effect_tightness, prob = 0.95)[[1]])` 
-`r roundd(HPDI(interaction_effect_tightness, prob = 0.95)[[2]])`]). Other 
-cultural factors did not moderate the experimental effects 
+`r roundd(HPDI(interaction_effect_tightness, prob = 0.95)[[2]])`]). 
+Other cultural factors did not moderate the experimental effects 
 (@suppfig-cross-cultural).
 
 ```{r, fig.height=4, fig.width=6.5}
@@ -807,44 +815,48 @@ advice that the AI provides might influence this trust. In a large-scale,
 pre-registered experiment across 12 countries, we studied people's trust in, and
 deference to, artificial moral advisors who give advice aligned with different
 ethical theories. We found that participants perceived AI moral advisors
-as less trustworthy than humans, particularly when they gave advice based on 
-utilitarian principles. Despite this relative distrust, however, people still 
-listened to the moral advice from AI by updating their own moral judgments, 
-especially when the advice was in line with deontological principles. 
-Importantly, this judgment updating was observed regardless of whether the 
-advice came from a human or an AI advisor and, perhaps concerningly, even when 
-the advisor was explicitly perceived to be untrustworthy. Taken together, these
-findings suggest that artificial moral advisors may play an influential role in
-human morality, for better or worse.
+as less trustworthy than humans, said that they would trust AI advisors less on
+other issues, and reported that they would blame others more for listening to 
+AI advisors. At the same time, the kind of ethical framework that the AI was 
+aligned with influenced perceptions, with particular distrust when the advisor 
+gave recommendations based on utilitarian principles. Despite this relative 
+distrust, however, people still listened to the moral advice from AI by updating
+their own moral judgments, especially when the advice was in line with 
+deontological principles. Importantly, this judgment updating was observed 
+regardless of whether the advice came from a human or an AI advisor and, perhaps
+concerningly, even when the advisor was explicitly perceived to be 
+untrustworthy. Taken together, these findings suggest that artificial moral 
+advisors may play an influential role in human morality, for better or worse.
 
 Our first key finding is that participants perceived artificial moral advisors 
 to be less trustworthy than humans. We find that even though our AI advisors 
-were explicitly described as moral experts, people trusted them less than human
-advisors -- even if trustworthiness was still around the midpoint of the scale.
-This replicates previous work on algorithm aversion in general [@Dawes1979; 
-@Dietvorst2015; @Meehl1954; @Meehl1957] and emerging findings in the moral 
-domain [@Bigman2018; @Myers2025]. This pattern was observed for most of the 
-countries in our sample and was not moderated by global indices of AI progress 
-or government AI readiness. For those who are optimistic about the power of AMAs
-to be used in assisting moral judgments [@Giubilini2018; @Sinnott2021], such 
-results could lead to cautious optimism: these systems may be seen as less 
-trustworthy than humans, but not completely untrustworthy. And yet, we show that
-this trustworthiness is not static but depends on the specific type of moral 
-judgment that the AI makes.
+were explicitly described as moral experts, people rated AI advisors as less 
+trustworthy than human advisors -- even if trustworthiness was still around the 
+midpoint of the scale -- and reported that they would trust AI advisors less on 
+other issues. This replicates previous work on algorithm aversion in general 
+[@Dawes1979; @Dietvorst2015; @Meehl1954; @Meehl1957] and emerging findings in 
+the moral domain [@Bigman2018; @Myers2025]. This pattern was observed for most 
+of the countries in our sample and was not moderated by global indices of AI 
+progress or government AI readiness. For those who are optimistic about the 
+power of AMAs to be used in assisting moral judgments [@Giubilini2018; 
+@Sinnott2021], such results could lead to cautious optimism: these systems may 
+be seen as less trustworthy than humans, but not completely untrustworthy. And 
+yet, we show that this trustworthiness is not static but depends on the specific
+type of moral judgment that the AI makes.
 
-Our second key finding is that the type of advice drove participants' 
-perceptions of the advisors. Participants trusted AI (and human) advisors who 
-gave characteristically deontological advice more than advisors who gave 
-utilitarian advice. These results were observed overall, found when looking at 
-both dilemmas separately, and found when accounting for participants' own moral 
-judgments. For AI, like for humans [@Everett2016; @Everett2018; @Everett2021], 
-not all "moral" decisions equally signal trustworthiness and therefore AMAs that
-are built to align with impartial utilitarian ethics may be particularly 
-distrusted. Instead, artificial moral advice that aligns with deontological 
-norms of integrity and respect for persons may be better received by a public 
-uneasy with AI's perceived cold rationality, raising challenges to those who 
-believe that utilitarianism is the correct normative standpoint by which AMAs 
-should be programmed.
+Our second key finding is that not all moral advisors were trusted alike: the 
+type of advice drove participants' perceptions of the advisors. Participants 
+trusted AI (and human) advisors who gave characteristically deontological advice
+more than advisors who gave utilitarian advice. These results were observed 
+overall, found when looking at both dilemmas separately, and found when 
+accounting for participants' own moral judgments. For AI, like for humans 
+[@Everett2016; @Everett2018; @Everett2021], not all "moral" decisions equally 
+signal trustworthiness and therefore AMAs that are built to align with impartial
+utilitarian ethics may be particularly distrusted. Instead, artificial moral 
+advice that aligns with deontological norms of integrity and respect for persons
+may be better received by a public uneasy with AI's perceived cold rationality,
+raising challenges to those who believe that utilitarianism is the correct 
+normative standpoint by which AMAs should be programmed.
 
 While the difference in perceived trustworthiness between deontological and 
 utilitarian advisors generalized across most countries in our sample, we found 
@@ -867,62 +879,7 @@ different trust measures -- notably, in our study, we found that cultural
 tightness was associated with perceived trustworthiness, but not judgment 
 updating.
 
-Our third key finding is that participants listened to the moral advice by 
-updating their own moral judgments, regardless of whether the advisor was human
-or AI -- but did so especially when the advice was deontological, in line with 
-the effects on perceived trustworthiness. In addition, participants updated
-their judgments more when the advisor was perceived to be more trustworthy, yet
-they continued to update their judgments even when they explicitly perceived the
-advisor as untrustworthy. This reveals a psychological paradox: people may claim
-to distrust AI relative to humans, yet still update their moral views based on
-AI advice. Perceptions of trustworthiness are typically understood as 
-antecedents of trust [@Lee2004; @Mayer1995], even if we know that perceptions of 
-AI trustworthiness do not always lead to trusting behavior [@Schlicker2025].
-Yet our results highlight an underexplored and opposite pattern: that people may 
-"trust" AMAs behaviorally by updating their moral judgments, while still 
-perceiving them as less trustworthy than humans. This finding extends the 
-growing literature on the persuasive potential of AI [@Bai2025; @Costello2024; 
-@Durmus2024; @Hackenburg2024; @Hackenburg2025; @Krugel2023; @Schoenegger2025]
-into the moral domain and shows that people's perceptions of AI trustworthiness
-are distinct from their decisions to defer to AI in practice [@Hoff2015; 
-@Lee2004; @Schlicker2025; @Vereschak2021; @Wischnewski2023]. The moral 
-persuasiveness of AI is good news for those who argue for the possibility of AI 
-to enhance moral judgments [@Giubilini2018; @Sinnott2021], but is likely to ring
-alarm bells for those who have expressed concerns about outsourcing moral 
-judgments to AI, including concerns about the lack of epistemic agency involved,
-the risk of moral deskilling, and potential issues with offloading moral 
-responsibility onto machines [@Landes2025; @Landes_preprint; @Liu2022; 
-@Vallor2024].
-
-For AI developers and policymakers, our judgment updating results suggest that
-when testing AMA systems, developers should be cautious not to conflate
-perceived trustworthiness with actual behavioral impact. At a minimum, our 
-results suggest the need for safeguards for emerging AMA technologies, 
-especially those operating in high-stakes domains like healthcare, military 
-ethics, and criminal justice. The suggestion that people may behaviorally trust
-these systems even when rating them as untrustworthy reiterates the 
-importance of "designing for appropriate reliance" [@Lee2004] and ensuring 
-calibrated trust [@Ferrario2024], perhaps using both trust-enhancing and 
-trust-dampening cues [@Visser2025]. And yet, of course, our results here are 
-descriptive and should not lead to any normative conclusions. The fact that 
-people trust AMAs behaviorally by updating their moral judgments is a completely
-separate question to whether people should trust AMAs, whether developers should
-build AMAs at all, and whether the increasing expansion of algorithms into the 
-moral domain is an appropriate vision of society [@Everett_in_prep].
-
-Our results leave open the question of why people update their judgments in 
-response to AI advice. People might be persuaded by the reasons provided by the 
-AI, defer to its perceived expertise, reconsider their initial decisions when 
-given the opportunity to revise them, or simply adjust their judgments to meet 
-the perceived demands of the experiment. Our finding that people listened more 
-to deontological than utilitarian advice suggests that our results are not 
-merely due to demand characteristics. While our design was not able to tease 
-apart other explanations for judgment updating, recent work has found that 
-people do actively attend to the content of advice given by AMAs when updating 
-their judgments, rather than blindly deferring to the advisor's perceived 
-expertise [@Landes_under_review].
-
-Our fourth key finding is that people seem to associate utilitarianism with 
+Our third key finding is that people seem to associate utilitarianism with 
 being more machine-like. Utilitarianism, with its impartial focus on calculating
 predicted welfare and assessing consequences, has often been criticized for the
 way it seems to diminish humanity through its focus on algorithms -- that it is
@@ -948,39 +905,124 @@ they should build systems that can do more than merely compute outcomes -- the
 systems must also communicate care, character, and moral understanding in ways
 that align with human moral psychology.
 
+Our final key finding is that participants listened to the moral advice by 
+updating their own moral judgments, regardless of whether the advisor was human
+or AI -- but did so especially when the advice was deontological, in line with 
+the effects on perceived trustworthiness. In addition, participants updated
+their judgments more when the advisor was perceived to be more trustworthy, yet
+they continued to update their judgments even when they explicitly perceived the
+advisor as untrustworthy. This reveals an apparent psychological paradox: people
+may claim to distrust AI relative to humans, yet still update their moral views
+based on AI advice. This is unusual when considering classic models of trust in 
+AI, where perceptions of trustworthiness are typically understood as antecedents
+of trust [@Lee2004; @Mayer1995]. While we know that perceptions of AI 
+trustworthiness do not always lead to trusting behavior [@Schlicker2025], our 
+results highlight an underexplored and opposite pattern: that people may "trust" 
+AMAs behaviorally by updating their moral judgments, while still perceiving them
+as less trustworthy than humans. This finding extends the growing literature on 
+the persuasive potential of AI [@Bai2025; @Costello2024; @Durmus2024; 
+@Hackenburg2024; @Hackenburg2025; @Krugel2023; @Schoenegger2025] into the moral
+domain and shows that people's perceptions of AI trustworthiness are distinct 
+from their decisions to defer to AI in practice [@Hoff2015; @Lee2004; 
+@Schlicker2025; @Vereschak2021; @Wischnewski2023]. The moral persuasiveness of 
+AI is good news for those who argue for the possibility of AI to enhance moral 
+judgments [@Giubilini2018; @Sinnott2021], but is likely to ring alarm bells for
+those who have expressed concerns about outsourcing moral judgments to AI, 
+including concerns about the lack of epistemic agency involved, the risk of 
+moral deskilling, and potential issues with offloading moral responsibility onto
+machines [@Landes2025; @Landes_preprint; @Liu2022; @Vallor2024].
+
+For AI developers and policymakers, our judgment updating results suggest that
+when testing AMA systems, developers should be cautious not to conflate
+perceived trustworthiness with actual behavioral impact, and to pay attention to
+the ethical frameworks used for aligning these systems, not only as a normative
+question, but as a practical barrier for trust. At a minimum, our results 
+suggest the need for safeguards for emerging AMA technologies, especially those
+operating in high-stakes domains like healthcare, military ethics, and criminal
+justice. The suggestion that people may behaviorally trust these systems even 
+when rating them as untrustworthy reiterates the importance of "designing for 
+appropriate reliance" [@Lee2004] and ensuring calibrated trust [@Ferrario2024],
+perhaps using both trust-enhancing and trust-dampening cues [@Visser2025]. And
+yet, of course, our results here are descriptive and should not lead to any 
+normative conclusions. The fact that people trust AMAs behaviorally by updating
+their moral judgments is a completely separate question to whether people should
+trust AMAs, whether developers should build AMAs at all, and whether the
+increasing expansion of algorithms into the moral domain is an appropriate 
+vision of society [@Everett_in_prep].
+
+Our results leave open the question of why people update their judgments in 
+response to AI advice. People might be persuaded by the reasons provided by the 
+AI, defer to its perceived expertise, or reconsider their initial decisions when 
+given the opportunity to revise them. While judgment updating can be interpreted
+as a form of trusting behavior -- a behavior reflecting a willingness to rely on
+another agent in a case of uncertainty [@Everett_in_prep] -- it is also possible
+that judgment updating does not actually reflect trusting behavior, but instead
+arises from people anchoring their judgments to the only available information
+or adjusting their judgments to meet the perceived demands of the experiment. 
+Our finding that people listened more to deontological than utilitarian advice 
+suggests that our results are not merely due to demand characteristics. While
+our design was not able to tease apart other explanations for judgment updating,
+recent work has found that people do actively attend to the content of advice 
+given by AMAs when updating their judgments, rather than blindly deferring to
+the advisor's perceived expertise [@Landes_under_review]. While at a practical
+level the concerns about the risks of people deferring to AI advice may persist
+regardless of whether this is driven by either a potentially biased or mistaken
+inference of trust or from anchoring, it will be interesting theoretically for
+future work to distinguish between these and other "non-trusting" explanations
+for judgment updating.
+
+One potential limitation of our design is that, while we described both human 
+and AI advisors as moral experts in the study preamble, the AI advisors were not 
+specifically described as being trained on moral decisions from humans with 
+extensive ethical training. This may have led to differences in perceived 
+expertise between the experimental conditions, which could explain the differing 
+perceptions of trustworthiness between human and AI advisors. To address this
+concern, we performed a follow-up experiment with UK participants in which we 
+sought to make the AI description even stronger in its described expertise (see 
+Supplementary Materials for more details). We replicated the findings with the 
+original wording and the revised wording, with no difference between the 
+wordings. This suggests that our finding of less reported trust in AI advisors 
+reflects a more general phenomenon consistent with other work on algorithm 
+aversion, rather than the particular descriptions of human and AI advisors that
+we used.
+
 Future work should build on these findings in several ways. First, AMAs need to 
 be aligned with a normative standard, but there are many different ethical 
 frameworks that they could be aligned with. While our results cohere with 
 previous work showing that utilitarian advisors are trusted less than 
 deontological advisors [@Everett2018; @Everett2021; @Myers2025], future work 
 should explore how AMAs are judged when their advice aligns with other 
-philosophical theories, such as virtue ethics. Second, future work should assess
-trust in AMAs in everyday moral situations. Sacrificial dilemmas are frequently
-used in moral psychology [@Conway2013; @Duke2015; @Everett2021; @Greene2008; 
-@Myers2025] due to their ability to tease apart different normative frameworks,
-such as deontology and utilitarianism. This was an advantage for our study, as 
-these normative frameworks are precisely the focus of discussions about how to 
-ethically program AMAs [@Giubilini2018; @Landes2025; @Liu2022]. Nonetheless, 
-sacrificial dilemmas have been criticized for lacking realism compared to more 
-contextualized real-world scenarios [@Bauman2014]. Research should explore how 
-people trust AI advisors in the kinds of everyday moral situations that LLMs are 
-increasingly being used to provide advice for, such as parenting, workplace 
-fairness, and relationships. These real-world contexts may trigger different 
-patterns of trust and influence than abstract dilemmas. Third, future work 
-should explore the role of advice consistency in the perceptions of AMAs. Since 
-our design focused on individual responses from separate advisors, we were 
-unable to assess the effects of advisor consistency on participants' judgments. 
-However, there is reason to believe that (in)consistency could be important for
-trust, especially since real AMAs are likely to be applied across many different
-situations. If people want AMAs to act as dispassionate "ideal observers" 
-[@Firth1952], then they may prefer AI to give consistent and unbiased moral 
-judgments in line with a particular normative framework. Alternatively, people 
-might prefer AI to adapt its moral decision-making dynamically depending on 
-morally relevant features of the situation. Future research could employ 
-multi-trial designs with different dilemmas to test these possibilities.
+philosophical theories, such as virtue ethics. Second, while we operationalized
+trustworthiness with a single-item measure, future work should distinguish 
+between different facets of trustworthiness, such as ability, benevolence, and 
+integrity [@Mayer1995], to determine whether specific aspects of trustworthiness 
+lead people to update their judgments in response to advice from AMAs. Third, 
+future work should assess trust in AMAs in everyday moral situations. 
+Sacrificial dilemmas are frequently used in moral psychology [@Conway2013; 
+@Duke2015; @Everett2021; @Greene2008; @Myers2025] due to their ability to tease
+apart different normative frameworks, such as deontology and utilitarianism. 
+This was an advantage for our study, as these normative frameworks are precisely
+the focus of discussions about how to ethically program AMAs [@Giubilini2018; 
+@Landes2025; @Liu2022]. Nonetheless, sacrificial dilemmas have been criticized
+for lacking realism compared to more contextualized real-world scenarios 
+[@Bauman2014]. Research should explore how people trust AI advisors in the 
+kinds of everyday moral situations that LLMs are increasingly being used to 
+provide advice for, such as parenting, workplace fairness, and relationships. 
+Fourth, future work should explore the role of advice consistency in the 
+perceptions of AMAs. Since our design focused on individual responses from 
+separate advisors, we were unable to assess the effects of advisor consistency 
+on participants' judgments. However, there is reason to believe that 
+(in)consistency could be important for trust, especially since real AMAs are 
+likely to be applied across many different situations. If people want AMAs to 
+act as dispassionate "ideal observers" [@Firth1952], then they may prefer AI to
+give consistent and unbiased moral judgments in line with a particular normative
+framework. Alternatively, people might prefer AI to adapt its moral 
+decision-making dynamically depending on morally relevant features of the 
+situation. Future research could employ multi-trial designs with different 
+dilemmas to test these possibilities.
 
-Overall, our findings reveal a paradox: people distrust artificial moral 
-advisors relative to humans, and particularly distrust utilitarian advisors, yet
+Overall, our findings show that people distrust artificial moral advisors 
+relative to humans, and particularly distrust utilitarian advisors, yet 
 still change their judgments in response to advice from AI, even when they 
 perceive the AI to be untrustworthy. This tension underscores both the promise 
 and peril of using AI in the moral domain. If artificial moral advisors are to 
@@ -1176,7 +1218,7 @@ resulting in a larger sample size of 7,096 participants.
 
 ## Statistical Analysis
 
-To analyse the perceptions of the advisors, we fitted Bayesian cumulative-link
+To analyze the perceptions of the advisors, we fitted Bayesian cumulative-link
 ordinal models to the Likert scale data, modelling the interaction between
 advice type (deontological vs. utilitarian) and advisor type (human vs. AI). To
 split by moral dilemma, we included dilemma (Baby vs. Bike) as an additional
@@ -1189,7 +1231,7 @@ AI readiness [@OxfordInsights]). These models were fitted separately as we did
 not have a clear causal model guiding the inclusion of controls or cross-level 
 interactions within a single model [@Cinelli2024; @McElreath2020].
 
-To analyse participants' judgments and confidence, we fitted Bayesian 
+To analyze participants' judgments and confidence, we fitted Bayesian 
 zero-one-inflated beta models to the 0-1 slider data and Bayesian 
 cumulative-link ordinal models to the Likert scale data, modelling the
 interaction between time (pre- vs. post- advice), advice type (deontological vs. 
